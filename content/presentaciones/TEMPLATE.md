@@ -1,38 +1,398 @@
-# Template de presentación
+# TEMPLATE — presentaciones web (landing por clase)
 
-Copiar este archivo como `clase-NN.md` (con N° de clase con 2 dígitos, p. ej. `clase-01.md`).
+Referencia de sintaxis para producir `content/presentaciones/clase-NN.md`. Cada archivo define **una landing page editorial** que se publica en `/clases/NN` y se imprime a PDF A4 apaisada desde el botón "Imprimir / Guardar PDF" en la toolbar.
 
-Reglas:
-- Portada y slide de cierre se generan automáticamente desde los metadatos de Notion (número, título, unidad, fecha). No hace falta escribirlas.
-- Cada slide de contenido se separa por una línea con exactamente `---`.
-- La primera línea de cada slide que empiece con `#` o `##` es el título del slide (aparece en la cabecera).
-- El resto es el cuerpo en markdown estándar (listas, tablas, `>` citas, `**negrita**`, etc.).
-- Cada slide debe caber en una lámina A4 horizontal (297×210mm). Si no cabe, partirlo en dos.
-
-Ejemplo mínimo (borrar al crear la presentación real):
+No hay ruta `/print` separada. La misma URL imprime vía `@media print`.
 
 ---
 
-## ¿Qué estudia la Economía?
+## 1. Estructura general
 
-Cómo las personas, empresas y gobiernos toman decisiones cuando los recursos son **limitados**.
+```markdown
+---
+clase: NN
+titulo: Título de la clase
+unidad: Unidad II
+fecha: Jueves XX de MES
+---
 
-> Recursos limitados → decisiones.
+::: tipo-de-seccion [props opcionales]
+::slot-uno
+Contenido markdown del slot uno.
+
+::slot-dos
+Contenido markdown del slot dos.
+:::
+
+::: otro-tipo
+...
+:::
+```
+
+**Reglas del parser:**
+- Frontmatter YAML-ligero en `---`/`---` (clase, titulo, unidad, fecha).
+- Cada sección: `::: tipo [props]` abre, `:::` cierra.
+- Los slots dentro de una sección se declaran con `::nombre-del-slot` en su propia línea. Todo lo que sigue hasta el próximo `::slot` (o el cierre `:::`) es el contenido de ese slot, como markdown libre.
+- Props en la línea de apertura: `num=01 titulo="Con espacios" clases="Clases 1 y 2"`. Usar comillas si hay espacios.
+
+**Consolidar.** ~18 secciones por clase. Si una idea no necesita sección propia, va dentro de un `station` o un `stat`. Evitar explotar el deck en 30+ slides.
 
 ---
 
-## Micro vs Macro
+## 2. Tipos de sección disponibles
 
-| Rama | Escala | Ejemplo |
-|------|--------|---------|
-| Micro | Individuo, empresa, mercado | Precio del completo en el quiosco |
-| Macro | País, agregados | Tasa de inflación de Chile |
+Cada tipo tiene un layout único. El renderer está en `app/clases/[id]/page.tsx`.
+
+### `hero` — portada
+Fondo negro, banda roja izquierda, título Fraunces masivo.
+
+```markdown
+::: hero
+::eyebrow
+CLASE NN · UNIDAD II
+
+::titulo
+Título grande de la clase
+
+::subtitulo
+Bajada opcional en cursiva
+
+::meta
+DERE-A0004 · Introducción a la Economía · Universidad Autónoma de Chile
+:::
+```
+
+### `intro` — encuadre
+Fondo arena, tipografía editorial, columna única a la izquierda.
+
+```markdown
+::: intro
+::kicker
+EL MAPA DE HOY
+
+::titulo
+Frase de apertura, máximo 2 líneas.
+
+::body
+Párrafo de contexto. Puede tener **bold** y *italic*.
+
+Otro párrafo si hace falta.
+:::
+```
+
+### `manifesto` — preguntas diagnósticas
+Tres preguntas numeradas en cursiva grande, estilo declaración.
+
+```markdown
+::: manifesto
+::titulo
+Tres preguntas para arrancar.
+
+::q1
+¿Primera pregunta?
+
+::q2
+¿Segunda pregunta?
+
+::q3
+¿Tercera pregunta?
+
+::footer
+Indicación o disclaimer en gris pequeño.
+:::
+```
+
+### `station` — estación temática (la pieza más densa)
+Número 40mm rojo + cabecera con tema + grid "qué dominar" | "pregunta + respuesta" + footer "trampa común" | "regla de oro". Hecha para consolidar una clase completa o una unidad temática en una sola sección.
+
+```markdown
+::: station num=01 clases="Clases 1 y 2"
+::titulo
+Fundamentos
+
+::dominar
+- **Concepto 1.** Explicación breve.
+- **Concepto 2.** Explicación breve.
+- **Concepto 3.** Explicación breve.
+
+::pregunta
+¿La pregunta que se le hace al curso?
+
+::respuesta
+**Respuesta esperada.** Explicación completa con **énfasis** donde haga falta.
+
+::trampa
+**"Frase errada."** La corrección y el porqué.
+
+::regla
+La regla de oro del curso que aplica aquí.
+:::
+```
+
+### `mecanismo` — secuencia de pasos
+Lista numerada con círculos rojos y flechas verticales. Fondo negro. Hecha para explicar procesos con orden fijo (ajuste de mercado, cadena causal).
+
+```markdown
+::: mecanismo
+::titulo
+Título del mecanismo
+
+::subtitulo
+Condición bajo la que opera
+
+::paso1
+**Primer paso**
+Explicación corta.
+
+::paso2
+**Segundo paso**
+Explicación corta.
+
+::paso3
+**Tercer paso**
+Explicación corta.
+
+::paso4
+**Resultado final**
+Explicación corta.
+
+::nota
+Variante o caveat opcional.
+:::
+```
+
+### `stat-hero` — un dato gigante
+Número de 85mm ocupando el 55% izquierdo (fondo rojo), panel derecho negro con contexto. Usar para el dato central de un ejercicio o concepto.
+
+```markdown
+::: stat-hero
+::numero
+$200
+
+::label
+ETIQUETA EN SMALL CAPS
+
+::texto
+Explicación editorial del dato. Puede tener **bold**.
+
+::subtexto
+Pie de página opcional con contexto adicional.
+:::
+```
+
+### `stat-duo` — número + fórmula + explicación
+Split 50/50. Izquierda: número rojo grande + fórmula en mono. Derecha: interpretación editorial. Usar para cálculos del ejercicio resuelto.
+
+```markdown
+::: stat-duo
+::kicker
+(A) CUÑA IMPOSITIVA
+
+::numero
+$200
+
+::formula
+Pc − Pv = $940 − $740
+
+::texto
+**Coincide con el impuesto.** Siempre. Por definición.
+:::
+```
+
+### `stat-split` — dos datos en paralelo
+Grilla de dos cells contrastantes (oscura / clara) con números gigantes a ambos lados + insight abajo. Usar para comparar dos valores del mismo fenómeno (70% / 30%, antes / después).
+
+```markdown
+::: stat-split
+::kicker
+(B) DISTRIBUCIÓN DE LA CARGA
+
+::leftlabel
+CONSUMIDORES ABSORBEN
+::leftnum
+$140
+::leftpct
+70%
+::leftformula
+Pc − Pe = $940 − $800
+
+::rightlabel
+PRODUCTORES ABSORBEN
+::rightnum
+$60
+::rightpct
+30%
+::rightformula
+Pe − Pv = $800 − $740
+
+::insight
+**Interpretación.** Lo que nos dice la distribución sobre las elasticidades.
+:::
+```
+
+### `grid-fallas` — grilla 2×2
+Cuatro items en grilla 2×2 con fondos alternados (claro/oscuro/oscuro/claro). Usar para taxonomías de cuatro categorías.
+
+```markdown
+::: grid-fallas
+::titulo
+Título de la taxonomía
+
+::f1-titulo
+Categoría 1
+::f1-body
+Descripción. Puede tener **bold**.
+
+::f2-titulo
+Categoría 2
+::f2-body
+Descripción.
+
+::f3-titulo
+Categoría 3
+::f3-body
+Descripción.
+
+::f4-titulo
+Categoría 4
+::f4-body
+Descripción.
+:::
+```
+
+### `exercise-intro` — apertura de ejercicio resuelto
+Portada de ejercicio en fondo negro. Título grande + banda con datos en monospace.
+
+```markdown
+::: exercise-intro
+::kicker
+EJERCICIO TIPO EVALUACIÓN
+
+::titulo
+Nombre del ejercicio
+
+::datos
+Pe = $800 · Impuesto = $200 · Pc = $940 · Pv = $740
+
+::nota
+Por qué se resuelve este.
+:::
+```
+
+### `exercise-d` — cierre narrativo del ejercicio
+Título enorme rojo + cuerpo editorial + panel negro con el "giro" o insight final. Usar para el último paso del ejercicio cuando tiene una reflexión conceptual.
+
+```markdown
+::: exercise-d
+::kicker
+(D) JUSTIFICACIÓN
+
+::titulo
+Externalidad negativa.
+
+::body
+Párrafo explicativo con **énfasis**. Máximo 3-4 líneas.
+
+::twist
+El giro final. Qué cambia la interpretación.
+:::
+```
+
+### `evaluacion` — formato de la evaluación
+Tres cells con puntajes gigantes rojos + criterio oscuro destacado + claves con flechas.
+
+```markdown
+::: evaluacion
+::titulo
+Cómo viene la evaluación
+
+::sub
+40 puntos · 90 minutos · miércoles XX de MES
+
+::sec1-label
+Sección I
+::sec1-pts
+10 pts
+::sec1-body
+Descripción de la sección.
+
+::sec2-label
+Sección II
+::sec2-pts
+15 pts
+::sec2-body
+Descripción.
+
+::sec3-label
+Sección III
+::sec3-pts
+15 pts
+::sec3-body
+Descripción.
+
+::criterio
+**Criterio clave** en una frase contundente.
+
+::claves
+- **Punto 1:** consejo práctico.
+- **Punto 2:** consejo práctico.
+:::
+```
+
+### `close` — cierre + tarea + fecha
+Fondo negro, título enorme con la fecha, tarea abajo, reglas de oro en banda.
+
+```markdown
+::: close
+::eyebrow
+TAREA · MIÉRCOLES XX DE MES
+
+::titulo
+Nos vemos a las 08:00.
+
+::body
+Instrucción de tarea con **énfasis**.
+
+::reglas
+lista · separada · con · puntos
+
+::meta
+DERE-A0004 · Introducción a la Economía · Universidad Autónoma de Chile
+:::
+```
 
 ---
 
-## Costo de oportunidad
+## 3. Cómo agregar un tipo de sección nuevo
 
-El valor de la **mejor alternativa** que sacrificas al tomar una decisión.
+Cuando una clase necesita un layout que no existe (timeline, grilla 3×3, split vertical, lo que sea):
 
-- Estudiar Derecho → años no dedicados a otra carrera.
-- Aceptar un caso nuevo → horas no dedicadas a otros casos.
+1. Agregar el caso en `SectionRenderer` en `app/clases/[id]/page.tsx`.
+2. Escribir la función React con los slots que vayas a usar. Usar los existentes como referencia (`Station`, `StatHero`, etc.).
+3. CSS en el template literal al final del mismo archivo: una sección para screen (responsive clamp, aprovechar el viewport) y un override dentro de `@media print` para que la sección quepa en A4 apaisada (297×210mm) con tamaños en `mm`.
+4. Añadir el ejemplo aquí en `TEMPLATE.md`.
+5. Usarlo en el MD de la clase.
+
+No hackear un tipo existente para que haga otra cosa.
+
+---
+
+## 4. Tipografía y colores
+
+- **Display (Fraunces):** portadas, títulos grandes, números protagonistas, manifesto.
+- **Body (Inter):** UI, cards, navegación, texto corrido, pregunta/respuesta.
+- **Mono (JetBrains Mono):** fórmulas, datos técnicos.
+
+- Rojo UA: `#C8102E`
+- Negro: `#0D0D0D`
+- Arena: `#F5F3EF`
+
+Las variables están definidas en `:root` dentro de `app/clases/[id]/page.tsx`.
+
+---
+
+## 5. Validación antes de publicar
+
+- **Screen:** abrir `/clases/NN` y hacer scroll. Cada sección debe verse completa en viewport sin que el contenido quede apretado ni con aire muerto.
+- **Print:** `Cmd+P` en el navegador → vista previa. Cada sección = una A4 apaisada. Si algo se desborda o deja espacio grande, ajustar tamaños dentro de `@media print`.
+- **Contenido:** debe salir **exclusivamente de la guía de la clase en Notion**. No inventar ejemplos ni inflar el material.

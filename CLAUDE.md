@@ -20,9 +20,9 @@
 Dos artefactos separados con audiencias y formatos distintos:
 
 1. **Guías del profesor (en Notion)** — fuente narrativa detallada para Jorge: qué decir, cuándo, preguntas, ejemplos, tiempos. No se editan desde este repo.
-2. **Presentaciones web (en este repo)** — slides proyectables en aula + exportables a PDF (1 lámina A4 horizontal por hoja). Viven en `content/presentaciones/clase-NN.md`.
+2. **Presentaciones web (en este repo)** — **una landing page editorial por clase** proyectable en aula + imprimible como PDF (1 A4 apaisada por sección). Viven en `content/presentaciones/clase-NN.md`.
 
-**Rutas públicas del sitio:** solo `/clases` (grid) y `/clases/[n]` (detalle + `/print`). El resto no se expone — la bibliografía (`content/manuales/`) es **fuente de datos interna** por copyright, no contenido público.
+**Rutas públicas del sitio:** solo `/clases` (grid) y `/clases/[n]` (landing). No hay `/print` separado — el mismo URL imprime vía `@media print` cuando se presiona el botón "Imprimir / Guardar PDF" en la toolbar. La bibliografía (`content/manuales/`) es **fuente de datos interna** por copyright, no contenido público. El cuerpo de las guías (Notion) tampoco se expone en la landing — solo metadata + botón a la presentación.
 
 ## Principios pedagógicos (no negociables)
 
@@ -61,48 +61,49 @@ Exactamente estas 7 secciones en este orden:
 - Becker es contexto, no se desarrolla en clase.
 - Teoría del consumidor (Clase 5) se detiene en utilidad y preferencias; la curva de demanda se construye en Clase 6.
 
-### Presentaciones web (este repo) — nuevo flujo reemplazando pptxgenjs
+### Presentaciones web — modelo landing-por-clase (vigente desde abril 2026)
+
+**Filosofía.** Cada clase es una landing page editorial, no un deck genérico. Layouts distintos por rol semántico de la sección: números protagonistas en 85mm para datos clave, manifesto tipográfico para preguntas diagnósticas, grilla 2×2 para taxonomías, split con contraste claro/oscuro para dualidades. El markdown declara **qué tipo** de sección es; el renderer React le da el layout rico.
+
+**Referencia completa del formato:** [`content/presentaciones/TEMPLATE.md`](content/presentaciones/TEMPLATE.md). Leer antes de producir una clase nueva.
+
+**Flujo:**
 1. Leer la guía de la clase en Notion como **única fuente de contenido**.
-2. Crear `content/presentaciones/clase-NN.md` siguiendo `content/presentaciones/TEMPLATE.md`.
-3. Slides separados por `---` en línea propia; primera línea `#` o `##` = título del slide.
-4. Estructura fija del deck (heredada del flujo PPT, sigue vigente):
-   - **Portada oscura** — fondo negro, barra roja izquierda, título grande (auto desde Notion).
-   - **Estructura de la clase** — los 6 bloques con número, título y descripción (sin duraciones).
-   - **Repaso** — 3 preguntas sobre la clase inmediatamente anterior, con círculos rojos.
-   - Por cada bloque: **divisor oscuro** + slides de contenido.
-   - **Cierre + Tarea** — columna izquierda preguntas de resumen, columna derecha tarea y próxima clase.
-   - **Slide final oscuro** — "Nos vemos el [día]." (auto).
-5. Las duraciones de bloque **nunca** aparecen en los slides.
-6. El contenido sale **exclusivamente** de la guía — no se inventan ejemplos ni se agrega material externo.
-7. Validar que cada slide quepa en A4 horizontal (297×210mm). Partir si no cabe.
-8. Guías y presentaciones son **tareas separadas**. Entregar la guía primero; empezar la presentación solo cuando Jorge lo pida explícitamente.
+2. Crear `content/presentaciones/clase-NN.md` con frontmatter + secciones `:::`.
+3. Cada sección abre con `::: tipo [props...]` y cierra con `:::`. Dentro, slots `::nombre` declaran sub-bloques. El contenido dentro de cada slot es markdown libre.
+4. Tipos de sección disponibles (13): `hero`, `intro`, `manifesto`, `station`, `mecanismo`, `stat-hero`, `stat-duo`, `stat-split`, `grid-fallas`, `exercise-intro`, `exercise-d`, `evaluacion`, `close`. Cada uno tiene su componente React con layout único en [`app/clases/[id]/page.tsx`](app/clases/[id]/page.tsx).
+5. Consolidar: **~18 secciones por clase**, no 30+. Si una idea no necesita slide propio, colapsarla en una `station` o `stat`. El peor síntoma del deck viejo era 4 bullets esparcidos en 4 slides; aquí todo va en 1.
+6. El contenido sale **exclusivamente** de la guía — no se inventan ejemplos.
+7. Validar en pantalla (scroll de landing) **y** en vista impresa (`window.print()` del navegador). Cada sección debe caber en una A4 apaisada (297×210mm) cuando se imprime.
+8. Guías (Notion) y presentaciones (repo) son **tareas separadas**. La guía primero; la presentación solo cuando Jorge la pida.
 
-### Taxonomía de tipos de slide (referencia al construir el MD)
-| Tipo | Cuándo usarlo |
-|------|---------------|
-| Dos columnas (claro/oscuro) | Comparaciones (macro vs micro, definición vs aplicación) |
-| Cards con acento rojo izquierdo | Listas de ítems, condiciones, pasos |
-| Pregunta + respuesta (izq/der) | Preguntas al curso con respuesta esperada |
-| Tabla real | Datos numéricos (ej. tablas de Samuelson) |
-| Grilla 2×2 | 4 supuestos o clasificaciones |
-| 5 círculos numerados en fila | Exactamente 5 condiciones o pasos |
-| Divisor oscuro | Cambio de bloque |
-| Callout oscuro al pie | Cita bibliográfica o conclusión clave |
+**Cómo agregar un tipo de sección nuevo.** Cuando una clase pide un layout que no existe (ej. una timeline, una grilla 3×3):
+1. Agregar el caso en `SectionRenderer` en [`app/clases/[id]/page.tsx`](app/clases/[id]/page.tsx).
+2. Escribir la función React para el layout (ver los existentes como modelo).
+3. Añadir CSS para screen (landing scroll) y override en `@media print` para que encaje en A4 apaisada.
+4. Documentarlo en `TEMPLATE.md` con ejemplo de sintaxis.
 
-Las citas bibliográficas van al pie, gris claro, cursiva. Footer de cada slide: "Universidad Autónoma de Chile · Introducción a la Economía · Clase N".
+**Errores ya cometidos en presentaciones — no repetir:**
+- El modelo "deck de slides" (un molde de título + body + footer por slide) produce láminas genéricas y vacías. Cada sección necesita layout propio según qué comunica.
+- Tipografía Playfair como body se ve editorial/libro, no presentación. Para UI y cuerpo: **Inter** (sans-serif). Para display grande y serif editorial: **Fraunces**.
+- `react-markdown` sin `remark-gfm` **no renderiza tablas** — salen como texto crudo con `|`. Siempre pasar `remarkPlugins={[remarkGfm]}`.
+- El CSS con `display: block` sobre `<strong>` quiebra palabras en líneas sueltas. Si se quiere dar énfasis tipográfico a un fragmento, splitear el contenido en JS (`splitQuestion`) en vez de depender de selectores CSS frágiles.
 
 ## Identidad visual UA
 
-- Rojo: `#C8102E`
-- Negro: `#1A1A1A`
-- Arena: `#F5F4F2`
+- Rojo: `#C8102E` (rojo UA) · `#8A0B1F` (dark) · `#FBE8EB` (soft)
+- Negro: `#0D0D0D` (fondo) · `#151515` (texto)
+- Arena: `#F5F3EF`
 - Blanco: `#FFFFFF`
 - Gris: `#6B6B6B`
-- Claro: `#ECECEA`
-- Display: Playfair Display
-- Body: Source Serif 4
+- Claro: `#E8E6E1`
 
-Definidas como variables en [styles/globals.css](styles/globals.css).
+**Tipografía:**
+- **Display (Fraunces):** portadas, títulos grandes, números protagonistas, manifesto.
+- **Body (Inter):** UI, cards, navegación, texto corrido, pregunta/respuesta.
+- **Mono (JetBrains Mono):** fórmulas, datos técnicos del ejercicio resuelto.
+
+Las variables CSS están inline en [`app/clases/[id]/page.tsx`](app/clases/[id]/page.tsx) (`:root`). No se usa `styles/globals.css` para el sistema de presentaciones.
 
 ## IDs de Notion en uso
 
@@ -113,16 +114,15 @@ Definidas como variables en [styles/globals.css](styles/globals.css).
 | Database de clases (page) | `7377612d194d8322ac2b0153d4d4c962` |
 | Página padre "Programación de Clases" | `4787612d194d83dc89f801d948db5a5e` |
 
-## Estado actual (según Protocolo de Producción en Notion al 2026-04-15)
+## Estado actual (al 2026-04-15)
 
-- **Guías completas:** Clases 1–14.
-  - Clase 13: monopolio (profundidad), monopsonio/oligopolio/competencia monopolística (definiciones), fallas de mercado. Cierre de micro.
-  - Clase 14: repaso + evaluación (40 pts, 90 min, pauta como subpágina). Evaluación ~22 abril.
-- **PPTs antiguos (pptxgenjs) pendientes:** Clases 6, 13, 14. Todos los demás están hechos.
-- **Presentaciones web pendientes:** todas — flujo recién arranca.
-- **Pendiente estructural:** Clase 27 no existe en Notion, hay que crearla.
-- **Discrepancia sin resolver:** Evaluación Regular 2 → Notion dice Semana 14, syllabus dice Semana 12.
-- **Macro arranca en Clase 15.** Clase 30 planificada: "Síntesis: Macroeconomía y entorno político-social actual" (jueves 11 de junio).
+- **Guías completas en Notion:** Clases 1–14.
+  - Clase 13: monopolio, oligopolio/competencia monopolística/monopsonio, fallas de mercado. Cierre de micro.
+  - Clase 14: repaso formato temático (5 estaciones). Evaluación (40 pts, 90 min, pauta como subpágina) el miércoles 22 abril = **Clase 15**.
+- **Presentaciones web:** Clase 14 hecha (~18 secciones, modelo landing). Clases 1–13 pendientes.
+- **PPTs antiguos (pptxgenjs):** quedaron como referencia de contenido. No se producen más. Clases 6, 13 y 14 nunca tuvieron PPT y ya no lo tendrán (pasaron directo al modelo web).
+- **Pendiente estructural:** Clase 27 no existe en Notion. Discrepancia Evaluación Regular 2 → Notion Semana 14, syllabus Semana 12.
+- **Macro arranca en Clase 16** (Clase 15 es la evaluación). Clase 30: "Síntesis: Macroeconomía y entorno político-social actual", jueves 11 de junio.
 
 ## Emails semanales a estudiantes
 
