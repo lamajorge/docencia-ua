@@ -1,7 +1,8 @@
 import { notFound } from 'next/navigation'
 import ReactMarkdown from 'react-markdown'
+import Link from 'next/link'
 import { getClaseByNumero, getClases, REVALIDATE_SECONDS } from '@/lib/notion'
-import type { BloqueTematico } from '@/lib/notion'
+import { getPresentacion } from '@/lib/presentaciones'
 import PrintButton from '@/components/PrintButton'
 
 export const revalidate = REVALIDATE_SECONDS
@@ -15,17 +16,6 @@ export async function generateStaticParams() {
   }
 }
 
-// Cuántos bloques caben por slide (ajustable)
-const BLOQUES_POR_SLIDE = 1
-
-function chunkBloques(bloques: BloqueTematico[], perSlide: number): BloqueTematico[][] {
-  const chunks: BloqueTematico[][] = []
-  for (let i = 0; i < bloques.length; i += perSlide) {
-    chunks.push(bloques.slice(i, i + perSlide))
-  }
-  return chunks
-}
-
 export default async function PrintPage({ params }: { params: { id: string } }) {
   const numero = parseInt(params.id)
   if (isNaN(numero)) notFound()
@@ -33,8 +23,7 @@ export default async function PrintPage({ params }: { params: { id: string } }) 
   const clase = await getClaseByNumero(numero)
   if (!clase) notFound()
 
-  const slideGroups = chunkBloques(clase.bloques, BLOQUES_POR_SLIDE)
-  const totalSlides = 1 + slideGroups.length + 1 // portada + contenido + cierre
+  const presentacion = getPresentacion(numero)
 
   return (
     <html lang="es">
@@ -50,71 +39,105 @@ export default async function PrintPage({ params }: { params: { id: string } }) 
         <style dangerouslySetInnerHTML={{ __html: printStyles }} />
       </head>
       <body>
-        {/* Controles (solo en pantalla) */}
-        <div className="print-controls">
-          <span>Clase {clase.numero} · {clase.titulo}</span>
-          <span>{totalSlides} slides</span>
-          <PrintButton />
-        </div>
-
-        <div className="slides-container">
-
-          {/* ── Slide 1: Portada ── */}
-          <div className="slide portada">
-            <div className="slide-stripe" />
-            <div className="slide-body">
-              <p className="clase-label">Clase {String(clase.numero).padStart(2, '0')}</p>
-              <h1>{clase.titulo}</h1>
-              <p className="meta-line">
-                {clase.unidad && <>{clase.unidad} · </>}
-                DERE-A0004 · Introducción a la Economía
-              </p>
-            </div>
-            <div className="ua-logo-area">
-              <p className="ua-logo-text">Universidad Autónoma de Chile</p>
-            </div>
-          </div>
-
-          {/* ── Slides de contenido ── */}
-          {slideGroups.map((grupo, gi) =>
-            grupo.map((bloque, bi) => (
-              <div key={`${gi}-${bi}`} className="slide contenido">
-                <div className="slide-header">
-                  <span className="slide-titulo">{bloque.titulo}</span>
-                  <span className="slide-numero">
-                    {gi + 2}/{totalSlides}
-                  </span>
-                </div>
-                <div className="slide-body">
-                  <ReactMarkdown>{bloque.contenido}</ReactMarkdown>
-                </div>
-                <div className="slide-footer">
-                  <span>Clase {clase.numero} · {clase.titulo}</span>
-                  <span>DERE-A0004</span>
-                </div>
-              </div>
-            ))
-          )}
-
-          {/* ── Slide final: Cierre ── */}
-          <div className="slide cierre">
-            <div className="cierre-body">
-              <h2>Fin de la Clase {clase.numero}</h2>
-              <p>{clase.titulo}</p>
-              <p style={{ marginTop: '1rem', fontSize: '0.75rem', opacity: 0.7 }}>
-                DERE-A0004 · Introducción a la Economía<br />
-                Universidad Autónoma de Chile
-              </p>
-            </div>
-          </div>
-
-        </div>
+        {!presentacion ? (
+          <NoPresentacionYet numero={clase.numero} titulo={clase.titulo} />
+        ) : (
+          <Slides
+            numero={clase.numero}
+            titulo={clase.titulo}
+            unidad={clase.unidad}
+            slides={presentacion.slides}
+          />
+        )}
       </body>
     </html>
   )
 }
 
-// CSS inlined para la vista de impresión (no depende del layout global)
+function Slides({
+  numero,
+  titulo,
+  unidad,
+  slides,
+}: {
+  numero: number
+  titulo: string
+  unidad: string | null
+  slides: { titulo: string; contenido: string }[]
+}) {
+  const totalSlides = 1 + slides.length + 1
+
+  return (
+    <>
+      <div className="print-controls">
+        <span>Clase {numero} · {titulo}</span>
+        <span>{totalSlides} slides</span>
+        <PrintButton />
+      </div>
+
+      <div className="slides-container">
+        <div className="slide portada">
+          <div className="slide-stripe" />
+          <div className="slide-body">
+            <p className="clase-label">Clase {String(numero).padStart(2, '0')}</p>
+            <h1>{titulo}</h1>
+            <p className="meta-line">
+              {unidad && <>{unidad} · </>}
+              DERE-A0004 · Introducción a la Economía
+            </p>
+          </div>
+          <div className="ua-logo-area">
+            <p className="ua-logo-text">Universidad Autónoma de Chile</p>
+          </div>
+        </div>
+
+        {slides.map((slide, i) => (
+          <div key={i} className="slide contenido">
+            <div className="slide-header">
+              <span className="slide-titulo">{slide.titulo || `Slide ${i + 2}`}</span>
+              <span className="slide-numero">{i + 2}/{totalSlides}</span>
+            </div>
+            <div className="slide-body">
+              <ReactMarkdown>{slide.contenido}</ReactMarkdown>
+            </div>
+            <div className="slide-footer">
+              <span>Clase {numero} · {titulo}</span>
+              <span>DERE-A0004</span>
+            </div>
+          </div>
+        ))}
+
+        <div className="slide cierre">
+          <div className="cierre-body">
+            <h2>Fin de la Clase {numero}</h2>
+            <p>{titulo}</p>
+            <p style={{ marginTop: '1rem', fontSize: '0.75rem', opacity: 0.7 }}>
+              DERE-A0004 · Introducción a la Economía<br />
+              Universidad Autónoma de Chile
+            </p>
+          </div>
+        </div>
+      </div>
+    </>
+  )
+}
+
+function NoPresentacionYet({ numero, titulo }: { numero: number; titulo: string }) {
+  return (
+    <div className="placeholder">
+      <div>
+        <p className="placeholder-eyebrow">Clase {String(numero).padStart(2, '0')} · {titulo}</p>
+        <h1>Presentación no disponible todavía</h1>
+        <p className="placeholder-help">
+          Crear <code>content/presentaciones/clase-{String(numero).padStart(2, '0')}.md</code>{' '}
+          siguiendo el template en <code>content/presentaciones/TEMPLATE.md</code>.
+        </p>
+        <Link href={`/clases/${numero}`} className="placeholder-back">← Volver a la guía de la clase</Link>
+      </div>
+    </div>
+  )
+}
+
 const printStyles = `
   :root {
     --ua-red:   #C8102E;
@@ -156,7 +179,6 @@ const printStyles = `
     background: var(--ua-white);
   }
 
-  /* Portada */
   .slide.portada { background: var(--ua-black); color: var(--ua-white); }
   .slide-stripe { position: absolute; left: 0; top: 0; bottom: 0; width: 8px; background: var(--ua-red); }
   .slide.portada .slide-body { padding: 3rem 3.5rem 3rem 4rem; display: flex; flex-direction: column; height: 100%; justify-content: center; }
@@ -166,7 +188,6 @@ const printStyles = `
   .ua-logo-area { position: absolute; bottom: 2.5rem; right: 3rem; text-align: right; }
   .ua-logo-text { font-family: var(--font-display); font-size: 0.9rem; color: rgba(255,255,255,0.4); letter-spacing: 0.05em; }
 
-  /* Contenido */
   .slide.contenido .slide-header { background: var(--ua-black); padding: 0.9rem 2rem; display: flex; align-items: center; gap: 1rem; flex-shrink: 0; }
   .slide-titulo { font-family: var(--font-display); font-size: 1rem; color: var(--ua-white); font-weight: 700; }
   .slide-numero { font-size: 0.65rem; color: var(--ua-red); letter-spacing: 0.15em; text-transform: uppercase; font-weight: 700; margin-left: auto; }
@@ -176,6 +197,7 @@ const printStyles = `
   .slide.contenido .slide-body p, .slide.contenido .slide-body li { font-size: 0.82rem; line-height: 1.65; color: #2a2a2a; }
   .slide.contenido .slide-body ul, .slide.contenido .slide-body ol { padding-left: 1.2rem; margin: 0.5rem 0; }
   .slide.contenido .slide-body strong { color: var(--ua-red); font-weight: 600; }
+  .slide.contenido .slide-body blockquote { border-left: 3px solid var(--ua-red); padding-left: 0.75rem; margin: 0.5rem 0; color: #444; font-style: italic; }
   .slide.contenido .slide-body table { width: 100%; border-collapse: collapse; font-size: 0.75rem; margin: 0.75rem 0; }
   .slide.contenido .slide-body th { background: var(--ua-black); color: var(--ua-white); padding: 0.4rem 0.6rem; text-align: left; }
   .slide.contenido .slide-body td { padding: 0.35rem 0.6rem; border-bottom: 1px solid var(--ua-light); }
@@ -183,11 +205,19 @@ const printStyles = `
   .slide-footer { padding: 0.5rem 2rem; border-top: 1px solid var(--ua-light); display: flex; justify-content: space-between; align-items: center; flex-shrink: 0; }
   .slide-footer span { font-size: 0.6rem; color: var(--ua-gray); letter-spacing: 0.08em; }
 
-  /* Cierre */
   .slide.cierre { background: var(--ua-red); color: var(--ua-white); justify-content: center; align-items: center; }
   .cierre-body { text-align: center; padding: 2rem; }
   .slide.cierre h2 { font-family: var(--font-display); font-size: 2rem; margin-bottom: 1rem; }
   .slide.cierre p { font-size: 0.9rem; opacity: 0.85; }
+
+  .placeholder { min-height: 100vh; display: flex; align-items: center; justify-content: center; background: var(--ua-sand); color: var(--ua-black); padding: 3rem; }
+  .placeholder > div { max-width: 560px; text-align: center; }
+  .placeholder-eyebrow { font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ua-red); font-weight: 700; margin-bottom: 1rem; }
+  .placeholder h1 { font-family: var(--font-display); font-size: 1.8rem; line-height: 1.2; margin-bottom: 1rem; }
+  .placeholder-help { font-size: 0.9rem; color: var(--ua-gray); line-height: 1.5; margin-bottom: 1.5rem; }
+  .placeholder-help code { background: var(--ua-white); border: 1px solid var(--ua-light); padding: 0.1rem 0.4rem; font-size: 0.82rem; }
+  .placeholder-back { color: var(--ua-red); font-size: 0.85rem; text-decoration: none; }
+  .placeholder-back:hover { text-decoration: underline; }
 
   @media print {
     * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
