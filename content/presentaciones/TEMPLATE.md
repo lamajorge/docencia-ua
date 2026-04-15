@@ -80,6 +80,34 @@ Otro párrafo si hace falta.
 :::
 ```
 
+### `roadmap` — índice visual de la clase
+Grilla de cards numeradas (hasta 12). Cada una con número rojo grande + título + subtítulo corto. Usar como "mapa de la clase" después del `hero`/`intro`.
+
+```markdown
+::: roadmap
+::kicker
+LAS SIETE PARADAS
+
+::titulo
+Título declarativo del arco de la clase.
+
+::p1-titulo
+Nombre del bloque 1
+::p1-body
+Subtítulo de una línea.
+
+::p2-titulo
+Nombre del bloque 2
+::p2-body
+Subtítulo.
+
+::p3-titulo
+...
+:::
+```
+
+El grid se ajusta automáticamente según cuántos `p{n}-titulo` se detecten (3, 4, 5, 6 o más). Para 6 o 3 bloques usa 3 columnas; para el resto, 4.
+
 ### `manifesto` — preguntas diagnósticas
 Tres preguntas numeradas en cursiva grande, estilo declaración.
 

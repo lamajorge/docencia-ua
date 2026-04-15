@@ -78,6 +78,8 @@ function SectionRenderer({ section, numero }: { section: Section; numero: number
       return <Hero s={section} />
     case 'intro':
       return <Intro s={section} />
+    case 'roadmap':
+      return <Roadmap s={section} />
     case 'manifesto':
       return <Manifesto s={section} />
     case 'station':
@@ -135,6 +137,34 @@ function Intro({ s }: { s: Section }) {
       <p className="intro-kicker">{s.slots.kicker}</p>
       <h2 className="intro-titulo">{s.slots.titulo}</h2>
       <div className="intro-body"><MD>{s.slots.body}</MD></div>
+    </section>
+  )
+}
+
+// ── ROADMAP (índice visual de la clase) ──────────
+function Roadmap({ s }: { s: Section }) {
+  const paradas = Array.from({ length: 12 }, (_, i) => i + 1)
+    .map((n) => ({
+      n,
+      titulo: s.slots[`p${n}-titulo`],
+      body: s.slots[`p${n}-body`],
+    }))
+    .filter((p) => p.titulo)
+  return (
+    <section className="slide slide-roadmap">
+      <header className="rm-head">
+        <p className="rm-kicker">{s.slots.kicker || 'EL MAPA DE HOY'}</p>
+        <h2 className="rm-titulo">{s.slots.titulo}</h2>
+      </header>
+      <div className="rm-grid" data-count={paradas.length}>
+        {paradas.map((p) => (
+          <div key={p.n} className="rm-cell">
+            <p className="rm-n">{String(p.n).padStart(2, '0')}</p>
+            <h3 className="rm-sub">{p.titulo}</h3>
+            {p.body && <p className="rm-body">{p.body}</p>}
+          </div>
+        ))}
+      </div>
     </section>
   )
 }
@@ -500,6 +530,56 @@ a { color: inherit; text-decoration: none; }
 }
 .intro-body strong { color: var(--red); font-weight: 700; }
 .intro-body p { margin-bottom: 1.2em; }
+
+/* ════════════════════════════════════════════
+   ROADMAP — índice visual
+════════════════════════════════════════════ */
+.slide-roadmap { background: var(--sand); padding: 6vh 7vw; gap: 4vh; }
+.rm-head { padding-bottom: 3vh; border-bottom: 3px solid var(--red); }
+.rm-kicker { font-size: 0.78rem; letter-spacing: 0.3em; font-weight: 800; color: var(--red); margin-bottom: 1vh; }
+.rm-titulo {
+  font-family: var(--disp);
+  font-size: clamp(2rem, 4vw, 3.3rem);
+  font-weight: 800;
+  letter-spacing: -0.015em;
+}
+.rm-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2vh 2vw;
+  flex: 1;
+}
+.rm-grid[data-count="6"] { grid-template-columns: repeat(3, 1fr); }
+.rm-grid[data-count="3"] { grid-template-columns: repeat(3, 1fr); }
+.rm-grid[data-count="5"] { grid-template-columns: repeat(5, 1fr); }
+.rm-cell {
+  background: var(--white);
+  padding: 3vh 1.8vw;
+  display: flex; flex-direction: column; gap: 1vh;
+  border-left: 4px solid var(--red);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+.rm-n {
+  font-family: var(--disp);
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 900;
+  color: var(--red);
+  line-height: 0.9;
+  letter-spacing: -0.03em;
+}
+.rm-sub {
+  font-family: var(--sans);
+  font-size: clamp(1rem, 1.3vw, 1.2rem);
+  font-weight: 700;
+  color: var(--black);
+  line-height: 1.2;
+  letter-spacing: -0.005em;
+}
+.rm-body {
+  font-size: clamp(0.82rem, 1vw, 0.95rem);
+  line-height: 1.5;
+  color: var(--gray);
+}
 
 /* ════════════════════════════════════════════
    MANIFESTO
@@ -1064,6 +1144,11 @@ a { color: inherit; text-decoration: none; }
 
   .intro-titulo { font-size: 13mm; }
   .intro-body { font-size: 4.5mm; }
+
+  .rm-titulo { font-size: 9mm; }
+  .rm-n { font-size: 7mm; }
+  .rm-sub { font-size: 4mm; }
+  .rm-body { font-size: 3.2mm; }
 
   .mani-titulo { font-size: 12mm; margin-bottom: 10mm; }
   .mani-num { font-size: 13mm; }

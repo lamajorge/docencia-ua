@@ -32,6 +32,49 @@ Cubrimos **cinco estaciones temáticas**, un ejercicio resuelto paso a paso, y l
 Tres preguntas diagnósticas primero, para saber dónde están parados.
 :::
 
+::: roadmap
+::kicker
+LAS SIETE PARADAS
+
+::titulo
+De fundamentos a evaluación, en una mañana.
+
+::p1-titulo
+Diagnóstico
+::p1-body
+Tres preguntas para ubicarnos antes de arrancar.
+
+::p2-titulo
+Fundamentos
+::p2-body
+Escasez, costo de oportunidad, FPP, positivo vs. normativo.
+
+::p3-titulo
+Mercados
+::p3-body
+Demanda, oferta, equilibrio y mecanismo de ajuste.
+
+::p4-titulo
+Intervenciones
+::p4-body
+Precios máximos y mínimos — cuándo muerden.
+
+::p5-titulo
+Impuestos
+::p5-body
+Cuña, incidencia y peso muerto.
+
+::p6-titulo
+Monopolio y fallas
+::p6-body
+Peso muerto sin impuesto. Externalidades, bienes públicos.
+
+::p7-titulo
+Ejercicio + evaluación
+::p7-body
+Bebidas azucaradas paso a paso y cómo viene la prueba.
+:::
+
 ::: manifesto
 ::titulo
 Tres preguntas para arrancar.
