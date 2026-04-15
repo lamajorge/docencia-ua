@@ -36,7 +36,6 @@ export default function ManualesPage() {
           return (
             <div key={book} style={{
               background: 'var(--ua-white)',
-              borderTop: '3px solid var(--ua-red)',
               border: '1px solid var(--ua-light)',
               borderTop: '3px solid var(--ua-red)',
             }}>
