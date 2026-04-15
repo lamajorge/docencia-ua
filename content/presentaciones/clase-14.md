@@ -8,19 +8,21 @@ unidad: Unidad II
 
 | Bloque | Qué hacemos |
 |--------|-------------|
-| 1. Repaso diagnóstico | Tres preguntas rápidas para ubicarnos |
-| 2. Fundamentos | Escasez, costo de oportunidad, FPP, positivo vs normativo |
+| 1. Diagnóstico | Tres preguntas rápidas para ubicarnos |
+| 2. Fundamentos | Escasez, costo de oportunidad, FPP, positivo vs. normativo |
 | 3. Mercados | Demanda, oferta, equilibrio y mecanismo de ajuste |
 | 4. Intervenciones de precios | Precios máximos y mínimos |
 | 5. Impuestos, subsidios y peso muerto | Cuña, incidencia, pérdida de eficiencia |
-| 6. Estructuras de mercado y fallas | Monopolio, oligopolio, externalidades |
-| 7. Orientaciones | Cómo viene la evaluación y cómo prepararse |
+| 6. Monopolio y fallas de mercado | Peso muerto sin impuesto, externalidades |
+| 7. Ejercicio + orientaciones | Bebidas azucaradas paso a paso y cómo viene la prueba |
+
+> Hoy no hay materia nueva. Hoy movilizamos lo que ya saben.
 
 ---
 
-## Repaso diagnóstico
+## Diagnóstico
 
-Tres preguntas para ver dónde estamos parados antes de empezar:
+Tres preguntas rápidas. No hay respuesta correcta inmediata — piensen en voz alta.
 
 1. **¿Por qué decimos que toda decisión económica implica un costo, aunque no paguemos nada?**
 
@@ -28,308 +30,338 @@ Tres preguntas para ver dónde estamos parados antes de empezar:
 
 3. **Un impuesto de $200 sobre un bien — ¿lo paga el comprador, el vendedor, o ambos?**
 
-> No hay respuesta correcta inmediata: piensen en voz alta.
+> Estas tres preguntas son el mapa de la evaluación. Si alguna incomoda, presten atención a la estación correspondiente.
 
 ---
 
-## Bloque 2 — Fundamentos
+## Estación 1 — Fundamentos
 
 *Clases 1 y 2*
 
 ---
 
-## Escasez y costo de oportunidad
+## Qué deben dominar — fundamentos
 
-**Escasez.** Los recursos son limitados frente a deseos ilimitados. No es sinónimo de pobreza.
-
-**Costo de oportunidad.** El valor de la **mejor alternativa** que sacrificas al tomar una decisión. No es solo lo que pagas — es lo que dejas de hacer.
-
-> Un abogado que dedica la tarde a un cliente nuevo sacrifica el avance en otro caso. Ese avance es el costo de oportunidad, aunque la consulta sea rentable.
-
-Toda decisión económica parte de la escasez, y el costo de oportunidad la hace visible.
+- **Escasez.** Recursos limitados frente a deseos ilimitados. **No** es sinónimo de pobreza.
+- **Costo de oportunidad.** Valor de la mejor alternativa sacrificada. No es solo lo que pagas — es lo que dejas de hacer.
+- **FPP.** Combinaciones máximas con recursos dados. Bajo la curva → ineficiencia. Fuera de la curva → inalcanzable.
+- **Positiva vs. normativa.** La positiva describe y predice; la normativa prescribe con juicios de valor.
 
 ---
 
-## Economía positiva vs. normativa
+## Pregunta — costo de oportunidad
 
-| Tipo | Qué hace | Ejemplo |
-|------|----------|---------|
-| **Positiva** | Describe lo que **es**, predice efectos. Se resuelve con datos. | "Si sube el salario mínimo, algunas empresas contratarán menos personal." |
-| **Normativa** | Dice lo que **debería ser**. Incorpora juicios de valor. | "El salario mínimo debería subir porque los trabajadores no cubren sus necesidades." |
+**Un abogado dedica la tarde a un cliente nuevo. La consulta le genera $80.000 de honorarios. ¿Tiene costo de oportunidad esa decisión?**
 
-La diferencia no es retórica: saber si estás describiendo o valorando es clave para argumentar bien.
+> Piensen: ¿qué dejó de hacer esa tarde?
 
----
-
-## Frontera de Posibilidades de Producción (FPP)
-
-Muestra todas las combinaciones **máximas** que una economía puede producir con sus recursos.
-
-| Punto | Significa |
-|-------|-----------|
-| **Sobre la curva** | Eficiencia: recursos plenamente usados |
-| **Bajo la curva** | Ineficiencia: recursos desaprovechados |
-| **Fuera de la curva** | Inalcanzable con los recursos actuales |
-
-La FPP hace visibles dos ideas: **escasez** (hay un tope) y **costo de oportunidad** (para producir más de un bien hay que producir menos del otro).
+El costo de oportunidad existe aunque la decisión sea rentable. Es la **mejor alternativa sacrificada**, no la ganancia monetaria.
 
 ---
 
-## Bloque 3 — Mercados: demanda, oferta, equilibrio
+## Trampa común — fundamentos
 
-*Clases 5 a 9 — las "reglas de oro" del curso*
+**"Escasez = pobreza."** Falso.
 
----
+Un país rico también tiene escasez, porque los deseos crecen con los recursos. Chile tiene escasez; Suiza también.
 
-## Ley de la demanda
-
-**A mayor precio, menor cantidad demandada** — todo lo demás constante.
-
-**Movimiento sobre la curva vs. desplazamiento:**
-
-| Causa | Efecto |
-|-------|--------|
-| Cambia el **precio del bien** | Movimiento **sobre** la curva |
-| Cambia ingreso, precio de otros bienes, gustos, expectativas, nº de compradores | **Desplaza** toda la curva |
-
-Confundir ambos es un error clásico. Si el precio sube, los consumidores compran menos — la curva no se mueve, el punto se mueve sobre ella.
+> **Regla de oro activada:** toda la microeconomía descansa sobre la escasez. Sin escasez no hay necesidad de elegir, y sin elección no hay costo de oportunidad.
 
 ---
 
-## Ley de la oferta
+## Estación 2 — Mercados
 
-**A mayor precio, mayor cantidad ofrecida** — todo lo demás constante.
-
-**Desplazamientos de la oferta:**
-
-| Evento | Efecto sobre la curva |
-|--------|------------------------|
-| Nueva tecnología que baja costos | Se desplaza a la **derecha** |
-| Sube el precio de un insumo | Se desplaza a la **izquierda** |
-| Sequía o choque productivo | Se desplaza a la **izquierda** |
-| Entran nuevos productores | Se desplaza a la **derecha** |
-
-Un cambio en el **precio del bien** no desplaza la oferta — mueve el punto sobre ella.
+*Clases 5 a 9 — las reglas de oro del curso*
 
 ---
 
-## Equilibrio y mecanismo de ajuste
+## Qué deben dominar — mercados
 
-**Equilibrio de mercado:** el precio donde la cantidad ofrecida iguala la demandada. Nadie lo decide centralmente — emerge de las señales de precios.
-
-**Si el precio está por encima del equilibrio:**
-1. Qs > Qd → **excedente**.
-2. Los vendedores no logran vender todo → **bajan el precio**.
-3. La baja de precio hace que Qd suba (ley de la demanda) y Qs baje (ley de la oferta).
-4. El mercado converge al equilibrio.
-
-**Si está por debajo:** Qd > Qs → escasez → el precio sube → converge.
-
-> Regla de oro del curso: el mecanismo funciona **porque** la ley de la demanda y la ley de la oferta son válidas.
+- **Ley de la demanda:** a mayor precio, menor cantidad demandada.
+- **Ley de la oferta:** a mayor precio, mayor cantidad ofrecida.
+- **Movimiento vs. desplazamiento:** cambia el precio del bien → movimiento sobre la curva. Cambia otra cosa → desplaza la curva.
+- **Equilibrio:** precio donde Qs = Qd. Emerge del mecanismo, no se decide centralmente.
 
 ---
 
-## Pregunta tipo evaluación — mecanismo de ajuste
+## Pregunta — oferta o demanda
 
-**Pregunta 2 de desarrollo (5 pts):** Explica qué ocurre cuando el precio sube por encima del equilibrio y describe el mecanismo de ajuste.
+**Sube el precio de los autos eléctricos porque aumenta el precio del litio. ¿La curva de oferta se desplaza, o es un movimiento sobre la curva de demanda?**
 
-**Qué tiene que aparecer en una respuesta completa:**
-- Identificar el **excedente** (Qs > Qd).
-- Los vendedores **bajan el precio**.
-- La baja conecta con la **ley de la demanda** (Qd sube).
-- Y con la **ley de la oferta** (Qs baja).
-- El proceso lleva al **equilibrio**.
-
-Sin la cadena completa se pierden puntos: cada eslabón es 1 punto.
+Desplazamiento de la oferta a la **izquierda** — el litio es un insumo. Nuevo equilibrio con precio más alto y cantidad menor. Sobre la demanda hay un movimiento, no un desplazamiento.
 
 ---
 
-## Bloque 4 — Intervenciones de precios
+## Mecanismo de ajuste — si P > Pe
+
+```
+Paso 1: P > Pe → Qs > Qd → EXCEDENTE
+Paso 2: Vendedores no venden todo → BAJAN EL PRECIO
+Paso 3: Baja de P → Qd sube  (ley de la demanda)
+                 → Qs baja  (ley de la oferta)
+Paso 4: Qd y Qs convergen → EQUILIBRIO
+```
+
+Si P < Pe: mismo mecanismo al revés → escasez → precio sube → converge.
+
+---
+
+## Trampa común — mercados
+
+**"Subió el precio, bajó la demanda."** Incorrecto.
+
+Bajó la **cantidad demandada** — la curva no se mueve, el punto se mueve sobre ella.
+
+> **Regla de oro activada:** en la Pregunta 2 de desarrollo, sin nombrar excedente + ley de la demanda + ley de la oferta + equilibrio, se pierden puntos.
+
+---
+
+## Estación 3 — Intervenciones de precios
 
 *Clase 10*
 
 ---
 
-## Precios máximos y mínimos
+## Qué deben dominar — intervenciones
 
-| Intervención | ¿Dónde se fija? | Consecuencia |
-|--------------|-----------------|--------------|
-| **Precio máximo** (tope legal) | Bajo el equilibrio | Qd > Qs → **escasez** |
-| **Precio mínimo** (piso legal) | Sobre el equilibrio | Qs > Qd → **excedente** |
+| Intervención | ¿Dónde opera? | Consecuencia |
+|--------------|---------------|--------------|
+| **Precio máximo** | Bajo el equilibrio | Qd > Qs → **escasez** |
+| **Precio mínimo** | Sobre el equilibrio | Qs > Qd → **excedente** |
 
-Si el precio máximo se fija sobre el equilibrio, o el mínimo bajo él, **no tienen efecto**: el mercado opera en equilibrio.
-
----
-
-## Ejemplos en la vida real
-
-**Precio máximo — cláusula de arriendo con tope del 3% anual bajo inflación del 8%.**
-El arrendatario paga menos de lo que valdría — bien para él. Pero la oferta de arriendos se reduce: aparece escasez de viviendas. Tensión eficiencia / justicia.
-
-**Precio mínimo — salario mínimo.**
-Si se fija sobre el salario de equilibrio, algunas empresas contratan menos o formalizan menos. Protege a quienes siguen empleados, pero reduce oportunidades para otros.
-
-> Ni "todo precio máximo es malo" ni "todo precio mínimo es bueno". El criterio es qué ocurre con la cantidad transada y quién gana y quién pierde.
+Si el máximo se fija sobre Pe, o el mínimo bajo Pe, **no tienen efecto** — el mercado sigue en equilibrio.
 
 ---
 
-## Bloque 5 — Impuestos, subsidios y peso muerto
+## Pregunta — salario mínimo
 
-*Clases 11 y 12*
+**Si el salario mínimo se fija por debajo del salario de equilibrio, ¿qué efecto tiene?**
+
+**Ninguno.** Es un precio mínimo bajo el equilibrio — inoperante.
+
+Para que el salario mínimo tenga efecto, tiene que estar **sobre** el equilibrio. Recién ahí genera excedente de oferta de trabajo (desempleo).
+
+---
+
+## Trampa común — intervenciones
+
+**"El precio máximo baja los precios."** Sí, pero también reduce la cantidad transada.
+
+Cláusula de arriendo con tope del 3% anual bajo inflación del 8%: el arrendatario que consigue arriendo paga menos; el que no lo consigue está peor. **Tensión eficiencia/justicia.**
+
+> **Regla de oro activada:** las intervenciones operan *porque* la ley de la demanda y la ley de la oferta son válidas.
+
+---
+
+## Estación 4 — Impuestos, subsidios y peso muerto
+
+*Clases 11 y 12 — estación densa: el caso aplicado de la evaluación es sobre este tema*
+
+---
+
+## Qué deben dominar — cuña e incidencia
+
+- **Cuña impositiva.** Pc (sube) − Pv (baja) = monto del impuesto. **Siempre.**
+- **Incidencia.** No importa a quién se cobra formalmente. La **elasticidad** decide quién absorbe más.
+- **Peso muerto.** El bienestar de las transacciones que ya no ocurren. No va a nadie.
+- **Subsidio** = impuesto negativo. Pc baja, Pv sube, Q aumenta, costo fiscal, también peso muerto.
+
+---
+
+## Pregunta — incidencia tributaria
+
+**Un impuesto se cobra al vendedor de cigarrillos. ¿Los consumidores pagan parte del impuesto?**
+
+Sí — probablemente la mayor parte. La demanda de cigarrillos es **inelástica**, así que el vendedor traspasa casi todo el impuesto.
+
+A quién se cobra formalmente **no importa**: la elasticidad decide.
 
 ---
 
 ## La cuña impositiva
 
-Un impuesto inserta una **cuña** entre lo que paga el comprador y lo que recibe el vendedor.
+```
+Sin impuesto:           Con impuesto T:
+  P = Pe                  Pc = precio que paga el consumidor  (sube)
+  Q = Qe                  Pv = precio que recibe el vendedor  (baja)
+  Peso muerto = 0         Pc − Pv = T   ← siempre
+                          Q' < Qe       ← la cantidad cae
 
-- **Pc** — precio que paga el comprador (sube).
-- **Pv** — precio que recibe el vendedor (baja).
-- **Pc − Pv = monto del impuesto.** Siempre. Esa es la cuña.
-
-Consecuencias:
-- La cantidad transada **cae**.
-- Se transfiere parte del bienestar de consumidores y productores al gobierno (recaudación).
-- Se destruye otra parte: el **peso muerto**.
-
----
-
-## Incidencia tributaria — ¿quién paga realmente?
-
-**Regla clave:** no importa a quién se cobra formalmente el impuesto. Lo que decide quién soporta la carga es la **elasticidad**.
-
-| Elasticidad | Quién absorbe más |
-|-------------|--------------------|
-| Demanda más inelástica que oferta | El **consumidor** |
-| Oferta más inelástica que demanda | El **productor** |
-| Demanda perfectamente inelástica | 100% consumidor |
-| Oferta perfectamente inelástica | 100% productor |
-
-Por eso los impuestos a cigarrillos, combustibles o bebidas azucaradas recaen más en los consumidores: su demanda es poco sensible al precio.
+Quién absorbe más:  demanda inelástica → consumidor
+                     oferta inelástica  → productor
+```
 
 ---
 
-## Peso muerto — el bienestar que se destruye
+## Trampa común — peso muerto ≠ recaudación
 
-Parte del impuesto va al gobierno (recaudación) — eso no se pierde, se redistribuye. Pero hay transacciones que **dejan de ocurrir**:
+**La recaudación se redistribuye.** La recibe el gobierno — eso es transferencia, no pérdida.
 
-- Consumidores que habrían pagado más de $Pe pero no llegan a $Pc.
-- Productores que habrían vendido a menos de $Pe pero no reciben $Pv.
+**El peso muerto se destruye.** No lo recibe nadie — ni comprador, ni vendedor, ni Estado.
 
-Ese bienestar **no va a nadie** — ni al comprador, ni al vendedor, ni al Estado. Es el **peso muerto**.
-
-> Peso muerto = señal de que el impuesto distorsiona el mercado. Puede ser deseado (externalidades) o indeseado (pura recaudación).
+Esta distinción es lo que pregunta el ítem (c) del caso aplicado.
 
 ---
 
-## Subsidio — el espejo del impuesto
-
-El subsidio funciona como un impuesto negativo:
-
-- **Pc baja** (el comprador paga menos).
-- **Pv sube** (el vendedor recibe más).
-- La cantidad transada **aumenta**.
-- El Estado cubre la diferencia = **costo fiscal**.
-- También genera peso muerto (transacciones que ocurren solo por el subsidio, no por valor real).
-
-La incidencia del beneficio depende de las mismas elasticidades que la incidencia del impuesto.
-
----
-
-## Ejercicio tipo evaluación — bebidas azucaradas
-
-**Datos:** Pe = $800, impuesto = $200. Tras el impuesto: Pc = $940, Pv = $740. Cantidad cae de 12 a 9 millones.
-
-**a) Cuña.** Pc − Pv = $940 − $740 = **$200**. Coincide con el impuesto — siempre.
-
-**b) ¿Quién paga más?**
-- Consumidores absorben $940 − $800 = **$140** (70%).
-- Productores absorben $800 − $740 = **$60** (30%).
-- Los consumidores cargan más → demanda **inelástica**.
-
-**c) Pérdida.** 3 millones de unidades ya no se transan. Ese bienestar no va a nadie: peso muerto.
-
-**d) Justificación.** Externalidad negativa (salud pública). Aquí el peso muerto es el objetivo — reducir consumo nocivo.
-
----
-
-## Bloque 6 — Estructuras de mercado y fallas
+## Estación 5 — Monopolio y fallas de mercado
 
 *Clase 13*
 
 ---
 
-## Monopolio — cuando hay un solo vendedor
+## Qué deben dominar — monopolio
 
-En competencia perfecta: **P = CM**, cantidad eficiente, peso muerto = 0.
-
-En monopolio: **P > CM**, cantidad menor al óptimo, aparece **peso muerto sin impuesto**.
-
-**¿Por qué peso muerto sin impuesto?** El poder de mercado actúa como una cuña. Hay consumidores dispuestos a pagar más de lo que cuesta producir, pero el monopolista no les vende — prefiere mantener el precio alto para maximizar su ganancia. Esas transacciones que no ocurren son bienestar destruido.
+- **Competencia perfecta:** P = CM → eficiencia máxima → peso muerto = 0.
+- **Monopolio:** P > CM → cantidad menor al óptimo → **peso muerto sin impuesto**.
+- El poder de mercado actúa como una **cuña económica**: hay consumidores dispuestos a pagar más de lo que cuesta producir, pero el monopolista no les vende.
 
 ---
 
-## Otras estructuras de mercado
+## Pregunta — peso muerto sin impuesto
 
-| Estructura | Nº empresas | Producto | Poder de mercado |
-|------------|-------------|----------|-------------------|
-| **Competencia perfecta** | Muchas | Homogéneo | Nulo |
-| **Competencia monopolística** | Muchas | Diferenciado | Bajo |
-| **Oligopolio** | Pocas | Homogéneo o diferenciado | Alto, interdependiente |
-| **Monopolio** | Una | Único | Total |
+**En el monopolio no hay impuesto ni subsidio. ¿Por qué entonces hay peso muerto?**
 
-Cuantas menos empresas y más diferenciado el producto, más poder de mercado → más distancia entre P y CM → más peso muerto.
+Porque el monopolista fija P > CM. Hay consumidores dispuestos a pagar más de lo que cuesta producir, pero no les vende — prefiere mantener el precio alto.
+
+> Esta es la **Pregunta 3 de desarrollo**. La respuesta completa necesita: P=CM vs P>CM, cantidad menor al óptimo, y la lógica de transacciones que no ocurren.
 
 ---
 
 ## Fallas de mercado
 
-El mercado no siempre asigna eficientemente. Tres fallas clave:
+**Externalidad negativa.** Costo que recae sobre terceros. Fábrica que contamina un río. Mercado sobreproduce.
 
-**Externalidad negativa.** La producción o consumo genera costos que recaen sobre terceros. Ej.: una fábrica que contamina un río. El mercado produce **demasiado** porque ese costo no se internaliza.
+**Externalidad positiva.** Beneficio que recae sobre terceros. Vacunas. Mercado subproduce.
 
-**Externalidad positiva.** Beneficios que recaen sobre terceros. Ej.: vacunas. El mercado produce **muy poco** porque ese beneficio no se cobra.
+**Bien público.** No rival y no excluyente. Defensa, alumbrado. Mercado subprovee.
 
-**Bienes públicos.** No rivales y no excluyentes (defensa, alumbrado). El mercado los subprovee porque nadie quiere pagar individualmente por algo de lo que todos pueden beneficiarse gratis.
-
-**Información asimétrica.** Una parte sabe más que la otra (vendedor de auto usado vs. comprador). Puede llevar al colapso del mercado o a contratos ineficientes.
+**Información asimétrica.** Una parte sabe más. Auto usado, seguros. Selección adversa o riesgo moral.
 
 ---
 
-## Pregunta tipo evaluación — monopolio
+## Trampa común — externalidad ≠ bien público
 
-**Pregunta 3 de desarrollo (5 pts):** Compara monopolio y competencia perfecta. ¿Por qué el monopolio genera peso muerto sin impuesto?
+**Externalidad** = efecto lateral de una transacción privada (fábrica → vecinos).
 
-**Qué tiene que aparecer:**
-- CP: **P = CM**, cantidad eficiente, peso muerto 0.
-- Monopolio: **P > CM**, cantidad menor al óptimo.
-- Peso muerto sin impuesto: el poder de mercado actúa como cuña.
-- Lógica: hay transacciones mutuamente beneficiosas que no ocurren.
+**Bien público** = bien sin excluibilidad ni rivalidad (defensa, alumbrado).
+
+Son **dos tipos distintos** de falla de mercado. Ambos justifican intervención estatal, pero por razones diferentes.
+
+---
+
+## Tres casos de peso muerto
+
+```
+1. Impuesto    → cuña tributaria
+2. Subsidio    → cuña fiscal
+3. Monopolio   → cuña por poder de mercado
+```
+
+**Principio común:** transacciones mutuamente beneficiosas que no ocurren destruyen bienestar.
+
+Cambia la causa, no el principio.
+
+---
+
+## Ejercicio resuelto — bebidas azucaradas
+
+*Mismo formato que el caso aplicado de la evaluación. Resolvemos paso a paso para fijar el método.*
+
+---
+
+## Datos del caso
+
+```
+Precio de equilibrio sin impuesto:     Pe = $800
+Impuesto:                              T  = $200 por botella
+Precio que paga el consumidor:         Pc = $940
+Precio que recibe el productor:        Pv = $740
+Cantidad antes:                        12 millones/mes
+Cantidad después:                       9 millones/mes
+```
+
+---
+
+## (a) Cuña impositiva
+
+**Pc − Pv = $940 − $740 = $200.**
+
+Coincide exactamente con el impuesto. **Siempre** es así: por definición, Pc − Pv = T.
+
+> Si en la evaluación la cuña no les da el monto del impuesto, es porque algún número está mal. Revisar.
+
+---
+
+## (b) Distribución de la carga
+
+**Consumidores absorben:** Pc − Pe = $940 − $800 = **$140** (70%).
+
+**Productores absorben:** Pe − Pv = $800 − $740 = **$60** (30%).
+
+Los consumidores cargan con el 70% → la demanda es **inelástica**. Es el patrón que predice la teoría: inelasticidad de la demanda → consumidor absorbe más.
+
+---
+
+## (c) Pérdida de eficiencia
+
+La cantidad cae de 12 a 9 millones: **3 millones de unidades dejaron de transarse**.
+
+Esas unidades habrían beneficiado a consumidores dispuestos a pagar más de $800 y a productores capaces de producir por menos de $800.
+
+**Ese bienestar desaparece.** No va al gobierno (eso es recaudación), no va al comprador, no va al vendedor. Es peso muerto.
+
+---
+
+## (d) Justificación por falla de mercado
+
+**Externalidad negativa.** El consumo de bebidas azucaradas genera costos de salud (diabetes, obesidad, gasto público) que recaen sobre terceros.
+
+Sin impuesto, el mercado sobreproduce porque no internaliza ese costo.
+
+> El peso muerto no desaparece — pero cambia su evaluación. Aquí la "distorsión" es el **objetivo** de la política: reducir consumo nocivo. El peso muerto es señal de éxito, no de fracaso.
 
 ---
 
 ## Orientaciones para la evaluación
 
-**Formato:**
-- **40 puntos totales · 90 minutos.**
-- Sección I: 10 selección múltiple (10 pts). Sin descuento por error.
-- Sección II: 3 desarrollo breve (15 pts, 5 cada una, máximo 8 líneas).
-- Sección III: caso aplicado (15 pts, cuatro sub-preguntas).
+| Sección | Puntos | Formato |
+|---------|--------|---------|
+| I. Selección múltiple | 10 pts | 10 preguntas, 1 pt c/u · sin descuento |
+| II. Desarrollo breve | 15 pts | 3 preguntas de 5 pts · máx. 8 líneas |
+| III. Caso aplicado | 15 pts | 4 sub-preguntas de 3–4 pts |
+| **Total** | **40 pts** | **90 min · Clases 1–13** |
 
-**Criterio clave:** se evalúa **precisión conceptual** y **claridad**, no extensión. Respuestas largas sin estructura pierden puntos.
+---
 
-**Cobertura:** Clases 1–13.
+## Criterio clave
+
+Se evalúa **precisión conceptual** y **claridad**, no extensión.
+
+- Escribir mucho sin estructurar **resta** puntos.
+- Máximo 8 líneas por pregunta de desarrollo.
+- En desarrollo, **nombrar explícitamente** las reglas que se usan.
+- Pregunta 2: sin "ley de la demanda" y "ley de la oferta", se pierden puntos.
+- Pregunta 3: sin "P = CM" vs "P > CM", se pierden puntos.
+
+---
+
+## Consejos prácticos
+
+- **Tiempo:** ~15 min selección múltiple · ~30 min desarrollo · ~30 min caso · ~15 min revisar.
+- **Cálculos:** aritmética básica — suma, resta, porcentajes. Lápiz y papel suficientes.
+- **Diagramas:** no son obligatorios, pero si los usan, rotular ejes, curvas y puntos. Sin rótulos no suman.
+- **Si hay error de cálculo, la interpretación correcta rescata puntaje parcial.**
 
 ---
 
 ## Tarea y próxima clase
 
-**Para la evaluación:**
+**Para el miércoles 22 de abril:**
 - Repasar guías y ejercicios de Canvas, Clases 3 a 13.
-- Trabajar en papel los ejercicios de impuestos (calcular cuñas, identificar incidencia).
-- Traer lápiz, calculadora básica no imprescindible.
+- Hacer **en papel** los ejercicios de impuestos — calcular cuñas, identificar incidencia.
+- Duda que no cierra → al correo antes del miércoles.
 
-**Recordatorio — reglas de oro que entran:**
+**Reglas de oro que entran:**
 ley de la demanda · ley de la oferta · mecanismo de ajuste · equilibrio · cuña · incidencia · peso muerto · externalidad.
 
-Cualquier respuesta de desarrollo que movilice estas piezas correctamente está en buen camino.
+> Nos vemos el **miércoles 22 de abril — 08:00 en punto, traer lápiz.**
