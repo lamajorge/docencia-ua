@@ -1,0 +1,291 @@
+{
+  "samuelson": {
+    "title": "Economía",
+    "edition": "18a edición",
+    "authors": "Samuelson & Nordhaus",
+    "chapters": [
+      {
+        "num": 1,
+        "title": "Los fundamentos de la economía",
+        "chars": 78423
+      },
+      {
+        "num": 2,
+        "title": "Los mercados y el Estado en la economía moderna",
+        "chars": 96303
+      },
+      {
+        "num": 3,
+        "title": "Elementos básicos de oferta y demanda",
+        "chars": 74581
+      },
+      {
+        "num": 4,
+        "title": "Aplicaciones de la oferta y de la demanda",
+        "chars": 76260
+      },
+      {
+        "num": 5,
+        "title": "Demanda y comportamiento del consumidor",
+        "chars": 96035
+      },
+      {
+        "num": 6,
+        "title": "Producción y organización de los negocios",
+        "chars": 73159
+      },
+      {
+        "num": 7,
+        "title": "Análisis de costes",
+        "chars": 92816
+      },
+      {
+        "num": 8,
+        "title": "Análisis de mercados perfectamente competitivos",
+        "chars": 96720
+      },
+      {
+        "num": 9,
+        "title": "La competencia imperfecta y el monopolio",
+        "chars": 53865
+      },
+      {
+        "num": 10,
+        "title": "El oligopolio y la competencia monopolística",
+        "chars": 86222
+      },
+      {
+        "num": 11,
+        "title": "La incertidumbre y la teoría de los juegos",
+        "chars": 94861
+      },
+      {
+        "num": 12,
+        "title": "Forma en que los mercados determinan los ingresos",
+        "chars": 69158
+      },
+      {
+        "num": 13,
+        "title": "El mercado laboral",
+        "chars": 84834
+      },
+      {
+        "num": 14,
+        "title": "Tierra y capital",
+        "chars": 114640
+      },
+      {
+        "num": 15,
+        "title": "Ventajas comparativas y proteccionismo",
+        "chars": 117598
+      },
+      {
+        "num": 16,
+        "title": "Impuestos y gasto público",
+        "chars": 87526
+      },
+      {
+        "num": 17,
+        "title": "Promoción de mercados más eficientes",
+        "chars": 91639
+      },
+      {
+        "num": 18,
+        "title": "Protección del ambiente",
+        "chars": 94155
+      },
+      {
+        "num": 19,
+        "title": "Eficiencia frente a igualdad: la gran disyuntiva",
+        "chars": 85075
+      },
+      {
+        "num": 20,
+        "title": "Panorama general de la macroeconomía",
+        "chars": 70170
+      },
+      {
+        "num": 21,
+        "title": "Medición de la actividad económica",
+        "chars": 82573
+      },
+      {
+        "num": 22,
+        "title": "Consumo e inversión",
+        "chars": 70690
+      },
+      {
+        "num": 23,
+        "title": "Fluctuaciones económicas y la teoría de la demanda agregada",
+        "chars": 60300
+      },
+      {
+        "num": 24,
+        "title": "El modelo del multiplicador",
+        "chars": 76114
+      },
+      {
+        "num": 25,
+        "title": "Mercados financieros y el caso especial del dinero",
+        "chars": 113751
+      },
+      {
+        "num": 26,
+        "title": "Banca central y política monetaria",
+        "chars": 95194
+      },
+      {
+        "num": 27,
+        "title": "El proceso de crecimiento económico",
+        "chars": 86737
+      },
+      {
+        "num": 28,
+        "title": "El desafio del desarrollo económico",
+        "chars": 89736
+      },
+      {
+        "num": 29,
+        "title": "Los tipos de cambio y el sistema financiero internacional",
+        "chars": 97550
+      },
+      {
+        "num": 30,
+        "title": "Macroeconomía de una economía abierta",
+        "chars": 82978
+      },
+      {
+        "num": 31,
+        "title": "Desempleo y fundamentos de la oferta agregada",
+        "chars": 83668
+      },
+      {
+        "num": 32,
+        "title": "Garantizar la estabilidad de precios",
+        "chars": 89653
+      },
+      {
+        "num": 33,
+        "title": "Las escuelas contendientes en macroeconomía",
+        "chars": 90657
+      },
+      {
+        "num": 34,
+        "title": "Políticas económicas para alcanzar el crecimiento y la estabilidad",
+        "chars": 413350
+      }
+    ]
+  },
+  "casefair": {
+    "title": "Principios de Microeconomía",
+    "edition": "10a edición",
+    "authors": "Case & Fair",
+    "chapters": [
+      {
+        "num": 1,
+        "title": "Alcance y método de la economía",
+        "chars": 103325
+      },
+      {
+        "num": 2,
+        "title": "El problema económico: Escasez y elección",
+        "chars": 99301
+      },
+      {
+        "num": 3,
+        "title": "Demanda, oferta y equilibrio de mercado",
+        "chars": 127644
+      },
+      {
+        "num": 4,
+        "title": "Aplicaciones de la oferta y la demanda",
+        "chars": 65669
+      },
+      {
+        "num": 5,
+        "title": "Elasticidad",
+        "chars": 92179
+      },
+      {
+        "num": 6,
+        "title": "Comportamiento familiar y opciones de consumo",
+        "chars": 112908
+      },
+      {
+        "num": 7,
+        "title": "El proceso de producción: Comportamiento de las empresas que maximizan las utilidades",
+        "chars": 92253
+      },
+      {
+        "num": 8,
+        "title": "Costos a corto plazo y decisiones de producción",
+        "chars": 92882
+      },
+      {
+        "num": 9,
+        "title": "Costos a largo plazo y decisiones de producción",
+        "chars": 117907
+      },
+      {
+        "num": 10,
+        "title": "Demanda de insumos: Los mercados de trabajo y de la tierra",
+        "chars": 82741
+      },
+      {
+        "num": 11,
+        "title": "La demanda de insumos: El mercado de capitales y las decisiones de inversión",
+        "chars": 97356
+      },
+      {
+        "num": 12,
+        "title": "Equilibrio general y eficiencia de la competencia perfecta",
+        "chars": 75413
+      },
+      {
+        "num": 13,
+        "title": "Monopolio y política antimonopolio",
+        "chars": 103829
+      },
+      {
+        "num": 14,
+        "title": "Oligopolio",
+        "chars": 99691
+      },
+      {
+        "num": 15,
+        "title": "Competencia monopólica",
+        "chars": 79373
+      },
+      {
+        "num": 16,
+        "title": "Externalidades, bienes públicos y elección social",
+        "chars": 124704
+      },
+      {
+        "num": 17,
+        "title": "Incertidumbre e información asimétrica",
+        "chars": 73781
+      },
+      {
+        "num": 18,
+        "title": "Distribución del ingreso y pobreza",
+        "chars": 109508
+      },
+      {
+        "num": 19,
+        "title": "Finanzas públicas: La economía del sistema tributario",
+        "chars": 105958
+      },
+      {
+        "num": 20,
+        "title": "Comercio internacional, ventaja comparativa y proteccionismo",
+        "chars": 111622
+      },
+      {
+        "num": 21,
+        "title": "Crecimiento económico en las economías en vías de desarrollo y en transición",
+        "chars": 206390
+      }
+    ]
+  }
+}
