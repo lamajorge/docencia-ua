@@ -1,19 +1,11 @@
 import { Client } from '@notionhq/client'
 import { NotionToMarkdown } from 'notion-to-md'
-import type {
-  PageObjectResponse,
-  DatabaseObjectResponse,
-} from '@notionhq/client/build/src/api-endpoints'
-
-// ─── Cliente singleton ────────────────────────────────────────────────────────
 
 export const notion = new Client({
   auth: process.env.NOTION_TOKEN,
 })
 
 const n2m = new NotionToMarkdown({ notionClient: notion })
-
-// ─── Tipos ────────────────────────────────────────────────────────────────────
 
 export interface ClaseEntry {
   id: string
@@ -35,79 +27,79 @@ export interface BloqueTematico {
   contenido: string
 }
 
-// ─── Helpers para extraer propiedades de Notion ───────────────────────────────
-
-function getText(prop: any): string {
-  if (!prop) return ''
-  if (prop.type === 'title') return prop.title.map((t: any) => t.plain_text).join('')
-  if (prop.type === 'rich_text') return prop.rich_text.map((t: any) => t.plain_text).join('')
-  if (prop.type === 'number') return String(prop.number ?? '')
-  if (prop.type === 'select') return prop.select?.name ?? ''
-  if (prop.type === 'date') return prop.date?.start ?? ''
-  return ''
+// Extrae "numero" y "titulo limpio" desde el título de la subpágina.
+// Acepta: "Clase 1: Intro", "Clase 01 — Intro", "01. Intro", "1 - Intro", etc.
+function parseTituloSubpagina(raw: string): { numero: number; titulo: string } {
+  const trimmed = raw.trim()
+  const match = trimmed.match(/^(?:clase\s*)?(\d+)\s*[:.\-–—]?\s*(.*)$/i)
+  if (!match) return { numero: 0, titulo: trimmed }
+  const numero = parseInt(match[1], 10)
+  const titulo = match[2].trim() || trimmed
+  return { numero, titulo }
 }
 
-function getNumber(prop: any): number | null {
-  if (!prop || prop.type !== 'number') return null
-  return prop.number ?? null
+// Recupera el título de una subpágina (el bloque child_page trae solo el title).
+async function getSubpageTitle(blockId: string, fallback: string): Promise<string> {
+  try {
+    const page = await notion.pages.retrieve({ page_id: blockId })
+    const props = (page as any).properties
+    if (props) {
+      for (const key of Object.keys(props)) {
+        const p = props[key]
+        if (p?.type === 'title') {
+          return p.title.map((t: any) => t.plain_text).join('') || fallback
+        }
+      }
+    }
+  } catch {}
+  return fallback
 }
 
-// ─── Obtener todas las clases desde la database ───────────────────────────────
-
+// Lista las subpáginas (clases) de la página padre.
 export async function getClases(): Promise<ClaseEntry[]> {
-  const dbId = process.env.NOTION_DATABASE_ID!
-  const response = await notion.databases.query({
-    database_id: dbId,
-    sorts: [{ property: 'Número', direction: 'ascending' }],
+  const pageId = process.env.NOTION_PAGE_ID
+  if (!pageId) throw new Error('NOTION_PAGE_ID no configurado')
+
+  const children = await notion.blocks.children.list({
+    block_id: pageId,
+    page_size: 100,
   })
 
-  return response.results
-    .filter((r): r is PageObjectResponse => r.object === 'page')
-    .map((page) => {
-      const props = page.properties as any
-      // Intentamos varios nombres de propiedad comunes en Notion
-      const numero =
-        getNumber(props['Número']) ??
-        getNumber(props['Numero']) ??
-        getNumber(props['N°']) ??
-        0
-      const titulo =
-        getText(props['Título']) ||
-        getText(props['Titulo']) ||
-        getText(props['Name']) ||
-        getText(props['title']) ||
-        'Sin título'
-      return {
-        id: String(numero).padStart(2, '0'),
-        numero,
-        titulo,
-        fecha: getText(props['Fecha']) || null,
-        semana: getNumber(props['Semana']) ?? null,
-        unidad: getText(props['Unidad']) || null,
-        notionPageId: page.id,
-      }
+  const clases: ClaseEntry[] = []
+  for (const block of children.results) {
+    if ((block as any).type !== 'child_page') continue
+    const b: any = block
+    const rawTitle: string = b.child_page?.title ?? ''
+    const fullTitle = await getSubpageTitle(b.id, rawTitle)
+    const { numero, titulo } = parseTituloSubpagina(fullTitle)
+    if (numero <= 0) continue
+    clases.push({
+      id: String(numero).padStart(2, '0'),
+      numero,
+      titulo,
+      fecha: null,
+      semana: null,
+      unidad: null,
+      notionPageId: b.id,
     })
-    .filter((c) => c.numero > 0)
-}
+  }
 
-// ─── Obtener detalle de una clase por su número ───────────────────────────────
+  clases.sort((a, b) => a.numero - b.numero)
+  return clases
+}
 
 export async function getClaseByNumero(numero: number): Promise<ClaseDetalle | null> {
   const clases = await getClases()
   const entrada = clases.find((c) => c.numero === numero)
   if (!entrada) return null
 
-  // Convertir el contenido de Notion a Markdown
   const mdBlocks = await n2m.pageToMarkdown(entrada.notionPageId)
-  const markdown = n2m.toMarkdownString(mdBlocks).parent
+  const markdown = n2m.toMarkdownString(mdBlocks).parent ?? ''
 
-  // Parsear bloques temáticos separados por ## headings
   const bloques = parseBloques(markdown)
 
   return { ...entrada, markdown, bloques }
 }
-
-// ─── Parsear bloques desde el markdown de la guía ────────────────────────────
 
 function parseBloques(markdown: string): BloqueTematico[] {
   const lines = markdown.split('\n')
@@ -115,12 +107,10 @@ function parseBloques(markdown: string): BloqueTematico[] {
   let current: BloqueTematico | null = null
 
   for (const line of lines) {
-    // Detectamos encabezados ## como separadores de bloques
     if (line.startsWith('## ')) {
       if (current) bloques.push(current)
       current = { titulo: line.replace('## ', '').trim(), contenido: '' }
     } else if (line.startsWith('# ')) {
-      // h1 = título de la clase, lo saltamos (ya lo tenemos)
       continue
     } else if (current) {
       current.contenido += line + '\n'
@@ -130,6 +120,4 @@ function parseBloques(markdown: string): BloqueTematico[] {
   return bloques
 }
 
-// ─── Revalidación: cuántos segundos cachear en Vercel ────────────────────────
-// Con ISR, Next.js regenerará la página en background cada X segundos
-export const REVALIDATE_SECONDS = 60 * 30 // 30 minutos
+export const REVALIDATE_SECONDS = 60 * 30
