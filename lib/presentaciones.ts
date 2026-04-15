@@ -26,6 +26,12 @@ export function getPresentacion(numero: number): Presentacion | null {
   return { numero, slides }
 }
 
+export function hasPresentacion(numero: number): boolean {
+  const fname = `clase-${String(numero).padStart(2, '0')}.md`
+  const fpath = path.join(PRESENTACIONES_DIR, fname)
+  return fs.existsSync(fpath)
+}
+
 export function listPresentacionesDisponibles(): number[] {
   if (!fs.existsSync(PRESENTACIONES_DIR)) return []
   const files = fs.readdirSync(PRESENTACIONES_DIR)
