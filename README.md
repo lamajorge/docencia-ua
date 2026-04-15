@@ -14,18 +14,15 @@ Web de materiales de clase para **Introducción a la Economía**, Universidad Au
 
 ---
 
-## Rutas
+## Rutas públicas
 
 | Ruta | Descripción |
 |------|-------------|
 | `/clases` | Grid de todas las clases (desde Notion) |
 | `/clases/[n]` | Vista web de una clase |
 | `/clases/[n]/print` | Vista presentación A4 — imprimible a PDF |
-| `/manuales` | Índice de ambos libros |
-| `/manuales/samuelson` | 34 capítulos de Samuelson & Nordhaus |
-| `/manuales/casefair` | 21 capítulos de Case & Fair |
-| `/manuales/[libro]/[n]` | Capítulo completo |
-| `/buscar` | Búsqueda full-text en ambos manuales |
+
+Los manuales (Samuelson, Case & Fair) **no son públicos**: viven en `content/manuales/` y `lib/manuales.ts` sólo como fuente de datos interna para preparar guías de clase con Claude Code.
 
 ---
 
@@ -112,13 +109,10 @@ Abrir el proyecto en Claude Code y los comandos estarán disponibles como `/nuev
 
 ```
 app/                     Next.js App Router
-  clases/                Páginas de clases (Notion)
-  manuales/              Páginas de bibliografía (local)
-  buscar/                Búsqueda full-text
-  api/buscar/            API route de búsqueda
+  clases/                Páginas de clases (Notion) — único contenido público
 lib/
   notion.ts              Cliente Notion + helpers
-  manuales.ts            Lector MD + buscador local
+  manuales.ts            Lector MD + buscador local (uso interno)
 content/manuales/
   samuelson/             34 capítulos como .md
   casefair/              21 capítulos como .md

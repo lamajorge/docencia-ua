@@ -14,8 +14,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <nav className="site-nav">
           <Link href="/" className="brand">Economía · UA</Link>
           <Link href="/clases">Clases</Link>
-          <Link href="/manuales">Manuales</Link>
-          <Link href="/buscar">Buscar</Link>
           <div className="spacer" />
           <span style={{ fontSize: '0.75rem', opacity: 0.5 }}>DERE-A0004 · Derecho</span>
         </nav>

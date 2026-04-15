@@ -72,6 +72,20 @@ nav.site-nav .print-btn {
   text-transform: uppercase;
 }
 
+/* ─── Lista de capítulos de manuales ────────────────────────────────────────── */
+.manual-ch-link {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  color: var(--ua-black);
+  font-size: 0.82rem;
+  border-bottom: 1px solid var(--ua-sand);
+  transition: background 0.15s;
+}
+.manual-ch-link:hover { background: var(--ua-sand); }
+
 /* ─── Index de clases ────────────────────────────────────────────────────────── */
 .clases-grid {
   display: grid;
