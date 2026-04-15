@@ -4,7 +4,12 @@ import { getClases, REVALIDATE_SECONDS } from '@/lib/notion'
 export const revalidate = REVALIDATE_SECONDS
 
 export default async function ClasesPage() {
-  const clases = await getClases()
+  let clases: Awaited<ReturnType<typeof getClases>> = []
+  try {
+    clases = await getClases()
+  } catch {
+    clases = []
+  }
 
   return (
     <main>

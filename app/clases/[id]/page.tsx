@@ -6,8 +6,12 @@ import { getClaseByNumero, getClases, REVALIDATE_SECONDS } from '@/lib/notion'
 export const revalidate = REVALIDATE_SECONDS
 
 export async function generateStaticParams() {
-  const clases = await getClases()
-  return clases.map((c) => ({ id: String(c.numero) }))
+  try {
+    const clases = await getClases()
+    return clases.map((c) => ({ id: String(c.numero) }))
+  } catch {
+    return []
+  }
 }
 
 export async function generateMetadata({ params }: { params: { id: string } }) {

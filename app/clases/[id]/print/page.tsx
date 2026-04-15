@@ -7,8 +7,12 @@ import PrintButton from '@/components/PrintButton'
 export const revalidate = REVALIDATE_SECONDS
 
 export async function generateStaticParams() {
-  const clases = await getClases()
-  return clases.map((c) => ({ id: String(c.numero) }))
+  try {
+    const clases = await getClases()
+    return clases.map((c) => ({ id: String(c.numero) }))
+  } catch {
+    return []
+  }
 }
 
 // Cuántos bloques caben por slide (ajustable)
