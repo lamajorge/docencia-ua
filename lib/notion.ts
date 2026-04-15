@@ -1,5 +1,6 @@
 import { Client } from '@notionhq/client'
 import { NotionToMarkdown } from 'notion-to-md'
+import type { PageObjectResponse } from '@notionhq/client/build/src/api-endpoints'
 
 export const notion = new Client({
   auth: process.env.NOTION_TOKEN,
@@ -14,6 +15,9 @@ export interface ClaseEntry {
   fecha: string | null
   semana: number | null
   unidad: string | null
+  dia: string | null
+  estado: string | null
+  contenidosClave: string | null
   notionPageId: string
 }
 
@@ -27,62 +31,80 @@ export interface BloqueTematico {
   contenido: string
 }
 
-// Extrae "numero" y "titulo limpio" desde el título de la subpágina.
-// Acepta: "Clase 1: Intro", "Clase 01 — Intro", "01. Intro", "1 - Intro", etc.
-function parseTituloSubpagina(raw: string): { numero: number; titulo: string } {
-  const trimmed = raw.trim()
-  const match = trimmed.match(/^(?:clase\s*)?(\d+)\s*[:.\-–—]?\s*(.*)$/i)
-  if (!match) return { numero: 0, titulo: trimmed }
-  const numero = parseInt(match[1], 10)
-  const titulo = match[2].trim() || trimmed
-  return { numero, titulo }
+// Busca una propiedad por cualquiera de los nombres candidatos (tolerante a espacios/acentos).
+function findProp(props: Record<string, any>, ...candidates: string[]): any {
+  const keys = Object.keys(props)
+  for (const c of candidates) {
+    const target = c.toLowerCase().trim()
+    const key = keys.find((k) => k.toLowerCase().trim() === target)
+    if (key) return props[key]
+  }
+  return null
 }
 
-// Recupera el título de una subpágina (el bloque child_page trae solo el title).
-async function getSubpageTitle(blockId: string, fallback: string): Promise<string> {
-  try {
-    const page = await notion.pages.retrieve({ page_id: blockId })
-    const props = (page as any).properties
-    if (props) {
-      for (const key of Object.keys(props)) {
-        const p = props[key]
-        if (p?.type === 'title') {
-          return p.title.map((t: any) => t.plain_text).join('') || fallback
-        }
-      }
-    }
-  } catch {}
-  return fallback
+function getText(prop: any): string {
+  if (!prop) return ''
+  if (prop.type === 'title') return prop.title.map((t: any) => t.plain_text).join('')
+  if (prop.type === 'rich_text') return prop.rich_text.map((t: any) => t.plain_text).join('')
+  if (prop.type === 'select') return prop.select?.name ?? ''
+  if (prop.type === 'status') return prop.status?.name ?? ''
+  if (prop.type === 'multi_select') return prop.multi_select.map((s: any) => s.name).join(', ')
+  if (prop.type === 'number') return prop.number != null ? String(prop.number) : ''
+  if (prop.type === 'date') return prop.date?.start ?? ''
+  return ''
 }
 
-// Lista las subpáginas (clases) de la página padre.
+function getNumber(prop: any): number | null {
+  if (!prop) return null
+  if (prop.type === 'number') return prop.number ?? null
+  if (prop.type === 'title') {
+    const s = prop.title.map((t: any) => t.plain_text).join('').trim()
+    const n = parseInt(s, 10)
+    return isNaN(n) ? null : n
+  }
+  if (prop.type === 'rich_text') {
+    const s = prop.rich_text.map((t: any) => t.plain_text).join('').trim()
+    const n = parseInt(s, 10)
+    return isNaN(n) ? null : n
+  }
+  return null
+}
+
 export async function getClases(): Promise<ClaseEntry[]> {
-  const pageId = process.env.NOTION_PAGE_ID
-  if (!pageId) throw new Error('NOTION_PAGE_ID no configurado')
+  const dbId = process.env.NOTION_DATABASE_ID
+  if (!dbId) throw new Error('NOTION_DATABASE_ID no configurado')
 
-  const children = await notion.blocks.children.list({
-    block_id: pageId,
+  const response = await notion.databases.query({
+    database_id: dbId,
     page_size: 100,
   })
 
-  const clases: ClaseEntry[] = []
-  for (const block of children.results) {
-    if ((block as any).type !== 'child_page') continue
-    const b: any = block
-    const rawTitle: string = b.child_page?.title ?? ''
-    const fullTitle = await getSubpageTitle(b.id, rawTitle)
-    const { numero, titulo } = parseTituloSubpagina(fullTitle)
-    if (numero <= 0) continue
-    clases.push({
-      id: String(numero).padStart(2, '0'),
-      numero,
-      titulo,
-      fecha: null,
-      semana: null,
-      unidad: null,
-      notionPageId: b.id,
+  const clases: ClaseEntry[] = response.results
+    .filter((r): r is PageObjectResponse => r.object === 'page' && 'properties' in r)
+    .map((page) => {
+      const props = page.properties as Record<string, any>
+
+      const numero =
+        getNumber(findProp(props, 'Clase', 'Número', 'Numero', 'N°')) ?? 0
+
+      const titulo =
+        getText(findProp(props, 'Título de la clase', 'Titulo de la clase', 'Título', 'Titulo', 'Name')) ||
+        'Sin título'
+
+      return {
+        id: String(numero).padStart(2, '0'),
+        numero,
+        titulo,
+        fecha: getText(findProp(props, 'Fecha', 'Date')) || null,
+        semana: getNumber(findProp(props, 'Semana')),
+        unidad: getText(findProp(props, 'Unidad')) || null,
+        dia: getText(findProp(props, 'Día', 'Dia')) || null,
+        estado: getText(findProp(props, 'Estado', 'Status')) || null,
+        contenidosClave: getText(findProp(props, 'Contenidos clave')) || null,
+        notionPageId: page.id,
+      }
     })
-  }
+    .filter((c) => c.numero > 0)
 
   clases.sort((a, b) => a.numero - b.numero)
   return clases

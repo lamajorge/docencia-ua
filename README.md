@@ -43,11 +43,11 @@ npm install
 
 ```bash
 cp .env.local.example .env.local
-# Editar con NOTION_TOKEN y NOTION_PAGE_ID
+# Editar con NOTION_TOKEN y NOTION_DATABASE_ID
 ```
 
 **Obtener el token:** [notion.so/my-integrations](https://www.notion.so/my-integrations) → Nueva integración → copiar token.  
-**Importante:** Compartir la página "Programación de Clases" con la integración desde Notion. `NOTION_PAGE_ID` es el hash al final de la URL de la página (32 caracteres).
+**Importante:** Compartir la base de datos "Programación de Clases" con la integración desde Notion. `NOTION_DATABASE_ID` es el hash de la database (no de la página padre).
 
 ### 3. Correr en desarrollo
 
@@ -70,7 +70,7 @@ npm run dev
 
 1. Crear repo en GitHub y hacer push
 2. [vercel.com](https://vercel.com) → Import → seleccionar repo
-3. Agregar variables: `NOTION_TOKEN`, `NOTION_PAGE_ID`
+3. Agregar variables: `NOTION_TOKEN`, `NOTION_DATABASE_ID`
 4. Deploy automático en cada `git push main`
 
 ---
