@@ -82,110 +82,6 @@ Un impuesto de $200 sobre un bien, ¿lo paga el comprador, el vendedor, o ambos?
 No hay respuesta inmediata. Piensen en voz alta. Si alguna incomoda, presten atención a la estación correspondiente.
 :::
 
-::: intro
-::kicker
-EL HILO CONDUCTOR
-
-::titulo
-Toda la microeconomía evalúa lo mismo: ¿hay eficiencia?
-
-::body
-**Eficiencia** significa que los recursos llegan a quienes más los valoran, al menor costo posible. En el mercado competitivo se logra cuando el precio iguala al costo marginal: no queda ninguna transacción mutuamente beneficiosa sin realizarse.
-
-Cuando la eficiencia se rompe — por una intervención de precios, un impuesto, el poder de monopolio o una falla de mercado — aparece el **peso muerto**: bienestar destruido que no va a nadie. Las cinco estaciones de hoy cuentan la misma historia desde distintos ángulos.
-
-**Eficiencia no es sinónimo de justicia.** Un mercado puede ser eficiente e inequitativo. La tensión entre eficiencia y equidad explica la mayor parte de los debates de política económica.
-:::
-
-::: referencia
-::kicker
-DÓNDE ESTÁ LA MATERIA
-
-::titulo
-Cada tema tiene su capítulo
-
-::r1-tema
-Escasez, costo de oportunidad y FPP
-::r1-sam
-Cap. 1
-::r1-cf
-Cap. 1
-
-::r2-tema
-Demanda, oferta y sus determinantes
-::r2-sam
-Cap. 3
-::r2-cf
-Cap. 3
-
-::r3-tema
-Equilibrio, mecanismo de ajuste y excedentes
-::r3-sam
-Cap. 3–4
-::r3-cf
-Cap. 3–4
-
-::r4-tema
-Precios máximos y mínimos
-::r4-sam
-Cap. 4
-::r4-cf
-Cap. 4
-
-::r5-tema
-Impuestos, subsidios, incidencia y peso muerto
-::r5-sam
-Cap. 4
-::r5-cf
-Cap. 4
-
-::r6-tema
-Monopolio y poder de mercado
-::r6-sam
-Cap. 9–10
-::r6-cf
-Cap. 12–13
-
-::r7-tema
-Externalidades, bienes públicos, información asimétrica
-::r7-sam
-Cap. 18
-::r7-cf
-Cap. 16
-:::
-
-::: diagrama
-::kicker
-DIAGRAMAS CLAVE — CÓMO LEERLOS
-
-::d1-tipo
-fpp
-
-::d1-titulo
-Frontera de Posibilidades de Producción
-
-::d1-texto
-**Sobre la curva** = eficiencia productiva (recursos plenamente usados). **Bajo la curva** = ineficiencia (recursos ociosos o mal asignados). **Fuera de la curva** = inalcanzable con los recursos actuales. La pendiente de la curva es el **costo de oportunidad**: producir más de B implica producir menos de A.
-
-::d2-tipo
-equilibrio
-
-::d2-titulo
-El Punto de Equilibrio
-
-::d2-texto
-La curva **D** baja (ley de la demanda). La curva **O** sube (ley de la oferta). Donde se cruzan: precio de equilibrio **Pe** y cantidad **Qe**. Si P > Pe hay excedente y el precio baja. Si P < Pe hay escasez y el precio sube. El mecanismo es automático.
-
-::d3-tipo
-cuña
-
-::d3-titulo
-La Cuña Impositiva
-
-::d3-texto
-El impuesto abre una brecha entre **Pc** (precio que paga el consumidor, sube) y **Pv** (precio que recibe el vendedor, baja). La diferencia es exactamente el monto del impuesto. El rectángulo sombreado es **recaudación** (va al Estado). El triángulo es **peso muerto** (bienestar destruido que no va a nadie).
-:::
-
 ::: station num=01 clases="Clases 1 y 2"
 ::titulo
 Fundamentos
@@ -332,18 +228,51 @@ Externalidad **≠** bien público. Externalidad = efecto lateral de una transac
 Mismo principio en tres casos: impuesto, monopolio, externalidad — en todos hay ineficiencia y peso muerto. Cambia la causa, no el principio.
 :::
 
-::: stat-hero
-::numero
-$200
+::: intro
+::kicker
+EL HILO CONDUCTOR
 
-::label
-LA CUÑA IMPOSITIVA
+::titulo
+Toda la microeconomía evalúa lo mismo: ¿hay eficiencia?
 
-::texto
-**Pc − Pv = monto del impuesto.** Siempre. El impuesto se inserta entre el precio que paga el consumidor (Pc, sube) y el que recibe el vendedor (Pv, baja), separando ambos lados del mercado en exactamente el monto gravado.
+::body
+**Eficiencia** significa que los recursos llegan a quienes más los valoran, al menor costo posible. En el mercado competitivo se logra cuando el precio iguala al costo marginal: no queda ninguna transacción mutuamente beneficiosa sin realizarse.
 
-::subtexto
-Pc = precio al consumidor. Pv = precio al vendedor. Si en la evaluación la cuña no da el monto del impuesto — hay un número mal.
+Cuando la eficiencia se rompe — por una intervención de precios, un impuesto, el poder de monopolio o una falla de mercado — aparece el **peso muerto**: bienestar destruido que no va a nadie. Las cinco estaciones que acaban de ver cuentan la misma historia desde distintos ángulos.
+
+**Eficiencia no es sinónimo de justicia.** Un mercado puede ser eficiente e inequitativo. La tensión entre eficiencia y equidad explica la mayor parte de los debates de política económica.
+:::
+
+::: diagrama
+::kicker
+DIAGRAMAS CLAVE — CÓMO LEERLOS
+
+::d1-tipo
+fpp
+
+::d1-titulo
+Frontera de Posibilidades de Producción
+
+::d1-texto
+**Sobre la curva** = eficiencia productiva (recursos plenamente usados). **Bajo la curva** = ineficiencia (recursos ociosos o mal asignados). **Fuera de la curva** = inalcanzable con los recursos actuales. La pendiente de la curva es el **costo de oportunidad**: producir más de B implica producir menos de A.
+
+::d2-tipo
+equilibrio
+
+::d2-titulo
+El Punto de Equilibrio
+
+::d2-texto
+La curva **D** baja (ley de la demanda). La curva **O** sube (ley de la oferta). Donde se cruzan: precio de equilibrio **Pe** y cantidad **Qe**. Si P > Pe hay excedente y el precio baja. Si P < Pe hay escasez y el precio sube. El mecanismo es automático.
+
+::d3-tipo
+cuña
+
+::d3-titulo
+La Cuña Impositiva
+
+::d3-texto
+El impuesto abre una brecha entre **Pc** (precio que paga el consumidor, sube) y **Pv** (precio que recibe el vendedor, baja). La diferencia es exactamente el monto del impuesto. El rectángulo sombreado es **recaudación** (va al Estado). El triángulo es **peso muerto** (bienestar destruido que no va a nadie).
 :::
 
 ::: exercise-intro
@@ -432,6 +361,63 @@ El consumo de bebidas azucaradas genera costos de salud — diabetes, obesidad, 
 
 ::twist
 El peso muerto **no desaparece**. Pero cambia su evaluación: aquí la distorsión es el **objetivo** de la política — reducir consumo nocivo. El peso muerto es **señal de éxito**, no de fracaso.
+:::
+
+::: referencia
+::kicker
+DÓNDE ESTÁ LA MATERIA
+
+::titulo
+Cada tema tiene su capítulo
+
+::r1-tema
+Escasez, costo de oportunidad y FPP
+::r1-sam
+Cap. 1
+::r1-cf
+Cap. 1
+
+::r2-tema
+Demanda, oferta y sus determinantes
+::r2-sam
+Cap. 3
+::r2-cf
+Cap. 3
+
+::r3-tema
+Equilibrio, mecanismo de ajuste y excedentes
+::r3-sam
+Cap. 3–4
+::r3-cf
+Cap. 3–4
+
+::r4-tema
+Precios máximos y mínimos
+::r4-sam
+Cap. 4
+::r4-cf
+Cap. 4
+
+::r5-tema
+Impuestos, subsidios, incidencia y peso muerto
+::r5-sam
+Cap. 4
+::r5-cf
+Cap. 4
+
+::r6-tema
+Monopolio y poder de mercado
+::r6-sam
+Cap. 9–10
+::r6-cf
+Cap. 12–13
+
+::r7-tema
+Externalidades, bienes públicos, información asimétrica
+::r7-sam
+Cap. 18
+::r7-cf
+Cap. 16
 :::
 
 ::: close
