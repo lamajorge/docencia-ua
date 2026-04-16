@@ -198,13 +198,25 @@ BLOQUE 5 · LA FPP — VISUALIZACIÓN
 fpp
 
 ::d1-titulo
-Frontera de Posibilidades de Producción
+La FPP — el caso general
 
 ::d1-leyenda
-**Bien A · Bien B** = los dos bienes que la economía puede producir · **Eficiencia** = sobre la curva · **Ineficiencia** = bajo la curva · **Inalcanzable** = fuera de la curva
+**Bien A · Bien B** = los dos bienes producibles · **Eficiencia** = sobre la curva · **Ineficiencia** = bajo la curva · **Inalcanzable** = fuera de la curva
 
 ::d1-texto
 La curva es el **límite** de lo que la economía puede producir con los recursos actuales. La pendiente expresa el **costo de oportunidad**: para ganar una unidad de un bien hay que sacrificar parte del otro. Esa pendiente se vuelve más empinada hacia los extremos — por eso la curva es cóncava.
+
+::d2-tipo
+fpp-tabla
+
+::d2-titulo
+La FPP — Tabla 2.1 ploteada
+
+::d2-leyenda
+**A** (700, 0) · **B** (650, 200) · **C** (510, 380) · **D** (400, 500) · **E** (0, 550) — los 5 puntos eficientes. **G** = punto interior (ineficiente). **H** = punto exterior (inalcanzable).
+
+::d2-texto
+Los 5 puntos de la tabla, ploteados sobre los ejes Capital × Consumo. La curva los une — toda combinación sobre ella es eficiente. **G** está dentro: la economía produce menos de lo que podría. **H** está fuera: imposible con los recursos actuales.
 :::
 
 ::: intro

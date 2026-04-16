@@ -483,6 +483,54 @@ function Referencia({ s }: { s: Section }) {
 }
 
 // ── DIAGRAMA (SVG inline + explicación) ─────────
+function DiagramFPPTabla() {
+  // Tabla 2.1 Case & Fair: A(0,700) B(200,650) C(380,510) D(500,400) E(550,0)
+  // viewBox 240x210. X axis: Consumo 0→600 mapeado a 35→220 (185 unidades / 600 = 0.308)
+  // Y axis: Capital 0→700 mapeado a 185→15 (170 unidades / 700 = 0.243)
+  const fx = (consumo: number) => 35 + consumo * 0.308
+  const fy = (capital: number) => 185 - capital * 0.243
+  const A = { x: fx(0),   y: fy(700), label: 'A' }
+  const B = { x: fx(200), y: fy(650), label: 'B' }
+  const C = { x: fx(380), y: fy(510), label: 'C' }
+  const D = { x: fx(500), y: fy(400), label: 'D' }
+  const E = { x: fx(550), y: fy(0),   label: 'E' }
+  // Punto interior (G) e inalcanzable (H)
+  const G = { x: fx(280), y: fy(280), label: 'G' }
+  const H = { x: fx(500), y: fy(620), label: 'H' }
+  const points = [A, B, C, D, E]
+  return (
+    <svg viewBox="0 0 240 210" className="diag-svg" aria-label="FPP — Tabla 2.1 Case & Fair">
+      {/* Ejes */}
+      <line x1="35" y1="10" x2="35" y2="185" stroke="#151515" strokeWidth="1.5" />
+      <line x1="35" y1="185" x2="225" y2="185" stroke="#151515" strokeWidth="1.5" />
+      <polygon points="35,7 32,14 38,14" fill="#151515" />
+      <polygon points="228,185 221,182 221,188" fill="#151515" />
+      <text x="38" y="14" fontSize="8" fill="#6B6B6B">Capital</text>
+      <text x="195" y="197" fontSize="8" fill="#6B6B6B">Consumo</text>
+      {/* Curva FPP suave a través de los 5 puntos */}
+      <path
+        d={`M ${A.x} ${A.y} C ${B.x} ${B.y - 5}, ${C.x - 30} ${C.y - 8}, ${C.x} ${C.y} S ${D.x + 10} ${D.y + 5}, ${E.x} ${E.y}`}
+        stroke="#C8102E" strokeWidth="2.2" fill="none"
+      />
+      {/* Puntos eficientes A-E sobre la curva */}
+      {points.map((p, i) => (
+        <g key={i}>
+          <circle cx={p.x} cy={p.y} r="3.5" fill="#C8102E" />
+          <text x={p.x + 5} y={p.y - 4} fontSize="8.5" fill="#C8102E" fontWeight="bold">{p.label}</text>
+        </g>
+      ))}
+      {/* Punto G - ineficiente (interior) */}
+      <circle cx={G.x} cy={G.y} r="3" fill="#6B6B6B" />
+      <text x={G.x + 5} y={G.y - 3} fontSize="8" fill="#6B6B6B" fontWeight="bold">G</text>
+      <text x={G.x - 2} y={G.y + 12} fontSize="6.5" fill="#6B6B6B">ineficiente</text>
+      {/* Punto H - inalcanzable (exterior) */}
+      <circle cx={H.x} cy={H.y} r="3" fill="#6B6B6B" />
+      <text x={H.x + 5} y={H.y - 3} fontSize="8" fill="#6B6B6B" fontWeight="bold">H</text>
+      <text x={H.x - 4} y={H.y + 11} fontSize="6.5" fill="#6B6B6B">inalcanzable</text>
+    </svg>
+  )
+}
+
 function DiagramFPP() {
   return (
     <svg viewBox="0 0 240 210" className="diag-svg" aria-label="Frontera de Posibilidades de Producción">
@@ -605,6 +653,7 @@ function Diagrama({ s }: { s: Section }) {
   const renderSVG = (tipo: string) => {
     switch (tipo) {
       case 'fpp': return <DiagramFPP />
+      case 'fpp-tabla': return <DiagramFPPTabla />
       case 'equilibrio': return <DiagramEquilibrio />
       case 'cuña': return <DiagramCuña />
       default: return null
