@@ -122,22 +122,9 @@ BLOQUE 3 · POSITIVA VS. NORMATIVA
 Toda afirmación económica puede ser de un tipo u otro — saber distinguirlos es una habilidad crítica.
 
 ::body
-**Positiva — describe lo que ES.** Afirmaciones verificables con datos y evidencia. Pueden ser verdaderas o falsas.
+**Positiva — describe lo que ES.** Afirmaciones verificables con datos y evidencia. Pueden ser verdaderas o falsas. *Ejemplo:* «Si sube el salario mínimo, algunas empresas contratarán menos personal.» → Afirmación empírica. Se contrasta con datos.
 
-*Ejemplo:* «Si sube el salario mínimo, algunas empresas contratarán menos personal.» → Afirmación empírica. Se contrasta con datos.
-:::
-
-::: intro
-::kicker
-BLOQUE 3 · POSITIVA VS. NORMATIVA
-
-::titulo
-Normativa — dice lo que DEBERÍA SER.
-
-::body
-**Normativa — dice lo que DEBERÍA SER.** Incorpora juicios de valor. No se resuelve con datos — depende de prioridades éticas y políticas.
-
-*Ejemplo:* «El Estado debería subir el salario mínimo porque es lo justo.» → Juicio de valor. Depende de las prioridades de cada uno.
+**Normativa — dice lo que DEBERÍA SER.** Incorpora juicios de valor. No se resuelve con datos — depende de prioridades éticas y políticas. *Ejemplo:* «El Estado debería subir el salario mínimo porque es lo justo.» → Juicio de valor. Depende de las prioridades de cada uno.
 
 **Positiva describe lo que ES. Normativa dice lo que DEBERÍA SER.**
 :::
@@ -151,27 +138,9 @@ Tres conexiones clave entre economía y derecho.
 
 ::body
 **1. La economía necesita al derecho.** Sin contratos ejecutables ni derechos de propiedad los mercados no funcionan. El derecho es la infraestructura invisible de la economía de mercado.
-:::
 
-::: intro
-::kicker
-BLOQUE 4 · DERECHO Y ECONOMÍA
-
-::titulo
-El derecho tiene efectos económicos.
-
-::body
 **2. El derecho tiene efectos económicos.** Cada norma cambia comportamientos. Una ley pensada para proteger puede terminar perjudicando. El abogado que no entiende eso redacta normas con consecuencias que no anticipó.
-:::
 
-::: intro
-::kicker
-BLOQUE 4 · DERECHO Y ECONOMÍA
-
-::titulo
-A veces los criterios chocan.
-
-::body
 **3. A veces los criterios chocan.** Lo más eficiente no siempre es lo más justo. Identificar esa tensión — eficiencia vs. justicia — es el campo de batalla cotidiano del abogado.
 :::
 

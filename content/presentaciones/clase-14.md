@@ -297,6 +297,9 @@ fpp
 ::d1-titulo
 Frontera de Posibilidades de Producción
 
+::d1-leyenda
+**Bien A · Bien B** = los dos bienes que la economía puede producir
+
 ::d1-texto
 **Sobre la curva** = eficiencia productiva (recursos plenamente usados). **Bajo la curva** = ineficiencia (recursos ociosos o mal asignados). **Fuera de la curva** = inalcanzable con los recursos actuales. La pendiente de la curva es el **costo de oportunidad**: producir más de B implica producir menos de A.
 
@@ -306,6 +309,9 @@ equilibrio
 ::d2-titulo
 El Punto de Equilibrio
 
+::d2-leyenda
+**D** = Demanda · **O** = Oferta · **Pe** = precio de equilibrio · **Qe** = cantidad de equilibrio · **E** = punto de equilibrio
+
 ::d2-texto
 La curva **D** baja (ley de la demanda). La curva **O** sube (ley de la oferta). Donde se cruzan: precio de equilibrio **Pe** y cantidad **Qe**. Si P > Pe hay excedente y el precio baja. Si P < Pe hay escasez y el precio sube. El mecanismo es automático.
 
@@ -314,6 +320,9 @@ cuña
 
 ::d3-titulo
 La Cuña Impositiva
+
+::d3-leyenda
+**T** = monto del impuesto · **Pc** = precio del consumidor · **Pv** = precio del vendedor · **Pe** = precio equilibrio sin impuesto · **Qt** = cantidad con impuesto · **Qe** = cantidad equilibrio sin impuesto
 
 ::d3-texto
 El impuesto abre una brecha entre **Pc** (precio que paga el consumidor, sube) y **Pv** (precio que recibe el vendedor, baja). La diferencia es exactamente el monto del impuesto. El rectángulo sombreado es **recaudación** (va al Estado). El triángulo es **peso muerto** (bienestar destruido que no va a nadie).

@@ -191,17 +191,8 @@ Comercio voluntario → ambas partes ganan.
 
 ::body
 Si no ganaran ambas, no intercambiarían.
-:::
 
-::: intro
-::kicker
-EL EJEMPLO DE LOS PAÍSES
-
-::titulo
-Japón se especializó en manufactura y exporta para importar materias primas.
-
-::body
-¿Pierde? **No** — las compra más barato de lo que le costaría producirlas. El país que vende las materias primas también gana, porque recibe manufacturas que no podría producir tan eficientemente.
+**El ejemplo de los países — Japón.** Japón se especializó en manufactura y exporta para importar materias primas. ¿Pierde? **No** — las compra más barato de lo que le costaría producirlas. El país que vende las materias primas también gana, porque recibe manufacturas que no podría producir tan eficientemente.
 
 Los países que han intentado ser autosuficientes han descubierto que es el camino hacia el estancamiento. — Samuelson & Nordhaus, Cap. 2, p. 31.
 :::
@@ -232,7 +223,7 @@ División del trabajo en el sistema jurídico.
 
 ::: grid-fallas
 ::titulo
-Roles en el sistema jurídico — cuatro especialistas
+Roles en el sistema jurídico — seis especialistas
 
 ::f1-titulo
 Abogado litigante
@@ -253,18 +244,9 @@ Especialista en certeza documental.
 Juez
 ::f4-body
 Especialista en resolver conflictos.
-:::
 
-::: intro
-::kicker
-ROLES EN EL SISTEMA JURÍDICO — DOS MÁS
-
-::titulo
-Dos roles del sistema penal.
-
-::body
-- **Fiscal** → especialista en persecución penal
-- **Defensor público** → especialista en defensa
+::nota
+**Dos más, en el sistema penal.** **Fiscal** → especialista en persecución penal. **Defensor público** → especialista en defensa.
 :::
 
 ::: mecanismo

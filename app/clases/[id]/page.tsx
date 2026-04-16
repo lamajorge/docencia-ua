@@ -354,14 +354,16 @@ function StatSplit({ s }: { s: Section }) {
 
 // ── GRID FALLAS ────────────────────────────────
 function GridFallas({ s }: { s: Section }) {
+  const cells = ['1', '2', '3', '4'].filter((n) => s.slots[`f${n}-titulo`])
+  const layoutClass = cells.length === 2 ? 'gf-grid gf-grid-2' : 'gf-grid'
   return (
     <section className="slide slide-grid-fallas">
       <header className="gf-head">
         <p className="gf-kicker">FALLAS DE MERCADO</p>
         <h2 className="gf-titulo">{s.slots.titulo}</h2>
       </header>
-      <div className="gf-grid">
-        {['1', '2', '3', '4'].map((n) => (
+      <div className={layoutClass}>
+        {cells.map((n) => (
           <div key={n} className={`gf-cell gf-${n}`}>
             <p className="gf-n">0{n}</p>
             <h3 className="gf-sub">{s.slots[`f${n}-titulo`]}</h3>
@@ -369,6 +371,9 @@ function GridFallas({ s }: { s: Section }) {
           </div>
         ))}
       </div>
+      {s.slots.nota && (
+        <div className="gf-nota"><MD>{s.slots.nota}</MD></div>
+      )}
     </section>
   )
 }
@@ -593,6 +598,7 @@ function Diagrama({ s }: { s: Section }) {
       tipo: s.slots[`d${n}-tipo`],
       titulo: s.slots[`d${n}-titulo`],
       texto: s.slots[`d${n}-texto`],
+      leyenda: s.slots[`d${n}-leyenda`],
     }))
     .filter((d) => d.tipo)
 
@@ -613,6 +619,9 @@ function Diagrama({ s }: { s: Section }) {
           <div key={i} className="dg-panel">
             <div className="dg-svg-wrap">{renderSVG(d.tipo)}</div>
             <h3 className="dg-titulo">{d.titulo}</h3>
+            {d.leyenda && (
+              <div className="dg-leyenda"><MD>{d.leyenda}</MD></div>
+            )}
             <div className="dg-texto"><MD>{d.texto}</MD></div>
           </div>
         ))}
@@ -1173,6 +1182,7 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: -0.015em;
 }
 .gf-grid { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 2vh 2vw; flex: 1; }
+.gf-grid-2 { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr; }
 .gf-cell {
   background: var(--sand);
   padding: 3vh 2.5vw;
@@ -1202,6 +1212,18 @@ a { color: inherit; text-decoration: none; }
 .gf-body strong { color: var(--red); font-weight: 700; }
 .gf-2 .gf-body strong, .gf-3 .gf-body strong { color: var(--white); }
 .gf-body p { margin: 0; }
+.gf-nota {
+  margin-top: 2vh;
+  padding: 1.8vh 2vw;
+  background: var(--sand);
+  border-left: 4px solid var(--red);
+  font-size: clamp(0.88rem, 1.05vw, 1rem);
+  line-height: 1.55;
+}
+.gf-nota strong { color: var(--red); font-weight: 700; }
+.gf-nota p { margin: 0; }
+.gf-nota ul { margin: 0; padding-left: 1.2em; }
+.gf-nota li { margin: 0; }
 
 /* ════════════════════════════════════════════
    EXERCISE INTRO
@@ -1469,6 +1491,15 @@ a { color: inherit; text-decoration: none; }
 }
 .dg-texto strong { color: var(--red); font-weight: 700; }
 .dg-texto p { margin: 0 0 0.5em; }
+.dg-leyenda {
+  background: var(--black); color: var(--white);
+  padding: 1.2vh 1vw; border-left: 3px solid var(--red);
+  font-size: 0.78rem; line-height: 1.5;
+  font-family: var(--mono); letter-spacing: 0.01em;
+  margin: 0 0 0.6vh 0;
+}
+.dg-leyenda strong { color: var(--red); font-weight: 700; }
+.dg-leyenda p { margin: 0; }
 
 /* ════════════════════════════════════════════
    PRINT — convierte landing en slides A4
@@ -1556,6 +1587,7 @@ a { color: inherit; text-decoration: none; }
   .gf-n { font-size: 10mm; }
   .gf-sub { font-size: 5.5mm; }
   .gf-body { font-size: 3.9mm; }
+  .gf-nota { font-size: 3.7mm; padding: 3mm 5mm; margin-top: 3mm; }
 
   .ei-titulo { font-size: 18mm; }
   .ei-datos { font-size: 4.2mm; }
@@ -1583,6 +1615,7 @@ a { color: inherit; text-decoration: none; }
   /* diagrama print */
   .dg-titulo { font-size: 3.5mm; padding-bottom: 1.5mm; }
   .dg-texto { font-size: 3mm; }
+  .dg-leyenda { font-size: 2.6mm; padding: 1.5mm 2mm; }
   .dg-panel { padding: 3mm 2mm; gap: 2mm; }
   .dg-grid { gap: 5mm; }
 }

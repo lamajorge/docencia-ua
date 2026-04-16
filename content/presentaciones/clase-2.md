@@ -123,28 +123,10 @@ El costo de oportunidad aparece en todas partes.
 
 ::body
 **Ejemplo 1 · Personal — Estar aquí a las 8 AM.** El costo no es el arancel de la Carrera — es lo que podrían estar haciendo: dormir, estudiar otro ramo, desayunar tranquilos. Eso tiene un valor. Lo están sacrificando.
-:::
 
-::: intro
-::kicker
-BLOQUE 4 · EJEMPLO 2 · JURÍDICO
+**Ejemplo 2 · Jurídico — El abogado y la tarde libre.** Acepta una consulta nueva de 4 horas en vez de preparar el caso que ya tiene. El costo de oportunidad es el avance que perdió — no cero, aunque la consulta sea rentable.
 
-::titulo
-El abogado y la tarde libre.
-
-::body
-Acepta una consulta nueva de 4 horas en vez de preparar el caso que ya tiene. El costo de oportunidad es el avance que perdió — no cero, aunque la consulta sea rentable.
-:::
-
-::: intro
-::kicker
-BLOQUE 4 · EJEMPLO 3 · SAMUELSON
-
-::titulo
-La mina y Yellowstone.
-
-::body
-El verdadero costo incluye vida silvestre, agua, aire y valor recreativo perdidos. Aunque el costo monetario sea pequeño, el costo de oportunidad puede ser enorme. *(Sam. & N., Cap. 1, p. 13.)*
+**Ejemplo 3 · Samuelson — La mina y Yellowstone.** El verdadero costo incluye vida silvestre, agua, aire y valor recreativo perdidos. Aunque el costo monetario sea pequeño, el costo de oportunidad puede ser enorme. *(Sam. & N., Cap. 1, p. 13.)*
 :::
 
 ::: station num=04 clases="Bloque 4 · Cálculo"
@@ -179,7 +161,7 @@ BLOQUE 5 · LA FPP
 BLOQUE 5 · TABLA 2.1 · CASE & FAIR
 
 ::titulo
-Cómo leer la tabla.
+Cómo leer la tabla: de E hacia A ganamos capital, sacrificamos consumo.
 
 ::body
 | Punto | Capital | Consumo |
@@ -189,19 +171,8 @@ Cómo leer la tabla.
 | **C** | 510 | 380 |
 | **D** | 400 | 500 |
 | **E** | 0 | 550 |
-:::
 
-::: intro
-::kicker
-BLOQUE 5 · LECTURA DE LA TABLA
-
-::titulo
-De E hacia A: ganamos capital, sacrificamos consumo.
-
-::body
-Punto A: todo en capital, nada en consumo. Punto E: todo en consumo, nada en capital. Cada fila es una combinación posible si todos los recursos se usan eficientemente.
-
-Al movernos de E hacia A ganamos capital, pero sacrificamos consumo — y ese sacrificio crece con cada paso.
+Punto A: todo en capital, nada en consumo. Punto E: todo en consumo, nada en capital. Cada fila es una combinación posible si todos los recursos se usan eficientemente. Al movernos de E hacia A ganamos capital, pero sacrificamos consumo — y ese sacrificio crece con cada paso.
 :::
 
 ::: intro
@@ -217,6 +188,23 @@ Sobre, bajo y fuera de la curva.
 **G · Bajo la curva — Ineficiente.** Alcanzable, pero con recursos desaprovechados: trabajadores desempleados, máquinas paradas, capacidad ociosa. *(¿En cuál estaba Chile en 2020?)*
 
 **H · Fuera de la curva — Imposible hoy.** Fuera del alcance con los recursos actuales. Para llegar aquí la economía necesita crecer — la FPP debe desplazarse hacia afuera.
+:::
+
+::: diagrama
+::kicker
+BLOQUE 5 · LA FPP — VISUALIZACIÓN
+
+::d1-tipo
+fpp
+
+::d1-titulo
+Frontera de Posibilidades de Producción
+
+::d1-leyenda
+**Bien A · Bien B** = los dos bienes que la economía puede producir · **Eficiencia** = sobre la curva · **Ineficiencia** = bajo la curva · **Inalcanzable** = fuera de la curva
+
+::d1-texto
+La curva es el **límite** de lo que la economía puede producir con los recursos actuales. La pendiente expresa el **costo de oportunidad**: para ganar una unidad de un bien hay que sacrificar parte del otro. Esa pendiente se vuelve más empinada hacia los extremos — por eso la curva es cóncava.
 :::
 
 ::: intro
@@ -252,32 +240,19 @@ Si la economía mueve recursos hacia armas, la mantequilla baja. El costo de pro
 *Samuelson, Cap. 1.*
 :::
 
-::: intro
-::kicker
-BLOQUE 6 · EFICIENCIA TIPO 1
-
+::: grid-fallas
 ::titulo
-Eficiencia en la Producción.
+Dos tipos de eficiencia — y por qué la primera no basta.
 
-::body
-Estar sobre la FPP — usar todos los recursos sin desperdiciarlos.
+::f1-titulo
+Tipo 1 · Eficiencia en la Producción
+::f1-body
+Estar sobre la FPP — usar todos los recursos sin desperdiciarlos. *Ejemplo jurídico:* Un tribunal que resuelve muchos casos usando todos sus jueces y horarios. Está sobre la FPP — eficiente en la producción.
 
-*Ejemplo jurídico:* Un tribunal que resuelve muchos casos usando todos sus jueces y horarios. Está sobre la FPP — eficiente en la producción.
-:::
-
-::: intro
-::kicker
-BLOQUE 6 · EFICIENCIA TIPO 2
-
-::titulo
-Eficiencia del Resultado.
-
-::body
-Estar en el punto correcto de la curva — producir lo que la gente realmente quiere.
-
-*Ejemplo Case & Fair:* Una economía produce ganado vacuno eficientemente — está sobre la FPP. Pero si la población es vegetariana, es un desperdicio total. Ese mismo tribunal resuelve muchos casos... pero mal. Eficiencia en la producción, ineficiencia en el resultado.
-
-*Estar sobre la FPP es condición necesaria pero no suficiente. Case & Fair, Cap. 2, p. 35.*
+::f2-titulo
+Tipo 2 · Eficiencia del Resultado
+::f2-body
+Estar en el punto correcto de la curva — producir lo que la gente realmente quiere. *Ejemplo Case & Fair:* Una economía produce ganado vacuno eficientemente — está sobre la FPP. Pero si la población es vegetariana, es un desperdicio total. Ese mismo tribunal resuelve muchos casos... pero mal. *Estar sobre la FPP es condición necesaria pero no suficiente. Case & Fair, Cap. 2, p. 35.*
 :::
 
 ::: mecanismo

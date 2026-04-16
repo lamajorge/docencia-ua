@@ -79,20 +79,11 @@ Respuestas esperadas: (1) Costos de producción · Tecnología · Precios de ins
 BLOQUE 2 · ¿QUÉ ES UNA EMPRESA Y QUÉ BUSCA?
 
 ::titulo
-La empresa busca maximizar utilidades.
+La empresa busca maximizar utilidades — y decide en dos horizontes.
 
 ::body
 **UTILIDAD = INGRESO TOTAL − COSTO TOTAL.** Ingreso Total: Precio × Cantidad vendida. Costo Total: Costos fijos + Costos variables.
-:::
 
-::: intro
-::kicker
-BLOQUE 2 · HORIZONTE TEMPORAL DE LAS DECISIONES
-
-::titulo
-Corto plazo y largo plazo.
-
-::body
 **CORTO PLAZO.** Al menos un factor es fijo. La empresa no puede cambiar el tamaño de su planta. Puede contratar más trabajadores o comprar más materiales.
 
 **LARGO PLAZO.** Todos los factores son variables. La empresa puede expandirse, instalar nueva maquinaria o salir del mercado si las pérdidas persisten.
@@ -111,17 +102,8 @@ CT = CF + CV.
 **CV — Costos Variables.** Aumentan cuando se produce más, disminuyen cuando se produce menos. Ej. Materias primas · Energía · Mano de obra directa.
 
 **CT — Costo Total.** Suma de los costos fijos y variables. Siempre crece con la producción. Ej. CT = CF + CV.
-:::
 
-::: intro
-::kicker
-BLOQUE 3 · ADVERTENCIA SOBRE EL CORTO PLAZO
-
-::titulo
-Aunque produzca cero, la empresa sigue pagando los costos fijos.
-
-::body
-⚠ En el corto plazo, incluso si la empresa produce cero, sigue pagando sus costos fijos. Por eso a veces conviene seguir produciendo aunque haya pérdidas — si los ingresos cubren al menos los CV, las pérdidas son menores que cerrar.
+⚠ **Advertencia sobre el corto plazo.** Incluso si la empresa produce cero, sigue pagando sus costos fijos. Por eso a veces conviene seguir produciendo aunque haya pérdidas — si los ingresos cubren al menos los CV, las pérdidas son menores que cerrar.
 :::
 
 ::: intro

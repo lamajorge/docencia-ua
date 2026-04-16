@@ -232,60 +232,41 @@ Principio común
 Cualquier desviación del equilibrio competitivo genera pérdida de bienestar.
 :::
 
-::: intro
-::kicker
-ESTRUCTURAS INTERMEDIAS
-
+::: grid-fallas
 ::titulo
-Entre la competencia perfecta y el monopolio.
+Estructuras intermedias — entre la competencia perfecta y el monopolio. Todas generan algún grado de ineficiencia porque el precio queda por encima del costo marginal.
 
-::body
-Todas generan algún grado de ineficiencia porque el precio queda por encima del costo marginal.
-:::
-
-::: intro
-::kicker
-ESTRUCTURA INTERMEDIA · 1 DE 3
-
-::titulo
-Monopsonio — un único comprador.
-
-::body
+::f1-titulo
+1. Monopsonio — un único comprador
+::f1-body
 El comprador tiene poder para fijar el precio que paga a los vendedores por debajo del nivel competitivo.
 
 *Ejemplo:* empresa minera única empleadora en una localidad — puede pagar salarios por debajo del equilibrio competitivo.
 
-*Conexión con lo visto:* el salario mínimo puede corregir el poder monopsónico del empleador — en ese caso no genera desempleo.
-:::
+*Conexión:* el salario mínimo puede corregir el poder monopsónico del empleador — en ese caso no genera desempleo.
 
-::: intro
-::kicker
-ESTRUCTURA INTERMEDIA · 2 DE 3
-
-::titulo
-Oligopolio — pocas empresas dominan.
-
-::body
+::f2-titulo
+2. Oligopolio — pocas empresas dominan
+::f2-body
 Cada empresa es suficientemente grande para que sus decisiones afecten al mercado. Hay interdependencia estratégica.
 
 *Ejemplo:* telecomunicaciones en Chile (Entel, Claro, Movistar); supermercados (Líder, SMU, Cencosud).
 
 Lo que decide una empresa afecta la rentabilidad de las otras. Ninguna puede ignorar a las demás.
-:::
 
-::: intro
-::kicker
-ESTRUCTURA INTERMEDIA · 3 DE 3
-
-::titulo
-Competencia monopolística — muchas empresas, productos diferenciados.
-
-::body
+::f3-titulo
+3. Competencia monopolística — muchas empresas, productos diferenciados
+::f3-body
 Cada empresa tiene algo de poder de mercado sobre su variante, pero enfrenta competencia de sustitutos cercanos.
 
 *Ejemplo:* restaurantes, cafeterías, tiendas de ropa. Similar pero no idéntico.
 
 En el largo plazo, la libre entrada elimina las utilidades extraordinarias. El precio supera el CM pero no por mucho.
+
+::f4-titulo
+Patrón común
+::f4-body
+En las tres estructuras, el precio queda por encima del costo marginal y se produce menos que la cantidad eficiente. Por eso todas generan algún grado de pérdida de bienestar — distinto en magnitud, mismo principio que el monopolio.
 :::
 
 ::: intro

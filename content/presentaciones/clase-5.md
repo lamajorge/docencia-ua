@@ -74,31 +74,21 @@ Repaso de la clase del jueves.
 Tres preguntas de apertura para conectar con la Clase 3.
 :::
 
-::: intro
-::kicker
-BLOQUE 2 · DE LA MACRO A LA MICRO
-
+::: grid-fallas
 ::titulo
-Microeconomía — los árboles.
+De la macro a la micro — las dos ramas de la economía
 
-::body
-**Microeconomía — ¿Cómo toman decisiones individuos y empresas?** Rama de la economía que estudia las decisiones de individuos y empresas, y cómo interactúan en mercados específicos.
+::f1-titulo
+Microeconomía — los árboles
+::f1-body
+**¿Cómo toman decisiones individuos y empresas?** Rama de la economía que estudia las decisiones de individuos y empresas, y cómo interactúan en mercados específicos. *Ejemplos:* precio del arriendo de un departamento · honorarios de un abogado recién egresado · precio del café en el casino de la U.
 
-*Ejemplos.* Precio del arriendo de un departamento · Honorarios de un abogado recién egresado · Precio del café en el casino de la U.
-:::
+::f2-titulo
+Macroeconomía — el bosque
+::f2-body
+**¿Cómo funciona la economía en su conjunto?** Rama de la economía que estudia el comportamiento de la economía en su conjunto: el PIB, la inflación, el desempleo y el crecimiento. *Ejemplos:* PIB, inflación, desempleo · crecimiento de un país · exportaciones totales.
 
-::: intro
-::kicker
-BLOQUE 2 · DE LA MACRO A LA MICRO
-
-::titulo
-Macroeconomía — el bosque.
-
-::body
-**Macroeconomía — ¿Cómo funciona la economía en su conjunto?** Rama de la economía que estudia el comportamiento de la economía en su conjunto: el PIB, la inflación, el desempleo y el crecimiento.
-
-*Ejemplos.* PIB, inflación, desempleo · Crecimiento de un país · Exportaciones totales.
-
+::nota
 **La macroeconomía mira el bosque. La microeconomía mira los árboles.**
 :::
 
@@ -303,7 +293,7 @@ El beneficio neto de participar en un mercado.
 
 ::: grid-fallas
 ::titulo
-El mercado como institución jurídica — cuatro condiciones que el derecho debe garantizar
+El mercado como institución jurídica — cinco condiciones que el derecho debe garantizar
 
 ::f1-titulo
 Derechos de propiedad
@@ -324,21 +314,9 @@ Lo pactado se cumple o se exige judicialmente.
 Resolución de conflictos
 ::f4-body
 Hay un mecanismo imparcial.
-:::
 
-::: intro
-::kicker
-BLOQUE 5 · LA QUINTA CONDICIÓN
-
-::titulo
-Reglas de competencia.
-
-::body
-5. **Reglas de competencia** (nadie puede monopolizar por la fuerza).
-
-Sin estas cinco condiciones, el mercado no funciona. Si no puedo confiar en que el contrato se va a cumplir, prefiero no contratar — y el intercambio colapsa.
-
-*El derecho no es una intervención externa al mercado: es su condición de posibilidad.* — Case & Fair, Cap. 3
+::nota
+**5. Reglas de competencia** (nadie puede monopolizar por la fuerza). Sin estas cinco condiciones, el mercado no funciona. Si no puedo confiar en que el contrato se va a cumplir, prefiero no contratar — y el intercambio colapsa. *El derecho no es una intervención externa al mercado: es su condición de posibilidad.* — Case & Fair, Cap. 3
 :::
 
 ::: intro

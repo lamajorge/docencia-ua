@@ -146,7 +146,7 @@ Lo que mueve la curva entera.
 
 ::: grid-fallas
 ::titulo
-Los 4 determinantes principales de la oferta
+Los 6 determinantes — 4 principales en grilla + (4) Bienes relacionados en producción: ↑ precio sustituto producido → O← del otro bien · (5) Número de oferentes: más empresas → O→ · menos empresas → O←.
 
 ::f1-titulo
 1. Costos de producción
@@ -171,23 +171,17 @@ Impuesto → O← · Subsidio → O→ · Regulación según costo
 
 ::: intro
 ::kicker
-BLOQUE 4 · DETERMINANTES 4 Y 5
-
-::titulo
-Los otros dos factores que mueven la curva.
-
-::body
-4. **Bienes relacionados en producción.** ↑ precio sustituto producido → reasignación → O← del otro bien
-
-5. **Número de oferentes.** Más empresas entran → O→ · Empresas salen → O←
-:::
-
-::: intro
-::kicker
 BLOQUE 4 · COSTOS DE PRODUCCIÓN — EL DETERMINANTE CENTRAL
 
 ::titulo
 Si los costos suben, el beneficio cae y los productores ofrecen menos. Si los costos bajan, ofrecen más.
+
+::body
+**↑ Costos → Oferta disminuye.** Los precios del petróleo se cuadruplicaron en los años 70. Las empresas que usaban energía vieron dispararse sus costos. A cualquier precio dado, ofrecían menos — la curva se desplazó a la izquierda. *(↑ costos → curva O hacia la IZQUIERDA)*
+
+**↓ Costos → Oferta aumenta.** En las últimas décadas, el costo de los chips computacionales cayó drásticamente. Eso abarató la automatización de procesos. Los costos de miles de bienes bajaron — las curvas de oferta se desplazaron a la derecha. *(↓ costos → curva O hacia la DERECHA)*
+
+**Pregunta al curso.** ¿Si el Banco Central sube la tasa de interés, qué le pasa a la curva de oferta de empresas que se financian con crédito?
 :::
 
 ::: grid-fallas
@@ -213,36 +207,6 @@ Electricidad, combustible, calefacción necesarios para producir.
 K — Capital
 ::f4-body
 Maquinaria y financiamiento para adquirirla (tasa de interés).
-:::
-
-::: intro
-::kicker
-BLOQUE 4 · CÓMO AFECTAN LOS COSTOS A LA CURVA
-
-::titulo
-Dos direcciones, dos historias.
-
-::body
-**↑ Costos → Oferta disminuye.** Los precios del petróleo se cuadruplicaron en los años 70. Las empresas que usaban energía vieron dispararse sus costos. A cualquier precio dado, ofrecían menos — la curva se desplazó a la izquierda. *(↑ costos → curva O hacia la IZQUIERDA)*
-
-**↓ Costos → Oferta aumenta.** En las últimas décadas, el costo de los chips computacionales cayó drásticamente. Eso abarató la automatización de procesos. Los costos de miles de bienes bajaron — las curvas de oferta se desplazaron a la derecha. *(↓ costos → curva O hacia la DERECHA)*
-
-**Pregunta al curso.** ¿Si el Banco Central sube la tasa de interés, qué le pasa a la curva de oferta de empresas que se financian con crédito?
-:::
-
-::: intro
-::kicker
-BLOQUE 4 · DETERMINANTES 2–6 AMPLIADOS
-
-::titulo
-Cinco palancas más que mueven la curva entera.
-
-::body
-- **2. Tecnología.** El cambio tecnológico reduce la cantidad de insumos necesarios para producir lo mismo. Eso baja los costos y desplaza la curva a la derecha. En las últimas décadas, el costo de los chips computacionales cayó drásticamente — eso abarató la automatización y desplazó a la derecha la curva de oferta de miles de bienes. *(mejora tecnológica → O→)*
-- **3. Precios de los insumos.** Si el precio de un insumo sube, los costos suben y la oferta cae. Si baja, la oferta aumenta. La tecnología determina qué insumos se necesitan; el precio de esos insumos determina cuánto cuestan. *(↑ precio insumo → O←)*
-- **4. Bienes relacionados en producción.** Un productor elegirá producir más del bien con mejor precio relativo. Si sube el precio de los SUVs, una fábrica reasigna líneas de ensamble — la oferta de sedanes cae aunque su precio no haya cambiado. *(↑ precio sustituto producido → O← del otro bien)*
-- **5. Número de oferentes.** Si hay más empresas produciendo el mismo bien, la oferta de mercado aumenta. Cuando las empresas del sector ganan bien, nuevas intentarán entrar — curva a la derecha. Cuando salen porque pierden dinero — curva a la izquierda. *(más empresas → O→ · menos empresas → O←)*
-- **6. Política gubernamental.** Las regulaciones, impuestos e intervenciones del Estado afectan la oferta. Un impuesto sobre la producción eleva el costo efectivo — curva a la izquierda. Un subsidio reduce el costo efectivo — curva a la derecha. *(impuesto → O← · subsidio → O→)*
 :::
 
 ::: intro

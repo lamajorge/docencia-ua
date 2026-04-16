@@ -175,7 +175,7 @@ Cinco factores que desplazan la curva — no son movimientos sobre ella.
 
 ::: grid-fallas
 ::titulo
-Los cuatro determinantes principales.
+Los cinco determinantes — los 4 principales + número de compradores (5) que desplaza la curva de mercado a la derecha.
 
 ::f1-titulo
 1. Ingreso del consumidor
@@ -196,17 +196,6 @@ Cambios culturales, información nueva, campañas — todo puede desplazar la de
 4. Expectativas
 ::f4-body
 Si se espera que el precio suba, se compra más hoy. La demanda presente aumenta.
-:::
-
-::: intro
-::kicker
-BLOQUE 4 · QUINTO DETERMINANTE
-
-::titulo
-5. Número de compradores.
-
-::body
-Más demandantes en el mercado → curva de mercado a la derecha.
 :::
 
 ::: grid-fallas
@@ -246,6 +235,9 @@ Demanda de mercado = suma de todas las cantidades demandadas por todos los consu
 ::kicker
 BLOQUE 5 · TABLA DE DEMANDA DE MERCADO
 
+::titulo
+Cuando el precio baja, no solo compran más las mismas personas: también entran nuevos compradores.
+
 ::body
 | Precio | Familia A | Familia B | Familia C | MERCADO |
 |---|---|---|---|---|
@@ -253,16 +245,7 @@ BLOQUE 5 · TABLA DE DEMANDA DE MERCADO
 | $1.500/kilo | 8 | 3 | 9 | **20** |
 
 *Fuente: Case & Fair, Principios de Microeconomía, 10ª ed., Cap. 3.*
-:::
 
-::: intro
-::kicker
-BLOQUE 5 · OBSERVACIONES
-
-::titulo
-Cuando el precio baja, no solo compran más las mismas personas: también entran nuevos compradores.
-
-::body
 - A $3.500 la Familia B no compra nada — el precio está fuera de su alcance. A $1.500 entra al mercado.
 - Cuando los precios bajan, no solo compran más las mismas personas: también entran nuevos compradores.
 - La curva de demanda de mercado también tiene **pendiente negativa** — la ley de la demanda se aplica al agregado.

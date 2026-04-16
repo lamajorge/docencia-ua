@@ -76,7 +76,7 @@ Respuestas: (1) Que la cantidad demandada sea igual a la cantidad ofrecida al pr
 
 ::: grid-fallas
 ::titulo
-Cuatro de los cinco conceptos que estructuran toda la clase.
+Cinco conceptos que estructuran toda la clase.
 
 ::f1-titulo
 Precio tope (precio máximo)
@@ -94,22 +94,11 @@ Salario mínimo
 Precio mínimo establecido para el precio de la mano de obra. Es el ejemplo más común de precio mínimo. Si se fija por encima del salario de equilibrio, genera exceso de oferta de trabajo (desempleo).
 
 ::f4-titulo
-Racionamiento de precios
+Racionamiento de precios · Pérdida de eficiencia
 ::f4-body
-El mecanismo mediante el cual el sistema de precios distribuye bienes escasos entre compradores, asignando el bien a quienes están dispuestos y pueden pagar. Cuando se bloquea este mecanismo, emergen mecanismos alternativos: filas, clientes favorecidos, mercado negro.
-:::
+**Racionamiento de precios:** mecanismo mediante el cual el sistema de precios distribuye bienes escasos entre compradores, asignando el bien a quienes están dispuestos y pueden pagar. Cuando se bloquea, emergen mecanismos alternativos: filas, clientes favorecidos, mercado negro.
 
-::: intro
-::kicker
-DEFINICIÓN CLAVE — QUINTO CONCEPTO
-
-::titulo
-Pérdida de eficiencia.
-
-::body
-Pérdida total de excedentes del productor y del consumidor derivada de la subproducción o sobreproducción resultante de una intervención que aleja el mercado del equilibrio.
-
-(Fuente: Case & Fair, Cap. 4 · Samuelson & Nordhaus, Cap. 4)
+**Pérdida de eficiencia:** pérdida total de excedentes del productor y del consumidor derivada de la subproducción o sobreproducción resultante de una intervención que aleja el mercado del equilibrio.
 :::
 
 ::: intro
@@ -230,20 +219,9 @@ Evidencia empírica — explicación
 Empleadores pueden tener poder de mercado (monopsonio). El debate sigue abierto — Samuelson lo reconoce.
 :::
 
-::: intro
-::kicker
-¿QUÉ ES LA ELASTICIDAD? — CASE & FAIR CAP. 4
-
-::titulo
-Medida de la sensibilidad de una variable ante cambios en otra.
-
-::body
-¿Cuánto cambia la cantidad cuando cambia el precio? En términos simples: si el precio sube 10%, ¿la cantidad cae mucho o poco?
-:::
-
 ::: grid-fallas
 ::titulo
-Tres tipos de elasticidad — y cómo se calcula.
+Elasticidad — medida de la sensibilidad de una variable ante cambios en otra (Case & Fair Cap. 4). ¿Cuánto cambia la cantidad cuando cambia el precio? Si el precio sube 10%, ¿la cantidad cae mucho o poco? Tres tipos — y cómo se calcula.
 
 ::f1-titulo
 Demanda INELÁSTICA
@@ -266,22 +244,9 @@ Cómo se calcula
 La elasticidad precio de la demanda se obtiene de dividir el cambio porcentual de la cantidad por el del precio: si el resultado es mayor que 1, es elástica; si es menor, inelástica; si es 1, unitaria.
 :::
 
-::: intro
-::kicker
-BLOQUE 4 · EFICIENCIA VS. EQUIDAD
-
-::titulo
-La tensión detrás de las políticas.
-
-::body
-El mecanismo de precio es eficiente pero no garantiza distribución equitativa. La intervención busca corregir la distribución — pero tiene costo en eficiencia.
-
-El modelo dice cuánto cuesta la intervención en términos de eficiencia. La decisión sobre si vale la pena es política y ética — no solo económica (Economía normativa).
-:::
-
 ::: grid-fallas
 ::titulo
-Los dos lados de la tensión, punto por punto.
+Bloque 4 · Eficiencia vs. equidad — la tensión detrás de las políticas. El mecanismo de precio es eficiente pero no garantiza distribución equitativa. La intervención corrige la distribución — pero tiene costo en eficiencia. El modelo dice cuánto cuesta; la decisión política y ética dice si vale la pena (economía normativa).
 
 ::f1-titulo
 Eficiencia — cómo asigna

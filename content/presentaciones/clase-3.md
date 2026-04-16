@@ -111,24 +111,15 @@ Ejemplo jurídico — el estudio de abogados
 
 ::: intro
 ::kicker
-BLOQUE 2 · EJEMPLO 3 · SAMUELSON
+BLOQUE 2 · EJEMPLO 3 · SAMUELSON · CALIFORNIA
 
 ::titulo
 California — el petróleo y las playas.
 
 ::body
 *«En un mundo de escasez, elegir una cosa significa renunciar a alguna otra. El costo de oportunidad de una decisión es el valor del bien o servicio al que se renuncia.»* — Samuelson & Nordhaus, Cap. 7, p. 135–136.
-:::
 
-::: intro
-::kicker
-BLOQUE 2 · EJEMPLO 3 · CALIFORNIA
-
-::titulo
-El verdadero costo incluye lo que no se mide.
-
-::body
-**El caso · California — el petróleo y las playas.** El gobierno quiere perforar frente a la costa de California. Alguien dice: hay muchas playas alternativas, el costo es bajo.
+**El caso.** El gobierno quiere perforar frente a la costa de California. Alguien dice: hay muchas playas alternativas, el costo es bajo.
 
 **La respuesta · Samuelson — el verdadero costo.** Samuelson señala que el verdadero costo incluye el valor recreativo del océano, el turismo y los ecosistemas. Ese costo puede ser enorme aunque sea difícil de medir.
 
@@ -197,7 +188,7 @@ Costo de oportunidad para Bill y Colleen
 
 ::: intro
 ::kicker
-BLOQUE 4 · APLICACIÓN
+BLOQUE 4 · APLICACIÓN · RICARDO Y SAMUELSON
 
 ::titulo
 Ventaja comparativa entre países — Chile y Alemania.
@@ -208,16 +199,7 @@ Samuelson, Cap. 15. El mismo principio aplica entre países. Cada país se benef
 - **Chile → cobre** (ventaja comparativa en minería).
 - **Alemania → maquinaria de precisión** (ventaja comparativa industrial).
 - Si cada uno produce ambas cosas solo, ambos terminan peor.
-:::
 
-::: intro
-::kicker
-BLOQUE 4 · RICARDO Y SAMUELSON
-
-::titulo
-La regla universal del comercio.
-
-::body
 **David Ricardo:** siempre que dos productores tengan productividades relativas distintas, cada uno tendrá ventaja comparativa en algo. Esta lógica también afecta tratados comerciales y acuerdos internacionales — terreno jurídico.
 
 **Samuelson:** todo país se beneficia si se especializa en producir lo que puede hacer a un costo de oportunidad relativamente bajo y exportar ese bien.

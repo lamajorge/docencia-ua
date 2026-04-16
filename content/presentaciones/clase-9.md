@@ -79,7 +79,7 @@ Respuestas esperadas: (1) Fijo no cambia con la producción — arriendo. Variab
 BLOQUE 2 · EL EQUILIBRIO
 
 ::titulo
-Cuando oferta y demanda se encuentran.
+Cuando oferta y demanda se encuentran — el precio que satisface a ambos lados, simultáneamente.
 
 ::body
 **Precio de equilibrio (P*).** Aquel al que Qd = Qs. La cantidad demandada es igual a la cantidad ofertada. Ninguna parte tiene incentivo para moverse.
@@ -87,16 +87,7 @@ Cuando oferta y demanda se encuentran.
 **Cantidad de equilibrio (Q*).** La que efectivamente se compra y vende al precio P*.
 
 **Sin tendencia al cambio.** No sobra nada ni falta nada. El mercado está en reposo.
-:::
 
-::: intro
-::kicker
-LA DEFINICIÓN CANÓNICA
-
-::titulo
-El precio que satisface a ambos lados, simultáneamente.
-
-::body
 *Samuelson:* el P* satisface simultáneamente los deseos de compradores y vendedores.
 :::
 
@@ -205,28 +196,16 @@ Primero: **¿qué curva se mueve?** Segundo: **¿en qué dirección?** Tercero: 
 
 ::: intro
 ::kicker
-CASO REAL 1 · CAÍDA DE OFERTA
+CASOS REALES · CAÍDA DE OFERTA
 
 ::titulo
-Helada en Brasil → mercado del café.
+Dos shocks distintos, mismo resultado: S ← izquierda → P* sube, Q* cae.
 
 ::body
-Cosecha destruida → oferta cae. S se desplaza a la izquierda. Precio sube de **$1.20 a $2.40 por libra**. Cantidad vendida cae.
+- **Helada en Brasil → mercado del café.** Cosecha destruida → oferta cae. S se desplaza a la izquierda. Precio sube de **$1.20 a $2.40 por libra**. Cantidad vendida cae.
+- **Dólar sube → computadores importados en Chile.** Importar es más caro → oferta cae. S se desplaza a la izquierda. Precio de venta sube. Cantidad vendida cae.
 
-**S ← izquierda → P* sube, Q* cae.**
-:::
-
-::: intro
-::kicker
-CASO REAL 2 · CAÍDA DE OFERTA
-
-::titulo
-Dólar sube → computadores importados en Chile.
-
-::body
-Importar es más caro → oferta cae. S se desplaza a la izquierda. Precio de venta sube. Cantidad vendida cae.
-
-**S ← izquierda → P* sube, Q* cae.**
+**En ambos casos: S ← izquierda → P* sube, Q* cae.**
 :::
 
 ::: station num=01 clases="Bloque 5 · Caso 1"
