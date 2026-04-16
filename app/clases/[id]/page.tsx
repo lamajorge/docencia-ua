@@ -102,6 +102,10 @@ function SectionRenderer({ section, numero }: { section: Section; numero: number
       return <Evaluacion s={section} />
     case 'close':
       return <Close s={section} />
+    case 'referencia':
+      return <Referencia s={section} />
+    case 'diagrama':
+      return <Diagrama s={section} />
     default:
       return (
         <section className="slide slide-generic">
@@ -387,6 +391,176 @@ function Close({ s }: { s: Section }) {
           <p className="cl-reglas-text">{s.slots.reglas}</p>
         </div>
         <p className="cl-meta">{s.slots.meta}</p>
+      </div>
+    </section>
+  )
+}
+
+// ── REFERENCIA (bibliografía por tema) ──────────
+function Referencia({ s }: { s: Section }) {
+  const items = Array.from({ length: 10 }, (_, i) => i + 1)
+    .map((n) => ({
+      n,
+      tema: s.slots[`r${n}-tema`],
+      sam: s.slots[`r${n}-sam`],
+      cf: s.slots[`r${n}-cf`],
+    }))
+    .filter((r) => r.tema)
+  return (
+    <section className="slide slide-referencia">
+      <header className="ref-head">
+        <p className="ref-kicker">{s.slots.kicker}</p>
+        <h2 className="ref-titulo">{s.slots.titulo}</h2>
+      </header>
+      <div className="ref-tabla">
+        <div className="ref-row ref-header-row">
+          <span>TEMA</span>
+          <span>SAMUELSON 18ª ED.</span>
+          <span>CASE &amp; FAIR 10ª ED.</span>
+        </div>
+        {items.map((r) => (
+          <div key={r.n} className="ref-row">
+            <span className="ref-tema">{r.tema}</span>
+            <span className="ref-cap">{r.sam}</span>
+            <span className="ref-cap">{r.cf}</span>
+          </div>
+        ))}
+      </div>
+    </section>
+  )
+}
+
+// ── DIAGRAMA (SVG inline + explicación) ─────────
+function DiagramFPP() {
+  return (
+    <svg viewBox="0 0 240 210" className="diag-svg" aria-label="Frontera de Posibilidades de Producción">
+      <line x1="35" y1="10" x2="35" y2="185" stroke="#151515" strokeWidth="1.5" />
+      <line x1="35" y1="185" x2="225" y2="185" stroke="#151515" strokeWidth="1.5" />
+      <polygon points="35,7 32,14 38,14" fill="#151515" />
+      <polygon points="228,185 221,182 221,188" fill="#151515" />
+      <text x="40" y="15" fontSize="9" fill="#6B6B6B">Bien A</text>
+      <text x="210" y="197" fontSize="9" fill="#6B6B6B">Bien B</text>
+      {/* FPP curve */}
+      <path d="M 35 22 C 90 25, 210 100, 215 185" stroke="#C8102E" strokeWidth="2.5" fill="none" />
+      {/* Point ON curve (~t=0.5 → ~143, 74) */}
+      <circle cx="143" cy="74" r="5" fill="#C8102E" />
+      <line x1="35" y1="74" x2="143" y2="74" stroke="#C8102E" strokeWidth="0.8" strokeDasharray="3,3" />
+      <line x1="143" y1="74" x2="143" y2="185" stroke="#C8102E" strokeWidth="0.8" strokeDasharray="3,3" />
+      <text x="148" y="66" fontSize="9" fill="#C8102E" fontWeight="bold">Eficiencia</text>
+      {/* Point INSIDE curve */}
+      <circle cx="95" cy="135" r="4" fill="#6B6B6B" />
+      <text x="100" y="132" fontSize="8.5" fill="#6B6B6B">Ineficiencia</text>
+      {/* Point OUTSIDE curve */}
+      <circle cx="175" cy="55" r="4" fill="#6B6B6B" />
+      <text x="180" y="53" fontSize="8.5" fill="#6B6B6B">Inalcanzable</text>
+    </svg>
+  )
+}
+
+function DiagramEquilibrio() {
+  return (
+    <svg viewBox="0 0 220 200" className="diag-svg" aria-label="Punto de equilibrio de mercado">
+      <line x1="30" y1="10" x2="30" y2="178" stroke="#151515" strokeWidth="1.5" />
+      <line x1="30" y1="178" x2="210" y2="178" stroke="#151515" strokeWidth="1.5" />
+      <polygon points="30,7 27,14 33,14" fill="#151515" />
+      <polygon points="213,178 206,175 206,181" fill="#151515" />
+      <text x="33" y="16" fontSize="9" fill="#6B6B6B">Precio</text>
+      <text x="200" y="190" fontSize="9" fill="#6B6B6B">Cantidad</text>
+      {/* Demand: (45,22) → (200,165) */}
+      <line x1="45" y1="22" x2="200" y2="165" stroke="#C8102E" strokeWidth="2" />
+      <text x="193" y="175" fontSize="10" fill="#C8102E" fontWeight="bold">D</text>
+      {/* Supply: (45,165) → (200,22) */}
+      <line x1="45" y1="165" x2="200" y2="22" stroke="#151515" strokeWidth="2" />
+      <text x="193" y="19" fontSize="10" fill="#151515" fontWeight="bold">O</text>
+      {/* Intersection at (122, 94) */}
+      <circle cx="122" cy="94" r="5" fill="#C8102E" />
+      <line x1="30" y1="94" x2="122" y2="94" stroke="#C8102E" strokeWidth="0.8" strokeDasharray="3,3" />
+      <line x1="122" y1="94" x2="122" y2="178" stroke="#C8102E" strokeWidth="0.8" strokeDasharray="3,3" />
+      <text x="8" y="97" fontSize="9" fill="#C8102E" fontWeight="bold">Pe</text>
+      <text x="115" y="191" fontSize="9" fill="#C8102E" fontWeight="bold">Qe</text>
+      <text x="127" y="89" fontSize="9" fill="#C8102E" fontWeight="bold">E</text>
+    </svg>
+  )
+}
+
+function DiagramCuña() {
+  // Original equilibrium: (122, 94) — same as DiagramEquilibrio
+  // After tax: Pc = y59 (consumer), Pv = y128 (producer), Qt = x85
+  return (
+    <svg viewBox="0 0 220 200" className="diag-svg" aria-label="Cuña impositiva">
+      <line x1="30" y1="10" x2="30" y2="178" stroke="#151515" strokeWidth="1.5" />
+      <line x1="30" y1="178" x2="210" y2="178" stroke="#151515" strokeWidth="1.5" />
+      <polygon points="30,7 27,14 33,14" fill="#151515" />
+      <polygon points="213,178 206,175 206,181" fill="#151515" />
+      <text x="33" y="16" fontSize="9" fill="#6B6B6B">Precio</text>
+      <text x="200" y="190" fontSize="9" fill="#6B6B6B">Cantidad</text>
+      {/* Tax revenue rectangle */}
+      <rect x="30" y="59" width="55" height="69" fill="#C8102E" opacity="0.12" />
+      {/* Deadweight loss triangle */}
+      <polygon points="85,59 85,128 122,94" fill="#C8102E" opacity="0.3" />
+      {/* Demand line */}
+      <line x1="45" y1="22" x2="200" y2="165" stroke="#C8102E" strokeWidth="2" />
+      <text x="193" y="175" fontSize="10" fill="#C8102E" fontWeight="bold">D</text>
+      {/* Supply line */}
+      <line x1="45" y1="165" x2="200" y2="22" stroke="#151515" strokeWidth="2" />
+      <text x="193" y="19" fontSize="10" fill="#151515" fontWeight="bold">O</text>
+      {/* Dashed price levels */}
+      <line x1="30" y1="59" x2="85" y2="59" stroke="#C8102E" strokeWidth="0.9" strokeDasharray="3,2" />
+      <line x1="30" y1="94" x2="122" y2="94" stroke="#6B6B6B" strokeWidth="0.8" strokeDasharray="3,2" />
+      <line x1="30" y1="128" x2="85" y2="128" stroke="#C8102E" strokeWidth="0.9" strokeDasharray="3,2" />
+      {/* Dashed quantity levels */}
+      <line x1="85" y1="59" x2="85" y2="178" stroke="#C8102E" strokeWidth="0.9" strokeDasharray="3,2" />
+      <line x1="122" y1="94" x2="122" y2="178" stroke="#6B6B6B" strokeWidth="0.8" strokeDasharray="3,2" />
+      {/* Tax bracket */}
+      <line x1="21" y1="59" x2="21" y2="128" stroke="#C8102E" strokeWidth="1.5" />
+      <line x1="21" y1="59" x2="27" y2="59" stroke="#C8102E" strokeWidth="1.5" />
+      <line x1="21" y1="128" x2="27" y2="128" stroke="#C8102E" strokeWidth="1.5" />
+      <text x="3" y="97" fontSize="9" fill="#C8102E" fontWeight="bold">T</text>
+      {/* Price labels */}
+      <text x="5" y="62" fontSize="8.5" fill="#C8102E" fontWeight="bold">Pc</text>
+      <text x="7" y="97" fontSize="8.5" fill="#6B6B6B">Pe</text>
+      <text x="5" y="131" fontSize="8.5" fill="#C8102E" fontWeight="bold">Pv</text>
+      {/* Quantity labels */}
+      <text x="79" y="191" fontSize="8.5" fill="#C8102E" fontWeight="bold">Qt</text>
+      <text x="115" y="191" fontSize="8.5" fill="#6B6B6B">Qe</text>
+      {/* Area labels */}
+      <text x="38" y="89" fontSize="7.5" fill="#8A0B1F">Recauda-</text>
+      <text x="38" y="100" fontSize="7.5" fill="#8A0B1F">ción</text>
+      <text x="89" y="91" fontSize="7.5" fill="#8A0B1F">Peso</text>
+      <text x="89" y="101" fontSize="7.5" fill="#8A0B1F">muerto</text>
+    </svg>
+  )
+}
+
+function Diagrama({ s }: { s: Section }) {
+  const diagramas = ['1', '2', '3']
+    .map((n) => ({
+      tipo: s.slots[`d${n}-tipo`],
+      titulo: s.slots[`d${n}-titulo`],
+      texto: s.slots[`d${n}-texto`],
+    }))
+    .filter((d) => d.tipo)
+
+  const renderSVG = (tipo: string) => {
+    switch (tipo) {
+      case 'fpp': return <DiagramFPP />
+      case 'equilibrio': return <DiagramEquilibrio />
+      case 'cuña': return <DiagramCuña />
+      default: return null
+    }
+  }
+
+  return (
+    <section className="slide slide-diagrama">
+      <p className="dg-kicker">{s.slots.kicker}</p>
+      <div className="dg-grid" data-count={diagramas.length}>
+        {diagramas.map((d, i) => (
+          <div key={i} className="dg-panel">
+            <div className="dg-svg-wrap">{renderSVG(d.tipo)}</div>
+            <h3 className="dg-titulo">{d.titulo}</h3>
+            <div className="dg-texto"><MD>{d.texto}</MD></div>
+          </div>
+        ))}
       </div>
     </section>
   )
@@ -1116,6 +1290,89 @@ a { color: inherit; text-decoration: none; }
 .ph-back { color: var(--red); font-weight: 600; }
 
 /* ════════════════════════════════════════════
+   REFERENCIA (tabla bibliografía por tema)
+════════════════════════════════════════════ */
+.slide-referencia { background: var(--black); color: var(--white); padding: 5vh 7vw; gap: 3vh; }
+.ref-head { padding-bottom: 2.5vh; border-bottom: 2px solid var(--red); }
+.ref-kicker { font-size: 0.78rem; letter-spacing: 0.3em; font-weight: 800; color: var(--red); margin-bottom: 1vh; }
+.ref-titulo {
+  font-family: var(--disp);
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 800;
+  letter-spacing: -0.015em;
+}
+.ref-tabla { display: flex; flex-direction: column; flex: 1; gap: 0; overflow: hidden; }
+.ref-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 2vw;
+  padding: 1.4vh 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  align-items: baseline;
+}
+.ref-header-row {
+  font-size: 0.68rem;
+  letter-spacing: 0.22em;
+  font-weight: 800;
+  color: var(--red);
+  border-bottom: 1px solid var(--red) !important;
+  padding-bottom: 1.5vh;
+}
+.ref-tema {
+  font-size: clamp(0.88rem, 1.1vw, 1.05rem);
+  line-height: 1.3;
+  color: var(--white);
+}
+.ref-cap {
+  font-family: var(--mono);
+  font-size: clamp(0.82rem, 1vw, 0.95rem);
+  color: rgba(255,255,255,0.55);
+}
+
+/* ════════════════════════════════════════════
+   DIAGRAMA (FPP + equilibrio + cuña)
+════════════════════════════════════════════ */
+.slide-diagrama { background: var(--sand); padding: 5vh 5vw; gap: 3vh; }
+.dg-kicker {
+  font-size: 0.78rem; letter-spacing: 0.3em; font-weight: 800;
+  color: var(--red);
+}
+.dg-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3vw;
+  flex: 1;
+  align-items: start;
+}
+.dg-grid[data-count="2"] { grid-template-columns: repeat(2, 1fr); }
+.dg-panel {
+  background: var(--white);
+  padding: 2.5vh 2vw;
+  display: flex; flex-direction: column; gap: 1.5vh;
+}
+.dg-svg-wrap {
+  width: 100%;
+  aspect-ratio: 1.15 / 1;
+  overflow: hidden;
+}
+.diag-svg { width: 100%; height: 100%; display: block; }
+.dg-titulo {
+  font-family: var(--sans);
+  font-size: clamp(0.88rem, 1.1vw, 1rem);
+  font-weight: 800;
+  color: var(--black);
+  padding-bottom: 1vh;
+  border-bottom: 2px solid var(--red);
+}
+.dg-texto {
+  font-size: clamp(0.78rem, 0.95vw, 0.9rem);
+  line-height: 1.55;
+  color: var(--text);
+}
+.dg-texto strong { color: var(--red); font-weight: 700; }
+.dg-texto p { margin: 0 0 0.5em; }
+
+/* ════════════════════════════════════════════
    PRINT — convierte landing en slides A4
 ════════════════════════════════════════════ */
 @media print {
@@ -1197,6 +1454,18 @@ a { color: inherit; text-decoration: none; }
   .cl-titulo { font-size: 22mm; }
   .cl-body { font-size: 4.8mm; }
   .cl-reglas-text { font-size: 4.5mm; }
+
+  /* referencia print */
+  .ref-titulo { font-size: 9mm; }
+  .ref-tema { font-size: 3.8mm; }
+  .ref-cap { font-size: 3.5mm; }
+  .ref-row { padding: 1.8mm 0; }
+
+  /* diagrama print */
+  .dg-titulo { font-size: 3.5mm; padding-bottom: 1.5mm; }
+  .dg-texto { font-size: 3mm; }
+  .dg-panel { padding: 3mm 2mm; gap: 2mm; }
+  .dg-grid { gap: 5mm; }
 }
 
 @page { size: A4 landscape; margin: 0; }

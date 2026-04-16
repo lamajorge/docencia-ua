@@ -389,6 +389,88 @@ DERE-A0004 · Introducción a la Economía · Universidad Autónoma de Chile
 :::
 ```
 
+### `referencia` — tabla bibliografía por tema
+Fondo negro, tabla de tres columnas: Tema · Samuelson · Case & Fair. Usar para una lámina de "dónde estudiar cada tema" en clases de repaso.
+
+```markdown
+::: referencia
+::kicker
+DÓNDE ESTÁ LA MATERIA
+
+::titulo
+Cada tema tiene su capítulo
+
+::r1-tema
+Escasez, costo de oportunidad y FPP
+::r1-sam
+Cap. 1
+::r1-cf
+Cap. 1
+
+::r2-tema
+Demanda, oferta y sus determinantes
+::r2-sam
+Cap. 3
+::r2-cf
+Cap. 3
+
+::r3-tema
+Impuestos, subsidios, incidencia y peso muerto
+::r3-sam
+Cap. 4
+::r3-cf
+Cap. 4
+
+::r7-tema
+Externalidades, bienes públicos, información asimétrica
+::r7-sam
+Cap. 18
+::r7-cf
+Cap. 16
+:::
+```
+
+Acepta hasta 10 filas (`r1` … `r10`). Cada fila necesita `r{n}-tema`, `r{n}-sam`, `r{n}-cf`. Las filas sin `r{n}-tema` se omiten.
+
+### `diagrama` — tres SVG con explicación
+Fondo arena, tres paneles en grilla (1 a 3 diagramas). Cada panel: SVG preconstruido arriba + título + explicación textual. Los SVGs disponibles se identifican con `::d{n}-tipo`: `fpp`, `equilibrio`, `cuña`.
+
+```markdown
+::: diagrama
+::kicker
+DIAGRAMAS CLAVE — CÓMO LEERLOS
+
+::d1-tipo
+fpp
+
+::d1-titulo
+Frontera de Posibilidades de Producción
+
+::d1-texto
+**Sobre la curva** = eficiencia. **Bajo la curva** = ineficiencia. **Fuera** = inalcanzable. La pendiente es el **costo de oportunidad**.
+
+::d2-tipo
+equilibrio
+
+::d2-titulo
+El Punto de Equilibrio
+
+::d2-texto
+Donde D y O se cruzan: **Pe** y **Qe**. Si P > Pe hay excedente. Si P < Pe hay escasez.
+
+::d3-tipo
+cuña
+
+::d3-titulo
+La Cuña Impositiva
+
+::d3-texto
+**Pc** = precio consumidor. **Pv** = precio vendedor. Pc − Pv = T (impuesto). Rectángulo = recaudación. Triángulo = **peso muerto**.
+:::
+```
+
+Para agregar un diagrama nuevo: crear la función SVG (ej. `DiagramNuevo`) y añadir el caso `'nuevo'` en el switch de `renderSVG` dentro de la función `Diagrama`.
+
 ---
 
 ## 3. Cómo agregar un tipo de sección nuevo
