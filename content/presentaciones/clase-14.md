@@ -439,7 +439,7 @@ El peso muerto **no desaparece**. Pero cambia su evaluación: aquí la distorsi�
 TAREA · MIÉRCOLES 22 DE ABRIL
 
 ::titulo
-Nos vemos a las 08:00.
+Nos vemos el miércoles.
 
 ::body
 Repasar las **presentaciones de cada clase** y los capítulos de Samuelson indicados en la lámina de bibliografía. Hacer **en papel** los ejercicios de impuestos — calcular cuñas, identificar incidencia y peso muerto. Dudas al correo antes del miércoles.
