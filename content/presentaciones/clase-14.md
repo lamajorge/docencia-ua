@@ -284,20 +284,6 @@ Si el salario mínimo se fija por debajo del salario de equilibrio, ¿qué efect
 Las intervenciones operan **porque** la ley de la demanda y la ley de la oferta son válidas.
 :::
 
-::: stat-hero
-::numero
-$200
-
-::label
-LA CUÑA IMPOSITIVA
-
-::texto
-**Pc − Pv = monto del impuesto.** Siempre. El impuesto se inserta entre el precio que paga el consumidor (Pc, sube) y el que recibe el vendedor (Pv, baja), separando ambos lados del mercado en exactamente el monto gravado.
-
-::subtexto
-Pc = precio al consumidor. Pv = precio al vendedor. Si en la evaluación la cuña no da el monto del impuesto — hay un número mal.
-:::
-
 ::: station num=04 clases="Clases 11 y 12 · estación densa"
 ::titulo
 Impuestos, subsidios y peso muerto
@@ -319,6 +305,20 @@ Peso muerto **≠** recaudación. La recaudación se redistribuye (la recibe el 
 
 ::regla
 Recaudación = quién la recibe. Peso muerto = bienestar que nadie recibe. Esta distinción es exactamente lo que pregunta el ítem (c) del caso aplicado.
+:::
+
+::: stat-hero
+::numero
+$200
+
+::label
+LA CUÑA IMPOSITIVA
+
+::texto
+**Pc − Pv = monto del impuesto.** Siempre. El impuesto se inserta entre el precio que paga el consumidor (Pc, sube) y el que recibe el vendedor (Pv, baja), separando ambos lados del mercado en exactamente el monto gravado.
+
+::subtexto
+Pc = precio al consumidor. Pv = precio al vendedor. Si en la evaluación la cuña no da el monto del impuesto — hay un número mal.
 :::
 
 ::: station num=05 clases="Clase 13"
