@@ -118,6 +118,7 @@ Mercados, equilibrio y el mecanismo de ajuste
 - **Movimiento vs. desplazamiento.** Cambia el precio → movimiento sobre la curva. Cambia un **determinante** → se desplaza toda la curva.
 - **Determinantes de la demanda:** ingreso del consumidor · precios de bienes relacionados (sustitutos y complementarios) · gustos · expectativas · número de compradores. Cualquiera desplaza la demanda.
 - **Determinantes de la oferta:** precio de insumos · tecnología · expectativas del vendedor · número de vendedores · precios de otros bienes producibles. Cualquiera desplaza la oferta.
+- **Costo marginal (CMg) y curva de oferta — Clase 8.** CMg = lo que cuesta producir una unidad adicional. Sube con la cantidad (rendimientos decrecientes). La empresa produce hasta donde **P = CMg**: si P > CMg conviene producir más; si P < CMg conviene producir menos. Por eso la curva de oferta tiene pendiente positiva — es la curva de CMg. En equilibrio competitivo P = CMg: cada unidad producida vale exactamente lo que cuesta → **eficiencia máxima**.
 - **Equilibrio.** Precio donde Qs = Qd. Emerge del mecanismo de ajuste, no se decide centralmente.
 
 ::pregunta
@@ -188,7 +189,7 @@ Las intervenciones operan **porque** la ley de la demanda y la ley de la oferta 
 Impuestos, subsidios y peso muerto
 
 ::dominar
-- **Costo marginal (CMg).** Lo que cuesta producir una unidad adicional. En competencia perfecta el precio se iguala al costo marginal: **P = CMg**. Eso significa que cada unidad producida vale exactamente lo que cuesta — no sobra ni falta nada. Cuando P > CMg hay transacciones que beneficiarían a ambas partes y no ocurren: eso es **peso muerto**.
+- **Recuerda — P = CMg es el punto de eficiencia (Clase 8).** El impuesto rompe esa igualdad: Pc sube por encima del CMg para las unidades que ya no se transan. Esas unidades habrían beneficiado a ambas partes — y no ocurren. Eso es el **peso muerto**.
 - **Cuña impositiva.** Pc − Pv = monto del impuesto. Siempre.
 - **Incidencia.** No importa a quién se cobra formalmente. La **elasticidad** decide quién absorbe más. Demanda inelástica → consumidor paga la mayor parte.
 - **Peso muerto.** Bienestar de las transacciones que ya no ocurren porque el impuesto eleva el precio por encima del CMg — medida directa de **ineficiencia**. No va al Estado ni a nadie: se destruye.
