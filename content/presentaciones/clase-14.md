@@ -24,7 +24,7 @@ DERE-A0004 · Introducción a la Economía · Universidad Autónoma de Chile
 El mapa de hoy
 
 ::titulo
-Hoy no hay materia nueva. Movilizamos lo que ya saben.
+Hoy no hay materia nueva. Trabajamos con lo que ya saben.
 
 ::body
 Cinco estaciones temáticas, los diagramas clave explicados y un ejercicio resuelto paso a paso.
