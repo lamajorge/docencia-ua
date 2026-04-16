@@ -145,19 +145,24 @@ Cambia un determinante
 Desplazamiento de toda la curva. La demanda **sí** cambió.
 :::
 
-::: intro
-::kicker
-BLOQUE 3 · ¿MOVIMIENTO O DESPLAZAMIENTO?
-
+::: mecanismo
 ::titulo
-Tres casos para distinguir.
+¿Movimiento o desplazamiento? — tres casos para distinguir
 
-::body
-**1. El precio de la gasolina sube de $3 a $6.** → **MOVIMIENTO**. ↑ precio → ↓ cantidad demandada. Nos desplazamos hacia arriba sobre la curva D.
+::subtitulo
+BLOQUE 3 · El test que hay que aplicar a cada noticia económica
 
-**2. El Ministerio de Salud lanza una campaña alertando sobre los riesgos del tabaco.** → **DESPLAZAMIENTO**. Cambian las preferencias. La curva de demanda de cigarrillos se desplaza a la izquierda.
+::paso1
+**El precio de la gasolina sube de $3 a $6.**
+→ **MOVIMIENTO**. ↑ precio → ↓ cantidad demandada. Nos desplazamos hacia arriba sobre la curva D.
 
-**3. Se anuncia que el precio de los autos bajará el próximo año.** → **DESPLAZAMIENTO**. Cambian las expectativas. La demanda de autos hoy cae — se posterga la compra.
+::paso2
+**El Ministerio de Salud lanza una campaña alertando sobre los riesgos del tabaco.**
+→ **DESPLAZAMIENTO**. Cambian las preferencias. La curva de demanda de cigarrillos se desplaza a la izquierda.
+
+::paso3
+**Se anuncia que el precio de los autos bajará el próximo año.**
+→ **DESPLAZAMIENTO**. Cambian las expectativas. La demanda de autos hoy cae — se posterga la compra.
 :::
 
 ::: intro
@@ -166,17 +171,42 @@ BLOQUE 4 · DETERMINANTES DE LA DEMANDA
 
 ::titulo
 Cinco factores que desplazan la curva — no son movimientos sobre ella.
+:::
+
+::: grid-fallas
+::titulo
+Los cuatro determinantes principales.
+
+::f1-titulo
+1. Ingreso del consumidor
+::f1-body
+↑ ingreso + bien normal → curva a la derecha. ↑ ingreso + bien inferior → curva a la izquierda.
+
+::f2-titulo
+2. Precios de bienes relacionados
+::f2-body
+Sustitutos: ↑P(A) → ↑ demanda de B. Complementarios: ↑P(A) → ↓ demanda de B.
+
+::f3-titulo
+3. Preferencias y gustos
+::f3-body
+Cambios culturales, información nueva, campañas — todo puede desplazar la demanda.
+
+::f4-titulo
+4. Expectativas
+::f4-body
+Si se espera que el precio suba, se compra más hoy. La demanda presente aumenta.
+:::
+
+::: intro
+::kicker
+BLOQUE 4 · QUINTO DETERMINANTE
+
+::titulo
+5. Número de compradores.
 
 ::body
-**1. Ingreso del consumidor.** ↑ ingreso + bien normal → curva a la derecha. ↑ ingreso + bien inferior → curva a la izquierda.
-
-**2. Precios de bienes relacionados.** Sustitutos: ↑P(A) → ↑ demanda de B. Complementarios: ↑P(A) → ↓ demanda de B.
-
-**3. Preferencias y gustos.** Cambios culturales, información nueva, campañas — todo puede desplazar la demanda.
-
-**4. Expectativas.** Si se espera que el precio suba, se compra más hoy. La demanda presente aumenta.
-
-**5. Número de compradores.** Más demandantes en el mercado → curva de mercado a la derecha.
+Más demandantes en el mercado → curva de mercado a la derecha.
 :::
 
 ::: grid-fallas
@@ -210,6 +240,11 @@ BLOQUE 5 · DE LA DEMANDA INDIVIDUAL AL MERCADO
 
 ::titulo
 Demanda de mercado = suma de todas las cantidades demandadas por todos los consumidores a cada precio.
+:::
+
+::: intro
+::kicker
+BLOQUE 5 · TABLA DE DEMANDA DE MERCADO
 
 ::body
 | Precio | Familia A | Familia B | Familia C | MERCADO |

@@ -79,13 +79,22 @@ Tres preguntas de apertura para conectar con la Clase 3.
 BLOQUE 2 · DE LA MACRO A LA MICRO
 
 ::titulo
-Microeconomía y macroeconomía — dos zooms sobre el mismo fenómeno.
+Microeconomía — los árboles.
 
 ::body
 **Microeconomía — ¿Cómo toman decisiones individuos y empresas?** Rama de la economía que estudia las decisiones de individuos y empresas, y cómo interactúan en mercados específicos.
 
 *Ejemplos.* Precio del arriendo de un departamento · Honorarios de un abogado recién egresado · Precio del café en el casino de la U.
+:::
 
+::: intro
+::kicker
+BLOQUE 2 · DE LA MACRO A LA MICRO
+
+::titulo
+Macroeconomía — el bosque.
+
+::body
 **Macroeconomía — ¿Cómo funciona la economía en su conjunto?** Rama de la economía que estudia el comportamiento de la economía en su conjunto: el PIB, la inflación, el desempleo y el crecimiento.
 
 *Ejemplos.* PIB, inflación, desempleo · Crecimiento de un país · Exportaciones totales.
@@ -225,17 +234,36 @@ La primera unidad produce mucha satisfacción. Cada unidad adicional produce men
 BLOQUE 4 · UTILIDAD MARGINAL DECRECIENTE
 
 ::titulo
-El ejemplo de las empanadas.
+Definición.
 
 ::body
-- **1ª empanada:** satisfacción altísima — urgente, necesaria.
-- **2ª empanada:** rica, pero ya no tan urgente.
-- **3ª empanada:** se siente lleno. Satisfacción adicional pequeña.
-- **4ª empanada:** ya no quiere más. Utilidad marginal → 0.
-
 **Utilidad marginal.** Utilidad adicional que genera consumir una unidad más de un bien. Es **decreciente**: la primera unidad genera mucha satisfacción, la segunda menos, la tercera menos todavía.
 
 *Nota.* La utilidad **total** sigue subiendo — pero lo que agrega cada unidad extra cae.
+:::
+
+::: mecanismo
+::titulo
+El ejemplo de las empanadas
+
+::subtitulo
+Cómo cae la utilidad marginal unidad por unidad
+
+::paso1
+**1ª empanada**
+Satisfacción altísima — urgente, necesaria.
+
+::paso2
+**2ª empanada**
+Rica, pero ya no tan urgente.
+
+::paso3
+**3ª empanada**
+Se siente lleno. Satisfacción adicional pequeña.
+
+::paso4
+**4ª empanada**
+Ya no quiere más. Utilidad marginal → 0.
 :::
 
 ::: intro
@@ -273,18 +301,39 @@ El beneficio neto de participar en un mercado.
 **Conexión jurídica.** Cuando el derecho regula precios o impone impuestos, puede destruir excedente. Una política que impide intercambios mutuamente beneficiosos elimina valor social. Por eso el derecho tributario y regulatorio tiene consecuencias económicas que van más allá de lo recaudado. — Samuelson & Nordhaus, Cap. 5
 :::
 
+::: grid-fallas
+::titulo
+El mercado como institución jurídica — cuatro condiciones que el derecho debe garantizar
+
+::f1-titulo
+Derechos de propiedad
+::f1-body
+Lo que produzco es mío.
+
+::f2-titulo
+Libertad de contrato
+::f2-body
+Puedo acordar con quien quiera.
+
+::f3-titulo
+Cumplimiento de contratos
+::f3-body
+Lo pactado se cumple o se exige judicialmente.
+
+::f4-titulo
+Resolución de conflictos
+::f4-body
+Hay un mecanismo imparcial.
+:::
+
 ::: intro
 ::kicker
-BLOQUE 5 · EL MERCADO COMO INSTITUCIÓN JURÍDICA
+BLOQUE 5 · LA QUINTA CONDICIÓN
 
 ::titulo
-Cinco condiciones que el derecho debe garantizar.
+Reglas de competencia.
 
 ::body
-1. **Derechos de propiedad** (lo que produzco es mío).
-2. **Libertad de contrato** (puedo acordar con quien quiera).
-3. **Cumplimiento de contratos** (lo pactado se cumple o se exige judicialmente).
-4. **Resolución de conflictos** (hay un mecanismo imparcial).
 5. **Reglas de competencia** (nadie puede monopolizar por la fuerza).
 
 Sin estas cinco condiciones, el mercado no funciona. Si no puedo confiar en que el contrato se va a cumplir, prefiero no contratar — y el intercambio colapsa.
@@ -332,17 +381,21 @@ Cuando el derecho fija un precio, está interviniendo en el mecanismo de coordin
 Un abogado debe entender ambas dimensiones: la jurídica y la económica.
 :::
 
-::: intro
-::kicker
-BLOQUE 6 · RESUMEN PARTICIPATIVO
-
+::: manifesto
 ::titulo
 Tres preguntas de cierre.
 
-::body
-1. ¿Qué diferencia la microeconomía de la macroeconomía?
-2. ¿Qué tres elementos tiene todo mercado?
-3. ¿Qué es la utilidad marginal y por qué es decreciente?
+::q1
+¿Qué diferencia la microeconomía de la macroeconomía?
+
+::q2
+¿Qué tres elementos tiene todo mercado?
+
+::q3
+¿Qué es la utilidad marginal y por qué es decreciente?
+
+::footer
+BLOQUE 6 · Resumen participativo
 :::
 
 ::: close

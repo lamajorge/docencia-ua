@@ -61,7 +61,16 @@ BLOQUE 2
 
 ::body
 La Economía estudia **cómo las personas, las empresas y los gobiernos toman decisiones cuando los recursos son limitados**. Recursos limitados → decisiones.
+:::
 
+::: intro
+::kicker
+BLOQUE 2 · DOS ZOOMS
+
+::titulo
+Microeconomía y macroeconomía — el árbol y el bosque.
+
+::body
 **Microeconomía — el árbol.** Decisiones individuales. ¿Qué precio tiene un producto? ¿Cuánto produce una empresa? ¿Qué compra un consumidor? El zoom cercano.
 
 **Macroeconomía — el bosque.** El conjunto del país. ¿Cómo crece la economía? ¿Qué pasa con la inflación? ¿Por qué sube el desempleo? El zoom lejano.
@@ -69,39 +78,45 @@ La Economía estudia **cómo las personas, las empresas y los gobiernos toman de
 
 ::: intro
 ::kicker
-BLOQUE 3 · ESCASEZ Y COSTO DE OPORTUNIDAD
+BLOQUE 3 · ESCASEZ
 
 ::titulo
-Los dos conceptos que estructuran toda decisión económica.
+Recursos limitados frente a deseos ilimitados.
 
 ::body
 **Escasez.** Los recursos son limitados frente a deseos ilimitados. **No** significa pobreza — incluso Elon Musk enfrenta escasez de tiempo.
 
 *Ejemplo jurídico.* En los tribunales hay más causas que jueces disponibles. Eso obliga a priorizar. ¿Qué causas se ven primero? Esa es una decisión económica tomada en un juzgado.
+:::
 
+::: intro
+::kicker
+BLOQUE 3 · COSTO DE OPORTUNIDAD
+
+::titulo
+El valor de la mejor alternativa que sacrificas.
+
+::body
 **Costo de oportunidad.** El valor de la mejor alternativa que sacrificas al tomar una decisión.
 
 *Ejemplo jurídico.* Un abogado acepta un caso de 20 horas. El costo real no es solo el arancel — son los otros casos, el descanso y el tiempo con su familia. Aunque el caso sea rentable, nunca es gratuito.
 :::
 
-::: intro
-::kicker
-BLOQUE 3 · EFICIENCIA
-
+::: station num=01 clases="Bloque 3 · Eficiencia"
 ::titulo
-Hacer lo correcto con lo que tienes.
+Eficiencia
 
-::body
-**Eficiencia.** Usar los recursos de manera que se genere el mayor beneficio posible, sin desperdiciarlos. No es lo mismo que velocidad, ni que "hacer mucho".
+::dominar
+- **Eficiencia.** Usar los recursos de manera que se genere el mayor beneficio posible, sin desperdiciarlos. No es lo mismo que velocidad, ni que "hacer mucho".
+- *Ejemplo jurídico.* Un tribunal eficiente no es el más rápido — es el que resuelve bien con los recursos que tiene. La eficiencia del sistema judicial es una discusión que mezcla datos (cuántas causas se resuelven) con valores (¿quién merece atención preferente?).
 
-*Ejemplo jurídico.* Un tribunal eficiente no es el más rápido — es el que resuelve bien con los recursos que tiene. La eficiencia del sistema judicial es una discusión que mezcla datos (cuántas causas se resuelven) con valores (¿quién merece atención preferente?).
-
-**Pregunta al curso.** ¿El sistema judicial chileno es eficiente? ¿Por qué sí o por qué no?
+::pregunta
+¿El sistema judicial chileno es eficiente? ¿Por qué sí o por qué no?
 :::
 
 ::: intro
 ::kicker
-BLOQUE 3 · ECONOMÍA POSITIVA VS. NORMATIVA
+BLOQUE 3 · POSITIVA VS. NORMATIVA
 
 ::titulo
 Toda afirmación económica puede ser de un tipo u otro — saber distinguirlos es una habilidad crítica.
@@ -110,7 +125,16 @@ Toda afirmación económica puede ser de un tipo u otro — saber distinguirlos 
 **Positiva — describe lo que ES.** Afirmaciones verificables con datos y evidencia. Pueden ser verdaderas o falsas.
 
 *Ejemplo:* «Si sube el salario mínimo, algunas empresas contratarán menos personal.» → Afirmación empírica. Se contrasta con datos.
+:::
 
+::: intro
+::kicker
+BLOQUE 3 · POSITIVA VS. NORMATIVA
+
+::titulo
+Normativa — dice lo que DEBERÍA SER.
+
+::body
 **Normativa — dice lo que DEBERÍA SER.** Incorpora juicios de valor. No se resuelve con datos — depende de prioridades éticas y políticas.
 
 *Ejemplo:* «El Estado debería subir el salario mínimo porque es lo justo.» → Juicio de valor. Depende de las prioridades de cada uno.
@@ -127,9 +151,27 @@ Tres conexiones clave entre economía y derecho.
 
 ::body
 **1. La economía necesita al derecho.** Sin contratos ejecutables ni derechos de propiedad los mercados no funcionan. El derecho es la infraestructura invisible de la economía de mercado.
+:::
 
+::: intro
+::kicker
+BLOQUE 4 · DERECHO Y ECONOMÍA
+
+::titulo
+El derecho tiene efectos económicos.
+
+::body
 **2. El derecho tiene efectos económicos.** Cada norma cambia comportamientos. Una ley pensada para proteger puede terminar perjudicando. El abogado que no entiende eso redacta normas con consecuencias que no anticipó.
+:::
 
+::: intro
+::kicker
+BLOQUE 4 · DERECHO Y ECONOMÍA
+
+::titulo
+A veces los criterios chocan.
+
+::body
 **3. A veces los criterios chocan.** Lo más eficiente no siempre es lo más justo. Identificar esa tensión — eficiencia vs. justicia — es el campo de batalla cotidiano del abogado.
 :::
 

@@ -118,7 +118,16 @@ California — el petróleo y las playas.
 
 ::body
 *«En un mundo de escasez, elegir una cosa significa renunciar a alguna otra. El costo de oportunidad de una decisión es el valor del bien o servicio al que se renuncia.»* — Samuelson & Nordhaus, Cap. 7, p. 135–136.
+:::
 
+::: intro
+::kicker
+BLOQUE 2 · EJEMPLO 3 · CALIFORNIA
+
+::titulo
+El verdadero costo incluye lo que no se mide.
+
+::body
 **El caso · California — el petróleo y las playas.** El gobierno quiere perforar frente a la costa de California. Alguien dice: hay muchas playas alternativas, el costo es bajo.
 
 **La respuesta · Samuelson — el verdadero costo.** Samuelson señala que el verdadero costo incluye el valor recreativo del océano, el turismo y los ecosistemas. Ese costo puede ser enorme aunque sea difícil de medir.
@@ -143,22 +152,34 @@ Case & Fair, Cap. 2.
 **3. La herramienta.** Para responder, vamos a usar lo que aprendimos en el Bloque 2: calcular el costo de oportunidad de cada uno y compararlo. Ahí aparece la ventaja comparativa.
 :::
 
-::: intro
-::kicker
-PASO 1 · VENTAJA ABSOLUTA
-
+::: mecanismo
 ::titulo
-¿Quién produce más con los mismos recursos?
+Tres pasos para encontrar la ventaja comparativa
 
-::body
-**Troncos: Colleen (10 > 4).** Colleen corta 10 troncos al día. Bill solo 4. En términos absolutos, Colleen es más productiva con los mismos recursos.
+::subtitulo
+De ventaja absoluta a costo de oportunidad a ventaja comparativa
 
-**Alimento: Colleen (10 > 8).** Colleen recolecta 10 fanegas al día. Bill solo 8. Colleen también tiene ventaja absoluta en alimento.
+::paso1
+**Paso 1 · Ventaja absoluta**
+Troncos: Colleen (10 > 4). Alimento: Colleen (10 > 8). Colleen es más productiva en todo. La intuición dice: no vale la pena colaborar — pero la economía nos dirá que esa conclusión es equivocada.
 
-**¿Debe Colleen hacerlo todo sola?** La intuición dice: no vale la pena colaborar. Colleen tiene ventaja absoluta en todo. La economía nos dirá que esta conclusión es equivocada — hay que calcular el costo de oportunidad de cada uno.
+::paso2
+**Paso 2 · Costo de oportunidad**
+Calculamos cuánto sacrifica cada uno por unidad. Bill: 4/8 = 0,5 troncos por fanega. Colleen: 10/10 = 1 tronco por fanega. Bill sacrifica menos troncos por cada fanega que produce.
+
+::paso3
+**Paso 3 · Ventaja comparativa**
+Alimento → Bill (C.O. = 0,5 troncos). Troncos → Colleen (C.O. = 1 fanega, vs. 2 fanegas de Bill). Cada uno tiene ventaja comparativa en algo.
+
+::paso4
+**Conclusión**
+Conviene especializarse e intercambiar. Aunque Colleen es mejor en todo en términos absolutos, cada uno tiene ventaja comparativa en algo. Especializarse produce más para los dos.
+
+::nota
+Lo que importa no es quién produce más, sino quién sacrifica menos. (Case & Fair, Cap. 2, p. 29)
 :::
 
-::: station num=03 clases="Bloque 3 · Paso 2"
+::: station num=03 clases="Bloque 3 · Cálculo central"
 ::titulo
 Costo de oportunidad para Bill y Colleen
 
@@ -176,25 +197,6 @@ Costo de oportunidad para Bill y Colleen
 
 ::: intro
 ::kicker
-PASO 3 · VENTAJA COMPARATIVA
-
-::titulo
-Quien produce a menor costo de oportunidad.
-
-::body
-Case & Fair, Cap. 2, p. 29.
-
-**Alimento → Bill (C.O. = 0,5 troncos).** Bill produce cada fanega sacrificando 0,5 troncos. Colleen sacrifica 1 tronco por fanega. **Bill tiene ventaja comparativa en alimento.**
-
-**Troncos → Colleen (C.O. = 1 fanega).** Colleen produce cada tronco sacrificando 1 fanega. Bill sacrifica 2 fanegas por tronco. **Colleen tiene ventaja comparativa en troncos.**
-
-**¡Cada uno tiene ventaja comparativa en algo!**
-
-**La conclusión.** Conviene especializarse e intercambiar. Aunque Colleen es mejor en todo en términos absolutos, cada uno tiene ventaja comparativa en algo. Especializarse produce más para los dos.
-:::
-
-::: intro
-::kicker
 BLOQUE 4 · APLICACIÓN
 
 ::titulo
@@ -206,7 +208,16 @@ Samuelson, Cap. 15. El mismo principio aplica entre países. Cada país se benef
 - **Chile → cobre** (ventaja comparativa en minería).
 - **Alemania → maquinaria de precisión** (ventaja comparativa industrial).
 - Si cada uno produce ambas cosas solo, ambos terminan peor.
+:::
 
+::: intro
+::kicker
+BLOQUE 4 · RICARDO Y SAMUELSON
+
+::titulo
+La regla universal del comercio.
+
+::body
 **David Ricardo:** siempre que dos productores tengan productividades relativas distintas, cada uno tendrá ventaja comparativa en algo. Esta lógica también afecta tratados comerciales y acuerdos internacionales — terreno jurídico.
 
 **Samuelson:** todo país se beneficia si se especializa en producir lo que puede hacer a un costo de oportunidad relativamente bajo y exportar ese bien.

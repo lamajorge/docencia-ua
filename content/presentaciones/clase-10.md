@@ -57,27 +57,6 @@ Cierre y orientaciones
 10 minutos.
 :::
 
-::: intro
-::kicker
-DEFINICIONES CLAVE
-
-::titulo
-Cinco conceptos que estructuran toda la clase.
-
-::body
-**Precio tope (precio máximo).** Precio máximo que los vendedores pueden cobrar por un bien, generalmente establecido por el gobierno. Cuando se fija por debajo del precio de equilibrio, genera exceso de demanda (escasez).
-
-**Precio mínimo.** Precio por debajo del cual no se permite el intercambio comercial. Cuando se fija por encima del precio de equilibrio, genera exceso de oferta (superávit).
-
-**Salario mínimo.** Precio mínimo establecido para el precio de la mano de obra. Es el ejemplo más común de precio mínimo. Si se fija por encima del salario de equilibrio, genera exceso de oferta de trabajo (desempleo).
-
-**Racionamiento de precios.** El mecanismo mediante el cual el sistema de precios distribuye bienes escasos entre compradores, asignando el bien a quienes están dispuestos y pueden pagar. Cuando se bloquea este mecanismo, emergen mecanismos alternativos: filas, clientes favorecidos, mercado negro.
-
-**Pérdida de eficiencia.** Pérdida total de excedentes del productor y del consumidor derivada de la subproducción o sobreproducción resultante de una intervención que aleja el mercado del equilibrio.
-
-(Fuente: Case & Fair, Cap. 4 · Samuelson & Nordhaus, Cap. 4)
-:::
-
 ::: manifesto
 ::titulo
 Repaso de la Clase 9.
@@ -93,6 +72,44 @@ Si el precio está por debajo del equilibrio, ¿qué ocurre?
 
 ::footer
 Respuestas: (1) Que la cantidad demandada sea igual a la cantidad ofrecida al precio actual. (2) Hay exceso de demanda — escasez. Los compradores compiten y el precio tiende a subir hacia el equilibrio. (3) Sube el costo de producción, cae la cantidad de un bien relacionado en producción, etc. El precio de equilibrio sube y la cantidad cae.
+:::
+
+::: grid-fallas
+::titulo
+Cuatro de los cinco conceptos que estructuran toda la clase.
+
+::f1-titulo
+Precio tope (precio máximo)
+::f1-body
+Precio máximo que los vendedores pueden cobrar por un bien, generalmente establecido por el gobierno. Cuando se fija por debajo del precio de equilibrio, genera exceso de demanda (escasez).
+
+::f2-titulo
+Precio mínimo
+::f2-body
+Precio por debajo del cual no se permite el intercambio comercial. Cuando se fija por encima del precio de equilibrio, genera exceso de oferta (superávit).
+
+::f3-titulo
+Salario mínimo
+::f3-body
+Precio mínimo establecido para el precio de la mano de obra. Es el ejemplo más común de precio mínimo. Si se fija por encima del salario de equilibrio, genera exceso de oferta de trabajo (desempleo).
+
+::f4-titulo
+Racionamiento de precios
+::f4-body
+El mecanismo mediante el cual el sistema de precios distribuye bienes escasos entre compradores, asignando el bien a quienes están dispuestos y pueden pagar. Cuando se bloquea este mecanismo, emergen mecanismos alternativos: filas, clientes favorecidos, mercado negro.
+:::
+
+::: intro
+::kicker
+DEFINICIÓN CLAVE — QUINTO CONCEPTO
+
+::titulo
+Pérdida de eficiencia.
+
+::body
+Pérdida total de excedentes del productor y del consumidor derivada de la subproducción o sobreproducción resultante de una intervención que aleja el mercado del equilibrio.
+
+(Fuente: Case & Fair, Cap. 4 · Samuelson & Nordhaus, Cap. 4)
 :::
 
 ::: intro
@@ -186,12 +203,31 @@ MERCADO DE TRABAJO: Smín > S* → Ls > Ld → Desempleo = Ls − Ld
 
 ::body
 Cuando el Salario mínimo es mayor al Salario de Equilibrio, la Oferta Laboral o de Trabajo (Ls) será menor a la Demanda de Trabajo (Ld). En otras palabras, hay Desempleo.
+:::
 
-**El modelo estándar predice:** Si Sm > S* → Ls > Ld → desempleo. Trabajadores empleados ganan más. Pero algunos pierden el empleo. El efecto neto depende de la elasticidad.
+::: grid-fallas
+::titulo
+Modelo estándar vs. evidencia empírica.
 
-**La evidencia empírica matiza:** Alzas moderadas no siempre generan desempleo significativo. Mercados laborales no son perfectamente competitivos. Empleadores pueden tener poder de mercado (monopsonio). El debate sigue abierto — Samuelson lo reconoce.
+::f1-titulo
+Modelo estándar — predicción
+::f1-body
+Si Sm > S* → Ls > Ld → desempleo. Trabajadores empleados ganan más. Pero algunos pierden el empleo.
 
-El modelo da la dirección del efecto. La elasticidad determina la magnitud.
+::f2-titulo
+Modelo estándar — efecto neto
+::f2-body
+El efecto neto depende de la elasticidad. El modelo da la dirección del efecto. La elasticidad determina la magnitud.
+
+::f3-titulo
+Evidencia empírica — matiz
+::f3-body
+Alzas moderadas no siempre generan desempleo significativo. Mercados laborales no son perfectamente competitivos.
+
+::f4-titulo
+Evidencia empírica — explicación
+::f4-body
+Empleadores pueden tener poder de mercado (monopsonio). El debate sigue abierto — Samuelson lo reconoce.
 :::
 
 ::: intro
@@ -203,11 +239,30 @@ Medida de la sensibilidad de una variable ante cambios en otra.
 
 ::body
 ¿Cuánto cambia la cantidad cuando cambia el precio? En términos simples: si el precio sube 10%, ¿la cantidad cae mucho o poco?
+:::
 
-- **Demanda INELÁSTICA.** La cantidad cambia poco cuando cambia el precio. Insulina · Gasolina a corto plazo · Sal | Elasticidad < 1 (Q cae poco aunque P sube mucho).
-- **Elasticidad UNITARIA.** La cantidad cambia exactamente igual que el precio. Punto de referencia teórico | Elasticidad = 1 (% cambio Q = % cambio P).
-- **Demanda ELÁSTICA.** La cantidad cambia mucho cuando cambia el precio. Vuelos turísticos · Restaurantes · Lujos | Elasticidad > 1 (Q cae mucho aunque P sube poco).
+::: grid-fallas
+::titulo
+Tres tipos de elasticidad — y cómo se calcula.
 
+::f1-titulo
+Demanda INELÁSTICA
+::f1-body
+La cantidad cambia poco cuando cambia el precio. Insulina · Gasolina a corto plazo · Sal | Elasticidad < 1 (Q cae poco aunque P sube mucho).
+
+::f2-titulo
+Elasticidad UNITARIA
+::f2-body
+La cantidad cambia exactamente igual que el precio. Punto de referencia teórico | Elasticidad = 1 (% cambio Q = % cambio P).
+
+::f3-titulo
+Demanda ELÁSTICA
+::f3-body
+La cantidad cambia mucho cuando cambia el precio. Vuelos turísticos · Restaurantes · Lujos | Elasticidad > 1 (Q cae mucho aunque P sube poco).
+
+::f4-titulo
+Cómo se calcula
+::f4-body
 La elasticidad precio de la demanda se obtiene de dividir el cambio porcentual de la cantidad por el del precio: si el resultado es mayor que 1, es elástica; si es menor, inelástica; si es 1, unitaria.
 :::
 
@@ -219,23 +274,34 @@ BLOQUE 4 · EFICIENCIA VS. EQUIDAD
 La tensión detrás de las políticas.
 
 ::body
-**EFICIENCIA**
-1. El mercado asigna los recursos al uso más valorado.
-2. El bien va a quien más está dispuesto a pagar.
-3. El precio de equilibrio maximiza el excedente total.
-4. No sobra ni falta — no hay pérdidas de eficiencia.
-
-El mecanismo de precio es eficiente pero no garantiza distribución equitativa.
-
-**EQUIDAD**
-1. ¿Es justo que acceda solo quien puede pagar?
-2. Familias de bajos ingresos pueden ser excluidas.
-3. Algunos bienes se consideran 'derechos' (vivienda, salud, educación).
-4. La distribución del ingreso afecta quién gana en el mercado.
-
-La intervención busca corregir la distribución — pero tiene costo en eficiencia.
+El mecanismo de precio es eficiente pero no garantiza distribución equitativa. La intervención busca corregir la distribución — pero tiene costo en eficiencia.
 
 El modelo dice cuánto cuesta la intervención en términos de eficiencia. La decisión sobre si vale la pena es política y ética — no solo económica (Economía normativa).
+:::
+
+::: grid-fallas
+::titulo
+Los dos lados de la tensión, punto por punto.
+
+::f1-titulo
+Eficiencia — cómo asigna
+::f1-body
+1. El mercado asigna los recursos al uso más valorado. 2. El bien va a quien más está dispuesto a pagar.
+
+::f2-titulo
+Equidad — quién accede
+::f2-body
+1. ¿Es justo que acceda solo quien puede pagar? 2. Familias de bajos ingresos pueden ser excluidas.
+
+::f3-titulo
+Eficiencia — sin pérdidas
+::f3-body
+3. El precio de equilibrio maximiza el excedente total. 4. No sobra ni falta — no hay pérdidas de eficiencia.
+
+::f4-titulo
+Equidad — distribución
+::f4-body
+3. Algunos bienes se consideran 'derechos' (vivienda, salud, educación). 4. La distribución del ingreso afecta quién gana en el mercado.
 :::
 
 ::: intro
@@ -266,36 +332,36 @@ BLOQUE 5 · DEBATE
 **El caso.** Un grupo de economistas propone subir el salario mínimo un 20% para reducir la pobreza. Otro grupo advierte que generará desempleo. Un tercer grupo argumenta que si la demanda de trabajo es poco elástica, el efecto sobre el empleo será pequeño.
 :::
 
-::: intro
-::kicker
-DEBATE — PREGUNTA A
-
+::: station num=01 clases="Debate · Pregunta A"
 ::titulo
+Debate — Pregunta A
+
+::pregunta
 Según el modelo, ¿qué condición determina si la medida genera desempleo?
 
-::body
+::respuesta
 **Respuesta.** ¿Está el salario mínimo por encima del salario de equilibrio en el sector afectado?
 :::
 
-::: intro
-::kicker
-DEBATE — PREGUNTA B
-
+::: station num=02 clases="Debate · Pregunta B"
 ::titulo
+Debate — Pregunta B
+
+::pregunta
 ¿Qué información adicional necesitarían para tomar una posición informada?
 
-::body
+::respuesta
 **Respuesta.** La elasticidad de la demanda de trabajo en los sectores donde se paga salario mínimo.
 :::
 
-::: intro
-::kicker
-DEBATE — PREGUNTA C
-
+::: station num=03 clases="Debate · Pregunta C"
 ::titulo
+Debate — Pregunta C
+
+::pregunta
 ¿El modelo les dice que la medida es 'buena' o 'mala'?
 
-::body
+::respuesta
 **Respuesta.** No — el modelo identifica quién gana y quién pierde. La decisión normativa es política y ética.
 :::
 

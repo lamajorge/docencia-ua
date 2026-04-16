@@ -79,13 +79,20 @@ Respuestas esperadas: (1) Costos de producción · Tecnología · Precios de ins
 BLOQUE 2 · ¿QUÉ ES UNA EMPRESA Y QUÉ BUSCA?
 
 ::titulo
-Objetivo · Utilidades · Corto y largo plazo.
+La empresa busca maximizar utilidades.
 
 ::body
 **UTILIDAD = INGRESO TOTAL − COSTO TOTAL.** Ingreso Total: Precio × Cantidad vendida. Costo Total: Costos fijos + Costos variables.
+:::
 
-**Horizonte temporal de las decisiones.**
+::: intro
+::kicker
+BLOQUE 2 · HORIZONTE TEMPORAL DE LAS DECISIONES
 
+::titulo
+Corto plazo y largo plazo.
+
+::body
 **CORTO PLAZO.** Al menos un factor es fijo. La empresa no puede cambiar el tamaño de su planta. Puede contratar más trabajadores o comprar más materiales.
 
 **LARGO PLAZO.** Todos los factores son variables. La empresa puede expandirse, instalar nueva maquinaria o salir del mercado si las pérdidas persisten.
@@ -104,7 +111,16 @@ CT = CF + CV.
 **CV — Costos Variables.** Aumentan cuando se produce más, disminuyen cuando se produce menos. Ej. Materias primas · Energía · Mano de obra directa.
 
 **CT — Costo Total.** Suma de los costos fijos y variables. Siempre crece con la producción. Ej. CT = CF + CV.
+:::
 
+::: intro
+::kicker
+BLOQUE 3 · ADVERTENCIA SOBRE EL CORTO PLAZO
+
+::titulo
+Aunque produzca cero, la empresa sigue pagando los costos fijos.
+
+::body
 ⚠ En el corto plazo, incluso si la empresa produce cero, sigue pagando sus costos fijos. Por eso a veces conviene seguir produciendo aunque haya pérdidas — si los ingresos cubren al menos los CV, las pérdidas son menores que cerrar.
 :::
 
@@ -113,11 +129,22 @@ CT = CF + CV.
 BLOQUE 3 · EL COSTO MARGINAL
 
 ::titulo
-Ejemplo: la panadería.
+CM = ΔCT / ΔQ.
 
 ::body
 **COSTO MARGINAL (CM).** El incremento en el costo total al producir una unidad más. CM = ΔCT / ΔQ → Como el CF no cambia, el CM refleja solo cambios en CV.
 
+**¿Por qué importa el CM?** Es la información clave para decidir si conviene producir una unidad más o no. Si el precio recibido por esa unidad es mayor que su CM → conviene producirla. Si no → no conviene.
+:::
+
+::: intro
+::kicker
+BLOQUE 3 · EJEMPLO
+
+::titulo
+La panadería.
+
+::body
 | Unidades | CT | CM |
 |---:|---:|---:|
 | 0 | $100.000 | — |
@@ -126,8 +153,6 @@ Ejemplo: la panadería.
 | 3 | $101.550 | $550 |
 | 4 | $102.200 | $650 |
 | 5 | $103.100 | $900 |
-
-**¿Por qué importa el CM?** Es la información clave para decidir si conviene producir una unidad más o no. Si el precio recibido por esa unidad es mayor que su CM → conviene producirla. Si no → no conviene.
 :::
 
 ::: intro
@@ -147,7 +172,16 @@ Parrilla de tamaño fijo (factor fijo) — trabajo (insumo o factor variable).
 | 3 | 24 | 6 |
 | 4 | 28 | 4 |
 | 5 | 30 | 2 |
+:::
 
+::: intro
+::kicker
+BLOQUE 4 · UN PRINCIPIO UNIVERSAL
+
+::titulo
+Toda empresa con un factor fijo enfrenta rendimientos decrecientes.
+
+::body
 → Esto es **UNIVERSAL** en el corto plazo: toda empresa con al menos un factor fijo enfrenta rendimientos decrecientes. No es un problema de gestión — es una consecuencia de la escala fija de la planta.
 :::
 
@@ -188,7 +222,16 @@ Produce hasta donde P = CM.
 **▼ P < CM.** Conviene producir menos. La última unidad cuesta más de lo que genera.
 
 **● P = CM.** Equilibrio. Ningún incentivo a cambiar la producción.
+:::
 
+::: intro
+::kicker
+BLOQUE 5 · DE LA EMPRESA AL MERCADO
+
+::titulo
+La curva de costo marginal ES la curva de oferta individual.
+
+::body
 **La curva de costo marginal ES la curva de oferta individual.** Para cada precio dado, la empresa produce hasta el punto donde P = CM. El CM crece por rendimientos decrecientes → curva con pendiente positiva → curva de oferta con pendiente positiva. Esto explica exactamente lo que construimos en la Clase 7.
 
 Lo anterior, debido a que la empresa produce donde el precio es igual al costo marginal (P = CM), por lo que solo estará dispuesta a ofrecer más cantidad si el precio aumenta.

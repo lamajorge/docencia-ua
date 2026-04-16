@@ -111,21 +111,29 @@ Por qué la curva de oferta sube.
 **Ceteris paribus en la oferta.** Solo varía el precio del bien. Todo lo demás queda constante: costos, tecnología, número de oferentes. Si cambia algo más, la curva entera se desplaza. Sin este supuesto, no podemos aislar el efecto del precio.
 :::
 
-::: intro
-::kicker
-BLOQUE 3 · MOVIMIENTO VS. DESPLAZAMIENTO
-
+::: grid-fallas
 ::titulo
-La misma distinción que ya conocen de demanda — ahora aplicada a la oferta.
+Movimiento vs. desplazamiento — la misma distinción que ya conocen de demanda, ahora aplicada a la oferta.
 
-::body
-**Movimiento a lo largo de la curva.** Causa: cambia el **precio** del bien. La curva no se mueve. Solo cambia la **cantidad ofrecida** — nos desplazamos de un punto a otro sobre la misma curva O.
+::f1-titulo
+Movimiento — causa
+::f1-body
+Cambia el **precio** del bien. La curva no se mueve. Solo cambia la **cantidad ofrecida** — nos desplazamos de un punto a otro sobre la misma curva O.
 
-*Ejemplo.* El precio de las hojuelas sube de $3 a $5: el productor pasa de ofrecer 12 a 18 millones de cajas. Misma curva.
+::f2-titulo
+Movimiento — ejemplo
+::f2-body
+El precio de las hojuelas sube de $3 a $5: el productor pasa de ofrecer 12 a 18 millones de cajas. **Misma curva.**
 
-**Desplazamiento de la curva.** Causa: cambia algo **distinto** al precio. Toda la curva se mueve. Cambia la **oferta**. Hacia la derecha = aumento. Hacia la izquierda = disminución.
+::f3-titulo
+Desplazamiento — causa
+::f3-body
+Cambia algo **distinto** al precio. Toda la curva se mueve. Cambia la **oferta**. Hacia la derecha = aumento. Hacia la izquierda = disminución.
 
-*Ejemplo.* Nueva maquinaria reduce costos: a $3 el productor ofrece 15 en lugar de 12. La curva entera se desplazó a la derecha.
+::f4-titulo
+Desplazamiento — ejemplo
+::f4-body
+Nueva maquinaria reduce costos: a $3 el productor ofrece 15 en lugar de 12. **La curva entera se desplazó a la derecha.**
 :::
 
 ::: intro
@@ -134,14 +142,44 @@ BLOQUE 4 · LOS 6 DETERMINANTES DE LA OFERTA
 
 ::titulo
 Lo que mueve la curva entera.
+:::
+
+::: grid-fallas
+::titulo
+Los 4 determinantes principales de la oferta
+
+::f1-titulo
+1. Costos de producción
+::f1-body
+**El más importante.** ↑ costos → O← · ↓ costos → O→
+
+::f2-titulo
+2. Tecnología
+::f2-body
+Mejora tecnológica reduce insumos necesarios → O→
+
+::f3-titulo
+3. Precios de los insumos
+::f3-body
+↑ precio insumo → ↑ costos → O←
+
+::f4-titulo
+6. Política gubernamental
+::f4-body
+Impuesto → O← · Subsidio → O→ · Regulación según costo
+:::
+
+::: intro
+::kicker
+BLOQUE 4 · DETERMINANTES 4 Y 5
+
+::titulo
+Los otros dos factores que mueven la curva.
 
 ::body
-1. **Costos de producción.** El más importante. ↑ costos → O← · ↓ costos → O→
-2. **Tecnología.** Mejora tecnológica reduce insumos necesarios → O→
-3. **Precios de los insumos.** ↑ precio insumo → ↑ costos → O←
 4. **Bienes relacionados en producción.** ↑ precio sustituto producido → reasignación → O← del otro bien
+
 5. **Número de oferentes.** Más empresas entran → O→ · Empresas salen → O←
-6. **Política gubernamental.** Impuesto → O← · Subsidio → O→ · Regulación según costo
 :::
 
 ::: intro
@@ -150,12 +188,31 @@ BLOQUE 4 · COSTOS DE PRODUCCIÓN — EL DETERMINANTE CENTRAL
 
 ::titulo
 Si los costos suben, el beneficio cae y los productores ofrecen menos. Si los costos bajan, ofrecen más.
+:::
 
-::body
-- **W — Trabajo.** Salarios que paga la empresa a sus trabajadores.
-- **M — Materias primas.** Insumos físicos que entran en el proceso productivo.
-- **E — Energía.** Electricidad, combustible, calefacción necesarios para producir.
-- **K — Capital.** Maquinaria y financiamiento para adquirirla (tasa de interés).
+::: grid-fallas
+::titulo
+Los 4 componentes del costo — W·M·E·K
+
+::f1-titulo
+W — Trabajo
+::f1-body
+Salarios que paga la empresa a sus trabajadores.
+
+::f2-titulo
+M — Materias primas
+::f2-body
+Insumos físicos que entran en el proceso productivo.
+
+::f3-titulo
+E — Energía
+::f3-body
+Electricidad, combustible, calefacción necesarios para producir.
+
+::f4-titulo
+K — Capital
+::f4-body
+Maquinaria y financiamiento para adquirirla (tasa de interés).
 :::
 
 ::: intro
@@ -196,13 +253,22 @@ BLOQUE 5 · DE LA OFERTA INDIVIDUAL A LA DE MERCADO
 La oferta de mercado: suma de todas las ofertas individuales.
 
 ::body
-A cada precio, se suman las cantidades ofrecidas por todos los productores del mercado. El proceso es exactamente simétrico al de la demanda de mercado que construyeron en Clase 6.
-
 | Precio  | Granja A       | Granja B      | Granja C      | OFERTA DE MERCADO |
 |---------|----------------|---------------|---------------|-------------------|
 | $3      | 30.000 fanegas | 10.000        | 25.000        | **65.000**        |
 | $1.75   | 10.000         | 5.000         | 10.000        | **25.000**        |
 
+A cada precio, se suman las cantidades ofrecidas por todos los productores del mercado. El proceso es exactamente simétrico al de la demanda de mercado que construyeron en Clase 6.
+:::
+
+::: intro
+::kicker
+BLOQUE 5 · NÚMERO DE OFERENTES
+
+::titulo
+Quién entra y quién sale del mercado.
+
+::body
 **Número de oferentes.** Si entran nuevas empresas → curva O de mercado a la derecha. Si salen empresas → curva a la izquierda. Las utilidades del sector atraen competidores; las pérdidas los expulsan.
 :::
 
@@ -223,17 +289,21 @@ Tabla comparativa — todo lo que tienen que tener claro.
 | **Curva de mercado** | Suma horizontal de demandas individuales                            | Suma horizontal de ofertas individuales                                                   |
 :::
 
-::: intro
-::kicker
-BLOQUE 6 · PREGUNTAS DE CIERRE
-
+::: manifesto
 ::titulo
 Verificación aleatoria antes de salir.
 
-::body
-1. ¿Cuál es la diferencia entre movimiento a lo largo de la curva de oferta y desplazamiento?
-2. Si los salarios de los trabajadores de una fábrica suben, ¿qué le pasa a la curva de oferta del bien que produce?
-3. ¿Cómo se obtiene la curva de oferta de mercado? ¿En qué se parece al proceso que usaron con la demanda?
+::q1
+¿Cuál es la diferencia entre movimiento a lo largo de la curva de oferta y desplazamiento?
+
+::q2
+Si los salarios de los trabajadores de una fábrica suben, ¿qué le pasa a la curva de oferta del bien que produce?
+
+::q3
+¿Cómo se obtiene la curva de oferta de mercado? ¿En qué se parece al proceso que usaron con la demanda?
+
+::footer
+Bloque 6 · preguntas de cierre.
 :::
 
 ::: close

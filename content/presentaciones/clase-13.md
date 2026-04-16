@@ -94,12 +94,32 @@ Todo lo que vieron hasta hoy ocurría en un mercado de competencia perfecta. Hoy
 ::body
 **Competencia perfecta.** Estructura de mercado en que hay muchos compradores y vendedores, el producto es homogéneo, y ninguna empresa tiene poder para influir en el precio. El precio lo determina el mercado.
 
-- **Muchos vendedores.** Ninguno es suficientemente grande para afectar el precio de mercado por sí solo.
-- **Producto homogéneo.** Los compradores no distinguen entre el producto de un vendedor y el de otro.
-- **Libre entrada y salida.** No hay barreras que impidan a nuevas empresas entrar a competir.
-- **Precio = costo marginal.** El resultado es eficiente: se produce exactamente la cantidad que maximiza el bienestar total.
-
 La competencia perfecta es el caso de referencia porque maximiza el bienestar. Cualquier estructura que se aleje de ella — el monopolio, el oligopolio — genera algún grado de ineficiencia.
+:::
+
+::: grid-fallas
+::titulo
+Competencia perfecta — las cuatro características
+
+::f1-titulo
+Muchos vendedores
+::f1-body
+Ninguno es suficientemente grande para afectar el precio de mercado por sí solo.
+
+::f2-titulo
+Producto homogéneo
+::f2-body
+Los compradores no distinguen entre el producto de un vendedor y el de otro.
+
+::f3-titulo
+Libre entrada y salida
+::f3-body
+No hay barreras que impidan a nuevas empresas entrar a competir.
+
+::f4-titulo
+Precio = costo marginal
+::f4-body
+El resultado es eficiente: se produce exactamente la cantidad que maximiza el bienestar total.
 :::
 
 ::: grid-fallas
@@ -185,11 +205,31 @@ EL MISMO PRINCIPIO — TRES CAUSAS DISTINTAS
 
 ::titulo
 Cualquier desviación del equilibrio competitivo genera pérdida de bienestar.
+:::
 
-::body
-- **Impuesto.** Sube el precio del comprador y baja el del vendedor. La cantidad cae por debajo de Q*. → Subproducción → peso muerto.
-- **Subsidio.** Baja el precio del comprador y sube el del vendedor. La cantidad sube por encima de Q*. → Sobreproducción → peso muerto.
-- **Monopolio.** La empresa cobra por encima del costo marginal. Produce menos de Q* para mantener el precio alto. → Subproducción → peso muerto.
+::: grid-fallas
+::titulo
+Tres causas del peso muerto
+
+::f1-titulo
+Impuesto
+::f1-body
+Sube el precio del comprador y baja el del vendedor. La cantidad cae por debajo de Q*. → Subproducción → peso muerto.
+
+::f2-titulo
+Subsidio
+::f2-body
+Baja el precio del comprador y sube el del vendedor. La cantidad sube por encima de Q*. → Sobreproducción → peso muerto.
+
+::f3-titulo
+Monopolio
+::f3-body
+La empresa cobra por encima del costo marginal. Produce menos de Q* para mantener el precio alto. → Subproducción → peso muerto.
+
+::f4-titulo
+Principio común
+::f4-body
+Cualquier desviación del equilibrio competitivo genera pérdida de bienestar.
 :::
 
 ::: intro
@@ -201,10 +241,51 @@ Entre la competencia perfecta y el monopolio.
 
 ::body
 Todas generan algún grado de ineficiencia porque el precio queda por encima del costo marginal.
+:::
 
-- **Monopsonio — un único comprador.** El comprador tiene poder para fijar el precio que paga a los vendedores por debajo del nivel competitivo. *Ejemplo:* empresa minera única empleadora en una localidad — puede pagar salarios por debajo del equilibrio competitivo. *Conexión con lo visto:* el salario mínimo puede corregir el poder monopsónico del empleador — en ese caso no genera desempleo.
-- **Oligopolio — pocas empresas dominan.** Cada empresa es suficientemente grande para que sus decisiones afecten al mercado. Hay interdependencia estratégica. *Ejemplo:* telecomunicaciones en Chile (Entel, Claro, Movistar); supermercados (Líder, SMU, Cencosud). Lo que decide una empresa afecta la rentabilidad de las otras. Ninguna puede ignorar a las demás.
-- **Competencia monopolística — muchas empresas, productos diferenciados.** Cada empresa tiene algo de poder de mercado sobre su variante, pero enfrenta competencia de sustitutos cercanos. *Ejemplo:* restaurantes, cafeterías, tiendas de ropa. Similar pero no idéntico. En el largo plazo, la libre entrada elimina las utilidades extraordinarias. El precio supera el CM pero no por mucho.
+::: intro
+::kicker
+ESTRUCTURA INTERMEDIA · 1 DE 3
+
+::titulo
+Monopsonio — un único comprador.
+
+::body
+El comprador tiene poder para fijar el precio que paga a los vendedores por debajo del nivel competitivo.
+
+*Ejemplo:* empresa minera única empleadora en una localidad — puede pagar salarios por debajo del equilibrio competitivo.
+
+*Conexión con lo visto:* el salario mínimo puede corregir el poder monopsónico del empleador — en ese caso no genera desempleo.
+:::
+
+::: intro
+::kicker
+ESTRUCTURA INTERMEDIA · 2 DE 3
+
+::titulo
+Oligopolio — pocas empresas dominan.
+
+::body
+Cada empresa es suficientemente grande para que sus decisiones afecten al mercado. Hay interdependencia estratégica.
+
+*Ejemplo:* telecomunicaciones en Chile (Entel, Claro, Movistar); supermercados (Líder, SMU, Cencosud).
+
+Lo que decide una empresa afecta la rentabilidad de las otras. Ninguna puede ignorar a las demás.
+:::
+
+::: intro
+::kicker
+ESTRUCTURA INTERMEDIA · 3 DE 3
+
+::titulo
+Competencia monopolística — muchas empresas, productos diferenciados.
+
+::body
+Cada empresa tiene algo de poder de mercado sobre su variante, pero enfrenta competencia de sustitutos cercanos.
+
+*Ejemplo:* restaurantes, cafeterías, tiendas de ropa. Similar pero no idéntico.
+
+En el largo plazo, la libre entrada elimina las utilidades extraordinarias. El precio supera el CM pero no por mucho.
 :::
 
 ::: intro
@@ -216,10 +297,31 @@ Cuando el mecanismo de precios no es suficiente.
 
 ::body
 La competencia perfecta produce eficientemente cuando no hay externalidades, bienes públicos ni información asimétrica. Cuando alguna de estas tres condiciones falla, el mercado asigna recursos de forma ineficiente y puede justificarse la intervención del Estado.
+:::
 
-- **1. Externalidades.** Costo o beneficio que recae sobre terceros no involucrados en la transacción. (−) Fábrica contamina el río → vecinos pagan el costo → sobreproducción → solución: impuesto. (+) Vacuna protege a quienes rodean al vacunado → subproducción → solución: subsidio.
-- **2. Bienes públicos.** No rival (el consumo de uno no reduce el de otro) + no excluyente (no se puede impedir que alguien lo use). El mercado los subproduce porque no son rentables privadamente. *Ejemplos:* defensa nacional, alumbrado público, conocimiento científico.
-- **3. Información asimétrica.** Una parte tiene más información que la otra. *Selección adversa:* los malos productos desplazan a los buenos (mercado de autos usados). *Riesgo moral:* quien está asegurado toma más riesgos (seguro de auto).
+::: grid-fallas
+::titulo
+Las tres fallas de mercado
+
+::f1-titulo
+1. Externalidades
+::f1-body
+Costo o beneficio que recae sobre terceros no involucrados en la transacción. (−) Fábrica contamina el río → vecinos pagan el costo → sobreproducción → solución: impuesto. (+) Vacuna protege a quienes rodean al vacunado → subproducción → solución: subsidio.
+
+::f2-titulo
+2. Bienes públicos
+::f2-body
+No rival (el consumo de uno no reduce el de otro) + no excluyente (no se puede impedir que alguien lo use). El mercado los subproduce porque no son rentables privadamente. *Ejemplos:* defensa nacional, alumbrado público, conocimiento científico.
+
+::f3-titulo
+3. Información asimétrica
+::f3-body
+Una parte tiene más información que la otra. *Selección adversa:* los malos productos desplazan a los buenos (mercado de autos usados). *Riesgo moral:* quien está asegurado toma más riesgos (seguro de auto).
+
+::f4-titulo
+Cuándo interviene el Estado
+::f4-body
+Cuando alguna de estas tres condiciones falla, el mercado asigna recursos de forma ineficiente y puede justificarse la intervención del Estado.
 :::
 
 ::: intro
@@ -228,18 +330,34 @@ EXTERNALIDADES — LA CONEXIÓN CON IMPUESTO Y SUBSIDIO
 
 ::titulo
 Ya vieron que el impuesto corrige sobreproducción y el subsidio corrige subproducción. Las externalidades son exactamente esa lógica.
+:::
 
-::body
-**Externalidad negativa.**
+::: grid-fallas
+::titulo
+Externalidad negativa vs. positiva
+
+::f1-titulo
+Externalidad negativa — diagnóstico
+::f1-body
 - El costo recae sobre terceros que no participan.
 - El mercado no lo registra → sobreproducción.
+
+::f2-titulo
+Externalidad positiva — diagnóstico
+::f2-body
+- El beneficio alcanza a terceros que no pagan.
+- El mercado no lo captura → subproducción.
+
+::f3-titulo
+Externalidad negativa — solución
+::f3-body
 - Solución: impuesto que internalice el costo externo.
 - *Ejemplo:* impuesto al tabaco = precio que sube para el fumador hasta reflejar el costo social.
 - *Ejemplo:* impuesto al carbono = internalizar el costo de la contaminación.
 
-**Externalidad positiva.**
-- El beneficio alcanza a terceros que no pagan.
-- El mercado no lo captura → subproducción.
+::f4-titulo
+Externalidad positiva — solución
+::f4-body
 - Solución: subsidio que incentive la producción.
 - *Ejemplo:* subsidio a vacunas = precio más bajo para el paciente hasta reflejar el beneficio social.
 - *Ejemplo:* subsidio a educación = capturar el beneficio para la sociedad.

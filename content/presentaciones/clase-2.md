@@ -123,10 +123,28 @@ El costo de oportunidad aparece en todas partes.
 
 ::body
 **Ejemplo 1 · Personal — Estar aquí a las 8 AM.** El costo no es el arancel de la Carrera — es lo que podrían estar haciendo: dormir, estudiar otro ramo, desayunar tranquilos. Eso tiene un valor. Lo están sacrificando.
+:::
 
-**Ejemplo 2 · Jurídico — El abogado y la tarde libre.** Acepta una consulta nueva de 4 horas en vez de preparar el caso que ya tiene. El costo de oportunidad es el avance que perdió — no cero, aunque la consulta sea rentable.
+::: intro
+::kicker
+BLOQUE 4 · EJEMPLO 2 · JURÍDICO
 
-**Ejemplo 3 · Samuelson — La mina y Yellowstone.** El verdadero costo incluye vida silvestre, agua, aire y valor recreativo perdidos. Aunque el costo monetario sea pequeño, el costo de oportunidad puede ser enorme. *(Sam. & N., Cap. 1, p. 13.)*
+::titulo
+El abogado y la tarde libre.
+
+::body
+Acepta una consulta nueva de 4 horas en vez de preparar el caso que ya tiene. El costo de oportunidad es el avance que perdió — no cero, aunque la consulta sea rentable.
+:::
+
+::: intro
+::kicker
+BLOQUE 4 · EJEMPLO 3 · SAMUELSON
+
+::titulo
+La mina y Yellowstone.
+
+::body
+El verdadero costo incluye vida silvestre, agua, aire y valor recreativo perdidos. Aunque el costo monetario sea pequeño, el costo de oportunidad puede ser enorme. *(Sam. & N., Cap. 1, p. 13.)*
 :::
 
 ::: station num=04 clases="Bloque 4 · Cálculo"
@@ -171,7 +189,16 @@ Cómo leer la tabla.
 | **C** | 510 | 380 |
 | **D** | 400 | 500 |
 | **E** | 0 | 550 |
+:::
 
+::: intro
+::kicker
+BLOQUE 5 · LECTURA DE LA TABLA
+
+::titulo
+De E hacia A: ganamos capital, sacrificamos consumo.
+
+::body
 Punto A: todo en capital, nada en consumo. Punto E: todo en consumo, nada en capital. Cada fila es una combinación posible si todos los recursos se usan eficientemente.
 
 Al movernos de E hacia A ganamos capital, pero sacrificamos consumo — y ese sacrificio crece con cada paso.
@@ -227,21 +254,30 @@ Si la economía mueve recursos hacia armas, la mantequilla baja. El costo de pro
 
 ::: intro
 ::kicker
-BLOQUE 6 · DOS TIPOS DE EFICIENCIA
+BLOQUE 6 · EFICIENCIA TIPO 1
 
 ::titulo
-Estar sobre la FPP es condición necesaria pero no suficiente.
+Eficiencia en la Producción.
 
 ::body
-**Tipo 1 — Eficiencia en la Producción.** Estar sobre la FPP — usar todos los recursos sin desperdiciarlos.
+Estar sobre la FPP — usar todos los recursos sin desperdiciarlos.
 
 *Ejemplo jurídico:* Un tribunal que resuelve muchos casos usando todos sus jueces y horarios. Está sobre la FPP — eficiente en la producción.
+:::
 
-**Tipo 2 — Eficiencia del Resultado.** Estar en el punto correcto de la curva — producir lo que la gente realmente quiere.
+::: intro
+::kicker
+BLOQUE 6 · EFICIENCIA TIPO 2
+
+::titulo
+Eficiencia del Resultado.
+
+::body
+Estar en el punto correcto de la curva — producir lo que la gente realmente quiere.
 
 *Ejemplo Case & Fair:* Una economía produce ganado vacuno eficientemente — está sobre la FPP. Pero si la población es vegetariana, es un desperdicio total. Ese mismo tribunal resuelve muchos casos... pero mal. Eficiencia en la producción, ineficiencia en el resultado.
 
-*Case & Fair, Cap. 2, p. 35.*
+*Estar sobre la FPP es condición necesaria pero no suficiente. Case & Fair, Cap. 2, p. 35.*
 :::
 
 ::: mecanismo
@@ -271,32 +307,35 @@ Lo que antes era imposible ahora puede ser alcanzable.
 La lógica del largo plazo: elegir hoy el punto A (más capital) sacrifica consumo ahora — pero desplaza la FPP hacia afuera en el futuro. Es la lógica de sacrificar hoy para tener más mañana.
 :::
 
-::: intro
-::kicker
-BLOQUE 6 · PREGUNTA REFLEXIVA
-
+::: manifesto
 ::titulo
 ¿Chile debería sacrificar consumo hoy para crecer mañana?
 
-::body
+::q1
 ¿Chile debería invertir más en capital — infraestructura, educación, tecnología — aunque signifique sacrificar consumo hoy?
 
+::q2
 ¿Qué implicancias tiene para las políticas públicas y para el derecho?
+
+::footer
+Bloque 6 · Pregunta reflexiva.
 :::
 
-::: intro
-::kicker
-BLOQUE 7 · RESUMEN PARTICIPATIVO
-
+::: manifesto
 ::titulo
 Tres preguntas para cerrar.
 
-::body
-**1.** ¿Qué es la FPP y qué nos muestra?
+::q1
+¿Qué es la FPP y qué nos muestra?
 
-**2.** Si una economía está bajo la FPP, ¿qué significa?
+::q2
+Si una economía está bajo la FPP, ¿qué significa?
 
-**3.** ¿Cómo se desplaza la FPP hacia afuera?
+::q3
+¿Cómo se desplaza la FPP hacia afuera?
+
+::footer
+Bloque 7 · Resumen participativo.
 :::
 
 ::: close

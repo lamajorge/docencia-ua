@@ -85,34 +85,29 @@ La semana pasada vimos dos formas de intervención directa:
 Hoy: el impuesto. En lugar de fijar el precio, el gobierno cobra un monto adicional por cada unidad comprada o vendida. La pregunta es: ¿quién absorbe ese costo? ¿Qué se pierde en el camino?
 :::
 
-::: intro
-::kicker
-BLOQUE 2 · EXCEDENTE DEL CONSUMIDOR Y DEL PRODUCTOR
-
+::: grid-fallas
 ::titulo
-Construyendo el bienestar en el gráfico.
+Bloque 2 — los tres conceptos del bienestar
 
-::body
-**Excedente del consumidor (EC).** Lo que el comprador 'ahorra': la diferencia entre lo que estaba dispuesto a pagar y lo que efectivamente paga. Es el área bajo la curva de demanda y por encima del precio de mercado.
+::f1-titulo
+Excedente del consumidor (EC)
+::f1-body
+Lo que el comprador 'ahorra': la diferencia entre lo que estaba dispuesto a pagar y lo que efectivamente paga. Es el área bajo la curva de demanda y por encima del precio de mercado.
 
-**Excedente del productor (EP).** La ganancia del vendedor: la diferencia entre el precio que recibe y lo que le cuesta producir. Es el área sobre la curva de oferta y por debajo del precio de mercado.
+::f2-titulo
+Excedente del productor (EP)
+::f2-body
+La ganancia del vendedor: la diferencia entre el precio que recibe y lo que le cuesta producir. Es el área sobre la curva de oferta y por debajo del precio de mercado.
 
-**Bienestar social total.** La suma EC + EP mide el valor total que genera el mercado para compradores y vendedores. En competencia perfecta, el equilibrio maximiza ese total.
-:::
+::f3-titulo
+Bienestar social total
+::f3-body
+La suma EC + EP mide el valor total que genera el mercado para compradores y vendedores. En competencia perfecta, el equilibrio maximiza ese total.
 
-::: intro
-::kicker
-BLOQUE 2 · ÁREAS DE BIENESTAR EN EQUILIBRIO
-
-::titulo
-El mercado en equilibrio — áreas de bienestar.
-
-::body
-**EC** = triángulo arriba de P*. Los compradores que valoran el bien más que P* capturan ese excedente. A mayor disposición a pagar, mayor su EC.
-
-**EP** = triángulo abajo de P*. Los productores que pueden producir a un costo menor que P* capturan ese excedente. Es su ganancia económica.
-
-**EC + EP**: La suma es el bienestar máximo posible. Cualquier cantidad distinta a Q* lo reduce. Esto es la eficiencia del mercado competitivo.
+::f4-titulo
+Áreas en equilibrio (Q*)
+::f4-body
+**EC** = triángulo arriba de P*. **EP** = triángulo abajo de P*. **EC + EP** es el bienestar máximo posible. Cualquier cantidad distinta a Q* lo reduce. Esto es la eficiencia del mercado competitivo.
 :::
 
 ::: intro
@@ -186,17 +181,30 @@ El peso muerto — bienestar que no va a nadie.
 *"Los efectos visibles de un impuesto son los ingresos que recauda el gobierno. Los efectos invisibles son las cosas que no se produjeron y los intercambios que no ocurrieron."* — **Henry Hazlitt**, *Economía en una lección* (lectura asignada).
 :::
 
-::: intro
+::: stat-split
 ::kicker
-BLOQUE 3 · PÉRDIDA DE EFICIENCIA (FIG. 4.9 — CASE & FAIR, CAP. 4, P. 89)
+PÉRDIDA DE EFICIENCIA (FIG. 4.9 — CASE & FAIR, CAP. 4, P. 89)
 
-::titulo
-Subproducción y sobreproducción — los dos lados de la ineficiencia.
+::leftlabel
+a) SUBPRODUCCIÓN — EL CASO DEL IMPUESTO
+::leftnum
+ABC
+::leftpct
+Triángulo = peso muerto
+::leftformula
+Unidades 4 → 7 no se transan
 
-::body
-**a) Subproducción — el caso del impuesto.** Triángulo ABC = pérdida de eficiencia. El impuesto es un caso de subproducción: fuerza al mercado a operar con menos unidades que el equilibrio. Las unidades entre 4 y 7 no se transan, y el bienestar que habrían generado desaparece. Ese triángulo es el **peso muerto**.
+::rightlabel
+b) SOBREPRODUCCIÓN — MAÑANA: EL SUBSIDIO
+::rightnum
+ABC
+::rightpct
+Triángulo = peso muerto
+::rightformula
+Unidades 7 → 10 cuestan más de lo que valen
 
-**b) Sobreproducción — MAÑANA: el subsidio.** Triángulo ABC = pérdida de eficiencia. El subsidio fuerza a producir más de 7 millones. Las unidades entre 7 y 10 cuestan más producirlas de lo que los consumidores las valoran. Ese exceso también es pérdida neta.
+::insight
+**a) Subproducción.** El impuesto fuerza al mercado a operar con menos unidades que el equilibrio. Las unidades entre 4 y 7 no se transan, y el bienestar que habrían generado desaparece. Ese triángulo es el **peso muerto**. **b) Sobreproducción.** El subsidio fuerza a producir más de 7 millones. Las unidades entre 7 y 10 cuestan más producirlas de lo que los consumidores las valoran. Ese exceso también es pérdida neta.
 :::
 
 ::: intro
@@ -208,25 +216,31 @@ La incidencia no depende de a quién cobra el gobierno.
 
 ::body
 El gobierno puede cobrar el impuesto formalmente al vendedor o al comprador. Eso **no** determina quién soporta la carga real. La distribución depende de las **elasticidades**.
-
-**Demanda muy inelástica** (compradores no pueden sustituir fácilmente). Los compradores absorben la mayor parte del impuesto. El precio del comprador sube casi tanto como el impuesto. El precio del vendedor cae poco. *Ej.: medicamentos de urgencia, gasolina en el corto plazo.*
-
-**Oferta muy inelástica** (productores no pueden reducir cantidad fácilmente). Los productores absorben la mayor parte del impuesto. El precio del vendedor cae casi tanto como el impuesto. El precio del comprador sube poco. *Ej.: tierras agrícolas (la oferta de tierra es fija).*
 :::
 
-::: intro
-::kicker
-BLOQUE 4 · REGLA GENERAL Y APLICACIÓN
-
+::: grid-fallas
 ::titulo
-Quien menos puede ajustar, más carga soporta.
+Incidencia — dos casos extremos, regla general y aplicación
 
-::body
-**Regla general.** Quien tiene menos capacidad de ajustar su comportamiento ante el cambio de precio soporta la mayor parte de la carga impositiva.
+::f1-titulo
+Demanda muy inelástica
+::f1-body
+Compradores no pueden sustituir fácilmente. Los compradores absorben la mayor parte del impuesto. El precio del comprador sube casi tanto como el impuesto. El precio del vendedor cae poco. *Ej.: medicamentos de urgencia, gasolina en el corto plazo.*
 
-**Aplicación al IVA chileno (19%).** Si el gobierno le cobra el IVA al vendedor, ¿significa que el vendedor paga todo? **No.** El vendedor traslada parte al consumidor subiendo el precio. La proporción que puede trasladar depende de cuánto puede ajustar el consumidor su comportamiento — es decir, de la **elasticidad de la demanda**.
+::f2-titulo
+Oferta muy inelástica
+::f2-body
+Productores no pueden reducir cantidad fácilmente. Los productores absorben la mayor parte del impuesto. El precio del vendedor cae casi tanto como el impuesto. El precio del comprador sube poco. *Ej.: tierras agrícolas (la oferta de tierra es fija).*
 
-**Pregunta al curso.** Si el gobierno quiere recaudar con el menor peso muerto posible, ¿qué tipo de bienes debería gravar?
+::f3-titulo
+Regla general
+::f3-body
+Quien tiene menos capacidad de ajustar su comportamiento ante el cambio de precio soporta la mayor parte de la carga impositiva.
+
+::f4-titulo
+Aplicación al IVA chileno (19%)
+::f4-body
+Si el gobierno le cobra el IVA al vendedor, ¿significa que el vendedor paga todo? **No.** El vendedor traslada parte al consumidor subiendo el precio. La proporción que puede trasladar depende de cuánto puede ajustar el consumidor su comportamiento — es decir, de la **elasticidad de la demanda**. **Pregunta al curso.** Si el gobierno quiere recaudar con el menor peso muerto posible, ¿qué tipo de bienes debería gravar?
 :::
 
 ::: exercise-intro
@@ -262,16 +276,25 @@ Cuatro preguntas para discutir.
 
 ::: intro
 ::kicker
-EJERCICIO · REVISIÓN EN GRUPO
+EJERCICIO · REVISIÓN — PREGUNTAS 1 Y 2
 
 ::titulo
-Las respuestas, una por una.
+Cuña impositiva e incidencia.
 
 ::body
 **1.** La cuña es **$500** ($1.800 − $1.300) — coincide con el monto del impuesto. Siempre es así. A quién se le cobra formalmente no importa: la incidencia la determina la elasticidad, no la ley.
 
 **2.** Compradores absorben **$300** ($1.800 − $1.500) y vendedores **$200** ($1.500 − $1.300). La carga se comparte: **60% compradores, 40% vendedores**. Que ambos soporten parte indica que la demanda no es perfectamente inelástica — pero los compradores sienten más el impuesto.
+:::
 
+::: intro
+::kicker
+EJERCICIO · REVISIÓN — PREGUNTAS 3 Y 4
+
+::titulo
+Peso muerto y evaluación de la política.
+
+::body
 **3.** Sí. Las **3 millones** de cajetillas que dejaron de venderse habrían generado bienestar para ambas partes. Ese bienestar no va a nadie — es el **peso muerto**. No lo captura ni el gobierno.
 
 **4.** Debate abierto. Desde la eficiencia: hay peso muerto. Desde la recaudación: funciona porque la demanda es inelástica. Desde la salud pública: la distorsión puede ser el **objetivo** — reducir el consumo de tabaco. Los tres criterios coexisten.

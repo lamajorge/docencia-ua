@@ -87,7 +87,16 @@ Cuando oferta y demanda se encuentran.
 **Cantidad de equilibrio (Q*).** La que efectivamente se compra y vende al precio P*.
 
 **Sin tendencia al cambio.** No sobra nada ni falta nada. El mercado está en reposo.
+:::
 
+::: intro
+::kicker
+LA DEFINICIÓN CANÓNICA
+
+::titulo
+El precio que satisface a ambos lados, simultáneamente.
+
+::body
 *Samuelson:* el P* satisface simultáneamente los deseos de compradores y vendedores.
 :::
 
@@ -196,47 +205,72 @@ Primero: **¿qué curva se mueve?** Segundo: **¿en qué dirección?** Tercero: 
 
 ::: intro
 ::kicker
-DESPLAZAMIENTO DE OFERTA · DOS CASOS REALES
+CASO REAL 1 · CAÍDA DE OFERTA
 
 ::titulo
-Caída de oferta — S ← izquierda → P* sube, Q* cae.
+Helada en Brasil → mercado del café.
 
 ::body
-**1. Helada en Brasil → mercado del café.**
 Cosecha destruida → oferta cae. S se desplaza a la izquierda. Precio sube de **$1.20 a $2.40 por libra**. Cantidad vendida cae.
 
-**2. Dólar sube → computadores importados en Chile.**
+**S ← izquierda → P* sube, Q* cae.**
+:::
+
+::: intro
+::kicker
+CASO REAL 2 · CAÍDA DE OFERTA
+
+::titulo
+Dólar sube → computadores importados en Chile.
+
+::body
 Importar es más caro → oferta cae. S se desplaza a la izquierda. Precio de venta sube. Cantidad vendida cae.
+
+**S ← izquierda → P* sube, Q* cae.**
 :::
 
-::: intro
-::kicker
-BLOQUE 5 · CASO 1 · APLICA LA LÓGICA
-
+::: station num=01 clases="Bloque 5 · Caso 1"
 ::titulo
-Harina y el precio del pan.
+Harina y el precio del pan
 
-::body
-El precio de la harina subió **40%** en Chile por el alza del trigo en los mercados internacionales. ¿Qué le pasó al precio y la cantidad de equilibrio del pan?
+::dominar
+- **Dato.** El precio de la harina subió **40%** en Chile por el alza del trigo en los mercados internacionales.
+- **Pregunta.** ¿Qué le pasó al precio y la cantidad de equilibrio del pan?
+- **Método.** ¿Qué curva se mueve? ¿Dirección? ¿Efecto sobre P* y Q*?
 
-¿Qué curva se mueve? ¿Dirección? ¿Efecto sobre P* y Q*?
+::pregunta
+¿Qué curva se mueve, en qué dirección, y qué pasa con P* y Q* del pan?
 
+::respuesta
 ✓ **Oferta del pan cae (S → izquierda).** P* sube. Q* cae.
+
+::trampa
+La harina es un **insumo** del pan, no un sustituto ni un complemento del pan. Por eso mueve la **oferta**, no la demanda.
+
+::regla
+Cambio en precio de un insumo → desplazamiento de la oferta → nuevo equilibrio.
 :::
 
-::: intro
-::kicker
-BLOQUE 5 · CASO 2 · APLICA LA LÓGICA
-
+::: station num=02 clases="Bloque 5 · Caso 2"
 ::titulo
-Campaña antitabaco.
+Campaña antitabaco
 
-::body
-El gobierno lanza una campaña exitosa sobre el daño del cigarro. La demanda de cigarrillos cae. ¿Qué pasa con P* y Q* en el mercado de cigarrillos?
+::dominar
+- **Dato.** El gobierno lanza una campaña exitosa sobre el daño del cigarro.
+- **Efecto observado.** La demanda de cigarrillos cae.
+- **Método.** ¿Qué curva se mueve? ¿Dirección? ¿Efecto sobre P* y Q*?
 
-¿Qué curva se mueve? ¿Dirección? ¿Efecto sobre P* y Q*?
+::pregunta
+¿Qué pasa con P* y Q* en el mercado de cigarrillos?
 
+::respuesta
 ✓ **Demanda cae (D → izquierda).** Exceso de oferta a P inicial. P* baja. Q* cae.
+
+::trampa
+La campaña no afecta los costos de producir cigarrillos. Por eso mueve la **demanda** (gustos), no la oferta.
+
+::regla
+Cambio en gustos / preferencias → desplazamiento de la demanda → nuevo equilibrio.
 :::
 
 ::: manifesto
