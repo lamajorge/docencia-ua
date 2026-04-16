@@ -175,15 +175,21 @@ function Roadmap({ s }: { s: Section }) {
 
 // ── MANIFESTO (tres preguntas) ───────────────────
 function Manifesto({ s }: { s: Section }) {
+  const qs = ['q1', 'q2', 'q3', 'q4', 'q5', 'q6']
+    .map((k) => s.slots[k])
+    .filter((q) => q && q.trim())
   return (
     <section className="slide slide-manifesto">
       <h2 className="mani-titulo">{s.slots.titulo}</h2>
       <ol className="mani-list">
-        <li><span className="mani-num">01</span><p>{s.slots.q1}</p></li>
-        <li><span className="mani-num">02</span><p>{s.slots.q2}</p></li>
-        <li><span className="mani-num">03</span><p>{s.slots.q3}</p></li>
+        {qs.map((q, i) => (
+          <li key={i}>
+            <span className="mani-num">{String(i + 1).padStart(2, '0')}</span>
+            <p>{q}</p>
+          </li>
+        ))}
       </ol>
-      <p className="mani-footer">{s.slots.footer}</p>
+      {s.slots.footer && <p className="mani-footer">{s.slots.footer}</p>}
     </section>
   )
 }
@@ -753,6 +759,33 @@ a { color: inherit; text-decoration: none; }
 }
 .intro-body strong { color: var(--red); font-weight: 700; }
 .intro-body p { margin-bottom: 1.2em; }
+.intro-body em { color: var(--gray); font-style: italic; }
+.intro-body ul, .intro-body ol { margin: 0.8em 0 1.2em 0; padding-left: 1.4em; }
+.intro-body li { margin-bottom: 0.5em; line-height: 1.55; }
+.intro-body table {
+  width: 100%; max-width: 70ch;
+  border-collapse: collapse; margin: 1em 0 1.5em 0;
+  background: #fff;
+  font-size: 0.95em;
+}
+.intro-body table th {
+  background: var(--black); color: var(--white);
+  padding: 0.6em 0.9em; text-align: left;
+  font-weight: 700; font-size: 0.85em;
+  letter-spacing: 0.04em;
+  border: 1px solid var(--black);
+}
+.intro-body table td {
+  padding: 0.55em 0.9em;
+  border: 1px solid var(--light);
+  color: var(--text);
+}
+.intro-body table tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.intro-body table strong { color: var(--black); }
+
+/* When intro body is dense, allow it to use the full slide */
+.slide-intro { padding: 6vh 7vw; }
+.slide-intro .intro-body { max-width: 80ch; }
 
 /* ════════════════════════════════════════════
    ROADMAP — índice visual
@@ -1464,8 +1497,13 @@ a { color: inherit; text-decoration: none; }
   .hero-subtitulo { font-size: 6mm; }
   .hero-meta { bottom: 12mm; left: 22mm; right: 22mm; }
 
-  .intro-titulo { font-size: 12mm; }
-  .intro-body { font-size: 4.2mm; }
+  .intro-titulo { font-size: 11mm; }
+  .intro-body { font-size: 3.9mm; line-height: 1.55; }
+  .intro-body p { margin-bottom: 2.5mm; }
+  .intro-body li { margin-bottom: 1.2mm; font-size: 3.7mm; }
+  .intro-body table { font-size: 3.4mm; }
+  .intro-body table th { padding: 1.5mm 2mm; font-size: 3mm; }
+  .intro-body table td { padding: 1.3mm 2mm; }
 
   .rm-titulo { font-size: 9mm; }
   .rm-n { font-size: 7mm; }
