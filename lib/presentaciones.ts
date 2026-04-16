@@ -17,7 +17,7 @@ export interface Presentacion {
 }
 
 export function hasPresentacion(numero: number): boolean {
-  const fname = `clase-${String(numero).padStart(2, '0')}.md`
+  const fname = `clase-${numero}.md`
   return fs.existsSync(path.join(PRESENTACIONES_DIR, fname))
 }
 
@@ -32,7 +32,7 @@ export function listPresentacionesDisponibles(): number[] {
 }
 
 export function getPresentacion(numero: number): Presentacion | null {
-  const fname = `clase-${String(numero).padStart(2, '0')}.md`
+  const fname = `clase-${numero}.md`
   const fpath = path.join(PRESENTACIONES_DIR, fname)
   if (!fs.existsSync(fpath)) return null
 
