@@ -190,15 +190,56 @@ function Manifesto({ s }: { s: Section }) {
 
 // ── STATION ──────────────────────────────────────
 function Station({ s, numero }: { s: Section; numero: number }) {
+  const StHeader = () => (
+    <header className="st-header">
+      <div className="st-num">{s.props.num}</div>
+      <div className="st-titles">
+        <p className="st-eyebrow">{s.props.clases}</p>
+        <h2 className="st-titulo">{s.slots.titulo}</h2>
+      </div>
+    </header>
+  )
+
+  if (s.props.part === 'a') {
+    return (
+      <section className="slide slide-station slide-station-a">
+        <StHeader />
+        <div className="st-dominar-full">
+          <p className="st-label">QUÉ DEBEN DOMINAR</p>
+          <div className="st-dominar-body st-dominar-cols"><MD>{s.slots.dominar}</MD></div>
+        </div>
+      </section>
+    )
+  }
+
+  if (s.props.part === 'b') {
+    return (
+      <section className="slide slide-station slide-station-b">
+        <StHeader />
+        <div className="st-b-body">
+          <div className="st-pregunta">
+            <p className="st-label">PREGUNTA AL CURSO</p>
+            <p className="st-pregunta-texto">{s.slots.pregunta}</p>
+            <div className="st-respuesta"><MD>{s.slots.respuesta}</MD></div>
+          </div>
+          <div className="st-footer">
+            <div className="st-trampa">
+              <p className="st-mini-label">⚠ TRAMPA COMÚN</p>
+              <div className="st-trampa-body"><MD>{s.slots.trampa}</MD></div>
+            </div>
+            <div className="st-regla">
+              <p className="st-mini-label">REGLA DE ORO</p>
+              <div className="st-regla-body"><MD>{s.slots.regla}</MD></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    )
+  }
+
   return (
     <section className="slide slide-station">
-      <header className="st-header">
-        <div className="st-num">{s.props.num}</div>
-        <div className="st-titles">
-          <p className="st-eyebrow">{s.props.clases}</p>
-          <h2 className="st-titulo">{s.slots.titulo}</h2>
-        </div>
-      </header>
+      <StHeader />
       <div className="st-grid">
         <div className="st-dominar">
           <p className="st-label">QUÉ DEBEN DOMINAR</p>
@@ -333,7 +374,7 @@ function ExerciseIntro({ s }: { s: Section }) {
       <p className="ei-kicker">{s.slots.kicker}</p>
       <h2 className="ei-titulo">{s.slots.titulo}</h2>
       <div className="ei-datos">{s.slots.datos}</div>
-      <p className="ei-nota">{s.slots.nota}</p>
+      <div className="ei-nota"><MD>{s.slots.nota}</MD></div>
     </section>
   )
 }
@@ -459,7 +500,7 @@ function DiagramFPP() {
 
 function DiagramEquilibrio() {
   return (
-    <svg viewBox="0 0 220 200" className="diag-svg" aria-label="Punto de equilibrio de mercado">
+    <svg viewBox="0 -6 220 212" className="diag-svg" aria-label="Punto de equilibrio de mercado">
       <line x1="30" y1="10" x2="30" y2="178" stroke="#151515" strokeWidth="1.5" />
       <line x1="30" y1="178" x2="210" y2="178" stroke="#151515" strokeWidth="1.5" />
       <polygon points="30,7 27,14 33,14" fill="#151515" />
@@ -468,10 +509,12 @@ function DiagramEquilibrio() {
       <text x="200" y="190" fontSize="9" fill="#6B6B6B">Cantidad</text>
       {/* Demand: (45,22) → (200,165) */}
       <line x1="45" y1="22" x2="200" y2="165" stroke="#C8102E" strokeWidth="2" />
-      <text x="193" y="175" fontSize="10" fill="#C8102E" fontWeight="bold">D</text>
+      <text x="191" y="172" fontSize="10" fill="#C8102E" fontWeight="bold">D</text>
+      <text x="182" y="182" fontSize="6.5" fill="#C8102E">(Demanda)</text>
       {/* Supply: (45,165) → (200,22) */}
       <line x1="45" y1="165" x2="200" y2="22" stroke="#151515" strokeWidth="2" />
-      <text x="193" y="19" fontSize="10" fill="#151515" fontWeight="bold">O</text>
+      <text x="192" y="18" fontSize="10" fill="#151515" fontWeight="bold">O</text>
+      <text x="184" y="8" fontSize="6.5" fill="#6B6B6B">(Oferta)</text>
       {/* Intersection at (122, 94) */}
       <circle cx="122" cy="94" r="5" fill="#C8102E" />
       <line x1="30" y1="94" x2="122" y2="94" stroke="#C8102E" strokeWidth="0.8" strokeDasharray="3,3" />
@@ -487,7 +530,7 @@ function DiagramCuña() {
   // Original equilibrium: (122, 94) — same as DiagramEquilibrio
   // After tax: Pc = y59 (consumer), Pv = y128 (producer), Qt = x85
   return (
-    <svg viewBox="0 0 220 200" className="diag-svg" aria-label="Cuña impositiva">
+    <svg viewBox="0 0 220 208" className="diag-svg" aria-label="Cuña impositiva">
       <line x1="30" y1="10" x2="30" y2="178" stroke="#151515" strokeWidth="1.5" />
       <line x1="30" y1="178" x2="210" y2="178" stroke="#151515" strokeWidth="1.5" />
       <polygon points="30,7 27,14 33,14" fill="#151515" />
@@ -515,14 +558,20 @@ function DiagramCuña() {
       <line x1="21" y1="59" x2="21" y2="128" stroke="#C8102E" strokeWidth="1.5" />
       <line x1="21" y1="59" x2="27" y2="59" stroke="#C8102E" strokeWidth="1.5" />
       <line x1="21" y1="128" x2="27" y2="128" stroke="#C8102E" strokeWidth="1.5" />
-      <text x="3" y="97" fontSize="9" fill="#C8102E" fontWeight="bold">T</text>
+      <text x="1" y="89" fontSize="8" fill="#C8102E" fontWeight="bold">T</text>
+      <text x="0" y="99" fontSize="6" fill="#C8102E">(impuesto)</text>
       {/* Price labels */}
-      <text x="5" y="62" fontSize="8.5" fill="#C8102E" fontWeight="bold">Pc</text>
-      <text x="7" y="97" fontSize="8.5" fill="#6B6B6B">Pe</text>
-      <text x="5" y="131" fontSize="8.5" fill="#C8102E" fontWeight="bold">Pv</text>
+      <text x="5" y="56" fontSize="7.5" fill="#C8102E" fontWeight="bold">Pc</text>
+      <text x="1" y="64" fontSize="5.5" fill="#C8102E">(consumidor)</text>
+      <text x="7" y="97" fontSize="7" fill="#6B6B6B">Pe (equilibrio</text>
+      <text x="7" y="104" fontSize="7" fill="#6B6B6B">sin impuesto)</text>
+      <text x="5" y="125" fontSize="7.5" fill="#C8102E" fontWeight="bold">Pv</text>
+      <text x="1" y="133" fontSize="5.5" fill="#C8102E">(vendedor)</text>
       {/* Quantity labels */}
-      <text x="79" y="191" fontSize="8.5" fill="#C8102E" fontWeight="bold">Qt</text>
-      <text x="115" y="191" fontSize="8.5" fill="#6B6B6B">Qe</text>
+      <text x="74" y="191" fontSize="7.5" fill="#C8102E" fontWeight="bold">Qt</text>
+      <text x="65" y="199" fontSize="5.5" fill="#C8102E">(con impuesto)</text>
+      <text x="112" y="191" fontSize="7.5" fill="#6B6B6B">Qe</text>
+      <text x="105" y="199" fontSize="5.5" fill="#6B6B6B">(sin impuesto)</text>
       {/* Area labels */}
       <text x="38" y="89" fontSize="7.5" fill="#8A0B1F">Recauda-</text>
       <text x="38" y="100" fontSize="7.5" fill="#8A0B1F">ción</text>
@@ -883,6 +932,18 @@ a { color: inherit; text-decoration: none; }
 .st-trampa-body strong { color: var(--red); font-weight: 700; }
 .st-regla-body strong { color: var(--black); font-weight: 700; }
 
+/* Station Part A — dominar full-width, 2 columns */
+.slide-station-a { gap: 2vh; }
+.st-dominar-full { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+.st-dominar-cols ul { columns: 2; column-gap: 4vw; padding: 0; }
+.st-dominar-cols li { break-inside: avoid; page-break-inside: avoid; }
+
+/* Station Part B — pregunta/respuesta + trampa/regla, full slide */
+.slide-station-b { gap: 2vh; }
+.st-b-body { flex: 1; display: flex; flex-direction: column; gap: 2vh; min-height: 0; }
+.slide-station-b .st-pregunta { flex: 1; min-height: 0; overflow: auto; }
+.slide-station-b .st-footer { padding-top: 2vh; flex-shrink: 0; }
+
 /* ════════════════════════════════════════════
    MECANISMO
 ════════════════════════════════════════════ */
@@ -1134,7 +1195,11 @@ a { color: inherit; text-decoration: none; }
   line-height: 1.8;
   letter-spacing: 0.02em;
 }
-.ei-nota { font-size: 0.95rem; color: rgba(255,255,255,0.5); font-style: italic; max-width: 60ch; }
+.ei-nota { font-size: clamp(1rem, 1.25vw, 1.15rem); color: rgba(255,255,255,0.85); max-width: 72ch; line-height: 1.6; }
+.ei-nota ul { list-style: none; padding: 0; }
+.ei-nota li { padding: 0.5vh 0; border-bottom: 1px solid rgba(255,255,255,0.08); }
+.ei-nota li:last-child { border-bottom: 0; }
+.ei-nota strong { color: var(--red); font-weight: 700; }
 
 /* ════════════════════════════════════════════
    EXERCISE D
@@ -1417,6 +1482,22 @@ a { color: inherit; text-decoration: none; }
   .st-pregunta-texto { font-size: 4.8mm; }
   .st-respuesta { font-size: 3.7mm; }
   .st-trampa-body, .st-regla-body { font-size: 3.6mm; }
+
+  /* Station part A print — 2-column dominar */
+  .slide-station-a { padding: 12mm 18mm 18mm; }
+  .st-dominar-cols ul { columns: 2; column-gap: 8mm; }
+  .st-dominar-cols li { font-size: 3.7mm; padding: 1.1mm 0; break-inside: avoid; }
+
+  /* Station part B print — drill slide, more breathing room */
+  .slide-station-b { padding: 12mm 18mm 18mm; }
+  .slide-station-b .st-pregunta-texto { font-size: 5.5mm; }
+  .slide-station-b .st-respuesta { font-size: 4.2mm; }
+  .slide-station-b .st-trampa-body,
+  .slide-station-b .st-regla-body { font-size: 4mm; }
+
+  /* exercise-intro nota */
+  .ei-nota { font-size: 4.5mm; }
+  .ei-nota li { padding: 1.2mm 0; }
 
   .mec-titulo { font-size: 10mm; }
   .mec-pasos > li { font-size: 4.4mm; }

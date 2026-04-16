@@ -82,20 +82,25 @@ Un impuesto de $200 sobre un bien, ¿lo paga el comprador, el vendedor, o ambos?
 No hay respuesta inmediata. Piensen en voz alta. Si alguna incomoda, presten atención a la estación correspondiente.
 :::
 
-::: station num=01 clases="Clases 1 a 4"
+::: station num=01 clases="Clases 1 a 4" part=a
 ::titulo
 Fundamentos
 
 ::dominar
 - **Escasez.** Recursos limitados frente a deseos ilimitados. **No** es sinónimo de pobreza.
-- **Costo de oportunidad.** Valor de la mejor alternativa sacrificada. Se calcula dividiendo lo que se sacrifica por lo que se obtiene. Ej: si Bill produce 8 fanegas o 4 troncos, el costo de oportunidad de 1 fanega = 4/8 = 0,5 troncos.
-- **FPP.** Combinaciones máximas con recursos dados. Bajo la curva → ineficiencia. Fuera → inalcanzable. Sobre → **eficiencia productiva**.
-- **Ventaja absoluta vs. comparativa.** Absoluta: quién produce más con los mismos recursos. Comparativa: quién produce a **menor costo de oportunidad**. Aunque alguien tenga ventaja absoluta en todo, siempre habrá ventaja comparativa para cada parte — y ahí conviene especializarse.
-- **División del trabajo.** Dividir el proceso en tareas especializadas multiplica la producción (Smith: de ~20 a 48.000 alfileres/día con las mismas 10 personas). Requiere intercambio — y el intercambio requiere contratos, propiedad y derecho.
+- **Costo de oportunidad.** Valor de la mejor alternativa sacrificada. Ej: si Bill produce 8 fanegas o 4 troncos, costo de 1 fanega = 4/8 = 0,5 troncos.
+- **FPP.** Combinaciones máximas con recursos dados. Bajo → ineficiencia. Fuera → inalcanzable. Sobre → **eficiencia productiva**.
+- **Crecimiento de la FPP.** Se desplaza hacia afuera con avance tecnológico o acumulación de capital. No viola la escasez — la amplía.
+- **Ventaja absoluta vs. comparativa.** Absoluta: quién produce más. Comparativa: quién produce a **menor costo de oportunidad**. Aunque alguien tenga ventaja absoluta en todo, conviene especializarse donde el costo de oportunidad es menor.
+- **División del trabajo.** Tareas especializadas multiplican la producción (Smith: ~20 → 48.000 alfileres/día). Requiere intercambio — el intercambio requiere contratos, propiedad y derecho.
 - **La mano invisible.** Cada persona busca su propio interés; el mercado competitivo coordina eso en un resultado socialmente eficiente, sin dirección central.
-- **Tres problemas económicos.** ¿Qué producir? ¿Cómo producir? ¿Para quién producir? Toda sociedad los enfrenta — y los resuelve con planificación central (Estado decide), mercado (precios coordinan) o una combinación (**economía mixta**). La mayoría de las economías actuales son mixtas.
-- **Crecimiento de la FPP.** La curva se desplaza hacia afuera con avance tecnológico o acumulación de capital. No viola la escasez — la amplía. Permite producir más de ambos bienes simultáneamente.
+- **Tres problemas económicos.** ¿Qué producir? ¿Cómo? ¿Para quién? Se resuelven con planificación central, mercado o combinación (**economía mixta**).
 - **Positiva vs. normativa.** La positiva describe; la normativa prescribe con juicios de valor.
+:::
+
+::: station num=01 clases="Clases 1 a 4" part=b
+::titulo
+Fundamentos
 
 ::pregunta
 Colleen produce 10 troncos o 10 fanegas al día. Bill produce 4 troncos o 8 fanegas. ¿Quién tiene ventaja comparativa en cada bien?
@@ -110,21 +115,26 @@ Costo de oportunidad de 1 fanega: Bill = 0,5 troncos · Colleen = 1 tronco → *
 Escasez → elegir → costo de oportunidad → especialización según ventaja comparativa → intercambio → necesita derecho. Esa es la cadena completa de las primeras cuatro clases.
 :::
 
-::: station num=02 clases="Clases 5 a 9 · reglas de oro del curso"
+::: station num=02 clases="Clases 5 a 9 · reglas de oro del curso" part=a
 ::titulo
 Mercados, equilibrio y el mecanismo de ajuste
 
 ::dominar
 - **Ley de la demanda.** A mayor precio, menor cantidad demandada.
-- **Utilidad marginal decreciente (Clases 5–6).** Cada unidad adicional de un bien entrega menos satisfacción que la anterior. Por eso el consumidor solo compra más si el precio baja — es el fundamento de la pendiente negativa de la curva de demanda.
+- **Utilidad marginal decreciente (Clases 5–6).** Cada unidad adicional da menos satisfacción que la anterior. Por eso el consumidor solo compra más si el precio baja — fundamento de la pendiente negativa de D.
 - **Ley de la oferta.** A mayor precio, mayor cantidad ofrecida.
 - **Movimiento vs. desplazamiento.** Cambia el precio → movimiento sobre la curva. Cambia un **determinante** → se desplaza toda la curva.
-- **Determinantes de la demanda:** ingreso del consumidor · precios de bienes relacionados (sustitutos y complementarios) · gustos · expectativas · número de compradores. Cualquiera desplaza la demanda.
-- **Determinantes de la oferta:** precio de insumos · tecnología · expectativas del vendedor · número de vendedores · precios de otros bienes producibles · **política gubernamental** (impuestos, subsidios, regulaciones). Cualquiera desplaza la oferta.
-- **Costo marginal (CMg) y curva de oferta — Clase 8.** CMg = lo que cuesta producir una unidad adicional. Sube con la cantidad (rendimientos decrecientes). La empresa produce hasta donde **P = CMg**: si P > CMg conviene producir más; si P < CMg conviene producir menos. Por eso la curva de oferta tiene pendiente positiva — es la curva de CMg. En equilibrio competitivo P = CMg: cada unidad producida vale exactamente lo que cuesta → **eficiencia máxima**.
+- **Determinantes de la demanda:** ingreso · precios de bienes relacionados (sustitutos y complementarios) · gustos · expectativas · número de compradores.
+- **Determinantes de la oferta:** precio de insumos · tecnología · expectativas del vendedor · número de vendedores · precios de otros bienes producibles · **política gubernamental** (impuestos, subsidios, regulaciones).
+- **CMg y curva de oferta (Clase 8).** CMg = costo de producir una unidad adicional. Sube con la cantidad. Empresa produce hasta **P = CMg**. La curva O es la curva de CMg. En equilibrio P = CMg → **eficiencia máxima**.
 - **Equilibrio.** Precio donde Qs = Qd. Emerge del mecanismo de ajuste, no se decide centralmente.
-- **Cambios en equilibrio.** D↑ → Pe↑, Qe↑. D↓ → Pe↓, Qe↓. S↑ → Pe↓, Qe↑. S↓ → Pe↑, Qe↓. Cada desplazamiento de curva lleva a un nuevo equilibrio en dirección predecible.
-- **Excedente del consumidor (EC) y del productor (EP).** EC = diferencia entre lo que el consumidor habría pagado y lo que pagó. EP = diferencia entre lo que el productor recibió y su costo mínimo. EC + EP = **bienestar total**. Cualquier reducción de Q por debajo del equilibrio destruye parte de ese bienestar → **peso muerto**.
+- **Cambios en equilibrio.** D↑ → Pe↑, Qe↑. D↓ → Pe↓, Qe↓. S↑ → Pe↓, Qe↑. S↓ → Pe↑, Qe↓.
+- **EC y EP.** EC = lo que el consumidor habría pagado − lo que pagó. EP = ingreso del productor − costo mínimo. EC + EP = **bienestar total**. Si Q cae → peso muerto.
+:::
+
+::: station num=02 clases="Clases 5 a 9 · reglas de oro del curso" part=b
+::titulo
+Mercados, equilibrio y el mecanismo de ajuste
 
 ::pregunta
 Sube el precio de los autos eléctricos porque aumenta el precio del litio. ¿La curva de oferta se desplaza, o es un movimiento sobre la demanda?
@@ -166,7 +176,7 @@ Qd = Qs. El mercado encuentra su punto de reposo.
 Si P < Pe: el mecanismo opera al revés → escasez → compradores compiten → precio sube → converge al equilibrio.
 :::
 
-::: station num=03 clases="Clase 10"
+::: station num=03 clases="Clase 10" part=a
 ::titulo
 Intervenciones de precios
 
@@ -175,8 +185,13 @@ Intervenciones de precios
 - **Precio mínimo.** Piso legal. Solo tiene efecto si se fija **sobre** el equilibrio → Qs > Qd → **excedente**.
 - Si el máximo se fija sobre Pe, o el mínimo bajo Pe, son **inoperantes**.
 - Las intervenciones **reducen la eficiencia**: crean peso muerto porque transacciones mutuamente beneficiosas dejan de ocurrir.
-- **Mecanismos alternativos.** Si el precio no puede asignar (precio máximo → escasez), el mercado recurre a: colas, relaciones personales, lotería, criterios discrecionales. Ninguno garantiza que el bien llegue a quien más lo valora — por eso son ineficientes.
+- **Mecanismos alternativos.** Si el precio no puede asignar (precio máximo → escasez), el mercado recurre a: colas, relaciones personales, lotería, criterios discrecionales. Ninguno garantiza que el bien llegue a quien más lo valora.
 - **Eficiencia vs. equidad.** Un precio máximo puede mejorar el acceso (equidad) pero siempre reduce la eficiencia. La tensión es real y no desaparece — se administra con política pública.
+:::
+
+::: station num=03 clases="Clase 10" part=b
+::titulo
+Intervenciones de precios
 
 ::pregunta
 Si el salario mínimo se fija por debajo del salario de equilibrio, ¿qué efecto tiene?
@@ -191,18 +206,23 @@ Si el salario mínimo se fija por debajo del salario de equilibrio, ¿qué efect
 Las intervenciones operan **porque** la ley de la demanda y la ley de la oferta son válidas.
 :::
 
-::: station num=04 clases="Clases 11 y 12 · estación densa"
+::: station num=04 clases="Clases 11 y 12 · estación densa" part=a
 ::titulo
 Impuestos, subsidios y peso muerto
 
 ::dominar
-- **Recuerda — P = CMg es el punto de eficiencia (Clase 8).** El impuesto rompe esa igualdad: Pc sube por encima del CMg para las unidades que ya no se transan. Esas unidades habrían beneficiado a ambas partes — y no ocurren. Eso es el **peso muerto**.
-- **EC, EP y peso muerto — visualización.** El impuesto redistribuye el bienestar: parte del EC y del EP pasa al Estado como **recaudación** (rectángulo). Lo que queda sin reclamar es el **peso muerto** (triángulo). Recaudación se redistribuye; peso muerto se destruye.
+- **P = CMg es el punto de eficiencia (Clase 8).** El impuesto rompe esa igualdad: Pc sube sobre el CMg para las unidades que ya no se transan. Esas unidades habrían beneficiado a ambas partes — y no ocurren. Eso es el **peso muerto**.
+- **EC, EP y recaudación.** El impuesto redistribuye el bienestar: parte del EC + EP pasa al Estado como **recaudación** (rectángulo en el diagrama). Lo que queda sin reclamar es el **peso muerto** (triángulo). Recaudación se redistribuye; peso muerto se destruye.
 - **Cuña impositiva.** Pc − Pv = monto del impuesto. Siempre.
 - **Incidencia.** No importa a quién se cobra formalmente. La **elasticidad** decide quién absorbe más. Demanda inelástica → consumidor paga la mayor parte.
-- **Peso muerto.** Bienestar de las transacciones que ya no ocurren porque el impuesto eleva el precio por encima del CMg — medida directa de **ineficiencia**. No va al Estado ni a nadie: se destruye.
+- **Peso muerto.** Bienestar de transacciones que ya no ocurren. No va al Estado ni a nadie: se **destruye**.
 - **Subsidio = impuesto negativo.** Pc baja, Pv sube, Q aumenta, costo fiscal, también genera peso muerto.
-- **Tipos de impuesto.** Proporcional: misma tasa para todos. Progresivo: tasa sube con la base imponible (impuesto a la renta en Chile). Regresivo: tasa efectiva cae con el ingreso — un IVA uniforme pesa más sobre los pobres porque consumen mayor proporción de su ingreso en bienes de primera necesidad.
+- **Tipos de impuesto.** Proporcional: misma tasa para todos. Progresivo: tasa sube con la base imponible (renta en Chile). Regresivo: tasa efectiva cae con el ingreso — IVA uniforme pesa más sobre los pobres.
+:::
+
+::: station num=04 clases="Clases 11 y 12 · estación densa" part=b
+::titulo
+Impuestos, subsidios y peso muerto
 
 ::pregunta
 Un impuesto se cobra al vendedor de cigarrillos. ¿Los consumidores pagan parte del impuesto?
@@ -217,7 +237,7 @@ Peso muerto **≠** recaudación. La recaudación se redistribuye (la recibe el 
 Recaudación = quién la recibe. Peso muerto = bienestar que nadie recibe. Esta distinción es exactamente lo que pregunta el ítem (c) del caso aplicado.
 :::
 
-::: station num=05 clases="Clase 13"
+::: station num=05 clases="Clase 13" part=a
 ::titulo
 Monopolio y fallas de mercado
 
@@ -225,14 +245,19 @@ Monopolio y fallas de mercado
 - **Competencia perfecta:** P = CMg → eficiencia máxima → peso muerto = 0.
 - **Monopolio:** restringe cantidad para subir precio → **P > CMg** → peso muerto **sin impuesto**. El poder de mercado opera como una cuña económica.
 - **Monopolio natural.** Costos medios siempre decrecientes → una sola empresa es más eficiente que varias (ej. distribución eléctrica, agua potable). Justifica regulación tarifaria, no competencia.
-- **Monopsonio.** Un solo comprador → paga menos que el valor marginal del bien o del trabajo. Análogo al monopolio pero por el lado de la demanda (ej. gran empleador en mercado laboral local).
-- **Oligopolio y competencia monopolística.** Oligopolio: pocos oferentes con interdependencia estratégica → precio > CMg, peso muerto menor que monopolio. Competencia monopolística: muchos vendedores con productos diferenciados → precio > CMg por diferenciación → peso muerto leve pero permanente.
-- **Externalidad negativa:** costo sobre terceros → mercado **sobreproduce** (ej. fábrica que contamina un río). La producción privada supera el óptimo social.
-- **Externalidad positiva:** beneficio a terceros → mercado **subproduce** (ej. vacunas, educación). La producción privada es menor que el óptimo social.
-- **Impuesto correctivo (Pigouviano).** Un impuesto igual al costo externo internaliza la externalidad negativa — lleva la cantidad al óptimo social y puede eliminar el peso muerto. Justificación formal de los impuestos a cigarrillos, combustibles, bebidas azucaradas.
-- **Bien público:** no rival + no excluyente → mercado lo subprovee o no lo provee (ej. defensa nacional, alumbrado público). **Problema del polizón** (free rider): nadie paga esperando que otros financien el bien.
-- **Selección adversa:** antes de la transacción, el que sabe menos elige mal. Ej: en seguros, se aseguran solo los de mayor riesgo → aseguradora pierde o sube precios → los de bajo riesgo salen del mercado.
-- **Riesgo moral:** después de la transacción, el asegurado toma más riesgo porque ya no lo asume directamente. Ambas fallas pueden destruir mercados enteros si no se corrigen.
+- **Monopsonio.** Un solo comprador → paga menos que el valor marginal del bien o del trabajo. Análogo al monopolio pero por el lado de la demanda.
+- **Oligopolio y competencia monopolística.** Oligopolio: pocos oferentes, interdependencia estratégica → precio > CMg. Competencia monopolística: muchos vendedores con productos diferenciados → precio > CMg → peso muerto leve pero permanente.
+- **Externalidad negativa:** costo sobre terceros → mercado **sobreproduce**. Producción privada supera el óptimo social.
+- **Externalidad positiva:** beneficio a terceros → mercado **subproduce**. Producción privada menor que el óptimo social.
+- **Impuesto correctivo (Pigouviano).** Impuesto igual al costo externo → internaliza la externalidad → lleva al óptimo social. Justificación formal de impuestos a cigarrillos, combustibles, bebidas azucaradas.
+- **Bien público:** no rival + no excluyente → mercado lo subprovee. **Problema del polizón** (free rider): nadie paga esperando que otros financien el bien.
+- **Selección adversa:** antes de la transacción, el menos informado elige mal (ej. seguros → solo se aseguran los de alto riesgo).
+- **Riesgo moral:** después de la transacción, el asegurado toma más riesgo porque no lo asume directamente.
+:::
+
+::: station num=05 clases="Clase 13" part=b
+::titulo
+Monopolio y fallas de mercado
 
 ::pregunta
 En el monopolio no hay impuesto ni subsidio. ¿Por qué entonces hay peso muerto?
@@ -305,7 +330,10 @@ Bebidas azucaradas — enunciado
 El gobierno aplica un impuesto de $200 por unidad a las bebidas azucaradas. Antes del impuesto, el precio de equilibrio era $800 y se transaban 12 millones de unidades. Después del impuesto, el consumidor paga $940 (Pc = precio al consumidor) y el vendedor recibe $740 (Pv = precio al vendedor); la cantidad transada cae a 9 millones de unidades.
 
 ::nota
-(a) Verifique la cuña impositiva. (b) Distribuya la carga entre consumidores y productores. (c) Calcule el peso muerto. (d) Justifique la política desde la teoría de fallas de mercado.
+- **(a)** Verifique la cuña impositiva.
+- **(b)** Distribuya la carga entre consumidores y productores.
+- **(c)** Calcule el peso muerto.
+- **(d)** Justifique la política desde la teoría de fallas de mercado.
 :::
 
 ::: stat-duo
