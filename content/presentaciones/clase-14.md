@@ -188,9 +188,10 @@ Las intervenciones operan **porque** la ley de la demanda y la ley de la oferta 
 Impuestos, subsidios y peso muerto
 
 ::dominar
+- **Costo marginal (CMg).** Lo que cuesta producir una unidad adicional. En competencia perfecta el precio se iguala al costo marginal: **P = CMg**. Eso significa que cada unidad producida vale exactamente lo que cuesta — no sobra ni falta nada. Cuando P > CMg hay transacciones que beneficiarían a ambas partes y no ocurren: eso es **peso muerto**.
 - **Cuña impositiva.** Pc − Pv = monto del impuesto. Siempre.
 - **Incidencia.** No importa a quién se cobra formalmente. La **elasticidad** decide quién absorbe más. Demanda inelástica → consumidor paga la mayor parte.
-- **Peso muerto.** Bienestar de las transacciones que ya no ocurren — medida directa de **ineficiencia**. No va al Estado ni a nadie: se destruye.
+- **Peso muerto.** Bienestar de las transacciones que ya no ocurren porque el impuesto eleva el precio por encima del CMg — medida directa de **ineficiencia**. No va al Estado ni a nadie: se destruye.
 - **Subsidio = impuesto negativo.** Pc baja, Pv sube, Q aumenta, costo fiscal, también genera peso muerto.
 
 ::pregunta
@@ -211,8 +212,8 @@ Recaudación = quién la recibe. Peso muerto = bienestar que nadie recibe. Esta 
 Monopolio y fallas de mercado
 
 ::dominar
-- **Competencia perfecta:** P = CMg → eficiencia máxima → peso muerto = 0.
-- **Monopolio:** P > CMg → cantidad menor al óptimo → **peso muerto sin impuesto**. El poder de mercado actúa como cuña económica.
+- **Competencia perfecta:** P = CMg → cada unidad producida vale exactamente lo que cuesta → eficiencia máxima → peso muerto = 0.
+- **Monopolio:** el monopolista restringe la cantidad para subir el precio → **P > CMg** → hay consumidores dispuestos a pagar más de lo que cuesta producir, pero no se les vende → peso muerto **sin impuesto**. El poder de mercado opera como una cuña económica.
 - **Externalidad negativa:** costo sobre terceros → mercado sobreproduce (ej. fábrica que contamina un río).
 - **Externalidad positiva:** beneficio a terceros → mercado subproduce (ej. vacunas, educación).
 - **Bien público:** no rival + no excluyente → mercado lo subprovee (ej. defensa nacional, alumbrado público).
