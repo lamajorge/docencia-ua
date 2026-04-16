@@ -42,7 +42,7 @@ De fundamentos a fallas de mercado, en una mañana.
 ::p1-titulo
 Fundamentos
 ::p1-body
-Escasez, costo de oportunidad, FPP, positivo vs. normativo.
+Escasez, costo de oportunidad, ventaja comparativa, división del trabajo.
 
 ::p2-titulo
 Mercados
@@ -82,27 +82,30 @@ Un impuesto de $200 sobre un bien, ¿lo paga el comprador, el vendedor, o ambos?
 No hay respuesta inmediata. Piensen en voz alta. Si alguna incomoda, presten atención a la estación correspondiente.
 :::
 
-::: station num=01 clases="Clases 1 y 2"
+::: station num=01 clases="Clases 1 a 4"
 ::titulo
 Fundamentos
 
 ::dominar
 - **Escasez.** Recursos limitados frente a deseos ilimitados. **No** es sinónimo de pobreza.
-- **Costo de oportunidad.** Valor de la mejor alternativa sacrificada. No es solo lo que pagas — es lo que dejas de hacer.
-- **FPP.** Combinaciones máximas con recursos dados. Bajo la curva → ineficiencia. Fuera de la curva → inalcanzable. Sobre la curva → **eficiencia productiva**.
+- **Costo de oportunidad.** Valor de la mejor alternativa sacrificada. Se calcula dividiendo lo que se sacrifica por lo que se obtiene. Ej: si Bill produce 8 fanegas o 4 troncos, el costo de oportunidad de 1 fanega = 4/8 = 0,5 troncos.
+- **FPP.** Combinaciones máximas con recursos dados. Bajo la curva → ineficiencia. Fuera → inalcanzable. Sobre → **eficiencia productiva**.
+- **Ventaja absoluta vs. comparativa.** Absoluta: quién produce más con los mismos recursos. Comparativa: quién produce a **menor costo de oportunidad**. Aunque alguien tenga ventaja absoluta en todo, siempre habrá ventaja comparativa para cada parte — y ahí conviene especializarse.
+- **División del trabajo.** Dividir el proceso en tareas especializadas multiplica la producción (Smith: de ~20 a 48.000 alfileres/día con las mismas 10 personas). Requiere intercambio — y el intercambio requiere contratos, propiedad y derecho.
+- **La mano invisible.** Cada persona busca su propio interés; el mercado competitivo coordina eso en un resultado socialmente eficiente, sin dirección central.
 - **Positiva vs. normativa.** La positiva describe; la normativa prescribe con juicios de valor.
 
 ::pregunta
-Un abogado dedica la tarde a un cliente nuevo. La consulta le genera $80.000 de honorarios. ¿Tiene costo de oportunidad?
+Colleen produce 10 troncos o 10 fanegas al día. Bill produce 4 troncos o 8 fanegas. ¿Quién tiene ventaja comparativa en cada bien?
 
 ::respuesta
-**Sí.** El costo existe aunque la decisión sea rentable. Es la **mejor alternativa sacrificada** — los otros casos que no avanzó, el descanso que no tomó — no la ganancia monetaria.
+Costo de oportunidad de 1 fanega: Bill = 0,5 troncos · Colleen = 1 tronco → **Bill tiene ventaja comparativa en alimento**. Costo de oportunidad de 1 tronco: Bill = 2 fanegas · Colleen = 1 fanega → **Colleen tiene ventaja comparativa en troncos**. Aunque Colleen es mejor en todo, conviene que cada uno se especialice donde su costo de oportunidad es menor.
 
 ::trampa
-"Escasez = pobreza." Falso. Un país rico también tiene escasez, porque los deseos crecen con los recursos. Chile tiene escasez; Suiza también.
+"Si alguien es mejor en todo, no tiene sentido que intercambie." Falso. La ventaja comparativa no depende de la ventaja absoluta — depende de los costos de oportunidad relativos. Siempre existe ventaja comparativa para cada parte.
 
 ::regla
-Toda la microeconomía descansa sobre la escasez. Sin escasez no hay necesidad de elegir, y sin elección no hay costo de oportunidad.
+Escasez → elegir → costo de oportunidad → especialización según ventaja comparativa → intercambio → necesita derecho. Esa es la cadena completa de las primeras cuatro clases.
 :::
 
 ::: station num=02 clases="Clases 5 a 9 · reglas de oro del curso"
@@ -373,50 +376,57 @@ Cada tema tiene su capítulo
 ::r1-tema
 Escasez, costo de oportunidad y FPP
 ::r1-sam
-Cap. 1
+Cap. 1 y 7
 ::r1-cf
-Cap. 1
+Cap. 1 y 2
 
 ::r2-tema
-Demanda, oferta y sus determinantes
+Ventaja comparativa y división del trabajo
 ::r2-sam
-Cap. 3
+Cap. 2 y 15
 ::r2-cf
-Cap. 3
+Cap. 2
 
 ::r3-tema
-Equilibrio, mecanismo de ajuste y excedentes
+Demanda, oferta y sus determinantes
 ::r3-sam
-Cap. 3–4
+Cap. 3
 ::r3-cf
-Cap. 3–4
+Cap. 3
 
 ::r4-tema
-Precios máximos y mínimos
+Equilibrio, mecanismo de ajuste y excedentes
 ::r4-sam
-Cap. 4
+Cap. 3–4
 ::r4-cf
-Cap. 4
+Cap. 3–4
 
 ::r5-tema
-Impuestos, subsidios, incidencia y peso muerto
+Precios máximos y mínimos
 ::r5-sam
 Cap. 4
 ::r5-cf
 Cap. 4
 
 ::r6-tema
-Monopolio y poder de mercado
+Impuestos, subsidios, incidencia y peso muerto
 ::r6-sam
-Cap. 9–10
+Cap. 4
 ::r6-cf
-Cap. 12–13
+Cap. 4
 
 ::r7-tema
-Externalidades, bienes públicos, información asimétrica
+Monopolio y poder de mercado
 ::r7-sam
-Cap. 18
+Cap. 9–10
 ::r7-cf
+Cap. 12–13
+
+::r8-tema
+Externalidades, bienes públicos, información asimétrica
+::r8-sam
+Cap. 18
+::r8-cf
 Cap. 16
 :::
 
