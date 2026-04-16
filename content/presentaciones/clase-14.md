@@ -93,6 +93,8 @@ Fundamentos
 - **Ventaja absoluta vs. comparativa.** Absoluta: quién produce más con los mismos recursos. Comparativa: quién produce a **menor costo de oportunidad**. Aunque alguien tenga ventaja absoluta en todo, siempre habrá ventaja comparativa para cada parte — y ahí conviene especializarse.
 - **División del trabajo.** Dividir el proceso en tareas especializadas multiplica la producción (Smith: de ~20 a 48.000 alfileres/día con las mismas 10 personas). Requiere intercambio — y el intercambio requiere contratos, propiedad y derecho.
 - **La mano invisible.** Cada persona busca su propio interés; el mercado competitivo coordina eso en un resultado socialmente eficiente, sin dirección central.
+- **Tres problemas económicos.** ¿Qué producir? ¿Cómo producir? ¿Para quién producir? Toda sociedad los enfrenta — y los resuelve con planificación central (Estado decide), mercado (precios coordinan) o una combinación (**economía mixta**). La mayoría de las economías actuales son mixtas.
+- **Crecimiento de la FPP.** La curva se desplaza hacia afuera con avance tecnológico o acumulación de capital. No viola la escasez — la amplía. Permite producir más de ambos bienes simultáneamente.
 - **Positiva vs. normativa.** La positiva describe; la normativa prescribe con juicios de valor.
 
 ::pregunta
@@ -114,12 +116,15 @@ Mercados, equilibrio y el mecanismo de ajuste
 
 ::dominar
 - **Ley de la demanda.** A mayor precio, menor cantidad demandada.
+- **Utilidad marginal decreciente (Clases 5–6).** Cada unidad adicional de un bien entrega menos satisfacción que la anterior. Por eso el consumidor solo compra más si el precio baja — es el fundamento de la pendiente negativa de la curva de demanda.
 - **Ley de la oferta.** A mayor precio, mayor cantidad ofrecida.
 - **Movimiento vs. desplazamiento.** Cambia el precio → movimiento sobre la curva. Cambia un **determinante** → se desplaza toda la curva.
 - **Determinantes de la demanda:** ingreso del consumidor · precios de bienes relacionados (sustitutos y complementarios) · gustos · expectativas · número de compradores. Cualquiera desplaza la demanda.
-- **Determinantes de la oferta:** precio de insumos · tecnología · expectativas del vendedor · número de vendedores · precios de otros bienes producibles. Cualquiera desplaza la oferta.
+- **Determinantes de la oferta:** precio de insumos · tecnología · expectativas del vendedor · número de vendedores · precios de otros bienes producibles · **política gubernamental** (impuestos, subsidios, regulaciones). Cualquiera desplaza la oferta.
 - **Costo marginal (CMg) y curva de oferta — Clase 8.** CMg = lo que cuesta producir una unidad adicional. Sube con la cantidad (rendimientos decrecientes). La empresa produce hasta donde **P = CMg**: si P > CMg conviene producir más; si P < CMg conviene producir menos. Por eso la curva de oferta tiene pendiente positiva — es la curva de CMg. En equilibrio competitivo P = CMg: cada unidad producida vale exactamente lo que cuesta → **eficiencia máxima**.
 - **Equilibrio.** Precio donde Qs = Qd. Emerge del mecanismo de ajuste, no se decide centralmente.
+- **Cambios en equilibrio.** D↑ → Pe↑, Qe↑. D↓ → Pe↓, Qe↓. S↑ → Pe↓, Qe↑. S↓ → Pe↑, Qe↓. Cada desplazamiento de curva lleva a un nuevo equilibrio en dirección predecible.
+- **Excedente del consumidor (EC) y del productor (EP).** EC = diferencia entre lo que el consumidor habría pagado y lo que pagó. EP = diferencia entre lo que el productor recibió y su costo mínimo. EC + EP = **bienestar total**. Cualquier reducción de Q por debajo del equilibrio destruye parte de ese bienestar → **peso muerto**.
 
 ::pregunta
 Sube el precio de los autos eléctricos porque aumenta el precio del litio. ¿La curva de oferta se desplaza, o es un movimiento sobre la demanda?
@@ -170,6 +175,8 @@ Intervenciones de precios
 - **Precio mínimo.** Piso legal. Solo tiene efecto si se fija **sobre** el equilibrio → Qs > Qd → **excedente**.
 - Si el máximo se fija sobre Pe, o el mínimo bajo Pe, son **inoperantes**.
 - Las intervenciones **reducen la eficiencia**: crean peso muerto porque transacciones mutuamente beneficiosas dejan de ocurrir.
+- **Mecanismos alternativos.** Si el precio no puede asignar (precio máximo → escasez), el mercado recurre a: colas, relaciones personales, lotería, criterios discrecionales. Ninguno garantiza que el bien llegue a quien más lo valora — por eso son ineficientes.
+- **Eficiencia vs. equidad.** Un precio máximo puede mejorar el acceso (equidad) pero siempre reduce la eficiencia. La tensión es real y no desaparece — se administra con política pública.
 
 ::pregunta
 Si el salario mínimo se fija por debajo del salario de equilibrio, ¿qué efecto tiene?
@@ -190,10 +197,12 @@ Impuestos, subsidios y peso muerto
 
 ::dominar
 - **Recuerda — P = CMg es el punto de eficiencia (Clase 8).** El impuesto rompe esa igualdad: Pc sube por encima del CMg para las unidades que ya no se transan. Esas unidades habrían beneficiado a ambas partes — y no ocurren. Eso es el **peso muerto**.
+- **EC, EP y peso muerto — visualización.** El impuesto redistribuye el bienestar: parte del EC y del EP pasa al Estado como **recaudación** (rectángulo). Lo que queda sin reclamar es el **peso muerto** (triángulo). Recaudación se redistribuye; peso muerto se destruye.
 - **Cuña impositiva.** Pc − Pv = monto del impuesto. Siempre.
 - **Incidencia.** No importa a quién se cobra formalmente. La **elasticidad** decide quién absorbe más. Demanda inelástica → consumidor paga la mayor parte.
 - **Peso muerto.** Bienestar de las transacciones que ya no ocurren porque el impuesto eleva el precio por encima del CMg — medida directa de **ineficiencia**. No va al Estado ni a nadie: se destruye.
 - **Subsidio = impuesto negativo.** Pc baja, Pv sube, Q aumenta, costo fiscal, también genera peso muerto.
+- **Tipos de impuesto.** Proporcional: misma tasa para todos. Progresivo: tasa sube con la base imponible (impuesto a la renta en Chile). Regresivo: tasa efectiva cae con el ingreso — un IVA uniforme pesa más sobre los pobres porque consumen mayor proporción de su ingreso en bienes de primera necesidad.
 
 ::pregunta
 Un impuesto se cobra al vendedor de cigarrillos. ¿Los consumidores pagan parte del impuesto?
@@ -213,12 +222,17 @@ Recaudación = quién la recibe. Peso muerto = bienestar que nadie recibe. Esta 
 Monopolio y fallas de mercado
 
 ::dominar
-- **Competencia perfecta:** P = CMg → cada unidad producida vale exactamente lo que cuesta → eficiencia máxima → peso muerto = 0.
-- **Monopolio:** el monopolista restringe la cantidad para subir el precio → **P > CMg** → hay consumidores dispuestos a pagar más de lo que cuesta producir, pero no se les vende → peso muerto **sin impuesto**. El poder de mercado opera como una cuña económica.
-- **Externalidad negativa:** costo sobre terceros → mercado sobreproduce (ej. fábrica que contamina un río).
-- **Externalidad positiva:** beneficio a terceros → mercado subproduce (ej. vacunas, educación).
-- **Bien público:** no rival + no excluyente → mercado lo subprovee (ej. defensa nacional, alumbrado público).
-- **Información asimétrica:** una parte sabe más → selección adversa o riesgo moral (ej. mercado de autos usados, seguros).
+- **Competencia perfecta:** P = CMg → eficiencia máxima → peso muerto = 0.
+- **Monopolio:** restringe cantidad para subir precio → **P > CMg** → peso muerto **sin impuesto**. El poder de mercado opera como una cuña económica.
+- **Monopolio natural.** Costos medios siempre decrecientes → una sola empresa es más eficiente que varias (ej. distribución eléctrica, agua potable). Justifica regulación tarifaria, no competencia.
+- **Monopsonio.** Un solo comprador → paga menos que el valor marginal del bien o del trabajo. Análogo al monopolio pero por el lado de la demanda (ej. gran empleador en mercado laboral local).
+- **Oligopolio y competencia monopolística.** Oligopolio: pocos oferentes con interdependencia estratégica → precio > CMg, peso muerto menor que monopolio. Competencia monopolística: muchos vendedores con productos diferenciados → precio > CMg por diferenciación → peso muerto leve pero permanente.
+- **Externalidad negativa:** costo sobre terceros → mercado **sobreproduce** (ej. fábrica que contamina un río). La producción privada supera el óptimo social.
+- **Externalidad positiva:** beneficio a terceros → mercado **subproduce** (ej. vacunas, educación). La producción privada es menor que el óptimo social.
+- **Impuesto correctivo (Pigouviano).** Un impuesto igual al costo externo internaliza la externalidad negativa — lleva la cantidad al óptimo social y puede eliminar el peso muerto. Justificación formal de los impuestos a cigarrillos, combustibles, bebidas azucaradas.
+- **Bien público:** no rival + no excluyente → mercado lo subprovee o no lo provee (ej. defensa nacional, alumbrado público). **Problema del polizón** (free rider): nadie paga esperando que otros financien el bien.
+- **Selección adversa:** antes de la transacción, el que sabe menos elige mal. Ej: en seguros, se aseguran solo los de mayor riesgo → aseguradora pierde o sube precios → los de bajo riesgo salen del mercado.
+- **Riesgo moral:** después de la transacción, el asegurado toma más riesgo porque ya no lo asume directamente. Ambas fallas pueden destruir mercados enteros si no se corrigen.
 
 ::pregunta
 En el monopolio no hay impuesto ni subsidio. ¿Por qué entonces hay peso muerto?
