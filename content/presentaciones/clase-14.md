@@ -307,20 +307,6 @@ Peso muerto **≠** recaudación. La recaudación se redistribuye (la recibe el 
 Recaudación = quién la recibe. Peso muerto = bienestar que nadie recibe. Esta distinción es exactamente lo que pregunta el ítem (c) del caso aplicado.
 :::
 
-::: stat-hero
-::numero
-$200
-
-::label
-LA CUÑA IMPOSITIVA
-
-::texto
-**Pc − Pv = monto del impuesto.** Siempre. El impuesto se inserta entre el precio que paga el consumidor (Pc, sube) y el que recibe el vendedor (Pv, baja), separando ambos lados del mercado en exactamente el monto gravado.
-
-::subtexto
-Pc = precio al consumidor. Pv = precio al vendedor. Si en la evaluación la cuña no da el monto del impuesto — hay un número mal.
-:::
-
 ::: station num=05 clases="Clase 13"
 ::titulo
 Monopolio y fallas de mercado
@@ -344,6 +330,20 @@ Externalidad **≠** bien público. Externalidad = efecto lateral de una transac
 
 ::regla
 Mismo principio en tres casos: impuesto, monopolio, externalidad — en todos hay ineficiencia y peso muerto. Cambia la causa, no el principio.
+:::
+
+::: stat-hero
+::numero
+$200
+
+::label
+LA CUÑA IMPOSITIVA
+
+::texto
+**Pc − Pv = monto del impuesto.** Siempre. El impuesto se inserta entre el precio que paga el consumidor (Pc, sube) y el que recibe el vendedor (Pv, baja), separando ambos lados del mercado en exactamente el monto gravado.
+
+::subtexto
+Pc = precio al consumidor. Pv = precio al vendedor. Si en la evaluación la cuña no da el monto del impuesto — hay un número mal.
 :::
 
 ::: exercise-intro
