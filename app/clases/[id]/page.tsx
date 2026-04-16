@@ -1383,7 +1383,7 @@ a { color: inherit; text-decoration: none; }
   .slide {
     width: 297mm; height: 210mm;
     min-height: 210mm; max-height: 210mm;
-    padding: 14mm 18mm;
+    padding: 12mm 18mm 22mm;
     border-bottom: 0;
     break-after: page; page-break-after: always;
     overflow: hidden;
@@ -1399,8 +1399,8 @@ a { color: inherit; text-decoration: none; }
   .hero-subtitulo { font-size: 6mm; }
   .hero-meta { bottom: 12mm; left: 22mm; right: 22mm; }
 
-  .intro-titulo { font-size: 13mm; }
-  .intro-body { font-size: 4.5mm; }
+  .intro-titulo { font-size: 12mm; }
+  .intro-body { font-size: 4.2mm; }
 
   .rm-titulo { font-size: 9mm; }
   .rm-n { font-size: 7mm; }
@@ -1412,11 +1412,11 @@ a { color: inherit; text-decoration: none; }
   .mani-list p { font-size: 6mm; }
 
   .st-num { font-size: 40mm; }
-  .st-titulo { font-size: 10mm; }
-  .st-dominar-body li { font-size: 4.1mm; padding: 2mm 0; }
-  .st-pregunta-texto { font-size: 5mm; }
-  .st-respuesta { font-size: 3.9mm; }
-  .st-trampa-body, .st-regla-body { font-size: 3.8mm; }
+  .st-titulo { font-size: 9.5mm; }
+  .st-dominar-body li { font-size: 3.8mm; padding: 1.2mm 0; }
+  .st-pregunta-texto { font-size: 4.8mm; }
+  .st-respuesta { font-size: 3.7mm; }
+  .st-trampa-body, .st-regla-body { font-size: 3.6mm; }
 
   .mec-titulo { font-size: 10mm; }
   .mec-pasos > li { font-size: 4.4mm; }
