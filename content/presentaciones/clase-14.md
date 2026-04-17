@@ -146,7 +146,7 @@ Sube el precio de los autos eléctricos porque aumenta el precio del litio. ¿La
 "Subió el precio, bajó la demanda." Incorrecto. Bajó la **cantidad demandada** — la curva no se mueve, el punto se mueve sobre ella. "La demanda bajó" solo es correcto si cambió un **determinante** (ingreso, gustos, precio de un sustituto, etc.), no el precio del mismo bien.
 
 ::regla
-En la Pregunta 2 de desarrollo, sin nombrar excedente + ley de la demanda + ley de la oferta + equilibrio, se pierden puntos.
+En cualquier pregunta de desarrollo sobre mercados, sin nombrar excedente + ley de la demanda + ley de la oferta + equilibrio, la respuesta queda incompleta
 :::
 
 ::: mecanismo
@@ -263,7 +263,7 @@ Monopolio y fallas de mercado
 En el monopolio no hay impuesto ni subsidio. ¿Por qué entonces hay peso muerto?
 
 ::respuesta
-Porque el monopolista fija **P > CMg**. Hay consumidores dispuestos a pagar más de lo que cuesta producir, pero no les vende — prefiere mantener el precio alto. Esas transacciones mutuamente beneficiosas no ocurren. Es la **Pregunta 3 de desarrollo**.
+Porque el monopolista fija **P > CMg**. Hay consumidores dispuestos a pagar más de lo que cuesta producir, pero no les vende — prefiere mantener el precio alto. Esas transacciones mutuamente beneficiosas no ocurren.
 
 ::trampa
 Externalidad **≠** bien público. Externalidad = efecto lateral de una transacción privada. Bien público = bien sin excluibilidad ni rivalidad. Dos fallas distintas.
