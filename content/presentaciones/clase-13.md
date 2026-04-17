@@ -117,7 +117,7 @@ Libre entrada y salida
 No hay barreras que impidan a nuevas empresas entrar a competir.
 
 ::f4-titulo
-Precio = costo marginal
+Resultado: Precio = costo marginal
 ::f4-body
 El resultado es eficiente: se produce exactamente la cantidad que maximiza el bienestar total.
 :::
@@ -140,7 +140,7 @@ Monopolio — estructura
 - Una sola empresa = la industria entera.
 - La empresa controla el precio.
 - **Precio > costo marginal.**
-- Empresa elige el punto de la demanda.
+- Empresa elige cuánto producir, y el precio lo determina la demanda.
 
 ::f3-titulo
 Competencia perfecta — resultado
@@ -261,7 +261,7 @@ Cada empresa tiene algo de poder de mercado sobre su variante, pero enfrenta com
 
 *Ejemplo:* restaurantes, cafeterías, tiendas de ropa. Similar pero no idéntico.
 
-En el largo plazo, la libre entrada elimina las utilidades extraordinarias. El precio supera el CM pero no por mucho.
+En el largo plazo, la libre entrada elimina las utilidades extraordinarias. El precio supera el CMg pero no por mucho.
 
 ::f4-titulo
 Patrón común
@@ -316,7 +316,7 @@ Cuando alguna de estas tres condiciones falla, el mercado asigna recursos de for
 EXTERNALIDADES — LA CONEXIÓN CON IMPUESTO Y SUBSIDIO
 
 ::titulo
-Ya vieron que el impuesto corrige sobreproducción y el subsidio corrige subproducción. Las externalidades son exactamente esa lógica.
+Ya vieron que el impuesto corrige sobreproducción y el subsidio corrige subproducción. Las externalidades se pueden analizar con la misma lógica.
 :::
 
 ::: grid-fallas
