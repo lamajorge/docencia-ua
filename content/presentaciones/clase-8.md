@@ -266,7 +266,7 @@ La curva de CM creciente es la curva de oferta individual. A medida que el preci
 
 ::: manifesto
 ::titulo
-Verificación aleatoria — cierren cuadernos.
+Verificación aleatoria
 
 ::q1
 ¿Cuál es la diferencia entre costo fijo y costo variable? Den un ejemplo de cada uno.

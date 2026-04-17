@@ -258,7 +258,7 @@ Quién entra y quién sale del mercado.
 BLOQUE 5 · DEMANDA Y OFERTA, LADO A LADO
 
 ::titulo
-Tabla comparativa — todo lo que tienen que tener claro.
+Tabla comparativa — lo esencial para avanzar.
 
 ::body
 |                   | DEMANDA (Clase 6)                                                       | OFERTA (Clase 7)                                                                          |

@@ -349,7 +349,7 @@ Debate — Pregunta C
 
 ::: manifesto
 ::titulo
-Verificación aleatoria — cierran cuadernos.
+Verificación aleatoria
 
 ::q1
 ¿Qué diferencia hay entre un precio máximo y un precio mínimo?

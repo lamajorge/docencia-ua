@@ -59,7 +59,7 @@ Verificación y orientación para el jueves. (8 min)
 
 ::: manifesto
 ::titulo
-Repaso — cierren cuadernos.
+Repaso
 
 ::q1
 Cuando el mercado está en equilibrio sin intervención, ¿qué ocurre con el excedente del consumidor, el del productor y el peso muerto?
@@ -346,7 +346,7 @@ Externalidad positiva — solución
 
 ::: manifesto
 ::titulo
-Verificación — cierren cuadernos.
+Verificación
 
 ::q1
 ¿Por qué el monopolio genera peso muerto si no hay impuesto ni subsidio?
