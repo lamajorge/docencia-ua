@@ -32,6 +32,35 @@ Dos artefactos separados con audiencias y formatos distintos:
 - **Conexiones con Derecho orgánicas, nunca forzadas.** Prohibido el framing "como futuros abogados…". Ejemplos naturales sí (salario mínimo → ley de la demanda, tasa de interés → mercado de arriendo).
 - **Ejercicios grupales después del bloque teórico correspondiente**, nunca antes (los alumnos necesitan la teoría de incidencia antes de resolver ejercicios de impuestos, por ejemplo).
 
+## Rigor conceptual al simplificar (no negociable)
+
+Se puede — y se debe — simplificar para primer año. Pero simplificar no es lo mismo que falsear. Estas reglas aplican tanto a guías (Notion) como a presentaciones web.
+
+### Ancla bibliográfica
+
+- Toda afirmación conceptual debe poder sostenerse en Samuelson & Nordhaus o en Case & Fair. No completar desde intuición, memoria suelta ni generalizaciones no verificadas.
+- Si una afirmación no aparece en ninguno de los dos manuales, no se incluye. Si aparece pero con matices, se incluye con esos matices — simplificados, pero presentes.
+
+### Supuestos, mecanismos y resultados
+
+- **Distinguir siempre** entre el supuesto del modelo (ej. "si hay competencia perfecta"), el mecanismo que opera (ej. "el precio baja porque los vendedores compiten") y el resultado que se obtiene (ej. "se llega al equilibrio"). No presentar resultados como si fueran características estructurales de toda economía.
+- Si una afirmación depende de supuestos, esos supuestos deben quedar nombrados de forma simple. No es necesario formalizarlos — basta con decir "en competencia perfecta" o "si la demanda es inelástica".
+
+### Lenguaje y precisión
+
+- Evitar absolutos innecesarios: "siempre", "nunca", "todas", "automáticamente" — salvo que sean estrictamente correctos según los manuales. El equilibrio no se alcanza "automáticamente"; se alcanza **si** las condiciones del modelo se cumplen.
+- Mantener **consistencia terminológica interna**. Si se usa "costo marginal" en la Clase 8, no cambiarlo a "costo de producir una más" en la Clase 14 sin aclarar que son lo mismo.
+- Si una frase ayuda pedagógicamente pero puede inducir un error conceptual posterior, **reformularla**. La claridad no justifica una imprecisión que el estudiante después tenga que desaprender.
+- Cuando haya tensión entre claridad y precisión, privilegiar la **precisión compatible con primer año**: la versión más simple que siga siendo correcta.
+
+### Checklist de errores frecuentes (revisar antes de cerrar guía o presentación)
+
+1. **Confundir características con resultados.** "El mercado es eficiente" es un resultado del modelo bajo supuestos específicos, no una propiedad ontológica del mercado.
+2. **Extrapolar competencia perfecta a otros mercados.** Los resultados de equilibrio competitivo no aplican automáticamente a monopolio, oligopolio ni mercados con externalidades.
+3. **Usar analogías que borren diferencias entre conceptos.** La analogía entre impuesto y monopolio (ambos generan peso muerto) es útil; pero el impuesto redistribuye al Estado y el monopolio al monopolista — si la analogía oculta eso, reformular.
+4. **Exagerar conclusiones normativas.** "El impuesto es malo" no es economía positiva. Lo correcto: "el impuesto genera peso muerto" (positiva) + "si ese costo se justifica depende del objetivo de política" (normativa).
+5. **Introducir ejemplos o diagramas no respaldados por los manuales.** Si un diagrama no existe ni en Samuelson ni en Case & Fair, no se construye — se explica verbalmente anclado a una figura que sí exista.
+
 ## Protocolos de producción
 
 ### Guías (Notion) — obligatorio
@@ -119,8 +148,8 @@ Las variables CSS están inline en [`app/clases/[id]/page.tsx`](app/clases/[id]/
 - **Guías completas en Notion:** Clases 1–14.
   - Clase 13: monopolio, oligopolio/competencia monopolística/monopsonio, fallas de mercado. Cierre de micro.
   - Clase 14: repaso formato temático (5 estaciones). Evaluación (40 pts, 90 min, pauta como subpágina) el miércoles 22 abril = **Clase 15**.
-- **Presentaciones web:** Clase 14 hecha (~18 secciones, modelo landing). Clases 1–13 pendientes.
-- **PPTs antiguos (pptxgenjs):** quedaron como referencia de contenido. No se producen más. Clases 6, 13 y 14 nunca tuvieron PPT y ya no lo tendrán (pasaron directo al modelo web).
+- **Presentaciones web:** Clases 1–14 completas en formato landing-por-clase. Cada una con 11–24 secciones, diagramas SVG con leyendas donde corresponde.
+- **PPTs antiguos (pptxgenjs):** quedaron como referencia de contenido histórico. No se producen más. Las 14 presentaciones web los reemplazan.
 - **Pendiente estructural:** Clase 27 no existe en Notion. Discrepancia Evaluación Regular 2 → Notion Semana 14, syllabus Semana 12.
 - **Macro arranca en Clase 16** (Clase 15 es la evaluación). Clase 30: "Síntesis: Macroeconomía y entorno político-social actual", jueves 11 de junio.
 
