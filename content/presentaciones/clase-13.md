@@ -234,7 +234,7 @@ Cualquier desviación del equilibrio competitivo genera pérdida de bienestar.
 
 ::: grid-fallas
 ::titulo
-Estructuras intermedias — entre la competencia perfecta y el monopolio. Todas generan algún grado de ineficiencia porque el precio queda por encima del costo marginal.
+Estructuras intermedias — entre la competencia perfecta y el monopolio. Todas generan algún grado de ineficiencia debido al poder de mercado.
 
 ::f1-titulo
 1. Monopsonio — un único comprador
@@ -266,7 +266,13 @@ En el largo plazo, la libre entrada elimina las utilidades extraordinarias. El p
 ::f4-titulo
 Patrón común
 ::f4-body
-En las tres estructuras, el precio queda por encima del costo marginal y se produce menos que la cantidad eficiente. Por eso todas generan algún grado de pérdida de bienestar — distinto en magnitud, mismo principio que el monopolio.
+En estas estructuras hay poder de mercado, lo que genera ineficiencia.
+
+*En mercados donde las empresas venden productos (monopolio, oligopolio, competencia monopolística), el precio suele ser mayor que el costo marginal.*
+
+*En mercados donde una empresa domina la compra (monopsonio), el problema es distinto: paga precios o salarios más bajos que en competencia.*
+
+En ambos casos, se produce o intercambia menos que lo eficiente, generando pérdida de bienestar.
 :::
 
 ::: intro
