@@ -384,7 +384,7 @@ TAREA · JUEVES
 Nos vemos mañana.
 
 ::body
-Revisar la lectura de Gary Becker, *'The Economic Approach to Human Behavior'* (páginas 507-516 en Canvas). Reconocerán la lógica de **utilidad y preferencias** que vimos hoy — aplicada al crimen, el matrimonio y la discriminación.
+Revisar la lectura de Gary Becker, *'The Economic Approach to Human Behavior'* . Reconocerán la lógica de **utilidad y preferencias** que vimos hoy — aplicada al crimen, el matrimonio y la discriminación.
 
 **Próxima clase — Jueves.** Construimos la **curva de demanda individual**. ¿Si el precio sube, cuánto menos compramos? La respuesta conecta directamente con la lógica de utilidad marginal que vimos hoy.
 

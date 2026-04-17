@@ -54,7 +54,7 @@ La regla P = CM y el puente con el mercado.
 ::p6-titulo
 Cierre y verificación
 ::p6-body
-3 preguntas aleatorias · Tarea Canvas · Clase 9.
+3 preguntas aleatorias · Tarea · Clase 9.
 :::
 
 ::: manifesto
@@ -289,7 +289,7 @@ TAREA · MIÉRCOLES — CLASE 9
 Equilibrio de mercado.
 
 ::body
-**Tarea Canvas:** Guía de ejercicios sobre curvas de oferta. Practicar: (1) Dado un precio, ¿cuánto produce la empresa? (2) ¿Qué pasa cuando el precio sube? (3) ¿Qué pasa cuando el precio baja? **Lógica central: P = CM.**
+**Tarea:** Guía de ejercicios sobre curvas de oferta. Practicar: (1) Dado un precio, ¿cuánto produce la empresa? (2) ¿Qué pasa cuando el precio sube? (3) ¿Qué pasa cuando el precio baja? **Lógica central: P = CM.**
 
 **Clase 9 — Miércoles.** Juntamos las dos piezas: → Curva de demanda (Clase 6) → Curva de oferta (Clases 7 y 8). ¿Cómo el mercado encuentra el precio de equilibrio? ¿Qué pasa con el exceso de demanda u oferta? ¿Cómo ajustan los precios?
 

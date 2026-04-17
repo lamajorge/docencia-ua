@@ -49,7 +49,7 @@ Quién paga y cuánto, el rol de la elasticidad.
 ::p5-titulo
 Cierre y tarea
 ::p5-body
-Verificación, ejercicios Canvas, anticipación Clase 12.
+Verificación, ejercicios, anticipación Clase 12.
 :::
 
 ::: manifesto

@@ -165,7 +165,7 @@ TAREA · JUEVES
 Nos vemos mañana.
 
 ::body
-Leer los materiales introductorios en Canvas. Próxima clase: **costo de oportunidad en profundidad + Frontera de Posibilidades de Producción (FPP)**. No se asusten con el nombre — es más simple de lo que suena.
+Leer los materiales introductorios. Próxima clase: **costo de oportunidad en profundidad + Frontera de Posibilidades de Producción (FPP)**. No se asusten con el nombre — es más simple de lo que suena.
 
 ::reglas
 escasez · costo de oportunidad · eficiencia · positiva vs. normativa · AED

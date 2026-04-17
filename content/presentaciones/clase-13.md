@@ -369,7 +369,7 @@ LA EVALUACIÓN CUBRE — CONCEPTOS CLAVE
 Tarea para el jueves (Clase 14): repaso integral antes de la evaluación.
 
 ::body
-Revisar las guías y ejercicios de Canvas de las **Clases 3 a 13**. No es necesario memorizar todo — lleguen con las dudas identificadas. La Clase 14 es repaso integral antes de la evaluación.
+Revisar las guías y ejercicios de las **Clases 3 a 13**. No es necesario memorizar todo — lleguen con las dudas identificadas. La Clase 14 es repaso integral antes de la evaluación.
 
 - Ley de la demanda y la oferta — equilibrio de mercado.
 - Excedente del consumidor y del productor — bienestar social.

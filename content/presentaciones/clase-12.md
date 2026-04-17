@@ -29,7 +29,7 @@ Cinco bloques para cerrar la lógica de impuestos y subsidios.
 ::p1-titulo
 Repaso y revisión
 ::p1-body
-Repaso Clase 11 · corrección colectiva Canvas.
+Repaso Clase 11 · corrección colectiva de ejercicios.
 
 ::p2-titulo
 El subsidio

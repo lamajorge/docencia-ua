@@ -54,7 +54,7 @@ Suma horizontal, número de oferentes, conexión con equilibrio.
 ::p6-titulo
 Cierre y tarea
 ::p6-body
-Verificación aleatoria, tarea Canvas, anticipación Clase 9.
+Verificación aleatoria, tarea, anticipación Clase 9.
 :::
 
 ::: manifesto
@@ -295,7 +295,7 @@ TAREA · JUEVES
 Nos vemos mañana.
 
 ::body
-**Tarea Canvas.** Ejercicios sobre curvas de oferta y determinantes. Para cada caso: identificar el determinante que opera, la dirección del desplazamiento y el razonamiento.
+**Tarea.** Ejercicios sobre curvas de oferta y determinantes. Para cada caso: identificar el determinante que opera, la dirección del desplazamiento y el razonamiento.
 
 **Próxima clase — Clase 8 (Jueves):** La empresa y su objetivo. Costos fijo, variable, total y marginal. Relación entre costo marginal y curva de oferta individual. Corto y largo plazo.
 
