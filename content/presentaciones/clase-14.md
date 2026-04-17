@@ -491,7 +491,7 @@ TAREA · MIÉRCOLES 22 DE ABRIL
 Nos vemos el miércoles.
 
 ::body
-Repasar las **presentaciones de cada clase** y los capítulos de Samuelson indicados en la lámina de bibliografía. Hacer **en papel** los ejercicios de impuestos — calcular cuñas, identificar incidencia y peso muerto. Dudas al correo antes del miércoles.
+Repasar las **presentaciones de cada clase** y los capítulos de Samuelson y Case & Fair indicados en la lámina de bibliografía. Hacer **en papel** los ejercicios de impuestos — calcular cuñas, identificar incidencia y peso muerto. Dudas al correo antes del miércoles.
 
 ::reglas
 ley de la demanda · ley de la oferta · mecanismo de ajuste · equilibrio · cuña · incidencia · peso muerto · eficiencia · externalidad
