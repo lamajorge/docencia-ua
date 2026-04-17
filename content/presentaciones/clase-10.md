@@ -164,6 +164,23 @@ El control de precios no solucionó la escasez — la mantuvo. Al levantarse el 
 Samuelson: los controles de precios tienden a provocar grandes distorsiones económicas y pueden ser más injustos que el racionamiento por precios.
 :::
 
+::: diagrama
+::kicker
+BLOQUE 2 · GASOLINA 1973 — VISUALIZACIÓN
+
+::d1-tipo
+tope-gasolina
+
+::d1-titulo
+Precio máximo — la escasez en el gráfico
+
+::d1-leyenda
+**D** = demanda · **O** = oferta · **Pe** = $1.50 (equilibrio sin intervención) · **Pmáx** = $0.57 (tope fijado por Nixon) · **Qs** = cantidad ofrecida al tope · **Qd** = cantidad demandada al tope · brecha Qs–Qd = **escasez**
+
+::d1-texto
+A $0.57 los consumidores quieren mucho más de lo que los productores están dispuestos a ofrecer. El **precio no puede subir** para corregir el desequilibrio — la escasez persiste todo el tiempo que dure el tope.
+:::
+
 ::: intro
 ::kicker
 BLOQUE 3 · PRECIO MÍNIMO (Pm > P*)

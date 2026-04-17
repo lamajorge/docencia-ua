@@ -112,6 +112,23 @@ A $3.00 → superávit → vendedores bajan precio → precio cae hasta $2.50.
 **En ambos casos el mercado converge al equilibrio.**
 :::
 
+::: diagrama
+::kicker
+BLOQUE 2 · EQUILIBRIO DE SOYA — VISUALIZACIÓN
+
+::d1-tipo
+equilibrio-soya
+
+::d1-titulo
+Oferta y demanda cruzan en $2.50
+
+::d1-leyenda
+**D** = demanda · **O** = oferta · **$2.50** = precio de equilibrio · **35k** = cantidad de equilibrio · a **$1.75** hay escasez · a **$3.00** hay superávit
+
+::d1-texto
+Las curvas D y O se cruzan en el punto de equilibrio ($2.50, 35k fanegas). A $1.75 la demanda supera la oferta: **escasez**. A $3.00 la oferta supera la demanda: **superávit**. En ambos casos el mecanismo de ajuste empuja el precio hacia $2.50.
+:::
+
 ::: mecanismo
 ::titulo
 Mecanismo de ajuste — exceso de demanda

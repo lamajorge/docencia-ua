@@ -137,6 +137,23 @@ La panadería.
 | 5 | $103.100 | $900 |
 :::
 
+::: diagrama
+::kicker
+BLOQUE 3 · COSTO MARGINAL — VISUALIZACIÓN
+
+::d1-tipo
+costo-panaderia
+
+::d1-titulo
+Curva de costo marginal — panadería
+
+::d1-leyenda
+**CMg** = costo marginal (lo que cuesta producir una unidad más) · cada punto = una fila de la tabla · eje **X** = unidades producidas · eje **Y** = costo en pesos
+
+::d1-texto
+El CMg se mantiene en $500 las 2 primeras unidades y después **crece** — $550, $650, $900. Esa aceleración es la señal de los **rendimientos decrecientes**: cada unidad adicional cuesta más producir porque el factor fijo (el horno) no puede ampliarse.
+:::
+
 ::: intro
 ::kicker
 BLOQUE 4 · RENDIMIENTOS DECRECIENTES

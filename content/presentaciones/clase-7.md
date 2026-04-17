@@ -95,6 +95,23 @@ Hojuelas de maíz — Samuelson, Tabla 3-3.
 **La ley de la oferta.** Cuando el precio de un bien sube, la cantidad ofrecida aumenta — *ceteris paribus*. Los productores ofrecen más cuando el precio es mayor porque les resulta más rentable.
 :::
 
+::: diagrama
+::kicker
+BLOQUE 2 · LA OFERTA DE HOJUELAS — VISUALIZACIÓN
+
+::d1-tipo
+oferta-hojuelas
+
+::d1-titulo
+Curva de oferta — Tabla 3-3 ploteada
+
+::d1-leyenda
+**O** = curva de oferta · cada punto negro = una fila de la tabla · eje **X** = millones de cajas · eje **Y** = precio por caja
+
+::d1-texto
+Los 5 puntos de la tabla, ploteados. La curva tiene **pendiente positiva**: a mayor precio, mayor cantidad ofrecida. Es la **ley de la oferta**, simétrica a la de la demanda — pero la lógica es del **productor**.
+:::
+
 ::: intro
 ::kicker
 BLOQUE 2 · LA LÓGICA DEL PRODUCTOR

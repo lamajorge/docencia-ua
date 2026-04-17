@@ -300,6 +300,23 @@ Peso muerto y evaluación de la política.
 **4.** Debate abierto. Desde la eficiencia: hay peso muerto. Desde la recaudación: funciona porque la demanda es inelástica. Desde la salud pública: la distorsión puede ser el **objetivo** — reducir el consumo de tabaco. Los tres criterios coexisten.
 :::
 
+::: diagrama
+::kicker
+EJERCICIO TABACO — VISUALIZACIÓN
+
+::d1-tipo
+cuna-tabaco
+
+::d1-titulo
+La cuña del impuesto al tabaco
+
+::d1-leyenda
+**D** = demanda · **O** = oferta · **$1.500** = Pe (equilibrio sin impuesto) · **$1.800** = Pc (precio consumidor) · **$1.300** = Pv (precio vendedor) · **7M** = Qt (cantidad con impuesto) · **10M** = Qe (cantidad sin impuesto) · rectángulo = **recaudación** · triángulo = **peso muerto**
+
+::d1-texto
+El impuesto de $500 abre la cuña Pc−Pv. El rectángulo es lo que recauda el Estado. El triángulo son las 3 millones de cajetillas que dejaron de transarse — bienestar destruido que no va a nadie. Los consumidores absorben el **60%** de la carga ($300); los vendedores el **40%** ($200).
+:::
+
 ::: manifesto
 ::titulo
 Verificación rápida antes de cerrar.

@@ -640,6 +640,268 @@ function DiagramCuña() {
   )
 }
 
+// Demanda Ana — gasolina (Case & Fair Cap. 3)
+// Datos: $1→20, $2→14, $3→10, $4→7, $5→5, $6→3, $7→2, $8→0
+function DiagramDemandaAna() {
+  const fx = (q: number) => 30 + q * 8.5  // 0-22 → 30-217
+  const fy = (p: number) => 178 - p * 20.5 // 0-8 → 178-14
+  const data = [[1,20],[2,14],[3,10],[4,7],[5,5],[6,3],[7,2],[8,0]]
+  return (
+    <svg viewBox="0 0 220 200" className="diag-svg" aria-label="Demanda individual de Ana — gasolina">
+      <line x1="30" y1="10" x2="30" y2="178" stroke="#151515" strokeWidth="1.5" />
+      <line x1="30" y1="178" x2="210" y2="178" stroke="#151515" strokeWidth="1.5" />
+      <polygon points="30,7 27,14 33,14" fill="#151515" />
+      <polygon points="213,178 206,175 206,181" fill="#151515" />
+      <text x="34" y="14" fontSize="8" fill="#6B6B6B">Precio ($)</text>
+      <text x="180" y="190" fontSize="8" fill="#6B6B6B">Galones/sem</text>
+      {/* Curve through all points */}
+      <path
+        d={`M ${fx(data[0][1])} ${fy(data[0][0])} ` + data.slice(1).map(([p, q]) => `L ${fx(q)} ${fy(p)}`).join(' ')}
+        stroke="#C8102E" strokeWidth="2" fill="none"
+      />
+      {/* Points */}
+      {data.map(([p, q], i) => (
+        <circle key={i} cx={fx(q)} cy={fy(p)} r="2.5" fill="#C8102E" />
+      ))}
+      <text x={fx(0) + 4} y={fy(8) - 2} fontSize="9" fill="#C8102E" fontWeight="bold">D</text>
+    </svg>
+  )
+}
+
+// Oferta Hojuelas — Samuelson Tabla 3-3
+// Datos: $1→0, $2→7, $3→12, $4→16, $5→18
+function DiagramOfertaHojuelas() {
+  const fx = (q: number) => 30 + q * 9    // 0-20 → 30-210
+  const fy = (p: number) => 178 - p * 32  // 0-5 → 178-18
+  const data = [[1,0],[2,7],[3,12],[4,16],[5,18]]
+  return (
+    <svg viewBox="0 0 220 200" className="diag-svg" aria-label="Oferta — hojuelas de maíz Samuelson">
+      <line x1="30" y1="10" x2="30" y2="178" stroke="#151515" strokeWidth="1.5" />
+      <line x1="30" y1="178" x2="210" y2="178" stroke="#151515" strokeWidth="1.5" />
+      <polygon points="30,7 27,14 33,14" fill="#151515" />
+      <polygon points="213,178 206,175 206,181" fill="#151515" />
+      <text x="34" y="14" fontSize="8" fill="#6B6B6B">Precio ($/caja)</text>
+      <text x="170" y="190" fontSize="8" fill="#6B6B6B">Cantidad (mill.)</text>
+      <path
+        d={`M ${fx(data[0][1])} ${fy(data[0][0])} ` + data.slice(1).map(([p, q]) => `L ${fx(q)} ${fy(p)}`).join(' ')}
+        stroke="#151515" strokeWidth="2" fill="none"
+      />
+      {data.map(([p, q], i) => (
+        <circle key={i} cx={fx(q)} cy={fy(p)} r="2.5" fill="#151515" />
+      ))}
+      <text x={fx(18) - 12} y={fy(5) - 2} fontSize="9" fill="#151515" fontWeight="bold">O</text>
+    </svg>
+  )
+}
+
+// Costos panadería — CMg crece con rendimientos decrecientes
+// Datos CM: $500, $500, $550, $650, $900
+function DiagramCostoPanaderia() {
+  const fx = (q: number) => 30 + q * 32    // 0-6 → 30-222
+  const fy = (cm: number) => 178 - cm * 0.16 // 0-1000 → 178-18
+  const data = [[1,500],[2,500],[3,550],[4,650],[5,900]]
+  return (
+    <svg viewBox="0 0 240 200" className="diag-svg" aria-label="Costo Marginal — panadería">
+      <line x1="30" y1="10" x2="30" y2="178" stroke="#151515" strokeWidth="1.5" />
+      <line x1="30" y1="178" x2="230" y2="178" stroke="#151515" strokeWidth="1.5" />
+      <polygon points="30,7 27,14 33,14" fill="#151515" />
+      <polygon points="233,178 226,175 226,181" fill="#151515" />
+      <text x="34" y="14" fontSize="8" fill="#6B6B6B">CMg ($)</text>
+      <text x="190" y="190" fontSize="8" fill="#6B6B6B">Unidades</text>
+      <path
+        d={`M ${fx(data[0][0])} ${fy(data[0][1])} ` + data.slice(1).map(([q, cm]) => `L ${fx(q)} ${fy(cm)}`).join(' ')}
+        stroke="#C8102E" strokeWidth="2" fill="none"
+      />
+      {data.map(([q, cm], i) => (
+        <g key={i}>
+          <circle cx={fx(q)} cy={fy(cm)} r="2.8" fill="#C8102E" />
+          <text x={fx(q) + 4} y={fy(cm) - 4} fontSize="7" fill="#C8102E">${cm}</text>
+        </g>
+      ))}
+      <text x={fx(5) - 14} y={fy(900) - 8} fontSize="9" fill="#C8102E" fontWeight="bold">CMg</text>
+    </svg>
+  )
+}
+
+// Equilibrio Soya — Case & Fair Cap. 3
+// $1.75: Qd=50k Qs=25k · $2.50: Qd=Qs=35k · $3.00: Qd=20k Qs=40k
+function DiagramEquilibrioSoya() {
+  // Eje X: cantidad 0-55k → 30-210
+  // Eje Y: precio $1-$3.5 → 178-18
+  const fx = (q: number) => 30 + (q / 55) * 180
+  const fy = (p: number) => 178 - ((p - 1) / 2.5) * 160
+  return (
+    <svg viewBox="0 0 220 200" className="diag-svg" aria-label="Equilibrio mercado de soya">
+      <line x1="30" y1="10" x2="30" y2="178" stroke="#151515" strokeWidth="1.5" />
+      <line x1="30" y1="178" x2="210" y2="178" stroke="#151515" strokeWidth="1.5" />
+      <polygon points="30,7 27,14 33,14" fill="#151515" />
+      <polygon points="213,178 206,175 206,181" fill="#151515" />
+      <text x="34" y="14" fontSize="8" fill="#6B6B6B">$/fanega</text>
+      <text x="170" y="190" fontSize="8" fill="#6B6B6B">Miles fanegas</text>
+      {/* Demand line: through (50,1.75), (35,2.50), (20,3.00) */}
+      <line x1={fx(55)} y1={fy(1.55)} x2={fx(15)} y2={fy(3.2)} stroke="#C8102E" strokeWidth="2" />
+      <text x={fx(53)} y={fy(1.55) + 2} fontSize="9" fill="#C8102E" fontWeight="bold">D</text>
+      {/* Supply line: through (25,1.75), (35,2.50), (40,3.00) */}
+      <line x1={fx(15)} y1={fy(1.2)} x2={fx(50)} y2={fy(3.4)} stroke="#151515" strokeWidth="2" />
+      <text x={fx(50) - 4} y={fy(3.4) - 2} fontSize="9" fill="#151515" fontWeight="bold">O</text>
+      {/* Equilibrium point */}
+      <circle cx={fx(35)} cy={fy(2.5)} r="3.5" fill="#C8102E" />
+      <line x1="30" y1={fy(2.5)} x2={fx(35)} y2={fy(2.5)} stroke="#C8102E" strokeWidth="0.8" strokeDasharray="3,2" />
+      <line x1={fx(35)} y1={fy(2.5)} x2={fx(35)} y2="178" stroke="#C8102E" strokeWidth="0.8" strokeDasharray="3,2" />
+      <text x="6" y={fy(2.5) + 3} fontSize="8" fill="#C8102E" fontWeight="bold">$2.50</text>
+      <text x={fx(35) - 6} y="190" fontSize="8" fill="#C8102E" fontWeight="bold">35k</text>
+      {/* Excess at $1.75 */}
+      <line x1={fx(25)} y1={fy(1.75)} x2={fx(50)} y2={fy(1.75)} stroke="#6B6B6B" strokeWidth="0.6" strokeDasharray="2,2" />
+      <text x="6" y={fy(1.75) + 3} fontSize="7" fill="#6B6B6B">$1.75</text>
+      <text x={fx(40)} y={fy(1.75) - 2} fontSize="6" fill="#6B6B6B">escasez</text>
+      {/* Excess at $3.00 */}
+      <line x1={fx(20)} y1={fy(3)} x2={fx(40)} y2={fy(3)} stroke="#6B6B6B" strokeWidth="0.6" strokeDasharray="2,2" />
+      <text x="6" y={fy(3) + 3} fontSize="7" fill="#6B6B6B">$3.00</text>
+      <text x={fx(28)} y={fy(3) - 2} fontSize="6" fill="#6B6B6B">superávit</text>
+    </svg>
+  )
+}
+
+// Tope precio gasolina EE.UU. 1973 — $1.50 equilibrio, $0.57 tope
+function DiagramTopeGasolina() {
+  // Eje X: cantidad 0-100 → 30-210
+  // Eje Y: precio $0-$2 → 178-18
+  const fx = (q: number) => 30 + (q / 100) * 180
+  const fy = (p: number) => 178 - (p / 2) * 160
+  return (
+    <svg viewBox="0 0 220 200" className="diag-svg" aria-label="Precio máximo — gasolina EE.UU. 1973">
+      <line x1="30" y1="10" x2="30" y2="178" stroke="#151515" strokeWidth="1.5" />
+      <line x1="30" y1="178" x2="210" y2="178" stroke="#151515" strokeWidth="1.5" />
+      <polygon points="30,7 27,14 33,14" fill="#151515" />
+      <polygon points="213,178 206,175 206,181" fill="#151515" />
+      <text x="34" y="14" fontSize="8" fill="#6B6B6B">Precio ($/gal)</text>
+      <text x="170" y="190" fontSize="8" fill="#6B6B6B">Galones</text>
+      {/* Shortage band at ceiling */}
+      <rect x={fx(20)} y={fy(0.57) - 1} width={fx(85) - fx(20)} height="2" fill="#C8102E" opacity="0.3" />
+      {/* Demand */}
+      <line x1={fx(10)} y1={fy(1.95)} x2={fx(95)} y2={fy(0.2)} stroke="#C8102E" strokeWidth="2" />
+      <text x={fx(95) - 8} y={fy(0.2) + 8} fontSize="9" fill="#C8102E" fontWeight="bold">D</text>
+      {/* Supply */}
+      <line x1={fx(15)} y1={fy(0.2)} x2={fx(95)} y2={fy(1.95)} stroke="#151515" strokeWidth="2" />
+      <text x={fx(95) - 4} y={fy(1.95) - 2} fontSize="9" fill="#151515" fontWeight="bold">O</text>
+      {/* Equilibrium $1.50 */}
+      <circle cx={fx(53)} cy={fy(1.5)} r="3" fill="#6B6B6B" />
+      <line x1="30" y1={fy(1.5)} x2={fx(53)} y2={fy(1.5)} stroke="#6B6B6B" strokeWidth="0.6" strokeDasharray="2,2" />
+      <text x="6" y={fy(1.5) + 3} fontSize="7" fill="#6B6B6B">$1.50</text>
+      <text x={fx(53) + 4} y={fy(1.5) - 3} fontSize="7" fill="#6B6B6B">Pe</text>
+      {/* Ceiling line $0.57 */}
+      <line x1="30" y1={fy(0.57)} x2={fx(95)} y2={fy(0.57)} stroke="#C8102E" strokeWidth="1.5" strokeDasharray="4,2" />
+      <text x="6" y={fy(0.57) + 3} fontSize="7" fill="#C8102E" fontWeight="bold">$0.57</text>
+      <text x={fx(95) + 2} y={fy(0.57) + 3} fontSize="7" fill="#C8102E" fontWeight="bold">Pmáx</text>
+      {/* Qs and Qd at ceiling */}
+      <line x1={fx(20)} y1={fy(0.57)} x2={fx(20)} y2="178" stroke="#6B6B6B" strokeWidth="0.6" strokeDasharray="2,2" />
+      <line x1={fx(85)} y1={fy(0.57)} x2={fx(85)} y2="178" stroke="#6B6B6B" strokeWidth="0.6" strokeDasharray="2,2" />
+      <text x={fx(20) - 5} y="190" fontSize="7" fill="#6B6B6B">Qs</text>
+      <text x={fx(85) - 5} y="190" fontSize="7" fill="#6B6B6B">Qd</text>
+      <text x={fx(45)} y={fy(0.57) - 5} fontSize="7" fill="#C8102E" fontWeight="bold">escasez</text>
+    </svg>
+  )
+}
+
+// Cuña tabaco — Pe=$1.500 Q=10M / Pc=$1.800 Pv=$1.300 Q=7M / T=$500
+function DiagramCunaTabaco() {
+  // Eje X: cantidad 0-12M → 30-210
+  // Eje Y: precio $1000-$2000 → 178-18
+  const fx = (q: number) => 30 + (q / 12) * 180
+  const fy = (p: number) => 178 - ((p - 1000) / 1000) * 160
+  return (
+    <svg viewBox="0 0 220 200" className="diag-svg" aria-label="Cuña impositiva tabaco $500">
+      <line x1="30" y1="10" x2="30" y2="178" stroke="#151515" strokeWidth="1.5" />
+      <line x1="30" y1="178" x2="210" y2="178" stroke="#151515" strokeWidth="1.5" />
+      <polygon points="30,7 27,14 33,14" fill="#151515" />
+      <polygon points="213,178 206,175 206,181" fill="#151515" />
+      <text x="34" y="14" fontSize="8" fill="#6B6B6B">$/cajetilla</text>
+      <text x="170" y="190" fontSize="8" fill="#6B6B6B">Mill. cajetillas</text>
+      {/* Recaudación */}
+      <rect x="30" y={fy(1800)} width={fx(7) - 30} height={fy(1300) - fy(1800)} fill="#C8102E" opacity="0.12" />
+      {/* Peso muerto */}
+      <polygon
+        points={`${fx(7)},${fy(1800)} ${fx(7)},${fy(1300)} ${fx(10)},${fy(1500)}`}
+        fill="#C8102E" opacity="0.3"
+      />
+      {/* Demanda */}
+      <line x1={fx(2)} y1={fy(1950)} x2={fx(11)} y2={fy(1100)} stroke="#C8102E" strokeWidth="2" />
+      <text x={fx(11) - 4} y={fy(1100) + 8} fontSize="9" fill="#C8102E" fontWeight="bold">D</text>
+      {/* Oferta */}
+      <line x1={fx(2)} y1={fy(1100)} x2={fx(11)} y2={fy(1950)} stroke="#151515" strokeWidth="2" />
+      <text x={fx(11) - 4} y={fy(1950) - 2} fontSize="9" fill="#151515" fontWeight="bold">O</text>
+      {/* Equilibrio Pe=1500 Q=10 */}
+      <circle cx={fx(10)} cy={fy(1500)} r="2.5" fill="#6B6B6B" />
+      <line x1="30" y1={fy(1500)} x2={fx(10)} y2={fy(1500)} stroke="#6B6B6B" strokeWidth="0.6" strokeDasharray="2,2" />
+      <text x="3" y={fy(1500) + 3} fontSize="7" fill="#6B6B6B">$1.500</text>
+      {/* Pc = 1800 */}
+      <line x1="30" y1={fy(1800)} x2={fx(7)} y2={fy(1800)} stroke="#C8102E" strokeWidth="0.8" strokeDasharray="3,2" />
+      <text x="3" y={fy(1800) + 3} fontSize="7" fill="#C8102E" fontWeight="bold">$1.800</text>
+      <text x={fx(7) + 2} y={fy(1800) + 3} fontSize="7" fill="#C8102E" fontWeight="bold">Pc</text>
+      {/* Pv = 1300 */}
+      <line x1="30" y1={fy(1300)} x2={fx(7)} y2={fy(1300)} stroke="#C8102E" strokeWidth="0.8" strokeDasharray="3,2" />
+      <text x="3" y={fy(1300) + 3} fontSize="7" fill="#C8102E" fontWeight="bold">$1.300</text>
+      <text x={fx(7) + 2} y={fy(1300) + 3} fontSize="7" fill="#C8102E" fontWeight="bold">Pv</text>
+      {/* Cantidades */}
+      <line x1={fx(7)} y1={fy(1300)} x2={fx(7)} y2="178" stroke="#C8102E" strokeWidth="0.8" strokeDasharray="3,2" />
+      <line x1={fx(10)} y1={fy(1500)} x2={fx(10)} y2="178" stroke="#6B6B6B" strokeWidth="0.6" strokeDasharray="2,2" />
+      <text x={fx(7) - 4} y="190" fontSize="7" fill="#C8102E" fontWeight="bold">7M</text>
+      <text x={fx(10) - 4} y="190" fontSize="7" fill="#6B6B6B">10M</text>
+      {/* T label */}
+      <text x={fx(3)} y={fy(1550) + 3} fontSize="7" fill="#8A0B1F" fontWeight="bold">recaudación</text>
+      <text x={fx(7.5)} y={fy(1550) + 3} fontSize="7" fill="#8A0B1F" fontWeight="bold">peso muerto</text>
+    </svg>
+  )
+}
+
+// Subsidio transporte — Pe=$900 Q=4M / Pc=$640 Pv=$1040 Q=5.2M / Subsidio=$400
+function DiagramSubsidioTransporte() {
+  // Eje X: cantidad 0-7M → 30-210
+  // Eje Y: precio $400-$1200 → 178-18
+  const fx = (q: number) => 30 + (q / 7) * 180
+  const fy = (p: number) => 178 - ((p - 400) / 800) * 160
+  return (
+    <svg viewBox="0 0 220 200" className="diag-svg" aria-label="Subsidio transporte $400">
+      <line x1="30" y1="10" x2="30" y2="178" stroke="#151515" strokeWidth="1.5" />
+      <line x1="30" y1="178" x2="210" y2="178" stroke="#151515" strokeWidth="1.5" />
+      <polygon points="30,7 27,14 33,14" fill="#151515" />
+      <polygon points="213,178 206,175 206,181" fill="#151515" />
+      <text x="34" y="14" fontSize="8" fill="#6B6B6B">$/viaje</text>
+      <text x="170" y="190" fontSize="8" fill="#6B6B6B">Mill. viajes/día</text>
+      {/* Costo fiscal */}
+      <rect x="30" y={fy(1040)} width={fx(5.2) - 30} height={fy(640) - fy(1040)} fill="#151515" opacity="0.1" />
+      {/* Peso muerto */}
+      <polygon
+        points={`${fx(4)},${fy(900)} ${fx(5.2)},${fy(1040)} ${fx(5.2)},${fy(640)}`}
+        fill="#C8102E" opacity="0.3"
+      />
+      {/* Demanda */}
+      <line x1={fx(1)} y1={fy(1180)} x2={fx(6.5)} y2={fy(450)} stroke="#C8102E" strokeWidth="2" />
+      <text x={fx(6.5) - 4} y={fy(450) + 8} fontSize="9" fill="#C8102E" fontWeight="bold">D</text>
+      {/* Oferta */}
+      <line x1={fx(1)} y1={fy(450)} x2={fx(6.5)} y2={fy(1180)} stroke="#151515" strokeWidth="2" />
+      <text x={fx(6.5) - 4} y={fy(1180) - 2} fontSize="9" fill="#151515" fontWeight="bold">O</text>
+      {/* Equilibrio Pe=900 Q=4 */}
+      <circle cx={fx(4)} cy={fy(900)} r="2.5" fill="#6B6B6B" />
+      <line x1="30" y1={fy(900)} x2={fx(4)} y2={fy(900)} stroke="#6B6B6B" strokeWidth="0.6" strokeDasharray="2,2" />
+      <text x="6" y={fy(900) + 3} fontSize="7" fill="#6B6B6B">$900</text>
+      {/* Pv = 1040 (vendedor recibe más) */}
+      <line x1="30" y1={fy(1040)} x2={fx(5.2)} y2={fy(1040)} stroke="#151515" strokeWidth="0.8" strokeDasharray="3,2" />
+      <text x="3" y={fy(1040) + 3} fontSize="7" fill="#151515" fontWeight="bold">$1.040</text>
+      <text x={fx(5.2) + 2} y={fy(1040) + 3} fontSize="7" fill="#151515" fontWeight="bold">Pv</text>
+      {/* Pc = 640 (consumidor paga menos) */}
+      <line x1="30" y1={fy(640)} x2={fx(5.2)} y2={fy(640)} stroke="#C8102E" strokeWidth="0.8" strokeDasharray="3,2" />
+      <text x="6" y={fy(640) + 3} fontSize="7" fill="#C8102E" fontWeight="bold">$640</text>
+      <text x={fx(5.2) + 2} y={fy(640) + 3} fontSize="7" fill="#C8102E" fontWeight="bold">Pc</text>
+      {/* Cantidades */}
+      <line x1={fx(5.2)} y1={fy(640)} x2={fx(5.2)} y2="178" stroke="#C8102E" strokeWidth="0.8" strokeDasharray="3,2" />
+      <line x1={fx(4)} y1={fy(900)} x2={fx(4)} y2="178" stroke="#6B6B6B" strokeWidth="0.6" strokeDasharray="2,2" />
+      <text x={fx(4) - 6} y="190" fontSize="7" fill="#6B6B6B">4M</text>
+      <text x={fx(5.2) - 8} y="190" fontSize="7" fill="#C8102E" fontWeight="bold">5,2M</text>
+    </svg>
+  )
+}
+
 function Diagrama({ s }: { s: Section }) {
   const diagramas = ['1', '2', '3']
     .map((n) => ({
@@ -656,6 +918,13 @@ function Diagrama({ s }: { s: Section }) {
       case 'fpp-tabla': return <DiagramFPPTabla />
       case 'equilibrio': return <DiagramEquilibrio />
       case 'cuña': return <DiagramCuña />
+      case 'demanda-ana': return <DiagramDemandaAna />
+      case 'oferta-hojuelas': return <DiagramOfertaHojuelas />
+      case 'costo-panaderia': return <DiagramCostoPanaderia />
+      case 'equilibrio-soya': return <DiagramEquilibrioSoya />
+      case 'tope-gasolina': return <DiagramTopeGasolina />
+      case 'cuna-tabaco': return <DiagramCunaTabaco />
+      case 'subsidio-transporte': return <DiagramSubsidioTransporte />
       default: return null
     }
   }

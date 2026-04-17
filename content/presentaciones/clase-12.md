@@ -251,6 +251,23 @@ Las cuatro respuestas, una a una.
 4. **Diferencias:** impuesto reduce cantidad, subsidio la aumenta. Impuesto recauda, subsidio gasta. En tabaco la distorsión era el objetivo; aquí es el costo del acceso. **Similitudes:** ambos crean una cuña. Ambos generan pérdida de eficiencia. En ambos, la distribución depende de la elasticidad, no de a quién se cobra o paga formalmente.
 :::
 
+::: diagrama
+::kicker
+EJERCICIO TRANSPORTE — VISUALIZACIÓN
+
+::d1-tipo
+subsidio-transporte
+
+::d1-titulo
+La cuña del subsidio al transporte
+
+::d1-leyenda
+**D** = demanda · **O** = oferta · **$900** = Pe (equilibrio sin subsidio) · **$640** = Pc (precio pasajero) · **$1.040** = Pv (precio operador) · **4M** = Qe (viajes sin subsidio) · **5,2M** = Qt (viajes con subsidio) · rectángulo gris = **costo fiscal** · triángulo rojo = **peso muerto**
+
+::d1-texto
+El subsidio de $400 abre la cuña Pv−Pc **hacia afuera** (opuesto al impuesto). El pasajero paga menos; el operador recibe más. La cantidad sube de 4M a 5,2M. Pero los 1,2M de viajes extra cuestan más de lo que los pasajeros los valoran — ese triángulo es el peso muerto.
+:::
+
 ::: manifesto
 ::titulo
 Verificación rápida antes de cerrar.

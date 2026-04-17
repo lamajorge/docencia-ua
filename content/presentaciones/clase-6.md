@@ -93,6 +93,23 @@ Ana y la gasolina — qué compraría a cada precio.
 *Fuente: Case & Fair, Principios de Microeconomía, 10ª ed., Cap. 3.*
 :::
 
+::: diagrama
+::kicker
+BLOQUE 2 · LA DEMANDA DE ANA — VISUALIZACIÓN
+
+::d1-tipo
+demanda-ana
+
+::d1-titulo
+Curva de demanda individual — Ana
+
+::d1-leyenda
+**D** = curva de demanda · cada punto rojo = una fila de la tabla · eje **X** = galones/semana · eje **Y** = precio en dólares
+
+::d1-texto
+Cada punto representa una decisión de Ana a un precio dado. Al unir los 8 puntos aparece la curva con **pendiente negativa**: cuando el precio sube, la cantidad demandada baja. Eso es la **ley de la demanda**.
+:::
+
 ::: intro
 ::kicker
 BLOQUE 2 · QUÉ MUESTRA LA TABLA
