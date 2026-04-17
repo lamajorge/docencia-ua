@@ -497,7 +497,11 @@ function DiagramFPPTabla() {
   // Punto interior (G) e inalcanzable (H)
   const G = { x: fx(280), y: fy(280), label: 'G' }
   const H = { x: fx(500), y: fy(620), label: 'H' }
-  const points = [A, B, C, D, E]
+  const pointsData = [
+    { ...A, cap: 700, con: 0 }, { ...B, cap: 650, con: 200 },
+    { ...C, cap: 510, con: 380 }, { ...D, cap: 400, con: 500 },
+    { ...E, cap: 0, con: 550 },
+  ]
   return (
     <svg viewBox="0 0 240 210" className="diag-svg" aria-label="FPP — Tabla 2.1 Case & Fair">
       {/* Ejes */}
@@ -507,16 +511,32 @@ function DiagramFPPTabla() {
       <polygon points="228,185 221,182 221,188" fill="#151515" />
       <text x="38" y="14" fontSize="8" fill="#6B6B6B">Capital</text>
       <text x="195" y="197" fontSize="8" fill="#6B6B6B">Consumo</text>
+      {/* Tick marks Y (Capital) */}
+      {[0, 200, 400, 510, 650, 700].map((v) => (
+        <g key={`y${v}`}>
+          <line x1="32" y1={fy(v)} x2="35" y2={fy(v)} stroke="#6B6B6B" strokeWidth="0.8" />
+          <text x="8" y={fy(v) + 3} fontSize="6" fill="#6B6B6B" textAnchor="end">{v}</text>
+        </g>
+      ))}
+      {/* Tick marks X (Consumo) */}
+      {[0, 200, 380, 500, 550].map((v) => (
+        <g key={`x${v}`}>
+          <line x1={fx(v)} y1="185" x2={fx(v)} y2="188" stroke="#6B6B6B" strokeWidth="0.8" />
+          <text x={fx(v)} y="196" fontSize="5.5" fill="#6B6B6B" textAnchor="middle">{v}</text>
+        </g>
+      ))}
       {/* Curva FPP suave a través de los 5 puntos */}
       <path
         d={`M ${A.x} ${A.y} C ${B.x} ${B.y - 5}, ${C.x - 30} ${C.y - 8}, ${C.x} ${C.y} S ${D.x + 10} ${D.y + 5}, ${E.x} ${E.y}`}
         stroke="#C8102E" strokeWidth="2.2" fill="none"
       />
-      {/* Puntos eficientes A-E sobre la curva */}
-      {points.map((p, i) => (
+      {/* Puntos eficientes A-E con dashed lines a ejes */}
+      {pointsData.map((p, i) => (
         <g key={i}>
+          <line x1="35" y1={p.y} x2={p.x} y2={p.y} stroke="#C8102E" strokeWidth="0.5" strokeDasharray="2,2" opacity="0.4" />
+          <line x1={p.x} y1={p.y} x2={p.x} y2="185" stroke="#C8102E" strokeWidth="0.5" strokeDasharray="2,2" opacity="0.4" />
           <circle cx={p.x} cy={p.y} r="3.5" fill="#C8102E" />
-          <text x={p.x + 5} y={p.y - 4} fontSize="8.5" fill="#C8102E" fontWeight="bold">{p.label}</text>
+          <text x={p.x + 5} y={p.y - 4} fontSize="8" fill="#C8102E" fontWeight="bold">{p.label}</text>
         </g>
       ))}
       {/* Punto G - ineficiente (interior) */}
@@ -643,9 +663,9 @@ function DiagramCuña() {
 // Demanda Ana — gasolina (Case & Fair Cap. 3)
 // Datos: $1→20, $2→14, $3→10, $4→7, $5→5, $6→3, $7→2, $8→0
 function DiagramDemandaAna() {
-  const fx = (q: number) => 30 + q * 8.5  // 0-22 → 30-217
-  const fy = (p: number) => 178 - p * 20.5 // 0-8 → 178-14
-  const data = [[1,20],[2,14],[3,10],[4,7],[5,5],[6,3],[7,2],[8,0]]
+  const fx = (q: number) => 30 + q * 8.5
+  const fy = (p: number) => 178 - p * 20.5
+  const data: [number,number][] = [[1,20],[2,14],[3,10],[4,7],[5,5],[6,3],[7,2],[8,0]]
   return (
     <svg viewBox="0 0 220 200" className="diag-svg" aria-label="Demanda individual de Ana — gasolina">
       <line x1="30" y1="10" x2="30" y2="178" stroke="#151515" strokeWidth="1.5" />
@@ -654,12 +674,24 @@ function DiagramDemandaAna() {
       <polygon points="213,178 206,175 206,181" fill="#151515" />
       <text x="34" y="14" fontSize="8" fill="#6B6B6B">Precio ($)</text>
       <text x="180" y="190" fontSize="8" fill="#6B6B6B">Galones/sem</text>
-      {/* Curve through all points */}
+      {/* Y-axis ticks (precios) */}
+      {[1,2,3,4,5,6,7,8].map((p) => (
+        <g key={`y${p}`}>
+          <line x1="27" y1={fy(p)} x2="30" y2={fy(p)} stroke="#6B6B6B" strokeWidth="0.8" />
+          <text x="13" y={fy(p) + 3} fontSize="6" fill="#6B6B6B" textAnchor="end">${p}</text>
+        </g>
+      ))}
+      {/* X-axis ticks (cantidades) */}
+      {[0,5,10,15,20].map((q) => (
+        <g key={`x${q}`}>
+          <line x1={fx(q)} y1="178" x2={fx(q)} y2="181" stroke="#6B6B6B" strokeWidth="0.8" />
+          <text x={fx(q)} y="189" fontSize="5.5" fill="#6B6B6B" textAnchor="middle">{q}</text>
+        </g>
+      ))}
       <path
         d={`M ${fx(data[0][1])} ${fy(data[0][0])} ` + data.slice(1).map(([p, q]) => `L ${fx(q)} ${fy(p)}`).join(' ')}
         stroke="#C8102E" strokeWidth="2" fill="none"
       />
-      {/* Points */}
       {data.map(([p, q], i) => (
         <circle key={i} cx={fx(q)} cy={fy(p)} r="2.5" fill="#C8102E" />
       ))}
@@ -671,9 +703,9 @@ function DiagramDemandaAna() {
 // Oferta Hojuelas — Samuelson Tabla 3-3
 // Datos: $1→0, $2→7, $3→12, $4→16, $5→18
 function DiagramOfertaHojuelas() {
-  const fx = (q: number) => 30 + q * 9    // 0-20 → 30-210
-  const fy = (p: number) => 178 - p * 32  // 0-5 → 178-18
-  const data = [[1,0],[2,7],[3,12],[4,16],[5,18]]
+  const fx = (q: number) => 30 + q * 9
+  const fy = (p: number) => 178 - p * 32
+  const data: [number,number][] = [[1,0],[2,7],[3,12],[4,16],[5,18]]
   return (
     <svg viewBox="0 0 220 200" className="diag-svg" aria-label="Oferta — hojuelas de maíz Samuelson">
       <line x1="30" y1="10" x2="30" y2="178" stroke="#151515" strokeWidth="1.5" />
@@ -682,6 +714,18 @@ function DiagramOfertaHojuelas() {
       <polygon points="213,178 206,175 206,181" fill="#151515" />
       <text x="34" y="14" fontSize="8" fill="#6B6B6B">Precio ($/caja)</text>
       <text x="170" y="190" fontSize="8" fill="#6B6B6B">Cantidad (mill.)</text>
+      {[1,2,3,4,5].map((p) => (
+        <g key={`y${p}`}>
+          <line x1="27" y1={fy(p)} x2="30" y2={fy(p)} stroke="#6B6B6B" strokeWidth="0.8" />
+          <text x="13" y={fy(p) + 3} fontSize="6" fill="#6B6B6B" textAnchor="end">${p}</text>
+        </g>
+      ))}
+      {[0,5,10,15,18].map((q) => (
+        <g key={`x${q}`}>
+          <line x1={fx(q)} y1="178" x2={fx(q)} y2="181" stroke="#6B6B6B" strokeWidth="0.8" />
+          <text x={fx(q)} y="189" fontSize="5.5" fill="#6B6B6B" textAnchor="middle">{q}</text>
+        </g>
+      ))}
       <path
         d={`M ${fx(data[0][1])} ${fy(data[0][0])} ` + data.slice(1).map(([p, q]) => `L ${fx(q)} ${fy(p)}`).join(' ')}
         stroke="#151515" strokeWidth="2" fill="none"
@@ -758,6 +802,114 @@ function DiagramEquilibrioSoya() {
       <line x1={fx(20)} y1={fy(3)} x2={fx(40)} y2={fy(3)} stroke="#6B6B6B" strokeWidth="0.6" strokeDasharray="2,2" />
       <text x="6" y={fy(3) + 3} fontSize="7" fill="#6B6B6B">$3.00</text>
       <text x={fx(28)} y={fy(3) - 2} fontSize="6" fill="#6B6B6B">superávit</text>
+    </svg>
+  )
+}
+
+// Equilibrio genérico con escala numérica sugerida (para clase-14)
+function DiagramEquilibrioNum() {
+  // Pe=$800, Qe=12M (datos del ejercicio clase-14)
+  const fx = (q: number) => 30 + (q / 16) * 180
+  const fy = (p: number) => 178 - ((p - 400) / 800) * 160
+  return (
+    <svg viewBox="0 -6 220 212" className="diag-svg" aria-label="Equilibrio de mercado — ejercicio">
+      <line x1="30" y1="10" x2="30" y2="178" stroke="#151515" strokeWidth="1.5" />
+      <line x1="30" y1="178" x2="210" y2="178" stroke="#151515" strokeWidth="1.5" />
+      <polygon points="30,7 27,14 33,14" fill="#151515" />
+      <polygon points="213,178 206,175 206,181" fill="#151515" />
+      <text x="33" y="16" fontSize="8" fill="#6B6B6B">Precio ($)</text>
+      <text x="175" y="190" fontSize="8" fill="#6B6B6B">Cantidad (mill.)</text>
+      {/* Ticks Y */}
+      {[400,600,800,1000,1200].map((p) => (
+        <g key={`y${p}`}>
+          <line x1="27" y1={fy(p)} x2="30" y2={fy(p)} stroke="#6B6B6B" strokeWidth="0.6" />
+          <text x="8" y={fy(p) + 3} fontSize="5.5" fill="#6B6B6B" textAnchor="end">${p}</text>
+        </g>
+      ))}
+      {/* Ticks X */}
+      {[0,3,6,9,12,15].map((q) => (
+        <g key={`x${q}`}>
+          <line x1={fx(q)} y1="178" x2={fx(q)} y2="181" stroke="#6B6B6B" strokeWidth="0.6" />
+          <text x={fx(q)} y="189" fontSize="5.5" fill="#6B6B6B" textAnchor="middle">{q}</text>
+        </g>
+      ))}
+      {/* D */}
+      <line x1={fx(2)} y1={fy(1150)} x2={fx(15)} y2={fy(500)} stroke="#C8102E" strokeWidth="2" />
+      <text x={fx(15) - 4} y={fy(500) + 8} fontSize="9" fill="#C8102E" fontWeight="bold">D</text>
+      <text x={fx(14)} y={fy(500) + 16} fontSize="6" fill="#C8102E">(Demanda)</text>
+      {/* O */}
+      <line x1={fx(2)} y1={fy(500)} x2={fx(15)} y2={fy(1150)} stroke="#151515" strokeWidth="2" />
+      <text x={fx(15) - 4} y={fy(1150) - 2} fontSize="9" fill="#151515" fontWeight="bold">O</text>
+      <text x={fx(14)} y={fy(1150) - 10} fontSize="6" fill="#6B6B6B">(Oferta)</text>
+      {/* Equilibrium */}
+      <circle cx={fx(12)} cy={fy(800)} r="4" fill="#C8102E" />
+      <line x1="30" y1={fy(800)} x2={fx(12)} y2={fy(800)} stroke="#C8102E" strokeWidth="0.8" strokeDasharray="3,2" />
+      <line x1={fx(12)} y1={fy(800)} x2={fx(12)} y2="178" stroke="#C8102E" strokeWidth="0.8" strokeDasharray="3,2" />
+      <text x="4" y={fy(800) + 3} fontSize="7" fill="#C8102E" fontWeight="bold">$800</text>
+      <text x={fx(12) - 6} y="196" fontSize="7" fill="#C8102E" fontWeight="bold">12M</text>
+      <text x={fx(12) + 5} y={fy(800) - 3} fontSize="7" fill="#C8102E" fontWeight="bold">E</text>
+    </svg>
+  )
+}
+
+// Cuña del ejercicio clase-14: T=$200, Pe=$800, Pc=$940, Pv=$740, Qe=12M, Qt=9M
+function DiagramCunaEjercicio() {
+  const fx = (q: number) => 30 + (q / 16) * 180
+  const fy = (p: number) => 178 - ((p - 400) / 800) * 160
+  return (
+    <svg viewBox="0 0 220 208" className="diag-svg" aria-label="Cuña impositiva — ejercicio bebidas azucaradas">
+      <line x1="30" y1="10" x2="30" y2="178" stroke="#151515" strokeWidth="1.5" />
+      <line x1="30" y1="178" x2="210" y2="178" stroke="#151515" strokeWidth="1.5" />
+      <polygon points="30,7 27,14 33,14" fill="#151515" />
+      <polygon points="213,178 206,175 206,181" fill="#151515" />
+      <text x="33" y="16" fontSize="8" fill="#6B6B6B">Precio ($)</text>
+      <text x="175" y="190" fontSize="8" fill="#6B6B6B">Cantidad (mill.)</text>
+      {/* Ticks Y */}
+      {[400,600,740,800,940,1200].map((p) => (
+        <g key={`y${p}`}>
+          <line x1="27" y1={fy(p)} x2="30" y2={fy(p)} stroke="#6B6B6B" strokeWidth="0.5" />
+        </g>
+      ))}
+      {/* Ticks X */}
+      {[0,3,6,9,12].map((q) => (
+        <g key={`x${q}`}>
+          <line x1={fx(q)} y1="178" x2={fx(q)} y2="181" stroke="#6B6B6B" strokeWidth="0.5" />
+          <text x={fx(q)} y="189" fontSize="5" fill="#6B6B6B" textAnchor="middle">{q}</text>
+        </g>
+      ))}
+      {/* Recaudación */}
+      <rect x="30" y={fy(940)} width={fx(9) - 30} height={fy(740) - fy(940)} fill="#C8102E" opacity="0.12" />
+      {/* Peso muerto */}
+      <polygon points={`${fx(9)},${fy(940)} ${fx(9)},${fy(740)} ${fx(12)},${fy(800)}`} fill="#C8102E" opacity="0.3" />
+      {/* D */}
+      <line x1={fx(2)} y1={fy(1150)} x2={fx(15)} y2={fy(500)} stroke="#C8102E" strokeWidth="2" />
+      <text x={fx(15) - 4} y={fy(500) + 8} fontSize="9" fill="#C8102E" fontWeight="bold">D</text>
+      {/* O */}
+      <line x1={fx(2)} y1={fy(500)} x2={fx(15)} y2={fy(1150)} stroke="#151515" strokeWidth="2" />
+      <text x={fx(15) - 4} y={fy(1150) - 2} fontSize="9" fill="#151515" fontWeight="bold">O</text>
+      {/* Dashed price levels */}
+      <line x1="30" y1={fy(940)} x2={fx(9)} y2={fy(940)} stroke="#C8102E" strokeWidth="0.8" strokeDasharray="3,2" />
+      <line x1="30" y1={fy(800)} x2={fx(12)} y2={fy(800)} stroke="#6B6B6B" strokeWidth="0.6" strokeDasharray="2,2" />
+      <line x1="30" y1={fy(740)} x2={fx(9)} y2={fy(740)} stroke="#C8102E" strokeWidth="0.8" strokeDasharray="3,2" />
+      <line x1={fx(9)} y1={fy(940)} x2={fx(9)} y2="178" stroke="#C8102E" strokeWidth="0.8" strokeDasharray="3,2" />
+      <line x1={fx(12)} y1={fy(800)} x2={fx(12)} y2="178" stroke="#6B6B6B" strokeWidth="0.6" strokeDasharray="2,2" />
+      {/* Tax bracket */}
+      <line x1="21" y1={fy(940)} x2="21" y2={fy(740)} stroke="#C8102E" strokeWidth="1.5" />
+      <line x1="21" y1={fy(940)} x2="27" y2={fy(940)} stroke="#C8102E" strokeWidth="1.5" />
+      <line x1="21" y1={fy(740)} x2="27" y2={fy(740)} stroke="#C8102E" strokeWidth="1.5" />
+      <text x="2" y={fy(840)} fontSize="7" fill="#C8102E" fontWeight="bold">T</text>
+      <text x="0" y={fy(840) + 8} fontSize="5" fill="#C8102E">($200)</text>
+      {/* Price labels */}
+      <text x="4" y={fy(940) + 3} fontSize="6" fill="#C8102E" fontWeight="bold">$940 Pc</text>
+      <text x="4" y={fy(800) + 3} fontSize="6" fill="#6B6B6B">$800 Pe</text>
+      <text x="4" y={fy(740) + 3} fontSize="6" fill="#C8102E" fontWeight="bold">$740 Pv</text>
+      {/* Quantity labels */}
+      <text x={fx(9) - 4} y="200" fontSize="6" fill="#C8102E" fontWeight="bold">9M</text>
+      <text x={fx(12) - 5} y="200" fontSize="6" fill="#6B6B6B">12M</text>
+      {/* Area labels */}
+      <text x={fx(4)} y={fy(840)} fontSize="6" fill="#8A0B1F">recaudación</text>
+      <text x={fx(9.5)} y={fy(840)} fontSize="6" fill="#8A0B1F">peso</text>
+      <text x={fx(9.5)} y={fy(840) + 8} fontSize="6" fill="#8A0B1F">muerto</text>
     </svg>
   )
 }
@@ -917,7 +1069,9 @@ function Diagrama({ s }: { s: Section }) {
       case 'fpp': return <DiagramFPP />
       case 'fpp-tabla': return <DiagramFPPTabla />
       case 'equilibrio': return <DiagramEquilibrio />
+      case 'equilibrio-num': return <DiagramEquilibrioNum />
       case 'cuña': return <DiagramCuña />
+      case 'cuna-ejercicio': return <DiagramCunaEjercicio />
       case 'demanda-ana': return <DiagramDemandaAna />
       case 'oferta-hojuelas': return <DiagramOfertaHojuelas />
       case 'costo-panaderia': return <DiagramCostoPanaderia />

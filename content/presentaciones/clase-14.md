@@ -304,28 +304,28 @@ Frontera de Posibilidades de Producción
 **Sobre la curva** = eficiencia productiva (recursos plenamente usados). **Bajo la curva** = ineficiencia (recursos ociosos o mal asignados). **Fuera de la curva** = inalcanzable con los recursos actuales. La pendiente de la curva es el **costo de oportunidad**: producir más de B implica producir menos de A.
 
 ::d2-tipo
-equilibrio
+equilibrio-num
 
 ::d2-titulo
-El Punto de Equilibrio
+El equilibrio — con los datos del ejercicio
 
 ::d2-leyenda
-**D** = Demanda · **O** = Oferta · **Pe** = precio de equilibrio · **Qe** = cantidad de equilibrio · **E** = punto de equilibrio
+**D** = Demanda · **O** = Oferta · **$800** = Pe (precio de equilibrio) · **12M** = Qe (cantidad de equilibrio) · **E** = punto de equilibrio
 
 ::d2-texto
-La curva **D** baja (ley de la demanda). La curva **O** sube (ley de la oferta). Donde se cruzan: precio de equilibrio **Pe** y cantidad **Qe**. Si P > Pe hay excedente y el precio baja. Si P < Pe hay escasez y el precio sube. El mecanismo es automático.
+Donde D y O se cruzan: **Pe = $800** y **Qe = 12M unidades**. Si P > $800 hay excedente y el precio baja. Si P < $800 hay escasez y el precio sube. El mecanismo es automático. Estos son los datos del ejercicio de bebidas azucaradas.
 
 ::d3-tipo
-cuña
+cuna-ejercicio
 
 ::d3-titulo
-La Cuña Impositiva
+La cuña — ejercicio bebidas azucaradas
 
 ::d3-leyenda
-**T** = monto del impuesto · **Pc** = precio del consumidor · **Pv** = precio del vendedor · **Pe** = precio equilibrio sin impuesto · **Qt** = cantidad con impuesto · **Qe** = cantidad equilibrio sin impuesto
+**T** = $200 (impuesto) · **Pc** = $940 (consumidor) · **Pv** = $740 (vendedor) · **Pe** = $800 (equilibrio sin impuesto) · **9M** = Qt (con impuesto) · **12M** = Qe (sin impuesto)
 
 ::d3-texto
-El impuesto abre una brecha entre **Pc** (precio que paga el consumidor, sube) y **Pv** (precio que recibe el vendedor, baja). La diferencia es exactamente el monto del impuesto. El rectángulo sombreado es **recaudación** (va al Estado). El triángulo es **peso muerto** (bienestar destruido que no va a nadie).
+El impuesto de $200 abre la cuña: el consumidor paga **$940**, el vendedor recibe **$740**. La cantidad cae de 12M a 9M. El rectángulo es **recaudación** ($200 × 9M). El triángulo son las **3M unidades** que dejaron de transarse — **peso muerto**.
 :::
 
 ::: exercise-intro
