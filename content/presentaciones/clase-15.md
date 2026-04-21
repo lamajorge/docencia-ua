@@ -6,24 +6,22 @@ fecha: Miércoles 22 de abril
 tipo: evaluacion
 ---
 
-::: eval-cabecera
-::sede
+::: eval-seccion
+::cabecera-sede
 Universidad Autónoma de Chile · Facultad de Ciencias Jurídicas y Sociales
 
-::curso
+::cabecera-curso
 DERE-A0004 · Introducción a la Economía
 
-::titulo
+::cabecera-titulo
 Evaluación Regular 1 — Unidades I y II
 
-::datos
+::cabecera-datos
 Semana 7 · Miércoles 22 de abril · Duración 90 minutos · Puntaje total 20 puntos · Cobertura Clases 1 a 13
 
-::instrucciones
-Marca con una **X** la alternativa correcta en la Sección I. En la Sección II se evalúa precisión conceptual y claridad, no extensión. **No se descuenta** por error en la selección múltiple. El uso de copia, fraude o materiales no autorizados implica nota 1.0 (Art. 28 Reglamento de Pregrado).
-:::
+::cabecera-instrucciones
+En la Sección I, **encierra en un círculo** la letra de la alternativa correcta. En la Sección II se evalúa precisión conceptual y claridad, no extensión. **No se descuenta** por error en la selección múltiple. El uso de copia, fraude o materiales no autorizados implica nota 1.0 (Art. 28 Reglamento de Pregrado).
 
-::: eval-seccion
 ::titulo
 Sección I — Selección múltiple (10 puntos)
 
@@ -102,7 +100,7 @@ Sección I — Selección múltiple (10 puntos)
 - D) Todas las anteriores son externalidades.
 :::
 
-::: eval-seccion
+::: eval-seccion pagina=nueva
 ::titulo
 Sección II — Desarrollo (10 puntos)
 
@@ -111,23 +109,9 @@ Responde en el espacio provisto. Se evalúa precisión conceptual y claridad, no
 
 ::preguntas
 **Pregunta 1 — Conceptual (4 pts).** Explica qué ocurre en un mercado competitivo cuando el precio de un bien **sube por encima del equilibrio**. Describe el mecanismo de ajuste que lleva al mercado de vuelta al equilibrio, mencionando qué roles juegan la ley de la demanda y la ley de la oferta.
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
 :::
 
-::: eval-ejercicio
+::: eval-ejercicio pagina=nueva
 ::titulo
 Pregunta 2 — Ejercicio aplicado: cambios en el equilibrio (6 pts)
 
@@ -144,25 +128,13 @@ equilibrio-ref-bn
 ::subpartes
 **(a) (2 pts)** Sube fuertemente el precio del **trigo**, insumo clave para producir pan.
 
-&nbsp;
-
-&nbsp;
-
 ---
 
 **(b) (2 pts)** El Ministerio de Salud publica un estudio sobre los riesgos del consumo excesivo de harinas blancas y los consumidores **reducen su preferencia** por el pan tradicional.
 
-&nbsp;
-
-&nbsp;
-
 ---
 
 **(c) (2 pts)** Una **nueva tecnología de horneado** reduce el costo unitario de producción del pan.
-
-&nbsp;
-
-&nbsp;
 :::
 
 ::: eval-cierre

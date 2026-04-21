@@ -61,7 +61,7 @@ export default async function ClasePage({ params }: { params: { id: string } }) 
               </div>
               <PrintButton />
             </div>
-            <main className={isEval ? 'deck deck-papel' : 'deck'}>
+            <main className="deck">
               {pres.sections.map((s, i) => (
                 <SectionRenderer key={i} section={s} numero={clase.numero} />
               ))}
@@ -1183,8 +1183,28 @@ function EvalInstrucciones({ s }: { s: Section }) {
 }
 
 function EvalSeccion({ s }: { s: Section }) {
+  const paginaNueva = s.props.pagina === 'nueva'
+  const tieneCabecera = !!(s.slots['cabecera-sede'] || s.slots['cabecera-titulo'])
   return (
-    <section className="slide eval-slide eval-seccion">
+    <section className={`slide eval-slide eval-hoja eval-seccion${paginaNueva ? ' eval-pagina-nueva' : ''}`}>
+      {tieneCabecera && (
+        <div className="eh-bloque">
+          <div className="eh-top">
+            <p className="eh-sede">{s.slots['cabecera-sede']}</p>
+            <p className="eh-curso">{s.slots['cabecera-curso']}</p>
+          </div>
+          <h1 className="eh-titulo">{s.slots['cabecera-titulo']}</h1>
+          <p className="eh-datos">{s.slots['cabecera-datos']}</p>
+          <div className="eh-identificacion">
+            <div className="eh-campo eh-campo-nombre"><span>Nombre</span><span className="eh-line" /></div>
+            <div className="eh-campo"><span>Sección</span><span className="eh-line" /></div>
+            <div className="eh-campo"><span>Fecha</span><span className="eh-line" /></div>
+          </div>
+          {s.slots['cabecera-instrucciones'] && (
+            <div className="eh-instrucciones"><MD>{s.slots['cabecera-instrucciones']}</MD></div>
+          )}
+        </div>
+      )}
       <header className="es-head">
         <h2 className="es-titulo">{s.slots.titulo}</h2>
         {s.slots.instrucciones && (
@@ -1198,8 +1218,9 @@ function EvalSeccion({ s }: { s: Section }) {
 
 function EvalEjercicio({ s }: { s: Section }) {
   const diag = (s.slots.diagrama || '').trim()
+  const paginaNueva = s.props.pagina === 'nueva'
   return (
-    <section className="slide eval-slide eval-ejercicio">
+    <section className={`slide eval-slide eval-hoja eval-ejercicio${paginaNueva ? ' eval-pagina-nueva' : ''}`}>
       <header className="eej-head">
         <h2 className="eej-titulo">{s.slots.titulo}</h2>
       </header>
@@ -2303,10 +2324,9 @@ a { color: inherit; text-decoration: none; }
 `
 
 // ── ESTILOS MODO EVALUACIÓN ───────────────────────
-// Se concatenan a `styles` cuando frontmatter.tipo === 'evaluacion'.
-// Overridea la @page a letter vertical y redefine el look a B&N sobrio.
-// En screen las secciones se acomodan en hoja simulada (216×279mm).
-// En print: carta vertical con márgenes 14mm·18mm; el navegador maneja saltos de página.
+// Cada sección .eval-hoja es UNA hoja carta vertical independiente.
+// El prop `pagina=nueva` fuerza salto de página en print y separación visual en screen.
+// Override del .slide base para aislar de los estilos del modo clase.
 const evalStyles = `
 body.eval-mode {
   background: #e8e6e1;
@@ -2330,27 +2350,14 @@ body.eval-mode .toolbar-print {
 }
 body.eval-mode .deck {
   background: transparent;
-  padding: 20px 0;
+  padding: 28px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
 }
-/* Hoja simulada en screen — carta vertical (216×279mm).
-   Los eval-slide son secciones que fluyen dentro del papel; el browser
-   maneja los saltos en print según la altura real del contenido. */
-body.eval-mode .deck-papel {
-  width: 216mm;
-  margin: 14px auto;
-  background: #fff;
-  color: #000;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.06), 0 6px 20px rgba(0,0,0,0.10);
-  border: 1px solid #d6d3cc;
-  padding: 14mm 18mm;
-  min-height: 279mm;
-  box-sizing: border-box;
-  font-family: 'Source Serif 4', Georgia, serif;
-  line-height: 1.5;
-}
-/* Reset COMPLETO del .slide base: block layout, sin overflow oculto, sin
-   saltos de página forzados por sección. El browser maneja los saltos según
-   el flujo real del contenido en @page letter portrait. */
+
+/* Reset del .slide base del modo clase cuando es eval-slide */
 body.eval-mode .slide.eval-slide {
   display: block;
   position: static;
@@ -2363,17 +2370,20 @@ body.eval-mode .slide.eval-slide {
   color: #000;
   box-shadow: none;
   border: none;
-  border-bottom: none;
   overflow: visible;
   font-family: 'Source Serif 4', Georgia, serif;
   line-height: 1.5;
+  flex: 0 0 auto;
   break-after: auto;
   page-break-after: auto;
   break-before: auto;
   page-break-before: auto;
   break-inside: auto;
   box-sizing: border-box;
+  justify-content: flex-start;
+  text-align: left;
 }
+
 body.eval-mode .slide.eval-slide p,
 body.eval-mode .slide.eval-slide li {
   font-family: 'Source Serif 4', Georgia, serif;
@@ -2382,72 +2392,91 @@ body.eval-mode .slide.eval-slide li {
 body.eval-mode .slide.eval-slide strong { font-weight: 700; }
 body.eval-mode .slide.eval-slide em { font-style: italic; }
 
-/* ── CABECERA unificada (arriba de la primera página) ── */
-.eval-cabecera { margin-bottom: 8mm; }
-.ec-top { display: flex; justify-content: space-between; align-items: baseline; padding-bottom: 3mm; border-bottom: 2px solid #000; font-family: 'Inter', sans-serif; font-size: 8.5pt; text-transform: uppercase; letter-spacing: 0.08em; }
-.ec-sede { margin: 0; }
-.ec-curso { margin: 0; font-weight: 600; }
-.ec-titulo { font-family: 'Source Serif 4', Georgia, serif; font-size: 17pt; font-weight: 700; margin: 4mm 0 2mm; letter-spacing: -0.005em; }
-.ec-datos { font-family: 'Inter', sans-serif; font-size: 9.5pt; letter-spacing: 0.02em; margin: 0 0 5mm; padding: 1.5mm 0; border-top: 0.5px solid #000; border-bottom: 0.5px solid #000; }
-.ec-identificacion { display: flex; gap: 5mm; margin-bottom: 4mm; }
-.ec-campo { display: flex; align-items: flex-end; gap: 2.5mm; font-family: 'Inter', sans-serif; font-size: 9.5pt; flex: 0 1 auto; }
-.ec-campo-nombre { flex: 1 1 auto; }
-.ec-campo > span:first-child { white-space: nowrap; }
-.ec-line { flex: 1; min-width: 28mm; border-bottom: 0.8px solid #000; height: 5mm; }
-.ec-instrucciones { font-size: 10pt; line-height: 1.45; border-left: 3px solid #000; padding: 2mm 4mm; background: #fafaf7; }
-.ec-instrucciones p { margin: 0; }
+/* ── HOJA (carta vertical 216×279mm) ──
+   Cada .eval-hoja es una página completa. En screen se ve como papel con sombra
+   y margen externo; en print se imprime edge-to-edge (el @page define márgenes). */
+body.eval-mode .eval-hoja {
+  width: 216mm;
+  min-height: 279mm;
+  padding: 16mm 18mm 14mm 18mm;
+  background: #fff !important;
+  color: #000 !important;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.06), 0 6px 22px rgba(0,0,0,0.10);
+  border: 1px solid #d6d3cc;
+  box-sizing: border-box;
+}
+body.eval-mode .eval-pagina-nueva {
+  break-before: page;
+  page-break-before: always;
+}
 
-/* Legacy eval-encabezado / eval-instrucciones (no se usan ya, pero se conservan por compat) */
-.eval-encabezado { display: none; }
-.eval-instrucciones { display: none; }
+/* ── CABECERA (bloque inline al tope de la primera hoja) ── */
+.eh-bloque { margin-bottom: 7mm; }
+.eh-top { display: flex; justify-content: space-between; align-items: baseline; padding-bottom: 2mm; border-bottom: 2px solid #000; font-family: 'Inter', sans-serif; font-size: 8.5pt; text-transform: uppercase; letter-spacing: 0.08em; }
+.eh-sede { margin: 0; }
+.eh-curso { margin: 0; font-weight: 600; }
+.eh-titulo { font-family: 'Source Serif 4', Georgia, serif; font-size: 18pt; font-weight: 700; margin: 4mm 0 2mm; letter-spacing: -0.005em; line-height: 1.2; }
+.eh-datos { font-family: 'Inter', sans-serif; font-size: 9.5pt; letter-spacing: 0.02em; margin: 0 0 5mm; padding: 1.5mm 0; border-top: 0.5px solid #000; border-bottom: 0.5px solid #000; }
+.eh-identificacion { display: flex; gap: 5mm; margin-bottom: 4mm; }
+.eh-campo { display: flex; align-items: flex-end; gap: 2.5mm; font-family: 'Inter', sans-serif; font-size: 9.5pt; flex: 0 1 auto; }
+.eh-campo-nombre { flex: 2 1 auto; }
+.eh-campo > span:first-child { white-space: nowrap; }
+.eh-line { flex: 1; min-width: 24mm; border-bottom: 0.8px solid #000; height: 5mm; }
+.eh-instrucciones { font-size: 10pt; line-height: 1.45; border-left: 3px solid #000; padding: 2mm 4mm; background: #fafaf7; }
+.eh-instrucciones p { margin: 0; }
+
+/* Legacy: eval-encabezado y eval-instrucciones ya no se usan */
+.eval-encabezado, .eval-instrucciones { display: none; }
 
 /* ── Sección (SM o desarrollo) ── */
-.eval-seccion { margin-top: 6mm; break-before: auto; }
-.eval-seccion + .eval-seccion { margin-top: 8mm; break-before: page; }
 .es-head { border-bottom: 1px solid #000; padding-bottom: 2mm; margin-bottom: 4mm; }
 .es-titulo { font-family: 'Source Serif 4', Georgia, serif; font-size: 13pt; font-weight: 700; margin: 0 0 1.5mm; }
-.es-instrucciones { font-family: 'Inter', sans-serif; font-size: 9pt; color: #333; font-style: italic; }
+.es-instrucciones { font-family: 'Inter', sans-serif; font-size: 9.5pt; color: #333; font-style: italic; }
 .es-instrucciones p { margin: 0; }
 .es-preguntas p { margin: 0 0 2mm; font-size: 10.5pt; line-height: 1.45; }
 .es-preguntas p + ul { margin-top: 0; margin-bottom: 4mm; }
-.es-preguntas ul { list-style: none; padding-left: 4mm; margin: 0 0 5mm; }
-.es-preguntas li { padding: 0; font-size: 10pt; line-height: 1.4; padding-left: 6.5mm; position: relative; margin-bottom: 0.5mm; }
-.es-preguntas li::before { content: "□"; position: absolute; left: 0; font-size: 11pt; line-height: 1.05; color: #000; font-family: 'Inter', sans-serif; }
+.es-preguntas ul { list-style: none; padding-left: 5mm; margin: 0 0 5mm; }
+.es-preguntas li { padding: 0; font-size: 10pt; line-height: 1.4; margin-bottom: 0.5mm; }
+.es-preguntas li::before { content: none; }  /* sin caja: el estudiante marca con círculo a mano */
+.es-preguntas li::marker { content: ''; }
 .es-preguntas strong { font-weight: 700; }
 .es-preguntas hr { border: none; border-top: 1px dashed #999; margin: 5mm 0; }
 
 /* ── Ejercicio aplicado (con diagrama al lado derecho) ── */
-.eval-ejercicio { margin-top: 6mm; break-inside: avoid; }
 .eej-head { border-bottom: 1px solid #000; padding-bottom: 2mm; margin-bottom: 4mm; }
-.eej-titulo { font-family: 'Source Serif 4', Georgia, serif; font-size: 12pt; font-weight: 700; margin: 0; }
-.eej-body { display: grid; grid-template-columns: 1fr 70mm; gap: 5mm; align-items: start; margin-bottom: 5mm; }
-.eej-contexto { font-size: 10pt; line-height: 1.45; }
+.eej-titulo { font-family: 'Source Serif 4', Georgia, serif; font-size: 13pt; font-weight: 700; margin: 0; }
+.eej-body { display: grid; grid-template-columns: 1fr 72mm; gap: 6mm; align-items: start; margin-bottom: 6mm; }
+.eej-contexto { font-size: 10.5pt; line-height: 1.5; }
 .eej-contexto p { margin: 0 0 2mm; }
 .eej-contexto ol { padding-left: 5mm; margin: 2mm 0; }
-.eej-contexto ol li { font-size: 10pt; margin-bottom: 1mm; }
+.eej-contexto ol li { font-size: 10.5pt; margin-bottom: 1mm; }
 .eej-contexto strong { font-weight: 700; }
-.eej-diagrama { display: flex; justify-content: center; align-items: center; padding: 1.5mm; border: 0.5px solid #000; background: #fff; }
+.eej-diagrama { display: flex; justify-content: center; align-items: flex-start; padding: 2mm; border: 0.5px solid #000; background: #fff; }
 .eej-diagrama svg { width: 100%; height: auto; max-width: 68mm; }
-.eej-subpartes { font-size: 10pt; line-height: 1.45; }
-.eej-subpartes p { margin: 0 0 2.5mm; }
-.eej-subpartes hr { border: none; border-top: 1px dashed #999; margin: 4mm 0 5mm; }
+.eej-subpartes { font-size: 10.5pt; line-height: 1.5; margin-top: 2mm; }
+.eej-subpartes p { margin: 0 0 4mm; }
+.eej-subpartes p:has(strong:first-child) { margin-top: 14mm; }
+.eej-subpartes p:first-child:has(strong:first-child) { margin-top: 0; }
+.eej-subpartes hr { border: none; border-top: 1px dashed #ccc; margin: 0; }
 
 /* ── Cierre ── */
-.eval-cierre { margin-top: 6mm; text-align: center; break-inside: avoid; }
+.eval-cierre { text-align: center; padding: 0 !important; min-height: 0 !important; background: transparent !important; border: none !important; box-shadow: none !important; }
 .ec-linea { width: 30%; margin: 0 auto 2mm; border-top: 0.5px solid #000; }
 .ec-texto { font-family: 'Source Serif 4', Georgia, serif; font-style: italic; font-size: 9.5pt; margin: 0; color: #444; }
 
 /* Diagrama B&N */
 .diag-bw { font-family: 'Source Serif 4', Georgia, serif; width: 100%; height: auto; }
 
-/* Impresión */
+/* Impresión: hojas ocupan página completa, sin sombras ni bordes, edge-to-edge */
 @media print {
-  body.eval-mode, body.eval-mode .deck-papel {
+  body.eval-mode, body.eval-mode .deck {
     background: #fff !important;
     color: #000 !important;
+    padding: 0 !important;
+    gap: 0 !important;
   }
-  body.eval-mode .toolbar { display: none; }
-  body.eval-mode .deck-papel {
+  body.eval-mode .toolbar { display: none !important; }
+  body.eval-mode .eval-hoja {
     width: 100% !important;
     min-height: 0 !important;
     padding: 0 !important;
@@ -2458,8 +2487,8 @@ body.eval-mode .slide.eval-slide em { font-style: italic; }
   body.eval-mode .eej-diagrama { border: 0.5px solid #000 !important; }
 }
 
-/* @page override: carta vertical con márgenes 14mm vert / 18mm horiz.
-   Al concatenarse después del @page del modo clase (A4 landscape), este gana por cascade. */
+/* @page: carta vertical con márgenes 14mm verticales / 18mm horizontales.
+   Va al final del bundle styles+evalStyles para ganarle al @page del modo clase. */
 @page { size: letter portrait; margin: 14mm 18mm; }
 `
 
