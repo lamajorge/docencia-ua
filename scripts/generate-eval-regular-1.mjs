@@ -273,11 +273,11 @@ async function main() {
           alignment: AlignmentType.LEFT,
         }),
         p('Responde en el espacio provisto. Se evalúa precisión conceptual y claridad, no extensión.', { italics: true, size: 20, after: 240 }),
-        pRuns([r('Pregunta 1 — Conceptual (4 pts). ', { bold: true }), r('Explica qué ocurre en un mercado competitivo cuando el precio de un bien '), r('sube por encima del equilibrio', { bold: true }), r('. Describe el mecanismo de ajuste que lleva al mercado de vuelta al equilibrio, mencionando qué roles juegan la ley de la demanda y la ley de la oferta.')], { after: 240 }),
-        ...lineaManuscrita(7),
+        pRuns([r('Pregunta 1 — Conceptual (5 pts). ', { bold: true }), r('Explica qué es el '), r('costo de oportunidad', { bold: true }), r(' y por qué es relevante para la toma de decisiones económicas. Usa un '), r('ejemplo concreto', { bold: true }), r(' para ilustrar tu respuesta.')], { after: 240 }),
+        ...lineaManuscrita(8),
 
         // ── SECCIÓN II — Pregunta 2 (ejercicio, nueva página) ──
-        p('Pregunta 2 — Ejercicio aplicado: cambios en el equilibrio (6 pts)', {
+        p('Pregunta 2 — Ejercicio aplicado: cambios en el equilibrio (5 pts)', {
           bold: true, size: 24, before: 400, after: 120,
           border: { bottom: { color: '000000', size: 6, style: BorderStyle.SINGLE, space: 4 } },
         }),
@@ -298,15 +298,12 @@ async function main() {
           ],
         }),
 
-        // Sub-preguntas
-        pRuns([r('(a) (2 pts). ', { bold: true }), r('Sube fuertemente el precio del '), r('trigo', { bold: true }), r(', insumo clave para producir pan.')], { after: 160 }),
-        ...lineaManuscrita(3),
+        // Sub-preguntas (solo a y b, 2,5 pts c/u)
+        pRuns([r('(a) (2,5 pts). ', { bold: true }), r('Sube fuertemente el precio del '), r('trigo', { bold: true }), r(', insumo clave para producir pan.')], { after: 160 }),
+        ...lineaManuscrita(4),
 
-        pRuns([r('(b) (2 pts). ', { bold: true }), r('El Ministerio de Salud publica un estudio sobre los riesgos del consumo excesivo de harinas blancas y los consumidores '), r('reducen su preferencia', { bold: true }), r(' por el pan tradicional.')], { after: 160 }),
-        ...lineaManuscrita(3),
-
-        pRuns([r('(c) (2 pts). ', { bold: true }), r('Una '), r('nueva tecnología de horneado', { bold: true }), r(' reduce el costo unitario de producción del pan.')], { after: 160 }),
-        ...lineaManuscrita(3),
+        pRuns([r('(b) (2,5 pts). ', { bold: true }), r('El Ministerio de Salud publica un estudio sobre los riesgos del consumo excesivo de harinas blancas y los consumidores '), r('reducen su preferencia', { bold: true }), r(' por el pan tradicional.')], { after: 160 }),
+        ...lineaManuscrita(4),
 
         // ── CIERRE ──
         p('— Fin de la evaluación —', {
