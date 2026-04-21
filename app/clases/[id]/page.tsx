@@ -2348,19 +2348,31 @@ body.eval-mode .deck-papel {
   font-family: 'Source Serif 4', Georgia, serif;
   line-height: 1.5;
 }
+/* Reset COMPLETO del .slide base: block layout, sin overflow oculto, sin
+   saltos de página forzados por sección. El browser maneja los saltos según
+   el flujo real del contenido en @page letter portrait. */
 body.eval-mode .slide.eval-slide {
+  display: block;
+  position: static;
   width: auto;
   min-height: 0;
+  max-height: none;
   padding: 0;
   margin: 0;
   background: transparent;
   color: #000;
   box-shadow: none;
   border: none;
-  display: block;
+  border-bottom: none;
+  overflow: visible;
   font-family: 'Source Serif 4', Georgia, serif;
   line-height: 1.5;
-  break-inside: avoid-page;
+  break-after: auto;
+  page-break-after: auto;
+  break-before: auto;
+  page-break-before: auto;
+  break-inside: auto;
+  box-sizing: border-box;
 }
 body.eval-mode .slide.eval-slide p,
 body.eval-mode .slide.eval-slide li {
