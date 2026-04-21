@@ -32,6 +32,7 @@ export default async function ClasePage({ params }: { params: { id: string } }) 
   if (!clase) notFound()
 
   const pres = getPresentacion(numero)
+  const isEval = pres?.frontmatter?.tipo === 'evaluacion'
 
   return (
     <html lang="es">
@@ -42,12 +43,12 @@ export default async function ClasePage({ params }: { params: { id: string } }) 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,900&family=JetBrains+Mono:wght@400;500&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,900&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap"
           rel="stylesheet"
         />
-        <style dangerouslySetInnerHTML={{ __html: styles }} />
+        <style dangerouslySetInnerHTML={{ __html: styles + (isEval ? evalStyles : '') }} />
       </head>
-      <body>
+      <body className={isEval ? 'eval-mode' : ''}>
         {!pres ? (
           <Placeholder numero={clase.numero} titulo={clase.titulo} />
         ) : (
@@ -106,6 +107,16 @@ function SectionRenderer({ section, numero }: { section: Section; numero: number
       return <Referencia s={section} />
     case 'diagrama':
       return <Diagrama s={section} />
+    case 'eval-encabezado':
+      return <EvalEncabezado s={section} />
+    case 'eval-instrucciones':
+      return <EvalInstrucciones s={section} />
+    case 'eval-seccion':
+      return <EvalSeccion s={section} />
+    case 'eval-ejercicio':
+      return <EvalEjercicio s={section} />
+    case 'eval-cierre':
+      return <EvalCierre s={section} />
     default:
       return (
         <section className="slide slide-generic">
@@ -1115,6 +1126,143 @@ function Placeholder({ numero, titulo }: { numero: number; titulo: string }) {
   )
 }
 
+// ── EVALUACIÓN ─────────────────────────────────────
+// Tipos eval-* renderizan en modo "prueba impresa": carta vertical, B&N, Source Serif.
+
+function EvalEncabezado({ s }: { s: Section }) {
+  return (
+    <section className="slide eval-slide eval-encabezado">
+      <div className="eh-institucional">
+        <p className="eh-sede">{s.slots.sede}</p>
+        <p className="eh-curso">{s.slots.curso}</p>
+      </div>
+      <div className="eh-titulo-bloque">
+        <h1 className="eh-titulo">{s.slots.titulo}</h1>
+        <p className="eh-cobertura">{s.slots.cobertura}</p>
+      </div>
+      <p className="eh-datos">{s.slots.datos}</p>
+      <div className="eh-identificacion">
+        <div className="eh-campo"><span>Nombre completo</span><span className="eh-line" /></div>
+        <div className="eh-campo eh-campo-corto"><span>Sección</span><span className="eh-line" /></div>
+        <div className="eh-campo eh-campo-corto"><span>Fecha</span><span className="eh-line" /></div>
+      </div>
+    </section>
+  )
+}
+
+function EvalInstrucciones({ s }: { s: Section }) {
+  return (
+    <section className="slide eval-slide eval-instrucciones">
+      <div className="ei-caja"><MD>{s.slots.body || s.body}</MD></div>
+    </section>
+  )
+}
+
+function EvalSeccion({ s }: { s: Section }) {
+  return (
+    <section className="slide eval-slide eval-seccion">
+      <header className="es-head">
+        <h2 className="es-titulo">{s.slots.titulo}</h2>
+        {s.slots.instrucciones && (
+          <div className="es-instrucciones"><MD>{s.slots.instrucciones}</MD></div>
+        )}
+      </header>
+      <div className="es-preguntas"><MD>{s.slots.preguntas || s.body}</MD></div>
+    </section>
+  )
+}
+
+function EvalEjercicio({ s }: { s: Section }) {
+  const diag = (s.slots.diagrama || '').trim()
+  return (
+    <section className="slide eval-slide eval-ejercicio">
+      <header className="eej-head">
+        <h2 className="eej-titulo">{s.slots.titulo}</h2>
+      </header>
+      <div className="eej-body">
+        <div className="eej-contexto"><MD>{s.slots.contexto}</MD></div>
+        {diag === 'cuna-tabaco-bn' && (
+          <div className="eej-diagrama"><DiagramCunaTabacoBW /></div>
+        )}
+      </div>
+      <div className="eej-subpartes"><MD>{s.slots.subpartes}</MD></div>
+    </section>
+  )
+}
+
+function EvalCierre({ s }: { s: Section }) {
+  return (
+    <section className="slide eval-slide eval-cierre">
+      <div className="ec-linea" />
+      <p className="ec-texto">{s.slots.body || s.body || '— Fin de la evaluación —'}</p>
+    </section>
+  )
+}
+
+// Cuña impositiva tabaco — versión B&N para la prueba impresa
+// Pe=$1500, T=$500, Pc=$1800, Pv=$1300, Q antes=10M, Q después=7M.
+function DiagramCunaTabacoBW() {
+  const fx = (q: number) => 40 + (q / 12) * 230
+  const fy = (p: number) => 180 - ((p - 1000) / 1100) * 150
+  return (
+    <svg viewBox="0 0 290 210" className="diag-bw" aria-label="Cuña impositiva tabaco">
+      {/* Ejes */}
+      <line x1="40" y1="20" x2="40" y2="180" stroke="#000" strokeWidth="1" />
+      <line x1="40" y1="180" x2="280" y2="180" stroke="#000" strokeWidth="1" />
+      <polygon points="40,17 37,24 43,24" fill="#000" />
+      <polygon points="283,180 276,177 276,183" fill="#000" />
+      <text x="45" y="24" fontSize="7" fill="#000" fontFamily="'Source Serif 4', serif">$/cajetilla</text>
+      <text x="232" y="192" fontSize="7" fill="#000" fontFamily="'Source Serif 4', serif">Millones de cajetillas</text>
+      {/* Hatching patterns */}
+      <defs>
+        <pattern id="hatchRec" patternUnits="userSpaceOnUse" width="4" height="4" patternTransform="rotate(45)">
+          <line x1="0" y1="0" x2="0" y2="4" stroke="#000" strokeWidth="0.6" />
+        </pattern>
+        <pattern id="hatchPM" patternUnits="userSpaceOnUse" width="3" height="3" patternTransform="rotate(-45)">
+          <line x1="0" y1="0" x2="0" y2="3" stroke="#000" strokeWidth="0.8" />
+        </pattern>
+      </defs>
+      {/* Recaudación: rectángulo con hatch */}
+      <rect x={fx(0) + 0.5} y={fy(1800)} width={fx(7) - fx(0) - 0.5} height={fy(1300) - fy(1800)} fill="url(#hatchRec)" stroke="#000" strokeWidth="0.6" />
+      {/* Peso muerto: triángulo entre 7M y 10M */}
+      <polygon points={`${fx(7)},${fy(1800)} ${fx(7)},${fy(1300)} ${fx(10)},${fy(1500)}`} fill="url(#hatchPM)" stroke="#000" strokeWidth="0.6" />
+      {/* Curva demanda */}
+      <line x1={fx(2)} y1={fy(1950)} x2={fx(11.5)} y2={fy(1100)} stroke="#000" strokeWidth="1.6" />
+      <text x={fx(11.5) - 3} y={fy(1100) + 9} fontSize="9" fill="#000" fontWeight="700" fontFamily="'Source Serif 4', serif">D</text>
+      {/* Curva oferta */}
+      <line x1={fx(2)} y1={fy(1100)} x2={fx(11.5)} y2={fy(1950)} stroke="#000" strokeWidth="1.6" />
+      <text x={fx(11.5) - 3} y={fy(1950) - 2} fontSize="9" fill="#000" fontWeight="700" fontFamily="'Source Serif 4', serif">O</text>
+      {/* Equilibrio sin impuesto Pe=1500 Q=10 */}
+      <circle cx={fx(10)} cy={fy(1500)} r="2" fill="#000" />
+      <line x1="40" y1={fy(1500)} x2={fx(10)} y2={fy(1500)} stroke="#000" strokeWidth="0.5" strokeDasharray="2,2" />
+      <line x1={fx(10)} y1={fy(1500)} x2={fx(10)} y2="180" stroke="#000" strokeWidth="0.5" strokeDasharray="2,2" />
+      <text x="10" y={fy(1500) + 3} fontSize="7" fill="#000" fontFamily="'Source Serif 4', serif">$1.500</text>
+      <text x="3" y={fy(1500) - 4} fontSize="6" fill="#000" fontFamily="'Source Serif 4', serif">Pe</text>
+      <text x={fx(10) - 3} y="192" fontSize="7" fill="#000" fontFamily="'Source Serif 4', serif">10</text>
+      <text x={fx(10) - 6} y="200" fontSize="6" fill="#000" fontFamily="'Source Serif 4', serif" fontStyle="italic">Qe</text>
+      {/* Pc = 1800 */}
+      <circle cx={fx(7)} cy={fy(1800)} r="2" fill="#000" />
+      <line x1="40" y1={fy(1800)} x2={fx(7)} y2={fy(1800)} stroke="#000" strokeWidth="0.8" />
+      <text x="10" y={fy(1800) + 3} fontSize="7" fill="#000" fontWeight="700" fontFamily="'Source Serif 4', serif">$1.800</text>
+      <text x="3" y={fy(1800) - 4} fontSize="6" fill="#000" fontWeight="700" fontFamily="'Source Serif 4', serif">Pc</text>
+      {/* Pv = 1300 */}
+      <circle cx={fx(7)} cy={fy(1300)} r="2" fill="#000" />
+      <line x1="40" y1={fy(1300)} x2={fx(7)} y2={fy(1300)} stroke="#000" strokeWidth="0.8" />
+      <text x="10" y={fy(1300) + 3} fontSize="7" fill="#000" fontWeight="700" fontFamily="'Source Serif 4', serif">$1.300</text>
+      <text x="3" y={fy(1300) - 4} fontSize="6" fill="#000" fontWeight="700" fontFamily="'Source Serif 4', serif">Pv</text>
+      {/* Cantidad 7M */}
+      <line x1={fx(7)} y1={fy(1300)} x2={fx(7)} y2="180" stroke="#000" strokeWidth="0.8" />
+      <text x={fx(7) - 3} y="192" fontSize="7" fill="#000" fontWeight="700" fontFamily="'Source Serif 4', serif">7</text>
+      <text x={fx(7) - 6} y="200" fontSize="6" fill="#000" fontWeight="700" fontFamily="'Source Serif 4', serif" fontStyle="italic">Q'</text>
+      {/* Cuña T label (entre Pc y Pv a la altura del Q') */}
+      <line x1={fx(7) + 14} y1={fy(1800)} x2={fx(7) + 14} y2={fy(1300)} stroke="#000" strokeWidth="0.5" />
+      <line x1={fx(7) + 12} y1={fy(1800)} x2={fx(7) + 16} y2={fy(1800)} stroke="#000" strokeWidth="0.5" />
+      <line x1={fx(7) + 12} y1={fy(1300)} x2={fx(7) + 16} y2={fy(1300)} stroke="#000" strokeWidth="0.5" />
+      <text x={fx(7) + 18} y={fy(1550) + 2} fontSize="8" fill="#000" fontWeight="700" fontFamily="'Source Serif 4', serif">T</text>
+    </svg>
+  )
+}
+
 const styles = `
 :root {
   --red:   #C8102E;
@@ -2094,3 +2242,155 @@ a { color: inherit; text-decoration: none; }
 
 @page { size: A4 landscape; margin: 0; }
 `
+
+// ── ESTILOS MODO EVALUACIÓN ───────────────────────
+// Se concatenan a `styles` cuando frontmatter.tipo === 'evaluacion'.
+// Overridea la @page a letter vertical y redefine el look a B&N sobrio.
+const evalStyles = `
+body.eval-mode {
+  background: #e8e6e1;
+  font-family: 'Source Serif 4', Georgia, serif;
+  color: #000;
+}
+body.eval-mode .toolbar {
+  background: #fff;
+  color: #151515;
+  border-bottom: 1px solid #d6d3cc;
+}
+body.eval-mode .toolbar-back,
+body.eval-mode .toolbar-titulo,
+body.eval-mode .toolbar-clase {
+  color: #151515;
+}
+body.eval-mode .toolbar-print {
+  background: #000;
+  color: #fff;
+  border: 1px solid #000;
+}
+body.eval-mode .deck {
+  background: transparent;
+  padding: 20px 0;
+}
+body.eval-mode .slide.eval-slide {
+  width: 216mm;
+  min-height: auto;
+  padding: 18mm 20mm 14mm 20mm;
+  margin: 10px auto;
+  background: #fff;
+  color: #000;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.06), 0 4px 14px rgba(0,0,0,0.08);
+  border: 1px solid #d6d3cc;
+  display: block;
+  font-family: 'Source Serif 4', Georgia, serif;
+  line-height: 1.55;
+  page-break-after: always;
+  break-after: page;
+}
+body.eval-mode .slide.eval-slide:last-child {
+  page-break-after: auto;
+  break-after: auto;
+}
+body.eval-mode .slide.eval-slide p,
+body.eval-mode .slide.eval-slide li {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 11pt;
+}
+body.eval-mode .slide.eval-slide strong { font-weight: 700; }
+body.eval-mode .slide.eval-slide em { font-style: italic; }
+
+/* Encabezado */
+.eval-encabezado { text-align: left; padding-bottom: 10mm; }
+.eh-institucional { display: flex; justify-content: space-between; align-items: baseline; padding-bottom: 6mm; border-bottom: 2px solid #000; margin-bottom: 8mm; font-family: 'Inter', sans-serif; font-size: 9pt; text-transform: uppercase; letter-spacing: 0.08em; }
+.eh-sede { margin: 0; }
+.eh-curso { margin: 0; font-weight: 600; }
+.eh-titulo-bloque { text-align: center; margin-bottom: 6mm; }
+.eh-titulo { font-family: 'Source Serif 4', Georgia, serif; font-size: 22pt; font-weight: 700; margin: 0 0 2mm; letter-spacing: -0.01em; }
+.eh-cobertura { font-family: 'Source Serif 4', Georgia, serif; font-size: 11pt; font-style: italic; margin: 0; color: #333; }
+.eh-datos { text-align: center; font-family: 'Inter', sans-serif; font-size: 10pt; letter-spacing: 0.04em; margin: 0 0 10mm; padding: 2mm 0; border-top: 1px solid #000; border-bottom: 1px solid #000; }
+.eh-identificacion { display: flex; flex-wrap: wrap; gap: 6mm 8mm; margin-top: 4mm; }
+.eh-campo { flex: 1 1 100%; display: flex; align-items: flex-end; gap: 4mm; font-family: 'Inter', sans-serif; font-size: 10pt; }
+.eh-campo-corto { flex: 1 1 calc(50% - 4mm); }
+.eh-campo > span:first-child { white-space: nowrap; color: #000; letter-spacing: 0.02em; }
+.eh-line { flex: 1; border-bottom: 1px solid #000; height: 6mm; }
+
+/* Instrucciones */
+.eval-instrucciones { padding: 10mm 20mm; page-break-after: avoid; break-after: avoid; min-height: auto !important; }
+.ei-caja { border-left: 3px solid #000; padding: 3mm 5mm; background: #fafaf7; font-size: 10.5pt; line-height: 1.5; }
+.ei-caja p { margin: 0; }
+
+/* Sección (SM o desarrollo) */
+.eval-seccion { padding: 14mm 20mm 12mm; }
+.es-head { border-bottom: 1.5px solid #000; padding-bottom: 3mm; margin-bottom: 6mm; }
+.es-titulo { font-family: 'Source Serif 4', Georgia, serif; font-size: 14pt; font-weight: 700; margin: 0 0 2mm; }
+.es-instrucciones { font-family: 'Inter', sans-serif; font-size: 9.5pt; color: #333; font-style: italic; }
+.es-instrucciones p { margin: 0; }
+.es-preguntas p { margin: 0 0 3mm; font-size: 11pt; }
+.es-preguntas p + ul { margin-top: -1mm; margin-bottom: 5mm; }
+.es-preguntas ul { list-style: none; padding-left: 6mm; margin: 0 0 6mm; }
+.es-preguntas li { padding: 0.6mm 0; font-size: 10.5pt; line-height: 1.45; padding-left: 8mm; position: relative; }
+.es-preguntas li input[type="checkbox"] { display: none; }
+.es-preguntas li::before { content: "□"; position: absolute; left: 0; font-size: 13pt; line-height: 1.1; color: #000; font-family: 'Inter', sans-serif; }
+.es-preguntas strong { font-weight: 700; }
+
+/* Pregunta desarrollo (dentro de es-preguntas — bloques largos con espacio abajo) */
+.es-preguntas hr { border: none; border-top: 1px dashed #999; margin: 6mm 0; }
+
+/* Ejercicio aplicado (con diagrama) */
+.eval-ejercicio { padding: 14mm 20mm 12mm; }
+.eej-head { border-bottom: 1.5px solid #000; padding-bottom: 3mm; margin-bottom: 5mm; }
+.eej-titulo { font-family: 'Source Serif 4', Georgia, serif; font-size: 13pt; font-weight: 700; margin: 0; }
+.eej-body { display: grid; grid-template-columns: 1fr 80mm; gap: 5mm; align-items: start; margin-bottom: 5mm; }
+.eej-contexto { font-size: 10.5pt; line-height: 1.5; }
+.eej-contexto p { margin: 0 0 2mm; }
+.eej-contexto ul { padding-left: 5mm; margin: 2mm 0 0; }
+.eej-contexto li { font-size: 10.5pt; line-height: 1.45; margin-bottom: 1mm; }
+.eej-contexto strong { font-weight: 700; }
+.eej-diagrama { display: flex; justify-content: center; align-items: center; padding: 2mm; border: 0.5px solid #000; background: #fff; }
+.eej-diagrama svg { width: 100%; height: auto; max-width: 78mm; }
+.eej-subpartes { font-size: 10.5pt; line-height: 1.5; }
+.eej-subpartes p { margin: 0 0 3mm; }
+.eej-subpartes p:has(strong:first-child) { margin-top: 6mm; }
+.eej-subpartes p + p:not(:has(strong:first-child)) { min-height: 0; }
+.eej-subpartes hr { border: none; border-top: 1px dashed #999; margin: 5mm 0 6mm; }
+
+/* Cierre */
+.eval-cierre { padding: 6mm 20mm; text-align: center; min-height: auto; }
+.ec-linea { width: 40%; margin: 0 auto 4mm; border-top: 0.5px solid #000; }
+.ec-texto { font-family: 'Source Serif 4', Georgia, serif; font-style: italic; font-size: 10pt; margin: 0; }
+
+/* Diagrama B&N */
+.diag-bw { font-family: 'Source Serif 4', Georgia, serif; width: 100%; height: auto; }
+
+/* En screen: simula hoja */
+@media screen {
+  body.eval-mode { padding-top: 0; }
+  body.eval-mode .slide.eval-slide + .slide.eval-slide { margin-top: 14px; }
+}
+
+/* Impresión carta vertical, B&N, sin sombras ni bordes */
+@media print {
+  body.eval-mode, body.eval-mode .deck, body.eval-mode .slide.eval-slide {
+    background: #fff !important;
+    color: #000 !important;
+  }
+  body.eval-mode .toolbar { display: none; }
+  body.eval-mode .deck { padding: 0; }
+  body.eval-mode .slide.eval-slide {
+    width: 100%;
+    margin: 0;
+    padding: 14mm 18mm;
+    box-shadow: none !important;
+    border: none !important;
+    page-break-inside: avoid;
+  }
+  body.eval-mode .eval-encabezado { padding-bottom: 6mm; }
+  body.eval-mode .eval-instrucciones { padding: 4mm 18mm; }
+  body.eval-mode .eej-diagrama { border: 0.5px solid #000 !important; }
+}
+
+/* @page override: carta vertical para toda evaluación.
+   Debe declararse fuera de @media print para que tome efecto en todas las páginas del documento. */
+@page eval { size: letter portrait; margin: 14mm 18mm; }
+body.eval-mode { page: eval; }
+`
+

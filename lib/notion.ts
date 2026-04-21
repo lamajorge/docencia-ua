@@ -1,12 +1,37 @@
 import { Client } from '@notionhq/client'
 import { NotionToMarkdown } from 'notion-to-md'
 import type { PageObjectResponse } from '@notionhq/client/build/src/api-endpoints'
+import { getPresentacion, listPresentacionesDisponibles } from './presentaciones'
 
 export const notion = new Client({
   auth: process.env.NOTION_TOKEN,
 })
 
 const n2m = new NotionToMarkdown({ notionClient: notion })
+
+function isNotionConfigured(): boolean {
+  return !!process.env.NOTION_TOKEN && !!process.env.NOTION_DATABASE_ID
+}
+
+// Genera una entrada a partir del frontmatter de una presentación local.
+// Se usa como fallback cuando Notion no está configurado (dev local) o falla.
+function entryFromPresentacion(numero: number): ClaseEntry | null {
+  const pres = getPresentacion(numero)
+  if (!pres) return null
+  const f = pres.frontmatter
+  return {
+    id: String(numero).padStart(2, '0'),
+    numero,
+    titulo: f.titulo || `Clase ${numero}`,
+    fecha: f.fecha || null,
+    semana: null,
+    unidad: f.unidad || null,
+    dia: null,
+    estado: null,
+    contenidosClave: null,
+    notionPageId: '',
+  }
+}
 
 export interface ClaseEntry {
   id: string
@@ -71,9 +96,14 @@ function getNumber(prop: any): number | null {
 }
 
 export async function getClases(): Promise<ClaseEntry[]> {
-  const dbId = process.env.NOTION_DATABASE_ID
-  if (!dbId) throw new Error('NOTION_DATABASE_ID no configurado')
+  // Fallback: si Notion no está configurado, listar desde presentaciones locales.
+  if (!isNotionConfigured()) {
+    return listPresentacionesDisponibles()
+      .map((n) => entryFromPresentacion(n))
+      .filter((c): c is ClaseEntry => c !== null)
+  }
 
+  const dbId = process.env.NOTION_DATABASE_ID!
   const response = await notion.databases.query({
     database_id: dbId,
     page_size: 100,
@@ -111,6 +141,13 @@ export async function getClases(): Promise<ClaseEntry[]> {
 }
 
 export async function getClaseByNumero(numero: number): Promise<ClaseDetalle | null> {
+  // Fallback: si Notion no está configurado, construir stub desde presentación local.
+  if (!isNotionConfigured()) {
+    const entrada = entryFromPresentacion(numero)
+    if (!entrada) return null
+    return { ...entrada, markdown: '', bloques: [] }
+  }
+
   const clases = await getClases()
   const entrada = clases.find((c) => c.numero === numero)
   if (!entrada) return null
