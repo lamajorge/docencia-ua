@@ -1,162 +1,82 @@
-# DERE-A0004 · Introducción a la Economía — Contexto para Claude Code
+# DERE-A0004 · Introducción a la Economía
+
+Curso de primer año de Derecho en Universidad Autónoma de Chile. Dos artefactos paralelos con audiencias distintas:
+
+1. **Guías del profesor** (Notion) — narrativas detalladas para Jorge en clase.
+2. **Presentaciones web** (este repo) — landing pages editoriales proyectables en aula e imprimibles como PDF.
+
+---
 
 ## Identidad del curso
 
-- **Asignatura:** DERE-A0004, Introducción a la Economía
-- **Programa:** Derecho, Universidad Autónoma de Chile
-- **Audiencia:** estudiantes de primer año, sin formación previa en economía ni matemática formal
-- **Horario:** miércoles y jueves, 08:00–09:20 (80 min cada sesión)
-- **Duración:** 18 semanas
-- **Profesor:** Jorge Lama. MA International Political Economy (University of York) — perspectiva crítica e históricamente situada.
+| | |
+|---|---|
+| Asignatura | **DERE-A0004** — Introducción a la Economía |
+| Código SCT antiguo | DSCT104 (no usar) |
+| Carrera | Derecho |
+| Audiencia | Primer año, sin formación previa en economía ni matemática formal |
+| Horario | Miércoles y jueves, 08:00–09:20 (80 min c/u) |
+| Duración | 18 semanas · 72 hrs pedagógicas presenciales + 96 cronológicas autónomas · 5 créditos SCT |
+| Régimen | Semestral, otoño, diurno regular, presencial |
+| Asistencia mínima | 70% |
+| Profesor | Jorge Lama · MA International Political Economy (University of York) — perspectiva crítica e históricamente situada |
 
-## Bibliografía
+**Bibliografía:**
+- Primaria: Samuelson & Nordhaus, *Economía*, 18ª ed.
+- Secundaria: Case & Fair, *Principios de Microeconomía*, 10ª ed.
+- Complementaria: Mankiw, Krugman, Varian, Hazlitt, Larraín & Sachs.
 
-- **Primaria:** Samuelson & Nordhaus, *Economía*, 18ª ed.
-- **Secundaria:** Case & Fair, *Principios de Microeconomía*, 10ª ed.
-- **Complementaria:** Mankiw, Krugman, Varian, Hazlitt.
+---
 
-## Arquitectura del sitio
+## Reglas por área — leer antes de trabajar
 
-Dos artefactos separados con audiencias y formatos distintos:
+Los archivos en [`.claude/rules/`](.claude/rules/) no se cargan automáticamente. Abrilos cuando el trabajo entre en su dominio.
 
-1. **Guías del profesor (en Notion)** — fuente narrativa detallada para Jorge: qué decir, cuándo, preguntas, ejemplos, tiempos. No se editan desde este repo.
-2. **Presentaciones web (en este repo)** — **una landing page editorial por clase** proyectable en aula + imprimible como PDF (1 A4 apaisada por sección). Viven en `content/presentaciones/clase-NN.md`.
+| Cuándo lo leés | Archivo |
+|---|---|
+| Antes de redactar cualquier contenido conceptual (guía o presentación) | [`.claude/rules/pedagogia.md`](.claude/rules/pedagogia.md) |
+| Antes de crear o modificar una guía en Notion | [`.claude/rules/produccion-guias.md`](.claude/rules/produccion-guias.md) |
+| Antes de tocar `content/presentaciones/` o el renderer | [`.claude/rules/produccion-presentaciones.md`](.claude/rules/produccion-presentaciones.md) |
+| Antes de tocar CSS, tema, tipografía | [`.claude/rules/identidad-visual.md`](.claude/rules/identidad-visual.md) |
+| Ante cualquier decisión sobre asistencia, notas, eliminación, interrupción | [`.claude/rules/normativa-pregrado.md`](.claude/rules/normativa-pregrado.md) |
+| Antes de diseñar, imprimir, corregir o retroalimentar una evaluación | [`.claude/rules/evaluaciones.md`](.claude/rules/evaluaciones.md) |
+| Antes de ejecutar algo que pudo haber fallado antes | [`.claude/rules/errores-no-repetir.md`](.claude/rules/errores-no-repetir.md) |
 
-**Rutas públicas del sitio:** solo `/clases` (grid) y `/clases/[n]` (landing). No hay `/print` separado — el mismo URL imprime vía `@media print` cuando se presiona el botón "Imprimir / Guardar PDF" en la toolbar. La bibliografía (`content/manuales/`) es **fuente de datos interna** por copyright, no contenido público. El cuerpo de las guías (Notion) tampoco se expone en la landing — solo metadata + botón a la presentación.
+---
 
-## Principios pedagógicos (no negociables)
+## Arquitectura del sitio (resumen)
 
-- **Palabras primero.** Fórmula solo si agrega precisión que las palabras no entregan. Diagrama como apoyo visual, nunca sustituto verbal. Criterio: utilidad pedagógica para estudiantes de Derecho sin matemática formal.
-- **"Reglas de oro" activadas explícitamente en cada clase nueva:** ley de la demanda, ley de la oferta, mecanismo de ajuste, equilibrio. Nunca asumir que los estudiantes hacen la conexión solos.
-- **Diagramas verificados contra manuales antes de construirlos.** Si un diagrama no existe ni en Samuelson ni en Case & Fair, reemplazar por explicación verbal anclada a una figura que sí exista.
-- **Conexiones con Derecho orgánicas, nunca forzadas.** Prohibido el framing "como futuros abogados…". Ejemplos naturales sí (salario mínimo → ley de la demanda, tasa de interés → mercado de arriendo).
-- **Ejercicios grupales después del bloque teórico correspondiente**, nunca antes (los alumnos necesitan la teoría de incidencia antes de resolver ejercicios de impuestos, por ejemplo).
+- Rutas públicas: `/clases` (grid) y `/clases/[n]` (landing). El mismo URL imprime vía `@media print`.
+- Presentaciones: `content/presentaciones/clase-N.md` (sin zero-pad). Parser `:::` → componentes React en [`app/clases/[id]/page.tsx`](app/clases/[id]/page.tsx).
+- Bibliografía (`content/manuales/`): fuente interna, no pública (copyright).
+- Guías (Notion): no se exponen en el sitio — solo metadata y enlace a la presentación.
 
-## Rigor conceptual al simplificar (no negociable)
+---
 
-Se puede — y se debe — simplificar para primer año. Pero simplificar no es lo mismo que falsear. Estas reglas aplican tanto a guías (Notion) como a presentaciones web.
+## Documentos normativos en el repo
 
-### Ancla bibliográfica
+| Documento | Uso |
+|---|---|
+| [`RES-RECTORIA-No-009-2024-Modifica-Reglamento-General-del-Estudiante-de-Pregrado.pdf`](RES-RECTORIA-No-009-2024-Modifica-Reglamento-General-del-Estudiante-de-Pregrado.pdf) | Reglamento vigente. Indexado en [`normativa-pregrado.md`](.claude/rules/normativa-pregrado.md). |
+| [`Formato 2025 Syllabus Diurno Regular Intro Economía (1).pdf`](<Formato 2025 Syllabus Diurno Regular Intro Economía (1).pdf>) | Syllabus corporativo vigente marzo 2026. |
+| [`04. INTRODUCCION A LA ECONOMÍA - PROGRAMA SCT - DERECHO.pdf`](<04. INTRODUCCION A LA ECONOMÍA - PROGRAMA SCT - DERECHO.pdf>) | Programa SCT base. Superado por syllabus donde difieran. |
 
-- Toda afirmación conceptual debe poder sostenerse en Samuelson & Nordhaus o en Case & Fair. No completar desde intuición, memoria suelta ni generalizaciones no verificadas.
-- Si una afirmación no aparece en ninguno de los dos manuales, no se incluye. Si aparece pero con matices, se incluye con esos matices — simplificados, pero presentes.
+---
 
-### Supuestos, mecanismos y resultados
+## Estado del curso (al 2026-04-21)
 
-- **Distinguir siempre** entre el supuesto del modelo (ej. "si hay competencia perfecta"), el mecanismo que opera (ej. "el precio baja porque los vendedores compiten") y el resultado que se obtiene (ej. "se llega al equilibrio"). No presentar resultados como si fueran características estructurales de toda economía.
-- Si una afirmación depende de supuestos, esos supuestos deben quedar nombrados de forma simple. No es necesario formalizarlos — basta con decir "en competencia perfecta" o "si la demanda es inelástica".
+- **Guías en Notion:** Clases 1–14 completas · Clase 15 = Evaluación Regular 1 · Clase 16 producida (macro arranca aquí).
+- **Presentaciones web:** Clases 1–14 y 16 en formato landing. Clase 15 no tiene landing (es evaluación).
+- **Regular 1:** miércoles 22 de abril · 40 pts · 90 min · cubre Clases 1–13 (Unidades I y II) · 40% de la nota final. Subpáginas "Evaluación" y "Pauta" colgadas de Clase 15 en Notion.
+- **Escala de notas:** corregida 2026-04-21 para cumplir Art. 26 reglamento (60% = 4.0).
+- **Pendiente estructural:** Clase 27 no existe en Notion · discrepancia Evaluación Regular 2 entre Notion (Semana 14) y syllabus (Semana 12).
 
-### Lenguaje y precisión
-
-- Evitar absolutos innecesarios: "siempre", "nunca", "todas", "automáticamente" — salvo que sean estrictamente correctos según los manuales. El equilibrio no se alcanza "automáticamente"; se alcanza **si** las condiciones del modelo se cumplen.
-- Mantener **consistencia terminológica interna**. Si se usa "costo marginal" en la Clase 8, no cambiarlo a "costo de producir una más" en la Clase 14 sin aclarar que son lo mismo.
-- Si una frase ayuda pedagógicamente pero puede inducir un error conceptual posterior, **reformularla**. La claridad no justifica una imprecisión que el estudiante después tenga que desaprender.
-- Cuando haya tensión entre claridad y precisión, privilegiar la **precisión compatible con primer año**: la versión más simple que siga siendo correcta.
-
-### Checklist de errores frecuentes (revisar antes de cerrar guía o presentación)
-
-1. **Confundir características con resultados.** "El mercado es eficiente" es un resultado del modelo bajo supuestos específicos, no una propiedad ontológica del mercado.
-2. **Extrapolar competencia perfecta a otros mercados.** Los resultados de equilibrio competitivo no aplican automáticamente a monopolio, oligopolio ni mercados con externalidades.
-3. **Usar analogías que borren diferencias entre conceptos.** La analogía entre impuesto y monopolio (ambos generan peso muerto) es útil; pero el impuesto redistribuye al Estado y el monopolio al monopolista — si la analogía oculta eso, reformular.
-4. **Exagerar conclusiones normativas.** "El impuesto es malo" no es economía positiva. Lo correcto: "el impuesto genera peso muerto" (positiva) + "si ese costo se justifica depende del objetivo de política" (normativa).
-5. **Introducir ejemplos o diagramas no respaldados por los manuales.** Si un diagrama no existe ni en Samuelson ni en Case & Fair, no se construye — se explica verbalmente anclado a una figura que sí exista.
-
-## Protocolos de producción
-
-### Guías (Notion) — obligatorio
-1. Leer el **Protocolo de Producción** en Notion (`3267612d194d8109a73cd5e63f81e343`). Es documento vivo — releer antes de cada guía nueva.
-2. Leer la guía de la clase inmediatamente anterior (modelo de formato y tono).
-3. **Buscar la página existente** de la clase con `notion-search` o query a la database antes de crear nada. Nunca duplicar entradas.
-4. Hacer preguntas pedagógicas estructuradas antes de generar.
-5. Buscar en fuentes indexadas (Samuelson 18ed, Case & Fair 10ed, programa SCT, syllabus) tablas/ejemplos/definiciones — no parafrasear de memoria.
-6. Generar siguiendo el formato no-negociable (abajo).
-7. Subir a la página existente con `replace_content` (reemplazo total) o `update_content` con `old_str`/`new_str` anclado a headings distintivos (ediciones quirúrgicas).
-
-### Formato no-negociable de guías
-Exactamente estas 7 secciones en este orden:
-
-1. **Bibliografía** — tabla Texto / Qué usar / Dónde.
-2. **Antes de entrar a la sala** — checklist.
-3. **Estructura de la clase** — tabla Bloque / Duración / Qué pasa. Duraciones no se repiten en el cuerpo.
-4. **Bloques de contenido** — diálogo del profesor en *cursiva* + comillas. Preguntas al curso marcadas. Respuestas esperadas entre paréntesis. Instrucciones estructurales en texto normal — **nunca** mezclar voz del profesor con instrucciones estructurales en el mismo párrafo.
-5. **Esquemas de pizarra** — en bloques de código `plain text`. No omitir.
-6. **Preguntas difíciles** — con respuestas sugeridas en voz del profesor.
-7. **Notas post-clase** — preguntas de reflexión.
-
-### Errores ya cometidos — no repetir
-- El repaso es de la clase **inmediatamente anterior**, no de cualquier anterior. (Clase 7 repasó Clase 5 en vez de 6.)
-- Verificar título **real** de la clase siguiente en Notion antes de anticiparla en el cierre. (Clase 7 anticipó "Teoría de la Empresa" cuando la 8 era "Oferta de mercado".)
-- Buscar la página existente antes de crear. (Clase 7 se creó duplicada.)
-- Becker es contexto, no se desarrolla en clase.
-- Teoría del consumidor (Clase 5) se detiene en utilidad y preferencias; la curva de demanda se construye en Clase 6.
-
-### Presentaciones web — modelo landing-por-clase (vigente desde abril 2026)
-
-**Filosofía.** Cada clase es una landing page editorial, no un deck genérico. Layouts distintos por rol semántico de la sección: números protagonistas en 85mm para datos clave, manifesto tipográfico para preguntas diagnósticas, grilla 2×2 para taxonomías, split con contraste claro/oscuro para dualidades. El markdown declara **qué tipo** de sección es; el renderer React le da el layout rico.
-
-**Referencia completa del formato:** [`content/presentaciones/TEMPLATE.md`](content/presentaciones/TEMPLATE.md). Leer antes de producir una clase nueva.
-
-**Flujo:**
-1. Leer la guía de la clase en Notion como **única fuente de contenido**.
-2. Crear `content/presentaciones/clase-NN.md` con frontmatter + secciones `:::`.
-3. Cada sección abre con `::: tipo [props...]` y cierra con `:::`. Dentro, slots `::nombre` declaran sub-bloques. El contenido dentro de cada slot es markdown libre.
-4. Tipos de sección disponibles (13): `hero`, `intro`, `manifesto`, `station`, `mecanismo`, `stat-hero`, `stat-duo`, `stat-split`, `grid-fallas`, `exercise-intro`, `exercise-d`, `evaluacion`, `close`. Cada uno tiene su componente React con layout único en [`app/clases/[id]/page.tsx`](app/clases/[id]/page.tsx).
-5. Consolidar: **~18 secciones por clase**, no 30+. Si una idea no necesita slide propio, colapsarla en una `station` o `stat`. El peor síntoma del deck viejo era 4 bullets esparcidos en 4 slides; aquí todo va en 1.
-6. El contenido sale **exclusivamente** de la guía — no se inventan ejemplos.
-7. Validar en pantalla (scroll de landing) **y** en vista impresa (`window.print()` del navegador). Cada sección debe caber en una A4 apaisada (297×210mm) cuando se imprime.
-8. Guías (Notion) y presentaciones (repo) son **tareas separadas**. La guía primero; la presentación solo cuando Jorge la pida.
-
-**Cómo agregar un tipo de sección nuevo.** Cuando una clase pide un layout que no existe (ej. una timeline, una grilla 3×3):
-1. Agregar el caso en `SectionRenderer` en [`app/clases/[id]/page.tsx`](app/clases/[id]/page.tsx).
-2. Escribir la función React para el layout (ver los existentes como modelo).
-3. Añadir CSS para screen (landing scroll) y override en `@media print` para que encaje en A4 apaisada.
-4. Documentarlo en `TEMPLATE.md` con ejemplo de sintaxis.
-
-**Errores ya cometidos en presentaciones — no repetir:**
-- El modelo "deck de slides" (un molde de título + body + footer por slide) produce láminas genéricas y vacías. Cada sección necesita layout propio según qué comunica.
-- Tipografía Playfair como body se ve editorial/libro, no presentación. Para UI y cuerpo: **Inter** (sans-serif). Para display grande y serif editorial: **Fraunces**.
-- `react-markdown` sin `remark-gfm` **no renderiza tablas** — salen como texto crudo con `|`. Siempre pasar `remarkPlugins={[remarkGfm]}`.
-- El CSS con `display: block` sobre `<strong>` quiebra palabras en líneas sueltas. Si se quiere dar énfasis tipográfico a un fragmento, splitear el contenido en JS (`splitQuestion`) en vez de depender de selectores CSS frágiles.
-
-## Identidad visual UA
-
-- Rojo: `#C8102E` (rojo UA) · `#8A0B1F` (dark) · `#FBE8EB` (soft)
-- Negro: `#0D0D0D` (fondo) · `#151515` (texto)
-- Arena: `#F5F3EF`
-- Blanco: `#FFFFFF`
-- Gris: `#6B6B6B`
-- Claro: `#E8E6E1`
-
-**Tipografía:**
-- **Display (Fraunces):** portadas, títulos grandes, números protagonistas, manifesto.
-- **Body (Inter):** UI, cards, navegación, texto corrido, pregunta/respuesta.
-- **Mono (JetBrains Mono):** fórmulas, datos técnicos del ejercicio resuelto.
-
-Las variables CSS están inline en [`app/clases/[id]/page.tsx`](app/clases/[id]/page.tsx) (`:root`). No se usa `styles/globals.css` para el sistema de presentaciones.
-
-## IDs de Notion en uso
-
-| Recurso | ID |
-|---------|-----|
-| Protocolo de Producción | `3267612d194d8109a73cd5e63f81e343` |
-| Database de clases (data source) | `collection://1017612d-194d-832e-9f51-87597dd50997` |
-| Database de clases (page) | `7377612d194d8322ac2b0153d4d4c962` |
-| Página padre "Programación de Clases" | `4787612d194d83dc89f801d948db5a5e` |
-
-## Estado actual (al 2026-04-15)
-
-- **Guías completas en Notion:** Clases 1–14.
-  - Clase 13: monopolio, oligopolio/competencia monopolística/monopsonio, fallas de mercado. Cierre de micro.
-  - Clase 14: repaso formato temático (5 estaciones). Evaluación (40 pts, 90 min, pauta como subpágina) el miércoles 22 abril = **Clase 15**.
-- **Presentaciones web:** Clases 1–14 completas en formato landing-por-clase. Cada una con 11–24 secciones, diagramas SVG con leyendas donde corresponde.
-- **PPTs antiguos (pptxgenjs):** quedaron como referencia de contenido histórico. No se producen más. Las 14 presentaciones web los reemplazan.
-- **Pendiente estructural:** Clase 27 no existe en Notion. Discrepancia Evaluación Regular 2 → Notion Semana 14, syllabus Semana 12.
-- **Macro arranca en Clase 16** (Clase 15 es la evaluación). Clase 30: "Síntesis: Macroeconomía y entorno político-social actual", jueves 11 de junio.
+---
 
 ## Emails semanales a estudiantes
 
-- Se envían el **lunes**.
+- Se envían los **lunes**.
 - Adjuntan el PDF/PPT de la clase del **jueves anterior**.
 - Previsualizan las clases del miércoles y jueves de esa semana.
-- Lecturas organizadas por día (Samuelson primario, Case & Fair alternativa).
+- Lecturas organizadas por día, Samuelson primario + Case & Fair alternativo.
 - Referencias a nivel de capítulo, no página.
