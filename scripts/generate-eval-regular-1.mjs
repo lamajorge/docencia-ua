@@ -187,84 +187,84 @@ async function main() {
         }),
         p('10 preguntas · 1 punto cada una.', { italics: true, size: 20, after: 240 }),
 
-        // Pregunta 1
+        // Pregunta 1 — correcta D ("recursos limitados")
         pRuns([r('1.', { bold: true }), r('  ¿Cuál de las siguientes afirmaciones describe correctamente el concepto de escasez en economía?')], { after: 80 }),
-        alt('A', 'La escasez es un problema exclusivo de los países pobres.'),
-        alt('B', 'La escasez ocurre solo cuando hay desabastecimiento en los supermercados.'),
-        alt('C', 'La escasez significa que los recursos son limitados en relación a los deseos, que son ilimitados.'),
-        alt('D', 'La escasez desaparece cuando una economía crece lo suficiente.'),
+        alt('a', 'La escasez es un problema exclusivo de los países pobres.'),
+        alt('b', 'La escasez ocurre solo cuando hay desabastecimiento en los supermercados.'),
+        alt('c', 'La escasez desaparece cuando una economía crece lo suficiente.'),
+        alt('d', 'La escasez significa que los recursos son limitados en relación a los deseos, que son ilimitados.'),
         p('', { after: 120 }),
 
-        // Pregunta 2
+        // Pregunta 2 — correcta c
         pRuns([r('2.', { bold: true }), r('  Una economía que opera '), r('bajo', { bold: true }), r(' su Frontera de Posibilidades de Producción (FPP):')], { after: 80 }),
-        alt('A', 'Está usando todos sus recursos eficientemente.'),
-        alt('B', 'Ha alcanzado su máximo nivel de producción posible.'),
-        alt('C', 'Tiene recursos desaprovechados: hay ineficiencia.'),
-        alt('D', 'Está produciendo más de lo que sus recursos permiten.'),
+        alt('a', 'Está usando todos sus recursos eficientemente.'),
+        alt('b', 'Ha alcanzado su máximo nivel de producción posible.'),
+        alt('c', 'Tiene recursos desaprovechados: hay ineficiencia.'),
+        alt('d', 'Está produciendo más de lo que sus recursos permiten.'),
         p('', { after: 120 }),
 
-        // Pregunta 3
+        // Pregunta 3 — correcta d
         pRuns([r('3.', { bold: true }), r('  Respecto de la distinción entre economía positiva y economía normativa, ¿cuál afirmación es correcta?')], { after: 80 }),
-        alt('A', 'La economía positiva describe lo que es; la normativa prescribe lo que debería ser.'),
-        alt('B', '“El IVA recauda aproximadamente un tercio de los ingresos fiscales” es economía positiva.'),
-        alt('C', '“El salario mínimo debería aumentarse” es economía normativa.'),
-        alt('D', 'Todas las anteriores.'),
+        alt('a', 'La economía positiva describe lo que es; la normativa prescribe lo que debería ser.'),
+        alt('b', '“El IVA recauda aproximadamente un tercio de los ingresos fiscales” es economía positiva.'),
+        alt('c', '“El salario mínimo debería aumentarse” es economía normativa.'),
+        alt('d', 'Todas las anteriores.'),
         p('', { after: 120 }),
 
-        // Pregunta 4
+        // Pregunta 4 — correcta c
         pRuns([r('4.', { bold: true }), r('  Según la '), r('ley de la demanda', { bold: true }), r(', si sube el precio de un bien, manteniendo todo lo demás constante:')], { after: 80 }),
-        alt('A', 'La cantidad demandada sube porque los consumidores anticipan más alzas.'),
-        alt('B', 'La cantidad demandada no cambia porque las necesidades son fijas.'),
-        alt('C', 'La cantidad demandada cae.'),
-        alt('D', 'La demanda se desplaza hacia la izquierda.'),
+        alt('a', 'La cantidad demandada sube porque los consumidores anticipan más alzas.'),
+        alt('b', 'La cantidad demandada no cambia porque las necesidades son fijas.'),
+        alt('c', 'La cantidad demandada cae.'),
+        alt('d', 'La demanda se desplaza hacia la izquierda.'),
         p('', { after: 120 }),
 
-        // Pregunta 5
-        pRuns([r('5.', { bold: true }), r('  ¿Cuál de los siguientes eventos desplaza la curva de oferta de manzanas hacia la '), r('derecha', { bold: true }), r(' (aumenta la oferta)?')], { after: 80 }),
-        alt('A', 'Una nueva tecnología agrícola que reduce los costos de producción.'),
-        alt('B', 'La entrada de nuevas empresas productoras al mercado.'),
-        alt('C', 'Un aumento en el precio de las manzanas.'),
-        alt('D', 'A y B.'),
+        // Pregunta 5 — correcta d (a y b)
+        pRuns([r('5.', { bold: true }), r('  ¿Cuál de los siguientes eventos desplaza la curva de oferta de manzanas hacia la '), r('derecha', { bold: true }), r('?')], { after: 80 }),
+        alt('a', 'Una nueva tecnología agrícola que reduce los costos de producción.'),
+        alt('b', 'La entrada de nuevas empresas productoras al mercado.'),
+        alt('c', 'Un aumento en el precio de las manzanas.'),
+        alt('d', 'Las alternativas a) y b).'),
         p('', { after: 120 }),
 
-        // Pregunta 6
+        // Pregunta 6 — correcta b
         pRuns([r('6.', { bold: true }), r('  En un mercado competitivo, cuando el precio está por '), r('debajo', { bold: true }), r(' del precio de equilibrio:')], { after: 80 }),
-        alt('A', 'Hay excedente: la cantidad ofrecida supera a la demandada.'),
-        alt('B', 'Hay escasez: la cantidad demandada supera a la ofrecida y el precio tiende a subir.'),
-        alt('C', 'El mercado permanece estable porque los consumidores están satisfechos.'),
-        alt('D', 'La curva de demanda se desplaza hacia la izquierda.'),
+        alt('a', 'Hay excedente: la cantidad ofrecida supera a la demandada.'),
+        alt('b', 'Hay escasez: la cantidad demandada supera a la ofrecida y el precio tiende a subir.'),
+        alt('c', 'El mercado permanece estable porque los consumidores están satisfechos.'),
+        alt('d', 'La curva de demanda se desplaza hacia la izquierda.'),
         p('', { after: 120 }),
 
-        // Pregunta 7
-        pRuns([r('7.', { bold: true }), r('  Un precio máximo genera escasez cuando se fija:')], { after: 80 }),
-        alt('A', 'Por encima del precio de equilibrio.'),
-        alt('B', 'Exactamente en el precio de equilibrio.'),
-        alt('C', 'Por debajo del precio de equilibrio.'),
-        alt('D', 'Ninguna de las anteriores: un precio máximo nunca genera escasez.'),
+        // Pregunta 7 — Impuesto (antes P8) — correcta c
+        pRuns([r('7.', { bold: true }), r('  Cuando el gobierno aplica un impuesto sobre las ventas de un bien, ¿quién soporta la carga tributaria?')], { after: 80 }),
+        alt('a', 'Siempre el vendedor, porque es quien paga el impuesto formalmente.'),
+        alt('b', 'Siempre el comprador, porque es quien consume el bien.'),
+        alt('c', 'La carga se distribuye entre ambos según sus elasticidades, sin importar a quién se cobre formalmente.'),
+        alt('d', 'El gobierno, porque es quien recauda el impuesto.'),
         p('', { after: 120 }),
 
-        // Pregunta 8
-        pRuns([r('8.', { bold: true }), r('  Cuando el gobierno aplica un impuesto sobre las ventas de un bien, ¿quién soporta la carga tributaria?')], { after: 80 }),
-        alt('A', 'Siempre el vendedor, porque es quien paga el impuesto formalmente.'),
-        alt('B', 'Siempre el comprador, porque es quien consume el bien.'),
-        alt('C', 'La carga se distribuye entre ambos según sus elasticidades, sin importar a quién se cobre formalmente.'),
-        alt('D', 'El gobierno, porque es quien recauda el impuesto.'),
+        // Pregunta 8 — Peso muerto (antes P9) — correcta c
+        pRuns([r('8.', { bold: true }), r('  El '), r('peso muerto', { bold: true }), r(' de un impuesto es:')], { after: 80 }),
+        alt('a', 'El ingreso total que recauda el gobierno.'),
+        alt('b', 'La reducción del excedente del consumidor que pasa al gobierno como recaudación.'),
+        alt('c', 'La pérdida de bienestar que no captura ningún agente: ni compradores, ni vendedores, ni el gobierno.'),
+        alt('d', 'El costo administrativo de recaudar el impuesto.'),
         p('', { after: 120 }),
 
-        // Pregunta 9
-        pRuns([r('9.', { bold: true }), r('  El '), r('peso muerto', { bold: true }), r(' (deadweight loss) de un impuesto es:')], { after: 80 }),
-        alt('A', 'El ingreso total que recauda el gobierno.'),
-        alt('B', 'La reducción del excedente del consumidor que pasa al gobierno como recaudación.'),
-        alt('C', 'La pérdida de bienestar que no captura ningún agente: ni compradores, ni vendedores, ni el gobierno.'),
-        alt('D', 'El costo administrativo de recaudar el impuesto.'),
+        // Pregunta 9 — Externalidad negativa (antes P10) — correcta b
+        pRuns([r('9.', { bold: true }), r('  ¿Cuál de las siguientes situaciones es un ejemplo de '), r('externalidad negativa', { bold: true }), r('?')], { after: 80 }),
+        alt('a', 'Una vacuna que protege a quienes rodean al vacunado.'),
+        alt('b', 'Una fábrica que contamina el río con sus desechos industriales, perjudicando a los vecinos.'),
+        alt('c', 'Un subsidio estatal al transporte público.'),
+        alt('d', 'Todas las anteriores son externalidades.'),
         p('', { after: 120 }),
 
-        // Pregunta 10
-        pRuns([r('10.', { bold: true }), r('  ¿Cuál de las siguientes situaciones es un ejemplo de '), r('externalidad negativa', { bold: true }), r('?')], { after: 80 }),
-        alt('A', 'Una vacuna que protege a quienes rodean al vacunado.'),
-        alt('B', 'Una fábrica que contamina el río con sus desechos industriales, perjudicando a los vecinos.'),
-        alt('C', 'Un subsidio estatal a la educación universitaria.'),
-        alt('D', 'Todas las anteriores son externalidades.'),
+        // Pregunta 10 — Precio máximo (antes P7) — correcta c
+        pRuns([r('10.', { bold: true }), r('  Un precio máximo genera escasez cuando se fija:')], { after: 80 }),
+        alt('a', 'Por encima del precio de equilibrio.'),
+        alt('b', 'Exactamente en el precio de equilibrio.'),
+        alt('c', 'Por debajo del precio de equilibrio.'),
+        alt('d', 'Ninguna de las anteriores: un precio máximo nunca genera escasez.'),
 
         // ── SECCIÓN II — Pregunta 1 (nueva página) ──
         p('Sección II — Desarrollo (10 puntos)', {
@@ -293,6 +293,7 @@ async function main() {
           children: [
             new ImageRun({
               data: pngBuffer,
+              type: 'png',
               transformation: { width: 320, height: 288 },
             }),
           ],
@@ -302,7 +303,7 @@ async function main() {
         pRuns([r('(a) (2,5 pts). ', { bold: true }), r('Sube fuertemente el precio del '), r('trigo', { bold: true }), r(', insumo clave para producir pan.')], { after: 160 }),
         ...lineaManuscrita(4),
 
-        pRuns([r('(b) (2,5 pts). ', { bold: true }), r('El Ministerio de Salud publica un estudio sobre los riesgos del consumo excesivo de harinas blancas y los consumidores '), r('reducen su preferencia', { bold: true }), r(' por el pan tradicional.')], { after: 160 }),
+        pRuns([r('(b) (2,5 pts). ', { bold: true }), r('El '), r('Ministerio de Salud Pública', { bold: true }), r(' publica un estudio sobre los riesgos del consumo excesivo de harinas blancas y los consumidores '), r('reducen su preferencia', { bold: true }), r(' por el pan tradicional.')], { after: 160 }),
         ...lineaManuscrita(4),
 
         // ── CIERRE ──
