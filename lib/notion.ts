@@ -147,7 +147,6 @@ export async function getClases(): Promise<ClaseEntry[]> {
 }
 
 export async function getClaseByNumero(numero: number): Promise<ClaseDetalle | null> {
-  // Fallback: si Notion no está configurado, construir stub desde presentación local.
   if (!isNotionConfigured()) {
     const entrada = entryFromPresentacion(numero)
     if (!entrada) return null
@@ -158,12 +157,18 @@ export async function getClaseByNumero(numero: number): Promise<ClaseDetalle | n
   const entrada = clases.find((c) => c.numero === numero)
   if (!entrada) return null
 
-  const mdBlocks = await n2m.pageToMarkdown(entrada.notionPageId)
-  const markdown = n2m.toMarkdownString(mdBlocks).parent ?? ''
+  // Si el fallback local fue usado, notionPageId queda vacío — no intentar fetch.
+  if (!entrada.notionPageId) {
+    return { ...entrada, markdown: '', bloques: [] }
+  }
 
-  const bloques = parseBloques(markdown)
-
-  return { ...entrada, markdown, bloques }
+  try {
+    const mdBlocks = await n2m.pageToMarkdown(entrada.notionPageId)
+    const markdown = n2m.toMarkdownString(mdBlocks).parent ?? ''
+    return { ...entrada, markdown, bloques: parseBloques(markdown) }
+  } catch {
+    return { ...entrada, markdown: '', bloques: [] }
+  }
 }
 
 function parseBloques(markdown: string): BloqueTematico[] {
