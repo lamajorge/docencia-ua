@@ -158,6 +158,8 @@ Sección II — Pregunta 2: Equilibrio del mercado del pan (5 pts)
 
 El trigo es un **insumo** del pan. Cuando su precio sube, producir pan cuesta más → los productores ofrecen *menos* a cada precio → la curva de **oferta se desplaza hacia la izquierda**. El resultado: el precio de equilibrio sube y la cantidad cae.
 
+---
+
 **(b) ¿Por qué se mueve la demanda?**
 
 El estudio del Ministerio cambia lo que los consumidores **quieren** comprar. No cambió el precio del pan — cambiaron las preferencias. Cuando los consumidores quieren menos a cada precio → la curva de **demanda se desplaza hacia la izquierda**. El resultado: precio y cantidad bajan.
