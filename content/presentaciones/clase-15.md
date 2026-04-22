@@ -142,9 +142,15 @@ Sección II — Pregunta 2: Equilibrio del mercado del pan (5 pts)
 ::dominar
 **Situación base:** mercado del pan en equilibrio a P* y Q*.
 
-**(a) Sube el precio del trigo — 2,5 pts:** el trigo es un insumo → sube el costo de producción del pan → **la oferta se desplaza hacia la izquierda** (menos cantidad a cada precio) → nuevo equilibrio con **P* más alto y Q* más bajo**.
+**(a) Sube el precio del trigo — 2,5 pts**
+- (i) Determinante: **costo de producción** (el trigo es un insumo del pan).
+- (ii) Se desplaza la **oferta hacia la izquierda** — menos cantidad a cada precio.
+- (iii) **P* sube · Q* baja.**
 
-**(b) Estudio del Ministerio de Salud Pública — 2,5 pts:** nuevo riesgo percibido → cambian las **preferencias de los consumidores** → **la demanda se desplaza hacia la izquierda** → nuevo equilibrio con **P* más bajo y Q* más bajo**.
+**(b) Estudio del Ministerio de Salud Pública — 2,5 pts**
+- (i) Determinante: **preferencias de los consumidores** (nuevo riesgo percibido).
+- (ii) Se desplaza la **demanda hacia la izquierda** — menos cantidad demandada a cada precio.
+- (iii) **P* baja · Q* baja.**
 
 ::pregunta
 ¿Por qué en (a) se mueve la oferta y en (b) se mueve la demanda?
