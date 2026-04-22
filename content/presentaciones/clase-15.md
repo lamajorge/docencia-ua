@@ -27,9 +27,20 @@ HOY
 Revisamos la prueba. Hoy no hay materia nueva.
 
 ::body
-20 puntos totales. La nota 4,0 requiere 12 puntos (60%, Art. 26 Reglamento de Pregrado).
+**Escala de notas — 20 puntos**
 
-Revisamos cada pregunta con la respuesta correcta y la materia de respaldo. Si algo no quedó claro, es el momento de preguntar.
+| Puntaje | Nota |
+|---|---|
+| 18–20 | 7,0 |
+| 16–17 | 6,0 |
+| 14–15 | 5,0 |
+| **12–13** | **4,0** ← piso (60%) |
+| 10–11 | 3,5 |
+| 8–9 | 3,0 |
+| 4–7 | 2,0 |
+| 0–3 | 1,0 |
+
+Revisamos cada pregunta con la respuesta correcta y la materia de respaldo.
 :::
 
 ::: station num=01 clases="Clases 1–3"
