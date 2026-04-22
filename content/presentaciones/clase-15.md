@@ -27,14 +27,14 @@ HOY
 Revisamos la prueba. Hoy no hay materia nueva.
 
 ::body
-**Escala de notas — 20 puntos**
+**Esta prueba pondera 40% en la nota final del curso.**
 
 | Puntaje | Nota |
 |---|---|
 | 18–20 | 7,0 |
 | 16–17 | 6,0 |
 | 14–15 | 5,0 |
-| **12–13** | **4,0** ← piso (60%) |
+| **12–13** | **4,0** ← nota mínima de aprobación |
 | 10–11 | 3,5 |
 | 8–9 | 3,0 |
 | 4–7 | 2,0 |
@@ -48,9 +48,9 @@ Revisamos cada pregunta con la respuesta correcta y la materia de respaldo.
 Fundamentos — Preguntas 1 a 3
 
 ::dominar
-- **P1 → D.** Escasez: los recursos son limitados en relación a los deseos, que son ilimitados. No es exclusiva de países pobres ni desaparece con el crecimiento.
-- **P2 → C.** Un punto *bajo* la FPP indica recursos desaprovechados — hay ineficiencia. Sobre la frontera es imposible; sobre ella no se opera.
-- **P3 → D.** Las tres afirmaciones son correctas: (a) es la definición clásica de positiva/normativa; (b) el dato del IVA es verificable → economía positiva; (c) el salario mínimo "debería" subir es un juicio de valor → economía normativa.
+- **P1 → D.** *"¿Cuál describe correctamente el concepto de escasez?"* La escasez significa que los recursos son limitados en relación a los deseos, que son ilimitados. No es exclusiva de países pobres ni desaparece con el crecimiento.
+- **P2 → C.** *"Una economía que opera bajo su FPP:"* Tiene recursos desaprovechados — hay ineficiencia. Operar sobre la frontera es imposible.
+- **P3 → D.** *"Positiva vs normativa: ¿cuál afirmación es correcta?"* Todas las anteriores: (a) define correctamente ambas; (b) el dato del IVA es verificable → positiva; (c) "debería" subir el salario mínimo es un juicio de valor → normativa.
 
 ::pregunta
 ¿Por qué la escasez no desaparece cuando un país se vuelve más rico?
@@ -70,9 +70,9 @@ Escasez → elección → costo de oportunidad. Esta cadena es el punto de parti
 Mercados — Preguntas 4 a 6
 
 ::dominar
-- **P4 → C.** Ley de la demanda: si sube el precio del bien, la cantidad demandada *cae* — movimiento a lo largo de la curva. La curva de demanda no se desplaza por un cambio en el precio del mismo bien.
-- **P5 → D.** Tecnología que reduce costos *y* entrada de nuevas empresas son determinantes de la oferta: ambas desplazan la curva hacia la derecha. Un alza de precio del bien mueve la cantidad ofrecida a lo largo de la curva — no desplaza la curva.
-- **P6 → B.** Precio por debajo del equilibrio: cantidad demandada > cantidad ofrecida → escasez → presión al alza hasta P*.
+- **P4 → C.** *"Según la ley de la demanda, si sube el precio del bien:"* La cantidad demandada cae — movimiento a lo largo de la curva. La curva no se desplaza por un cambio en el precio del mismo bien.
+- **P5 → D.** *"¿Qué desplaza la oferta de manzanas hacia la derecha?"* Las alternativas a) y b): nueva tecnología que baja costos *y* entrada de nuevas empresas. Un alza de precio del bien es movimiento a lo largo, no desplazamiento.
+- **P6 → B.** *"Precio por debajo del equilibrio en mercado competitivo:"* Hay escasez — cantidad demandada supera a la ofrecida — y el precio tiende a subir hasta P*.
 
 ::pregunta
 ¿Cuál es la diferencia entre un movimiento a lo largo de la curva y un desplazamiento de la curva?
@@ -92,10 +92,10 @@ Precio del bien → cantidad (movimiento a lo largo). Cualquier otro determinant
 Impuestos, externalidades e intervenciones — Preguntas 7 a 10
 
 ::dominar
-- **P7 → C.** La incidencia económica del impuesto la determinan las elasticidades, no a quién se le cobra formalmente. El lado menos elástico tiene menos opciones de ajuste y soporta más carga.
-- **P8 → C.** El peso muerto es la pérdida de bienestar que no captura ningún agente: ni compradores, ni vendedores, ni el Estado. Es el triángulo de transacciones que dejaron de ocurrir.
-- **P9 → B.** Externalidad negativa: terceros sufren un costo que no eligieron y no está incluido en el precio del bien. La vacuna es externalidad *positiva*; el subsidio al transporte es intervención, no externalidad.
-- **P10 → C.** El precio máximo genera escasez solo cuando se fija *por debajo* del equilibrio. Fijado sobre el equilibrio o exactamente en él, no tiene efecto real.
+- **P7 → C.** *"¿Quién soporta la carga de un impuesto sobre las ventas?"* Se distribuye entre compradores y vendedores según sus elasticidades, sin importar a quién se cobra formalmente. El lado menos elástico soporta más.
+- **P8 → C.** *"El peso muerto de un impuesto es:"* La pérdida de bienestar que no captura ningún agente — ni compradores, ni vendedores, ni el Estado. Es el triángulo de transacciones que dejaron de ocurrir.
+- **P9 → B.** *"¿Cuál es ejemplo de externalidad negativa?"* Una fábrica que contamina el río con sus desechos industriales, perjudicando a los vecinos. La vacuna es externalidad *positiva*; el subsidio al transporte es intervención.
+- **P10 → C.** *"Un precio máximo genera escasez cuando se fija:"* Por debajo del precio de equilibrio. Sobre el equilibrio o en él, no tiene efecto real.
 
 ::pregunta
 ¿Cuál es la diferencia entre la recaudación del impuesto y el peso muerto?
