@@ -1458,6 +1458,10 @@ a { color: inherit; text-decoration: none; }
 .st-dominar-body strong { color: var(--black); font-weight: 800; }
 .st-dominar-body hr,
 .st-respuesta hr { border: none; border-top: 1px solid var(--light); margin: 2.5vh 0; }
+.st-dominar-body ul + p,
+.st-dominar-body p + p,
+.st-respuesta ul + p,
+.st-respuesta p + p { margin-top: 2vh; }
 .st-pregunta { background: var(--sand); padding: 3vh 2.5vw; border-left: 4px solid var(--red); }
 .st-pregunta-texto {
   font-family: var(--disp);

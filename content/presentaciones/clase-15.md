@@ -139,14 +139,10 @@ Sección II — Pregunta 2: Equilibrio del mercado del pan (5 pts)
 ::respuestas
 **Situación base:** mercado del pan en equilibrio a P\* y Q\*. Para cada caso indica (i) qué determinante cambia, (ii) cómo se desplaza la curva, (iii) qué ocurre con P\* y Q\*.
 
----
-
 **(a) Sube el precio del trigo — 2,5 pts**
 - (i) Determinante: **costo de producción** (el trigo es insumo del pan).
 - (ii) Se desplaza la **oferta hacia la izquierda**.
 - (iii) **P\* sube · Q\* baja.**
-
----
 
 **(b) Estudio del Ministerio de Salud Pública — 2,5 pts**
 - (i) Determinante: **preferencias de los consumidores**.
@@ -157,8 +153,6 @@ Sección II — Pregunta 2: Equilibrio del mercado del pan (5 pts)
 **(a) ¿Por qué se mueve la oferta?**
 
 El trigo es un **insumo** del pan. Cuando su precio sube, producir pan cuesta más → los productores ofrecen *menos* a cada precio → la curva de **oferta se desplaza hacia la izquierda**. El resultado: el precio de equilibrio sube y la cantidad cae.
-
----
 
 **(b) ¿Por qué se mueve la demanda?**
 
