@@ -120,7 +120,7 @@ Sección II — Pregunta 1: Costo de oportunidad (5 pts)
 **Criterio de corrección:**
 - Definición correcta (2 pts): el valor de la mejor alternativa que se sacrifica al elegir.
 - Relevancia para decisiones (1,5 pts): toda elección implica una renuncia; el costo no es solo el dinero gastado.
-- Ejemplo concreto y pertinente (1,5 pts): ilustra la definición, no la contradice.
+- Ejemplo concreto (1,5 pts): ver ejemplo en el panel de la derecha.
 
 ::pregunta
 ¿Qué es lo que hace que el costo de oportunidad sea diferente del costo monetario?
