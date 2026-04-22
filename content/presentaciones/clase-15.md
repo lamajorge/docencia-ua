@@ -34,11 +34,13 @@ Revisamos la prueba. Hoy no hay materia nueva.
 | 18–20 | 7,0 |
 | 16–17 | 6,0 |
 | 14–15 | 5,0 |
-| **12–13** | **4,0** ← nota mínima de aprobación |
+| **12–13** | **4,0** |
 | 10–11 | 3,5 |
 | 8–9 | 3,0 |
 | 4–7 | 2,0 |
 | 0–3 | 1,0 |
+
+El Art. 26 del Reglamento exige que la nota 4,0 se obtenga con el **60% del puntaje**. En una prueba de 20 puntos, eso son **12 puntos**.
 
 Revisamos cada pregunta con la respuesta correcta y la materia de respaldo.
 :::
@@ -150,11 +152,13 @@ Sección II — Pregunta 2: Equilibrio del mercado del pan (5 pts)
 - (iii) **P\* baja · Q\* baja.**
 
 ::concepto
-**¿Por qué en (a) se mueve la oferta y en (b) se mueve la demanda?**
+**(a) ¿Por qué se mueve la oferta?**
 
-En (a), el trigo es un insumo del productor: su precio altera el **costo de producción** → determinante de la oferta → curva de oferta se desplaza.
+El trigo es un **insumo** del pan. Cuando su precio sube, producir pan cuesta más → los productores ofrecen *menos* a cada precio → la curva de **oferta se desplaza hacia la izquierda**. El resultado: el precio de equilibrio sube y la cantidad cae.
 
-En (b), el estudio cambia las **preferencias de los consumidores** → determinante de la demanda → curva de demanda se desplaza.
+**(b) ¿Por qué se mueve la demanda?**
+
+El estudio del Ministerio cambia lo que los consumidores **quieren** comprar. No cambió el precio del pan — cambiaron las preferencias. Cuando los consumidores quieren menos a cada precio → la curva de **demanda se desplaza hacia la izquierda**. El resultado: precio y cantidad bajan.
 
 ::trampa
 **"El precio del pan sube, entonces la oferta se desplaza."** No: un cambio en el precio del bien mismo es movimiento a lo largo de la curva, no desplazamiento. Lo que desplaza la oferta es el cambio en el costo del insumo.
