@@ -367,6 +367,53 @@ Descripción.
 :::
 ```
 
+### `revision` — revisión de prueba
+
+Misma estructura visual que `station` (número + cabecera + grid 50/50 + footer trampa/regla), pero con labels configurables. Usar para clases de revisión de evaluación. **No usar `station`** — tiene "QUÉ DEBEN DOMINAR" hardcodeado.
+
+Props: `num`, `clases`, `labelLeft` (default: `RESPUESTAS CORRECTAS`), `labelRight` (default: `CONCEPTO CLAVE`).
+
+```markdown
+::: revision num=01 clases="Clases 1–3"
+::titulo
+Fundamentos — Preguntas 1 a 3
+
+::respuestas
+- **P1 → D.** *"¿Cuál describe correctamente la escasez?"* La escasez significa que los recursos son limitados frente a deseos ilimitados.
+- **P2 → C.** *"Una economía bajo su FPP:"* Tiene recursos desaprovechados — ineficiencia.
+
+::concepto
+**Pregunta conceptual central al curso.**
+
+Explicación con cadena causal completa.
+
+::trampa
+**"Frase errada."** Corrección y porqué.
+
+::regla
+La regla de oro del curso que aplica.
+:::
+```
+
+Para secciones de desarrollo (rúbrica + respuesta modelo), usar `labelLeft` y `labelRight`:
+
+```markdown
+::: revision num=04 clases="Clases 1–2" labelLeft="PREGUNTA Y RÚBRICA" labelRight="RESPUESTA MODELO"
+::titulo
+Sección II — Pregunta 1: Costo de oportunidad (5 pts)
+
+::respuestas
+**Pregunta:** ...
+
+- Definición correcta (2 pts): ...
+- Relevancia (1,5 pts): ...
+- Ejemplo concreto (1,5 pts): ver panel de la derecha.
+
+::concepto
+**Respuesta modelo completa.**
+:::
+```
+
 ### `close` — cierre + tarea + fecha
 Fondo negro, título enorme con la fecha, tarea abajo, reglas de oro en banda.
 

@@ -43,3 +43,12 @@
 
 - Ruta `/print` separada es innecesaria — el mismo URL imprime vía `@media print` desde la toolbar.
 - `content/manuales/` es fuente interna por copyright — no exponer en rutas públicas.
+- **Vercel build tiempo:** deploy normal ~1m25s. Deploy de ~26s = build fallido — Vercel revierte al deploy anterior. Si el grid muestra 0 clases después de un deploy, verificar el tiempo del build en Vercel.
+- **Notion + grid 0 clases:** si `getClases()` lanza error (token inválido, red, database ID incorrecto), el try-catch de `app/clases/page.tsx` silenciosamente devuelve `[]`. El fallback está dentro de `getClases()` en `lib/notion.ts` — si Notion falla o retorna vacío, usa `localClases()` (archivos locales). No remover ese fallback.
+- **`station` tiene "QUÉ DEBEN DOMINAR" hardcodeado.** Para clases de revisión de evaluación, usar el tipo `revision` (labels configurables). Ver [`produccion-presentaciones.md`](produccion-presentaciones.md).
+
+---
+
+## Presentaciones — evaluaciones y porcentajes
+
+- **El % suelto se lee como ponderación.** Mostrar "60%" sin contexto en una prueba que pondera 40% confunde al estudiante — lo interpreta como el peso en la nota final. Siempre acompañar el umbral de aprobación con la frase del Art. 26: "la nota 4,0 se obtiene con el 60% del puntaje" + el equivalente en puntos concretos.

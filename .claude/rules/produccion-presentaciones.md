@@ -17,10 +17,42 @@ Cada clase es una **landing page editorial**, no un deck genérico. Layouts dist
 1. Leer la guía de la clase en Notion como **única fuente de contenido**.
 2. Crear `content/presentaciones/clase-NN.md` con frontmatter + secciones `:::`.
 3. Cada sección abre con `::: tipo [props...]` y cierra con `:::`. Dentro, slots `::nombre` declaran sub-bloques. El contenido dentro de cada slot es markdown libre.
-4. Tipos de sección disponibles: `hero`, `intro`, `roadmap`, `manifesto`, `station` (part=a/b), `mecanismo`, `stat-hero`, `stat-duo`, `stat-split`, `grid-fallas` (con `::nota` opcional), `exercise-intro`, `exercise-d`, `evaluacion`, `close`, `referencia`, `diagrama` (con `::d{n}-leyenda`). Cada uno tiene su componente React con layout único en [`app/clases/[id]/page.tsx`](../../app/clases/[id]/page.tsx).
+4. Tipos de sección disponibles: `hero`, `intro`, `roadmap`, `manifesto`, `station` (part=a/b), `mecanismo`, `stat-hero`, `stat-duo`, `stat-split`, `grid-fallas` (con `::nota` opcional), `exercise-intro`, `exercise-d`, `evaluacion`, `close`, `referencia`, `diagrama` (con `::d{n}-leyenda`), `revision` (para revisión de prueba — ver abajo). Cada uno tiene su componente React con layout único en [`app/clases/[id]/page.tsx`](../../app/clases/[id]/page.tsx).
 5. **Consolidar:** ~18 secciones por clase, no 30+. Si una idea no necesita slide propio, colapsarla en una `station` o `stat`. Regla: **1 sección = 1 concepto**; ejemplos del mismo concepto van juntos.
 6. El contenido sale **exclusivamente** de la guía — no se inventan ejemplos.
 7. Validar en pantalla (scroll de landing) **y** en vista impresa (`window.print()` del navegador). Cada sección debe caber en una A4 apaisada (297×210mm) cuando se imprime.
+
+---
+
+## Tipo `revision` — revisión de prueba
+
+Misma estructura visual que `station` pero con labels configurables. Usar para clases de revisión de evaluación (tipo Clase 15).
+
+```markdown
+::: revision num=01 clases="Clases 1–3"
+::titulo
+Tema — Preguntas N a M
+
+::respuestas
+- **P1 → D.** *"Enunciado abreviado."* Explicación de la respuesta correcta.
+- **P2 → C.** ...
+
+::concepto
+**Pregunta conceptual central.**
+
+Explicación completa con cadena causal.
+
+::trampa
+**"Distractor común."** Por qué está mal.
+
+::regla
+Regla de oro aplicable.
+:::
+```
+
+Props opcionales: `labelLeft="PREGUNTA Y RÚBRICA"` y `labelRight="RESPUESTA MODELO"` para secciones de desarrollo (override del default "RESPUESTAS CORRECTAS" / "CONCEPTO CLAVE").
+
+**No usar `station` para revisiones** — tiene "QUÉ DEBEN DOMINAR" hardcodeado, que no aplica.
 
 ---
 
