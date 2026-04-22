@@ -147,6 +147,8 @@ Sección II — Pregunta 2: Equilibrio del mercado del pan (5 pts)
 - (ii) Se desplaza la **oferta hacia la izquierda** — menos cantidad a cada precio.
 - (iii) **P\* sube · Q\* baja.**
 
+---
+
 **(b) Estudio del Ministerio de Salud Pública — 2,5 pts**
 - (i) Determinante: **preferencias de los consumidores** (nuevo riesgo percibido).
 - (ii) Se desplaza la **demanda hacia la izquierda** — menos cantidad demandada a cada precio.
