@@ -95,49 +95,55 @@ function getNumber(prop: any): number | null {
   return null
 }
 
+function localClases(): ClaseEntry[] {
+  return listPresentacionesDisponibles()
+    .map((n) => entryFromPresentacion(n))
+    .filter((c): c is ClaseEntry => c !== null)
+}
+
 export async function getClases(): Promise<ClaseEntry[]> {
-  // Fallback: si Notion no está configurado, listar desde presentaciones locales.
-  if (!isNotionConfigured()) {
-    return listPresentacionesDisponibles()
-      .map((n) => entryFromPresentacion(n))
-      .filter((c): c is ClaseEntry => c !== null)
-  }
+  if (!isNotionConfigured()) return localClases()
 
-  const dbId = process.env.NOTION_DATABASE_ID!
-  const response = await notion.databases.query({
-    database_id: dbId,
-    page_size: 100,
-  })
-
-  const clases: ClaseEntry[] = response.results
-    .filter((r): r is PageObjectResponse => r.object === 'page' && 'properties' in r)
-    .map((page) => {
-      const props = page.properties as Record<string, any>
-
-      const numero =
-        getNumber(findProp(props, 'Clase', 'Número', 'Numero', 'N°')) ?? 0
-
-      const titulo =
-        getText(findProp(props, 'Título de la clase', 'Titulo de la clase', 'Título', 'Titulo', 'Name')) ||
-        'Sin título'
-
-      return {
-        id: String(numero).padStart(2, '0'),
-        numero,
-        titulo,
-        fecha: getText(findProp(props, 'Fecha', 'Date')) || null,
-        semana: getNumber(findProp(props, 'Semana')),
-        unidad: getText(findProp(props, 'Unidad')) || null,
-        dia: getText(findProp(props, 'Día', 'Dia')) || null,
-        estado: getText(findProp(props, 'Estado', 'Status')) || null,
-        contenidosClave: getText(findProp(props, 'Contenidos clave')) || null,
-        notionPageId: page.id,
-      }
+  try {
+    const response = await notion.databases.query({
+      database_id: process.env.NOTION_DATABASE_ID!,
+      page_size: 100,
     })
-    .filter((c) => c.numero > 0)
 
-  clases.sort((a, b) => a.numero - b.numero)
-  return clases
+    const clases: ClaseEntry[] = response.results
+      .filter((r): r is PageObjectResponse => r.object === 'page' && 'properties' in r)
+      .map((page) => {
+        const props = page.properties as Record<string, any>
+
+        const numero =
+          getNumber(findProp(props, 'Clase', 'Número', 'Numero', 'N°')) ?? 0
+
+        const titulo =
+          getText(findProp(props, 'Título de la clase', 'Titulo de la clase', 'Título', 'Titulo', 'Name')) ||
+          'Sin título'
+
+        return {
+          id: String(numero).padStart(2, '0'),
+          numero,
+          titulo,
+          fecha: getText(findProp(props, 'Fecha', 'Date')) || null,
+          semana: getNumber(findProp(props, 'Semana')),
+          unidad: getText(findProp(props, 'Unidad')) || null,
+          dia: getText(findProp(props, 'Día', 'Dia')) || null,
+          estado: getText(findProp(props, 'Estado', 'Status')) || null,
+          contenidosClave: getText(findProp(props, 'Contenidos clave')) || null,
+          notionPageId: page.id,
+        }
+      })
+      .filter((c) => c.numero > 0)
+
+    clases.sort((a, b) => a.numero - b.numero)
+
+    // Si Notion respondió pero no hay entradas válidas, usar archivos locales.
+    return clases.length > 0 ? clases : localClases()
+  } catch {
+    return localClases()
+  }
 }
 
 export async function getClaseByNumero(numero: number): Promise<ClaseDetalle | null> {
