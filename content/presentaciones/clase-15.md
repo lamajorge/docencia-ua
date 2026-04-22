@@ -43,20 +43,19 @@ Revisamos la prueba. Hoy no hay materia nueva.
 Revisamos cada pregunta con la respuesta correcta y la materia de respaldo.
 :::
 
-::: station num=01 clases="Clases 1–3"
+::: revision num=01 clases="Clases 1–3"
 ::titulo
 Fundamentos — Preguntas 1 a 3
 
-::dominar
+::respuestas
 - **P1 → D.** *"¿Cuál describe correctamente el concepto de escasez?"* La escasez significa que los recursos son limitados en relación a los deseos, que son ilimitados. No es exclusiva de países pobres ni desaparece con el crecimiento.
 - **P2 → C.** *"Una economía que opera bajo su FPP:"* Tiene recursos desaprovechados — hay ineficiencia. Operar sobre la frontera es imposible.
 - **P3 → D.** *"Positiva vs normativa: ¿cuál afirmación es correcta?"* Todas las anteriores: (a) define correctamente ambas; (b) el dato del IVA es verificable → positiva; (c) "debería" subir el salario mínimo es un juicio de valor → normativa.
 
-::pregunta
-¿Por qué la escasez no desaparece cuando un país se vuelve más rico?
+::concepto
+**¿Por qué la escasez no desaparece cuando un país se vuelve más rico?**
 
-::respuesta
-**Porque la escasez no depende del nivel de ingreso, sino de la relación entre recursos y deseos.** A medida que las economías crecen, también surgen nuevos deseos y usos alternativos para los recursos. Samuelson la define como la condición estructural de toda economía: recursos limitados frente a necesidades y deseos ilimitados. Un país rico tiene más recursos, pero también más alternativas de uso — la necesidad de elegir no desaparece.
+Porque la escasez no depende del nivel de ingreso, sino de la relación entre recursos y deseos. A medida que las economías crecen, también surgen nuevos deseos y usos alternativos para los recursos. Samuelson la define como la condición estructural de toda economía.
 
 ::trampa
 **"La escasez es solo para los pobres."** Falso: es la condición fundamental que da origen a la economía como disciplina. Sin escasez no hay elección, no hay costo de oportunidad, no hay economía.
@@ -65,103 +64,100 @@ Fundamentos — Preguntas 1 a 3
 Escasez → elección → costo de oportunidad. Esta cadena es el punto de partida de todo lo que vimos.
 :::
 
-::: station num=02 clases="Clases 6–9"
+::: revision num=02 clases="Clases 6–9"
 ::titulo
 Mercados — Preguntas 4 a 6
 
-::dominar
+::respuestas
 - **P4 → C.** *"Según la ley de la demanda, si sube el precio del bien:"* La cantidad demandada cae — movimiento a lo largo de la curva. La curva no se desplaza por un cambio en el precio del mismo bien.
 - **P5 → D.** *"¿Qué desplaza la oferta de manzanas hacia la derecha?"* Las alternativas a) y b): nueva tecnología que baja costos *y* entrada de nuevas empresas. Un alza de precio del bien es movimiento a lo largo, no desplazamiento.
-- **P6 → B.** *"Precio por debajo del equilibrio en mercado competitivo:"* Hay escasez — cantidad demandada supera a la ofrecida — y el precio tiende a subir hasta P*.
+- **P6 → B.** *"Precio por debajo del equilibrio en mercado competitivo:"* Hay escasez — cantidad demandada supera a la ofrecida — y el precio tiende a subir hasta P\*.
 
-::pregunta
-¿Cuál es la diferencia entre un movimiento a lo largo de la curva y un desplazamiento de la curva?
+::concepto
+**¿Cuál es la diferencia entre un movimiento a lo largo de la curva y un desplazamiento?**
 
-::respuesta
-**Movimiento a lo largo:** ocurre cuando cambia el precio del propio bien. **Desplazamiento:** ocurre cuando cambia cualquier otro determinante — ingresos, precios de bienes relacionados, gustos, expectativas, número de compradores (demanda) o costos de producción, tecnología, precios de insumos, número de productores (oferta). En P5, tecnología y entrada de empresas son determinantes de la oferta: desplazan la curva, no la mueven a lo largo.
+**Movimiento a lo largo:** ocurre cuando cambia el precio del propio bien. **Desplazamiento:** ocurre cuando cambia cualquier otro determinante — ingresos, precios de bienes relacionados, gustos, expectativas, número de compradores (demanda) o costos de producción, tecnología, precios de insumos, número de productores (oferta).
 
 ::trampa
-**P4: "La demanda se desplaza hacia la izquierda."** No: un cambio en el precio del bien mismo genera un movimiento a lo largo de la curva. Para que se desplace la curva, tiene que cambiar un determinante distinto del precio.
+**"La demanda se desplaza hacia la izquierda"** cuando sube el precio del bien. No: es movimiento a lo largo. Para que se desplace, tiene que cambiar un determinante distinto del precio.
 
 ::regla
 Precio del bien → cantidad (movimiento a lo largo). Cualquier otro determinante → curva (desplazamiento).
 :::
 
-::: station num=03 clases="Clases 10–13"
+::: revision num=03 clases="Clases 10–13"
 ::titulo
 Impuestos, externalidades e intervenciones — Preguntas 7 a 10
 
-::dominar
-- **P7 → C.** *"¿Quién soporta la carga de un impuesto sobre las ventas?"* Se distribuye entre compradores y vendedores según sus elasticidades, sin importar a quién se cobra formalmente. El lado menos elástico soporta más.
-- **P8 → C.** *"El peso muerto de un impuesto es:"* La pérdida de bienestar que no captura ningún agente — ni compradores, ni vendedores, ni el Estado. Es el triángulo de transacciones que dejaron de ocurrir.
-- **P9 → B.** *"¿Cuál es ejemplo de externalidad negativa?"* Una fábrica que contamina el río con sus desechos industriales, perjudicando a los vecinos. La vacuna es externalidad *positiva*; el subsidio al transporte es intervención.
+::respuestas
+- **P7 → C.** *"¿Quién soporta la carga de un impuesto sobre las ventas?"* Se distribuye según elasticidades, sin importar a quién se cobra formalmente. El lado menos elástico soporta más.
+- **P8 → C.** *"El peso muerto de un impuesto es:"* La pérdida de bienestar que no captura ningún agente — ni compradores, ni vendedores, ni el Estado.
+- **P9 → B.** *"¿Cuál es ejemplo de externalidad negativa?"* Una fábrica que contamina el río con sus desechos industriales, perjudicando a los vecinos.
 - **P10 → C.** *"Un precio máximo genera escasez cuando se fija:"* Por debajo del precio de equilibrio. Sobre el equilibrio o en él, no tiene efecto real.
 
-::pregunta
-¿Cuál es la diferencia entre la recaudación del impuesto y el peso muerto?
+::concepto
+**¿Cuál es la diferencia entre recaudación y peso muerto?**
 
-::respuesta
-**La cuña T = Pc − Pv genera dos efectos.** Primero, la **recaudación** (rectángulo): ingresa al Estado y puede redistribuirse como gasto público. Segundo, el **peso muerto** (triángulo): son las transacciones que habrían ocurrido sin el impuesto — mutuamente beneficiosas para comprador y vendedor — y que el impuesto elimina. Esa pérdida no la recupera nadie: ni los compradores, ni los vendedores, ni el gobierno. La recaudación se redistribuye; el peso muerto se destruye.
+La cuña T = Pc − Pv genera dos efectos. La **recaudación** (rectángulo) ingresa al Estado y puede redistribuirse. El **peso muerto** (triángulo) son las transacciones que habrían ocurrido sin el impuesto y que el impuesto elimina — esa pérdida no la recupera nadie.
 
 ::trampa
-**P8: "La recaudación del Estado es el peso muerto."** No: son conceptos distintos. La recaudación es el rectángulo que el Estado *sí* captura. El peso muerto es el triángulo que *nadie* captura.
+**"La recaudación del Estado es el peso muerto."** No: la recaudación es el rectángulo que el Estado *sí* captura. El peso muerto es el triángulo que *nadie* captura.
 
 ::regla
 Cuña = recaudación (rectángulo, va al Estado) + peso muerto (triángulo, se destruye).
 :::
 
-::: station num=04 clases="Clases 1–2"
+::: revision num=04 clases="Clases 1–2" labelLeft="PREGUNTA Y RÚBRICA" labelRight="RESPUESTA MODELO"
 ::titulo
 Sección II — Pregunta 1: Costo de oportunidad (5 pts)
 
-::dominar
-**Pregunta:** Explica qué es el costo de oportunidad y por qué es relevante para la toma de decisiones económicas. Usa un ejemplo concreto para ilustrar tu respuesta.
+::respuestas
+**Explica qué es el costo de oportunidad y por qué es relevante para la toma de decisiones económicas. Usa un ejemplo concreto.**
 
-**Criterio de corrección:**
 - Definición correcta (2 pts): el valor de la mejor alternativa que se sacrifica al elegir.
 - Relevancia para decisiones (1,5 pts): toda elección implica una renuncia; el costo no es solo el dinero gastado.
-- Ejemplo concreto (1,5 pts): ver ejemplo en el panel de la derecha.
+- Ejemplo concreto (1,5 pts): ver panel de la derecha.
 
-::pregunta
-¿Qué es lo que hace que el costo de oportunidad sea diferente del costo monetario?
+::concepto
+**El costo de oportunidad es el valor de la mejor alternativa no elegida, no el dinero gastado.** Incluye el tiempo, el placer o los beneficios de todo lo que se dejó de hacer.
 
-::respuesta
-**El costo de oportunidad es el valor de la mejor alternativa no elegida, no el dinero gastado.** Incluye el tiempo, el placer o los beneficios de todo lo que se dejó de hacer. Ejemplo: estudiar Derecho tiene un costo de oportunidad equivalente al ingreso que se habría ganado trabajando esos años, más las actividades a las que se renunció. Samuelson: "el verdadero costo de algo es aquello a lo que se renuncia para obtenerlo." El costo de oportunidad existe aunque no haya desembolso de dinero.
+*Ejemplo:* estudiar Derecho tiene un costo de oportunidad equivalente al ingreso que se habría ganado trabajando esos años, más las actividades a las que se renunció. Samuelson: "el verdadero costo de algo es aquello a lo que se renuncia para obtenerlo."
 
 ::trampa
-**Confundir costo de oportunidad con precio o con costo contable.** El costo de oportunidad no requiere pago de dinero: asistir a una clase gratis tiene costo de oportunidad (el tiempo que podría haberse usado en otra cosa).
+**Confundir costo de oportunidad con precio o costo contable.** El costo de oportunidad no requiere pago de dinero: asistir a clases gratis tiene costo de oportunidad (el tiempo que podría haberse usado en otra cosa).
 
 ::regla
 Escasez → hay que elegir → elegir siempre implica renunciar a algo. Ese valor renunciado es el costo de oportunidad.
 :::
 
-::: station num=05 clases="Clases 6–9"
+::: revision num=05 clases="Clases 6–9" labelLeft="PREGUNTA Y RÚBRICA" labelRight="RESPUESTAS CORRECTAS"
 ::titulo
 Sección II — Pregunta 2: Equilibrio del mercado del pan (5 pts)
 
-::dominar
-**Situación base:** mercado del pan en equilibrio a P* y Q*.
+::respuestas
+**Situación base:** mercado del pan en equilibrio a P\* y Q\*. Para cada caso indica (i) qué determinante cambia, (ii) cómo se desplaza la curva, (iii) qué ocurre con P\* y Q\*.
 
 **(a) Sube el precio del trigo — 2,5 pts**
-- (i) Determinante: **costo de producción** (el trigo es un insumo del pan).
-- (ii) Se desplaza la **oferta hacia la izquierda** — menos cantidad a cada precio.
+- (i) Determinante: **costo de producción** (el trigo es insumo del pan).
+- (ii) Se desplaza la **oferta hacia la izquierda**.
 - (iii) **P\* sube · Q\* baja.**
 
 ---
 
 **(b) Estudio del Ministerio de Salud Pública — 2,5 pts**
-- (i) Determinante: **preferencias de los consumidores** (nuevo riesgo percibido).
-- (ii) Se desplaza la **demanda hacia la izquierda** — menos cantidad demandada a cada precio.
+- (i) Determinante: **preferencias de los consumidores**.
+- (ii) Se desplaza la **demanda hacia la izquierda**.
 - (iii) **P\* baja · Q\* baja.**
 
-::pregunta
-¿Por qué en (a) se mueve la oferta y en (b) se mueve la demanda?
+::concepto
+**¿Por qué en (a) se mueve la oferta y en (b) se mueve la demanda?**
 
-::respuesta
-**Porque los determinantes afectados son distintos.** En (a), el trigo es un insumo del productor: su precio altera el costo de producción → determinante de la oferta → la curva de oferta se desplaza. En (b), el estudio cambia las preferencias de los consumidores sobre el bien → determinante de la demanda → la curva de demanda se desplaza. Regla: si el cambio afecta a quien produce, mueve la oferta. Si afecta a quien consume, mueve la demanda.
+En (a), el trigo es un insumo del productor: su precio altera el **costo de producción** → determinante de la oferta → curva de oferta se desplaza.
+
+En (b), el estudio cambia las **preferencias de los consumidores** → determinante de la demanda → curva de demanda se desplaza.
 
 ::trampa
-**"El precio del pan sube, entonces la oferta se desplaza."** No: un cambio en el precio del pan mismo genera un movimiento a lo largo de la curva de demanda y la curva de oferta — no desplaza ninguna. Lo que desplaza la oferta es el cambio en los costos del productor (como el trigo).
+**"El precio del pan sube, entonces la oferta se desplaza."** No: un cambio en el precio del bien mismo es movimiento a lo largo de la curva, no desplazamiento. Lo que desplaza la oferta es el cambio en el costo del insumo.
 
 ::regla
 Determinante de oferta → desplaza oferta. Determinante de demanda → desplaza demanda. El precio del bien nunca desplaza su propia curva.

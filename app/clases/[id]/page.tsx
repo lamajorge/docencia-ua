@@ -84,6 +84,8 @@ function SectionRenderer({ section, numero }: { section: Section; numero: number
       return <Manifesto s={section} />
     case 'station':
       return <Station s={section} numero={numero} />
+    case 'revision':
+      return <Revision s={section} />
     case 'mecanismo':
       return <Mecanismo s={section} />
     case 'stat-hero':
@@ -267,6 +269,47 @@ function Station({ s, numero }: { s: Section; numero: number }) {
           <div className="st-regla-body"><MD>{s.slots.regla}</MD></div>
         </div>
       </div>
+    </section>
+  )
+}
+
+// ── REVISION — revisión de prueba ────────────────
+function Revision({ s }: { s: Section }) {
+  return (
+    <section className="slide slide-revision">
+      <header className="st-header">
+        <div className="st-num">{s.props.num}</div>
+        <div className="st-titles">
+          <p className="st-eyebrow">{s.props.clases}</p>
+          <h2 className="st-titulo">{s.slots.titulo}</h2>
+        </div>
+      </header>
+      <div className="st-grid">
+        <div className="st-dominar">
+          <p className="st-label rev-label-left">{s.props.labelLeft || 'RESPUESTAS CORRECTAS'}</p>
+          <div className="st-dominar-body"><MD>{s.slots.respuestas}</MD></div>
+        </div>
+        <div className="st-pregunta">
+          <p className="st-label rev-label-right">{s.props.labelRight || 'CONCEPTO CLAVE'}</p>
+          <div className="st-respuesta"><MD>{s.slots.concepto}</MD></div>
+        </div>
+      </div>
+      {(s.slots.trampa || s.slots.regla) && (
+        <div className="st-footer">
+          {s.slots.trampa && (
+            <div className="st-trampa">
+              <p className="st-mini-label">⚠ TRAMPA COMÚN</p>
+              <div className="st-trampa-body"><MD>{s.slots.trampa}</MD></div>
+            </div>
+          )}
+          {s.slots.regla && (
+            <div className="st-regla">
+              <p className="st-mini-label">REGLA DE ORO</p>
+              <div className="st-regla-body"><MD>{s.slots.regla}</MD></div>
+            </div>
+          )}
+        </div>
+      )}
     </section>
   )
 }
@@ -1457,6 +1500,16 @@ a { color: inherit; text-decoration: none; }
 .st-b-body { flex: 1; display: flex; flex-direction: column; gap: 2vh; min-height: 0; }
 .slide-station-b .st-pregunta { flex: 1; min-height: 0; overflow: auto; }
 .slide-station-b .st-footer { padding-top: 2vh; flex-shrink: 0; }
+
+/* ════════════════════════════════════════════
+   REVISION — revisión de prueba
+════════════════════════════════════════════ */
+.slide-revision {
+  background: var(--white);
+  padding: 5vh 7vw;
+  justify-content: flex-start;
+  gap: 3vh;
+}
 
 /* ════════════════════════════════════════════
    MECANISMO
