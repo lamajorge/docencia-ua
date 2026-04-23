@@ -2041,124 +2041,124 @@ a { color: inherit; text-decoration: none; }
   .toolbar { display: none !important; }
   .deck { padding-top: 0; }
   .slide {
-    width: 297mm; height: 210mm;
-    min-height: 210mm; max-height: 210mm;
-    padding: 12mm 18mm 22mm;
+    width: 297mm; height: 167mm;
+    min-height: 167mm; max-height: 167mm;
+    padding: 9mm 15mm 12mm;
     border-bottom: 0;
     break-after: page; page-break-after: always;
     overflow: hidden;
   }
   /* Ajustes específicos por tipo en print */
   .slide-hero, .slide-close, .slide-mecanismo, .slide-exercise-intro { padding: 0; }
-  .slide-hero .hero-inner, .slide-close .cl-inner { padding: 22mm 22mm 18mm; }
-  .slide-mecanismo, .slide-exercise-intro { padding: 20mm 22mm; }
+  .slide-hero .hero-inner, .slide-close .cl-inner { padding: 17mm 20mm 14mm; }
+  .slide-mecanismo, .slide-exercise-intro { padding: 15mm 20mm; }
   .slide-stat-hero { padding: 0; }
-  .slide-stat-hero .sh-side { padding: 14mm 10mm; }
+  .slide-stat-hero .sh-side { padding: 11mm 9mm; }
 
-  .hero-titulo { font-size: 24mm; }
-  .hero-subtitulo { font-size: 6mm; }
-  .hero-meta { bottom: 12mm; left: 22mm; right: 22mm; }
+  .hero-titulo { font-size: 19mm; }
+  .hero-subtitulo { font-size: 4.8mm; }
+  .hero-meta { bottom: 9mm; left: 20mm; right: 20mm; }
 
-  .intro-titulo { font-size: 11mm; }
-  .intro-body { font-size: 3.9mm; line-height: 1.55; }
-  .intro-body p { margin-bottom: 2.5mm; }
-  .intro-body li { margin-bottom: 1.2mm; font-size: 3.7mm; }
-  .intro-body table { font-size: 3.4mm; }
-  .intro-body table th { padding: 1.5mm 2mm; font-size: 3mm; }
-  .intro-body table td { padding: 1.3mm 2mm; }
+  .intro-titulo { font-size: 8.5mm; }
+  .intro-body { font-size: 3.4mm; line-height: 1.5; }
+  .intro-body p { margin-bottom: 2mm; }
+  .intro-body li { margin-bottom: 1mm; font-size: 3.2mm; }
+  .intro-body table { font-size: 3mm; }
+  .intro-body table th { padding: 1.2mm 1.8mm; font-size: 2.6mm; }
+  .intro-body table td { padding: 1mm 1.8mm; }
 
-  .rm-titulo { font-size: 9mm; }
-  .rm-n { font-size: 7mm; }
-  .rm-sub { font-size: 4mm; }
-  .rm-body { font-size: 3.2mm; }
+  .rm-titulo { font-size: 7mm; }
+  .rm-n { font-size: 5.5mm; }
+  .rm-sub { font-size: 3.2mm; }
+  .rm-body { font-size: 2.6mm; }
 
-  .mani-titulo { font-size: 12mm; margin-bottom: 10mm; }
-  .mani-num { font-size: 13mm; }
-  .mani-list p { font-size: 6mm; }
+  .mani-titulo { font-size: 9.5mm; margin-bottom: 8mm; }
+  .mani-num { font-size: 10mm; }
+  .mani-list p { font-size: 4.8mm; }
 
-  .st-num { font-size: 40mm; }
-  .st-titulo { font-size: 9.5mm; }
-  .st-dominar-body li { font-size: 3.8mm; padding: 1.2mm 0; }
-  .st-pregunta-texto { font-size: 4.8mm; }
-  .st-respuesta { font-size: 3.7mm; }
-  .st-trampa-body, .st-regla-body { font-size: 3.6mm; }
+  .st-num { font-size: 32mm; }
+  .st-titulo { font-size: 7.5mm; }
+  .st-dominar-body li { font-size: 3mm; padding: 1mm 0; }
+  .st-pregunta-texto { font-size: 3.8mm; }
+  .st-respuesta { font-size: 3mm; }
+  .st-trampa-body, .st-regla-body { font-size: 2.9mm; }
 
   /* Station part A print — 2-column dominar */
-  .slide-station-a { padding: 12mm 18mm 18mm; }
-  .st-dominar-cols ul { columns: 2; column-gap: 8mm; }
-  .st-dominar-cols li { font-size: 3.7mm; padding: 1.1mm 0; break-inside: avoid; }
+  .slide-station-a { padding: 9mm 15mm 12mm; }
+  .st-dominar-cols ul { columns: 2; column-gap: 6mm; }
+  .st-dominar-cols li { font-size: 3mm; padding: 0.9mm 0; break-inside: avoid; }
 
-  /* Station part B print — drill slide, more breathing room */
-  .slide-station-b { padding: 12mm 18mm 18mm; }
-  .slide-station-b .st-pregunta-texto { font-size: 5.5mm; }
-  .slide-station-b .st-respuesta { font-size: 4.2mm; }
+  /* Station part B print */
+  .slide-station-b { padding: 9mm 15mm 12mm; }
+  .slide-station-b .st-pregunta-texto { font-size: 4.4mm; }
+  .slide-station-b .st-respuesta { font-size: 3.3mm; }
   .slide-station-b .st-trampa-body,
-  .slide-station-b .st-regla-body { font-size: 4mm; }
+  .slide-station-b .st-regla-body { font-size: 3.2mm; }
 
   /* exercise-intro nota */
-  .ei-nota { font-size: 4.5mm; }
-  .ei-nota li { padding: 1.2mm 0; }
+  .ei-nota { font-size: 3.6mm; }
+  .ei-nota li { padding: 1mm 0; }
 
-  .mec-titulo { font-size: 10mm; }
-  .mec-pasos > li { font-size: 4.4mm; }
-  .mec-n { width: 10mm; height: 10mm; font-size: 5mm; }
+  .mec-titulo { font-size: 8mm; }
+  .mec-pasos > li { font-size: 3.5mm; }
+  .mec-n { width: 8mm; height: 8mm; font-size: 4mm; }
 
-  .sh-numero { font-size: 85mm; }
-  .sh-texto { font-size: 6mm; }
-  .sh-subtexto { font-size: 3.8mm; }
+  .sh-numero { font-size: 68mm; }
+  .sh-texto { font-size: 4.8mm; }
+  .sh-subtexto { font-size: 3mm; }
 
-  .sd-numero { font-size: 55mm; }
-  .sd-right { font-size: 6mm; }
+  .sd-numero { font-size: 44mm; }
+  .sd-right { font-size: 4.8mm; }
 
-  .ss-num { font-size: 28mm; }
-  .ss-pct { font-size: 8mm; }
-  .ss-insight { font-size: 5mm; }
+  .ss-num { font-size: 22mm; }
+  .ss-pct { font-size: 6.4mm; }
+  .ss-insight { font-size: 4mm; }
 
-  .gf-titulo { font-size: 10mm; }
-  .gf-n { font-size: 10mm; }
-  .gf-sub { font-size: 5.5mm; }
-  .gf-body { font-size: 3.9mm; }
-  .gf-nota { font-size: 3.7mm; padding: 3mm 5mm; margin-top: 3mm; }
+  .gf-titulo { font-size: 8mm; }
+  .gf-n { font-size: 8mm; }
+  .gf-sub { font-size: 4.4mm; }
+  .gf-body { font-size: 3.1mm; }
+  .gf-nota { font-size: 3mm; padding: 2.5mm 4mm; margin-top: 2.5mm; }
 
-  .ei-titulo { font-size: 18mm; }
-  .ei-datos { font-size: 4.2mm; }
+  .ei-titulo { font-size: 14mm; }
+  .ei-datos { font-size: 3.3mm; }
 
-  .ed-titulo { font-size: 18mm; }
-  .ed-body { font-size: 5mm; }
-  .ed-twist-body { font-size: 5.2mm; }
+  .ed-titulo { font-size: 14mm; }
+  .ed-body { font-size: 4mm; }
+  .ed-twist-body { font-size: 4.1mm; }
 
-  .slide-evaluacion { padding: 8mm 14mm 10mm; gap: 2mm; }
-  .ev-head { padding-bottom: 2mm; }
-  .ev-titulo { font-size: 8mm; }
-  .ev-sub { font-size: 3mm; }
-  .ev-grid { gap: 4mm; }
+  .slide-evaluacion { padding: 6mm 12mm 8mm; gap: 1.5mm; }
+  .ev-head { padding-bottom: 1.5mm; }
+  .ev-titulo { font-size: 6.5mm; }
+  .ev-sub { font-size: 2.5mm; }
+  .ev-grid { gap: 3mm; }
   .ev-cell { gap: 1mm; }
-  .ev-pts { font-size: 8mm; }
-  .ev-body { font-size: 3.2mm; line-height: 1.4; }
-  .ev-body p { margin: 0 0 1mm; }
-  .ev-criterio { font-size: 3.5mm; padding: 2mm 3mm; }
-  .ev-claves { padding: 2mm 3mm; }
-  .ev-claves li { font-size: 3.2mm; padding: 0.8mm 0 0.8mm 3mm; }
+  .ev-pts { font-size: 6.5mm; }
+  .ev-body { font-size: 2.6mm; line-height: 1.4; }
+  .ev-body p { margin: 0 0 0.8mm; }
+  .ev-criterio { font-size: 2.8mm; padding: 1.5mm 2.5mm; }
+  .ev-claves { padding: 1.5mm 2.5mm; }
+  .ev-claves li { font-size: 2.6mm; padding: 0.6mm 0 0.6mm 2.5mm; }
 
-  .cl-titulo { font-size: 22mm; }
-  .cl-body { font-size: 4.8mm; }
-  .cl-reglas-text { font-size: 4.5mm; }
+  .cl-titulo { font-size: 17.5mm; }
+  .cl-body { font-size: 3.8mm; }
+  .cl-reglas-text { font-size: 3.6mm; }
 
   /* referencia print */
-  .ref-titulo { font-size: 9mm; }
-  .ref-tema { font-size: 3.8mm; }
-  .ref-cap { font-size: 3.5mm; }
-  .ref-row { padding: 1.8mm 0; }
+  .ref-titulo { font-size: 7mm; }
+  .ref-tema { font-size: 3mm; }
+  .ref-cap { font-size: 2.8mm; }
+  .ref-row { padding: 1.4mm 0; }
 
   /* diagrama print */
-  .dg-titulo { font-size: 3.5mm; padding-bottom: 1.5mm; }
-  .dg-texto { font-size: 3mm; }
-  .dg-leyenda { font-size: 2.6mm; padding: 1.5mm 2mm; }
-  .dg-panel { padding: 3mm 2mm; gap: 2mm; }
-  .dg-grid { gap: 5mm; }
+  .dg-titulo { font-size: 2.8mm; padding-bottom: 1.2mm; }
+  .dg-texto { font-size: 2.4mm; }
+  .dg-leyenda { font-size: 2mm; padding: 1.2mm 1.8mm; }
+  .dg-panel { padding: 2.5mm 2mm; gap: 1.5mm; }
+  .dg-grid { gap: 4mm; }
 }
 
-@page { size: A4 landscape; margin: 0; }
+@page { size: 297mm 167mm; margin: 0; }
 `
 
 
