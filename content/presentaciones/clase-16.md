@@ -1,19 +1,19 @@
 ---
 clase: 16
-titulo: Revisión Regular 1 · Evaluación del 10% · Arranque Macro
+titulo: Revisión Regular 1 · Evaluación del 10% · Inicio Unidad III
 unidad: Unidad III
 fecha: Jueves 23 de abril
 ---
 
 ::: hero
 ::eyebrow
-CLASE 16 · TRANSICIÓN UNIDADES II → III
+CLASE 16 · UNIDADES II → III
 
 ::titulo
-Revisión, ensayo y arranque de macro.
+Revisión, evaluación del 10% e inicio de la Unidad III.
 
 ::subtitulo
-Tres bloques: cerramos la Regular 1, presentamos el 10% y abrimos la Unidad III.
+Tres bloques: revisamos la Regular 1, se explica la evaluación del 10% y se presenta la macroeconomía.
 
 ::meta
 DERE-A0004 · Introducción a la Economía · Universidad Autónoma de Chile
@@ -33,8 +33,8 @@ Espacio abierto para preguntas sobre la pauta. La pauta completa está a continu
 **Bloque 2 — Evaluación del 10% (20 min)**
 Instrucción del ensayo académico: estructura del párrafo argumentativo, 10 temas, rúbrica y logística de presentaciones.
 
-**Bloque 3 — Arranque Unidad III (25 min)**
-Qué es la macroeconomía, por qué es diferente de la micro y qué viene la próxima semana.
+**Bloque 3 — Introducción a la macroeconomía (25 min)**
+Qué es la macroeconomía, en qué se diferencia de la microeconomía y qué viene la próxima semana.
 :::
 
 ::: revision num=01 clases="Clases 1–3"
@@ -221,11 +221,6 @@ Cómo construir cada párrafo de desarrollo
 
 *[Punto]* El PIB mide la producción total de un país, pero no captura la distribución de ese ingreso ni el bienestar de la población. *[Evidencia]* Según Samuelson y Nordhaus, el PIB es el "valor de mercado de todos los bienes y servicios finales producidos en un país en un período determinado" — una medida de flujo productivo, no de equidad ni de calidad de vida. *[Explicación]* Esto significa que un país puede registrar crecimiento del PIB mientras la mayoría de su población empeora su situación, si los beneficios se concentran en pocos. *[Enlace]* Por tanto, utilizar el PIB como único indicador de bienestar conduce a conclusiones engañosas sobre el estado real de una sociedad.
 
-::trampa
-**"Citar es suficiente."** No: citar sin analizar no es argumento. El paso de **explicación** es donde está el pensamiento real.
-
-::regla
-Punto claro → evidencia relevante → explicación del vínculo → enlace al tema central.
 :::
 
 ::: grid-fallas
