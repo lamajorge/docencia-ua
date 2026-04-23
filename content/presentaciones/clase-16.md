@@ -228,34 +228,39 @@ Cómo construir cada párrafo de desarrollo
 Punto claro → evidencia relevante → explicación del vínculo → enlace al tema central.
 :::
 
-::: intro
-::kicker
-10 TEMAS — ELIGE 1
-
+::: grid-fallas
 ::titulo
-Todos son preguntas abiertas que requieren una postura argumentada.
+10 temas — elija uno. No hay respuesta única, pero sí argumentos mejor o peor fundamentados.
 
-::body
-No hay respuesta única correcta, pero hay respuestas mejor o peor fundamentadas. Una vez que elijas el tema, escríbele un correo al profesor — él te responde con sugerencias de fuentes específicas.
-
-**Macroeconomía**
-
+::f1-titulo
+Macroeconomía
+::f1-body
 1. ¿Es el PIB un buen indicador del bienestar de una sociedad?
 2. ¿Puede la política monetaria controlar la inflación sin generar desempleo?
 3. ¿Por qué el desempleo persiste incluso cuando la economía crece?
 4. ¿El crecimiento económico sostenido es compatible con la reducción de la desigualdad?
 5. ¿Tiene límites la política fiscal como herramienta de estabilización económica?
 
-**Economía política internacional**
-
+::f2-titulo
+Economía política internacional
+::f2-body
 6. ¿El libre comercio beneficia por igual a todos los países que participan en él?
 7. ¿Por qué algunos países son ricos y otros pobres? ¿Geografía, instituciones o historia?
 
-**Temas de actualidad**
-
-8. ¿Debería existir un ingreso básico universal? Argumenta a favor o en contra desde la economía.
+::f3-titulo
+Temas de actualidad
+::f3-body
+8. ¿Debería existir un ingreso básico universal? Argumente a favor o en contra desde la economía.
 9. ¿La inteligencia artificial es una amenaza para el empleo o una oportunidad de desarrollo económico?
 10. ¿Puede el crecimiento económico ser compatible con la sostenibilidad ambiental?
+
+::f4-titulo
+¿Cómo elegir?
+::f4-body
+Elija el tema que más le genere una postura. Escríbame un correo con su elección a **jorge.lama@cloud.uautonoma.cl** — le respondo con sugerencias de fuentes específicas para ese tema.
+
+::nota
+Todos los temas admiten más de una respuesta válida. Lo que se evalúa es la solidez del argumento.
 :::
 
 ::: grid-fallas
