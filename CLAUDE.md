@@ -63,14 +63,24 @@ Los archivos en [`.claude/rules/`](.claude/rules/) no se cargan automáticamente
 
 ---
 
-## Estado del curso (al 2026-04-22)
+## Estado del curso (al 2026-04-23)
 
-- **Guías en Notion:** Clases 1–14 completas · Clase 15 = Evaluación Regular 1 · Clase 16 producida (macro arranca aquí).
-- **Presentaciones web:** Clases 1–15 en formato landing. Clase 15 = revisión de la prueba (pauta completa con respuestas).
-- **Regular 1:** miércoles 22 de abril · 20 pts · 90 min · cubre Clases 1–13 (Unidades I y II) · 40% de la nota final. Aplicada hoy.
+- **Guías en Notion:** Clases 1–14 completas · Clase 15 = Evaluación Regular 1 · Clase 16 producida · Clase 17 (PIB) existe en Notion.
+- **Presentaciones web:** Clases 1–17 en formato landing.
+  - Clase 15 = revisión de pauta (con respuestas).
+  - Clase 16 = revisión Regular 1 + instrucción 10% + transición micro→macro.
+  - Clase 17 = PIB y objetivos macro (contenido que era la clase 16 anterior).
+- **Regular 1:** aplicada miércoles 22 de abril · 20 pts · cubre Clases 1–13 · 40%.
 - **Regular 2:** 2/3 junio 2026 · acumulativa Unidades I, II y III · 50%.
 - **Examen de repetición:** 8 julio 2026.
-- **10%:** mejor nota entre Regular 1 y Regular 2 (no se usa Canvas).
+- **10% — Ensayo + presentación oral:**
+  - ~750 palabras · estructura: intro + 3 párrafos PEEL + conclusión + referencias.
+  - PEEL = **Punto, Evidencia, Explicación, Enlace** (siglas inglesas entre paréntesis como referencia).
+  - Bibliografía libre; alumno envía correo con tema y recibe sugerencias de fuentes.
+  - Presentación oral: 6 min ante el curso; el profesor asigna 1–2 slots por clase según disponibilidad.
+  - Bonificación: entrega antes del 20 mayo → +2 pts base; 21 mayo–17 junio → +1 pt base.
+  - Correo de entrega y contacto: **jorge.lama@cloud.uautonoma.cl**
+  - 10% = mejor nota entre Regular 1 y Regular 2 (no Canvas).
 - **Escala de notas:** 60% = 4.0 (Art. 26). Para prueba de 20 pts → 12 pts = 4.0.
 - **Pendiente estructural:** Clase 27 no existe en Notion.
 
