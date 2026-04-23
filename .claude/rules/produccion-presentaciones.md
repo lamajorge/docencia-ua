@@ -12,15 +12,27 @@ Cada clase es una **landing page editorial**, no un deck genérico. Layouts dist
 
 ---
 
+## Fuente de verdad: Notion tiene prioridad sobre el archivo local
+
+`getPresentacionFromNotion(numero)` consulta primero la **base de datos de presentaciones de Notion** (`NOTION_PRESENTATIONS_DATABASE_ID`). Si encuentra una página para la clase, la usa — el archivo local `content/presentaciones/clase-N.md` queda ignorado por el sitio.
+
+**Regla operativa:** toda edición de contenido debe hacerse **en Notion** (usando `notion-update-page replace_content` con el markdown envuelto en \`\`\`markdown ... \`\`\`). El archivo local es respaldo para git y fallback si Notion no responde — siempre mantenerlos sincronizados, pero Notion manda.
+
+Para saber si una clase tiene página en Notion: buscar en la DB de presentaciones (`34b7612d194d80b69196e7dba1c44b4f`) con `notion-search` por "Clase N".
+
+---
+
 ## Flujo de producción
 
 1. Leer la guía de la clase en Notion como **única fuente de contenido**.
-2. Crear `content/presentaciones/clase-NN.md` con frontmatter + secciones `:::`.
+2. Redactar el markdown con frontmatter + secciones `:::` (localmente o en memoria).
 3. Cada sección abre con `::: tipo [props...]` y cierra con `:::`. Dentro, slots `::nombre` declaran sub-bloques. El contenido dentro de cada slot es markdown libre.
 4. Tipos de sección disponibles: `hero`, `intro`, `roadmap`, `manifesto`, `station` (part=a/b), `mecanismo`, `stat-hero`, `stat-duo`, `stat-split`, `grid-fallas` (con `::nota` opcional), `exercise-intro`, `exercise-d`, `evaluacion`, `close`, `referencia`, `diagrama` (con `::d{n}-leyenda`), `revision` (para revisión de prueba — ver abajo). Cada uno tiene su componente React con layout único en [`app/clases/[id]/page.tsx`](../../app/clases/[id]/page.tsx).
 5. **Consolidar:** ~18 secciones por clase, no 30+. Si una idea no necesita slide propio, colapsarla en una `station` o `stat`. Regla: **1 sección = 1 concepto**; ejemplos del mismo concepto van juntos.
 6. El contenido sale **exclusivamente** de la guía — no se inventan ejemplos.
-7. Validar en pantalla (scroll de landing) **y** en vista impresa (`window.print()` del navegador). Cada sección debe caber en una A4 apaisada (297×210mm) cuando se imprime.
+7. Subir a Notion con `notion-update-page replace_content`, contenido envuelto en \`\`\`markdown ... \`\`\`.
+8. Escribir también en `content/presentaciones/clase-N.md` (sin zero-pad) y hacer commit. Es el fallback y el historial.
+9. Validar en pantalla (scroll de landing) **y** en vista impresa (`window.print()` del navegador). Cada sección debe caber en una A4 apaisada (297×210mm) cuando se imprime.
 
 ---
 
