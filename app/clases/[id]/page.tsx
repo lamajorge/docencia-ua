@@ -462,7 +462,7 @@ function Evaluacion({ s }: { s: Section }) {
           <div key={n} className="ev-cell">
             <p className="ev-sec">{s.slots[`sec${n}-label`]}</p>
             <p className="ev-pts">{s.slots[`sec${n}-pts`]}</p>
-            <p className="ev-body">{s.slots[`sec${n}-body`]}</p>
+            <div className="ev-body"><MD>{s.slots[`sec${n}-body`]}</MD></div>
           </div>
         ))}
       </div>
