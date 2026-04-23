@@ -217,6 +217,10 @@ Cómo construir cada párrafo de desarrollo
 ::respuesta
 **Que el lector pueda ver el hilo: punto → evidencia → explicación → enlace con la pregunta.** Tres párrafos encadenados de esta forma construyen la respuesta completa.
 
+**Ejemplo sobre el tema 1 ("¿Es el PIB un buen indicador del bienestar?"):**
+
+*[Punto]* El PIB mide la producción total de un país, pero no captura la distribución de ese ingreso ni el bienestar de la población. *[Evidencia]* Según Samuelson y Nordhaus, el PIB es el "valor de mercado de todos los bienes y servicios finales producidos en un país en un período determinado" — una medida de flujo productivo, no de equidad ni de calidad de vida. *[Explicación]* Esto significa que un país puede registrar crecimiento del PIB mientras la mayoría de su población empeora su situación, si los beneficios se concentran en pocos. *[Enlace]* Por tanto, utilizar el PIB como único indicador de bienestar conduce a conclusiones engañosas sobre el estado real de una sociedad.
+
 ::trampa
 **"Citar es suficiente."** No: citar sin analizar no es argumento. El paso de **explicación** es donde está el pensamiento real.
 
