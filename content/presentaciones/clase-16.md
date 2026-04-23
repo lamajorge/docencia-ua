@@ -257,7 +257,7 @@ Temas de actualidad
 ::f4-titulo
 ¿Cómo elegir?
 ::f4-body
-Elija el tema sobre el que tenga más cosas que decir. Escríbame un correo con su elección a **jorge.lama@cloud.uautonoma.cl** — le respondo con sugerencias de fuentes específicas para ese tema.
+Elija un tema y tome una postura: defiéndala con argumentos y evidencia. Escríbame un correo con su elección a **jorge.lama@cloud.uautonoma.cl** — le respondo con sugerencias de fuentes específicas para ese tema.
 
 ::nota
 Todos los temas admiten más de una respuesta válida. Lo que se evalúa es la solidez del argumento.
