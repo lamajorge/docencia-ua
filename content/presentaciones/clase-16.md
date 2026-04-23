@@ -333,9 +333,6 @@ Dos cosas antes de la Clase 17.
 
 La próxima semana arranca macro: el PIB, el modelo DA-OA, inflación, desempleo, política fiscal y monetaria.
 
-::reglas
-escasez · costo de oportunidad · equilibrio · cuña · peso muerto · PIB · crecimiento · empleo · estabilidad · párrafo argumentativo
-
 ::meta
 DERE-A0004 · Introducción a la Economía · Universidad Autónoma de Chile
 :::
