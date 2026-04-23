@@ -63,13 +63,16 @@ Los archivos en [`.claude/rules/`](.claude/rules/) no se cargan automáticamente
 
 ---
 
-## Estado del curso (al 2026-04-21)
+## Estado del curso (al 2026-04-22)
 
 - **Guías en Notion:** Clases 1–14 completas · Clase 15 = Evaluación Regular 1 · Clase 16 producida (macro arranca aquí).
-- **Presentaciones web:** Clases 1–14 y 16 en formato landing. Clase 15 no tiene landing (es evaluación).
-- **Regular 1:** miércoles 22 de abril · 40 pts · 90 min · cubre Clases 1–13 (Unidades I y II) · 40% de la nota final. Subpáginas "Evaluación" y "Pauta" colgadas de Clase 15 en Notion.
-- **Escala de notas:** corregida 2026-04-21 para cumplir Art. 26 reglamento (60% = 4.0).
-- **Pendiente estructural:** Clase 27 no existe en Notion · discrepancia Evaluación Regular 2 entre Notion (Semana 14) y syllabus (Semana 12).
+- **Presentaciones web:** Clases 1–15 en formato landing. Clase 15 = revisión de la prueba (pauta completa con respuestas).
+- **Regular 1:** miércoles 22 de abril · 20 pts · 90 min · cubre Clases 1–13 (Unidades I y II) · 40% de la nota final. Aplicada hoy.
+- **Regular 2:** 2/3 junio 2026 · acumulativa Unidades I, II y III · 50%.
+- **Examen de repetición:** 8 julio 2026.
+- **10%:** mejor nota entre Regular 1 y Regular 2 (no se usa Canvas).
+- **Escala de notas:** 60% = 4.0 (Art. 26). Para prueba de 20 pts → 12 pts = 4.0.
+- **Pendiente estructural:** Clase 27 no existe en Notion.
 
 ---
 

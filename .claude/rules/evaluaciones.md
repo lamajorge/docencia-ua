@@ -66,10 +66,13 @@ Para una prueba de **40 puntos**, 60% = 24 pts → nota 4.0:
 **Calendario vigente:**
 | Evaluación | Fecha | Cobertura | Ponderación |
 |---|---|---|---|
-| Regular 1 | **Miércoles 22 de abril de 2026** (Clase 15) | Unidades I y II | 40% |
-| Regular 2 (acumulativa) | Semana por confirmar | Unidades I, II y III | 50% |
+| Regular 1 | **21/22 abril 2026** (Clase 15 — miércoles 22) | Unidades I y II | 40% |
+| Regular 2 (acumulativa) | **2/3 junio 2026** | Unidades I, II y III | 50% |
+| Examen de repetición | **8 julio 2026** | — | — |
 
-> Las fechas informadas al curso pueden diferir de la cobertura indicada en el syllabus corporativo. El syllabus mantiene la estructura 40%/50%/10%; la cobertura se ajustó al curso efectivamente dictado (dos clases por semana, 18 semanas).
+**10%:** Actividades plataforma Canvas **o mejor nota de las dos evaluaciones escritas**. Jorge no usa Canvas → se aplica la alternativa: la nota más alta entre Regular 1 y Regular 2.
+
+> Fuente: calendario institucional Primer Año Primer Semestre Diurno. El syllabus mantiene la estructura 40%/50%/10%; la cobertura se ajustó al curso efectivamente dictado.
 
 ---
 

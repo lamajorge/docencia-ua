@@ -1,73 +1,131 @@
 ---
 clase: 16
-titulo: Medición de la actividad económica — el PIB y objetivos macro
+titulo: Revisión Regular 1 · Evaluación del 10% · Arranque Macro
 unidad: Unidad III
-fecha: Miércoles 29 de abril
+fecha: Jueves 23 de abril
 ---
 
 ::: hero
 ::eyebrow
-CLASE 16 · UNIDAD III · MACROECONOMÍA
+CLASE 16 · TRANSICIÓN UNIDADES II → III
 
 ::titulo
-El PIB y los objetivos macro
+Revisión, ensayo y arranque de macro.
 
 ::subtitulo
-Primera clase de macroeconomía — cambiamos la escala
+Tres bloques: cerramos la Regular 1, presentamos el 10% y abrimos la Unidad III.
 
 ::meta
 DERE-A0004 · Introducción a la Economía · Universidad Autónoma de Chile
 :::
 
-::: roadmap
+::: intro
 ::kicker
-ESTRUCTURA DE LA CLASE
+HOY
 
 ::titulo
-Seis bloques: del mercado particular a la economía entera.
+Tres bloques en 80 minutos.
 
-::p1-titulo
-Puente de micro a macro
-::p1-body
-Cierre Unidad II como caso particular. ¿Cómo evaluamos la economía entera?
+::body
+**Bloque 1 — Revisión Regular 1 (30 min)**
+Espacio abierto para preguntas sobre la pauta. La pauta completa está en la presentación de Clase 15. Las notas se publican dentro de los 10 días corridos (Art. 29). Para solicitar revisión formal: 3 días corridos desde la publicación (Art. 30).
 
-::p2-titulo
-Los cuatro objetivos macro
-::p2-body
-Crecimiento, empleo, estabilidad de precios, equilibrio externo.
+**Bloque 2 — Evaluación del 10% (20 min)**
+Instrucción del ensayo académico: estructura, método PEEL, 10 temas, rúbrica y logística de presentaciones.
 
-::p3-titulo
-Qué es el PIB
-::p3-body
-Las cuatro palabras clave. Qué cuenta y qué no.
+**Bloque 3 — Arranque Unidad III (25 min)**
+Qué es la macroeconomía, por qué es diferente de la micro y qué viene la próxima semana.
+:::
 
-::p4-titulo
-Tres enfoques del PIB
-::p4-body
-Gasto, ingreso, producción. Por qué los tres dan el mismo número.
+::: evaluacion
+::titulo
+Evaluación del 10% — Ensayo académico y presentación oral
 
-::p5-titulo
-Flujo circular ampliado
-::p5-body
-Familias, empresas, gobierno, resto del mundo.
+::sub
+~750 palabras escritas · presentación oral 5–6 min · bibliografía libre
 
-::p6-titulo
-Cierre y tarea
-::p6-body
-Verificación y tarea de investigación en fuentes oficiales.
+::sec1-label
+El ensayo
+::sec1-pts
+~750 palabras
+::sec1-body
+Elige un tema de la lista. Escribe intro + 3 párrafos PEEL + conclusión + referencias. La bibliografía es libre — escríbeme un correo con tu tema y te sugiero fuentes específicas.
+
+::sec2-label
+La presentación
+::sec2-pts
+5–6 min
+::sec2-body
+Defiendes tu argumento oralmente ante el curso. No lees el papel. Una pregunta al final. Puedes presentar desde la próxima semana — yo administro 1–2 por clase durante el semestre.
+
+::sec3-label
+Entrega
+::sec3-pts
+Antes
+::sec3-body
+Envías el ensayo por correo a **jorgelamanavarro@gmail.com** antes del día que te asignen para presentar.
+
+::criterio
+**El argumento construido con evidencia** — no la extensión. Claridad de tesis + estructura PEEL visible en ≥ 2 párrafos.
+
+::claves
+- **Tesis (25%):** la introducción responde la pregunta en una frase clara.
+- **Evidencia (35%):** cada párrafo cita al menos 1 fuente y la analiza.
+- **PEEL (25%):** visible en ≥ 2 párrafos — punto → evidencia → análisis → enlace.
+- **Oral (15%):** claro, dentro del tiempo, no lee el papel.
+:::
+
+::: station num=01 clases="Método PEEL"
+::titulo
+Cómo construir cada párrafo de desarrollo
+
+::dominar
+- **P — Point:** primera oración = el argumento del párrafo en una frase. *"El PIB mide producción, no distribución."*
+- **E — Evidence:** 1–2 piezas de evidencia: dato, definición, ejemplo concreto (de los manuales del curso o fuente externa).
+- **E — Explain:** cómo la evidencia apoya el argumento. No basta citar — hay que mostrar la conexión.
+- **L — Link:** conecta el párrafo con la pregunta del ensayo o introduce el siguiente argumento.
+
+::pregunta
+¿Qué hace que un párrafo académico sea sólido?
+
+::respuesta
+**Que el lector pueda ver el hilo: argumento → evidencia → análisis → conexión con la pregunta.** Tres párrafos PEEL encadenados construyen la respuesta completa.
+
+::trampa
+**"Citar es suficiente."** No: citar sin analizar no es argumento. El paso **E — Explain** es donde está el pensamiento real.
+
+::regla
+Point claro → evidencia relevante → explicación del vínculo → link al tema central.
 :::
 
 ::: intro
 ::kicker
-BLOQUE 1 · CAMBIO DE ESCALA
+10 TEMAS — ELIGE 1
 
 ::titulo
-De un mercado particular a la economía entera.
+Todos son preguntas abiertas que requieren una postura argumentada.
 
 ::body
-Todo lo que vimos en la Unidad II era **un mercado particular**: una curva de demanda, una de oferta, un equilibrio, una cuña impositiva. Incluso cuando analizamos impuestos, la pregunta era sobre *un* mercado (bebidas azucaradas, cigarrillos).
+No hay respuesta única correcta, pero hay respuestas mejor o peor fundamentadas. Una vez que elijas el tema, escríbele un correo al profesor — él te responde con sugerencias de fuentes específicas.
 
-Hoy cambiamos de escala: en vez de un mercado, **la economía entera**. En vez de un precio, **el nivel general de precios**. En vez de una cantidad, **el PIB**. El método económico es el mismo; lo que cambia es el nivel de agregación.
+**Macroeconomía**
+
+1. ¿Es el PIB un buen indicador del bienestar de una sociedad?
+2. ¿Puede la política monetaria controlar la inflación sin generar desempleo?
+3. ¿Por qué el desempleo persiste incluso cuando la economía crece?
+4. ¿El crecimiento económico sostenido es compatible con la reducción de la desigualdad?
+5. ¿Tiene límites la política fiscal como herramienta de estabilización económica?
+
+**Economía política internacional**
+
+6. ¿El libre comercio beneficia por igual a todos los países que participan en él?
+7. ¿Por qué algunos países son ricos y otros pobres? ¿Geografía, instituciones o historia?
+
+**Temas de actualidad**
+
+8. ¿Debería existir un ingreso básico universal? Argumenta a favor o en contra desde la economía.
+9. ¿La inteligencia artificial es una amenaza para el empleo o una oportunidad de desarrollo económico?
+10. ¿Puede el crecimiento económico ser compatible con la sostenibilidad ambiental?
 :::
 
 ::: grid-fallas
@@ -75,24 +133,24 @@ Hoy cambiamos de escala: en vez de un mercado, **la economía entera**. En vez d
 Micro vs. Macro — el cambio de escala
 
 ::f1-titulo
-Micro (Unidad II)
+Micro (Unidades I y II)
 ::f1-body
 Un mercado · un bien · un precio · una cantidad · equilibrio de mercado · eficiencia.
 
 ::f2-titulo
-Macro (Unidad III, desde hoy)
+Macro (Unidad III, desde la próxima semana)
 ::f2-body
-La economía entera · todos los bienes · nivel general de precios · el PIB · equilibrio macroeconómico.
+La economía entera · todos los bienes · nivel general de precios · el PIB · crecimiento, empleo, estabilidad.
 
 ::f3-titulo
 ¿Qué se mantiene?
 ::f3-body
-El método: oferta, demanda, equilibrio, análisis de intervenciones. La próxima clase (Clase 17) introduce Demanda Agregada y Oferta Agregada.
+El método: oferta, demanda, equilibrio, análisis de intervenciones. Clase 17 introduce Demanda Agregada y Oferta Agregada.
 
 ::f4-titulo
 ¿Qué cambia?
 ::f4-body
-La escala de agregación y los **objetivos**: ya no es eficiencia de un mercado, sino crecimiento, empleo, estabilidad de precios y equilibrio externo del **país**.
+La escala y los **objetivos**: ya no es eficiencia de un mercado, sino crecimiento, empleo, estabilidad de precios y equilibrio externo del **país**.
 :::
 
 ::: grid-fallas
@@ -117,140 +175,31 @@ Los cuatro objetivos de la política macroeconómica
 ::f4-titulo
 4. Equilibrio externo
 ::f4-body
-¿Exportaciones guardan relación con importaciones en el mediano plazo? Es el objetivo más técnico — cuenta corriente sin desequilibrios persistentes.
+¿Exportaciones guardan relación con importaciones en el mediano plazo? Cuenta corriente sin desequilibrios persistentes.
 
 ::nota
-Pleno empleo no significa cero desempleo. Siempre hay desempleo friccional (gente cambiando de trabajo, recién egresados). Meta del BCCh inflación: **3% ± 1 punto**.
-:::
-
-::: intro
-::kicker
-BLOQUE 3 · EL CONCEPTO CENTRAL
-
-::titulo
-PIB — Producto Interno Bruto.
-
-::body
-**Definición.** Valor de mercado de todos los bienes y servicios **finales** producidos **dentro** de un país en un **período** determinado (año o trimestre).
-
-Cuatro palabras clave:
-
-1. **Valor de mercado.** No se suman cantidades físicas — se multiplica precio × cantidad. Es la única forma de agregar manzanas y computadores.
-2. **Finales.** No bienes intermedios. El trigo ya está dentro del valor del pan — contarlo aparte sería doble conteo.
-3. **Dentro.** Territorio, no nacionalidad. Fábrica de Toyota en Chile → PIB chileno. Chileno trabajando en Alemania → PIB alemán.
-4. **Período.** El PIB es un **flujo** (lo producido en un año), no un **stock** (la riqueza total del país).
-:::
-
-::: manifesto
-::titulo
-¿Entra en el PIB chileno de 2026?
-
-::q1
-Un auto nuevo producido en Chile en marzo 2026.
-
-::q2
-Un auto usado vendido entre dos personas en abril 2026.
-
-::q3
-Servicios de un abogado chileno que atiende un caso en abril 2026.
-
-::footer
-(1) Sí — producción del año. (2) No — el auto ya fue contabilizado en el PIB del año que se produjo; revenderlo no agrega producción nueva. (3) Sí — los servicios cuentan como producción actual.
-:::
-
-::: intro
-::kicker
-BLOQUE 4 · TRES ENFOQUES DEL PIB
-
-::titulo
-Tres formas de medir el mismo número.
-
-::body
-Las tres **tienen que dar el mismo número** — no porque se fuerce, sino porque son aritméticamente equivalentes. Cada una mira la misma transacción desde un ángulo distinto.
-
-**¿Para qué tener tres?** Porque cada una aporta información distinta. El enfoque del gasto dice quién demanda (política económica). El del ingreso dice cómo se distribuye (desigualdad). El de producción dice qué sectores aportan más (política industrial). El número es el mismo; la lectura, distinta.
-:::
-
-::: grid-fallas
-::titulo
-Los tres enfoques — el mismo PIB, tres miradas
-
-::f1-titulo
-Enfoque del gasto (quién compra)
-::f1-body
-**Y = C + I + G + (X − M).** C = consumo familias · I = inversión empresas · G = gasto público (no incluye transferencias) · X − M = exportaciones netas.
-
-::f2-titulo
-Enfoque del ingreso (quién recibe)
-::f2-body
-Cada peso gastado es ingreso de alguien. Se descompone en **salarios + rentas + intereses + utilidades**. Gasto e ingreso son dos caras de la misma transacción.
-
-::f3-titulo
-Enfoque de la producción (qué se produce)
-::f3-body
-Suma del **valor agregado** en cada etapa productiva. Evita el doble conteo. Trigo ($100) + molienda ($80) + panadería ($120) = **$300** = precio del pan (bien final).
-
-::f4-titulo
-¿Por qué coinciden?
-::f4-body
-Son aritméticamente equivalentes. Lo que uno gasta, otro lo recibe como ingreso, y todo se origina en valor agregado en la producción. No hay forma de que difieran.
-
-::nota
-La identidad **Y = C + I + G + (X − M)** se usa todo el resto de la unidad. La próxima clase la trata como **Demanda Agregada**.
-:::
-
-::: intro
-::kicker
-BLOQUE 5 · FLUJO CIRCULAR AMPLIADO
-
-::titulo
-Cuatro agentes, un solo PIB.
-
-::body
-El flujo circular conecta **familias, empresas, gobierno y resto del mundo**. Los tres enfoques del PIB no son casualidad — salen del flujo circular.
-
-Lo que se gasta en el **mercado de bienes** (arriba) es igual a lo que se paga en el **mercado de factores** (abajo). El gobierno entra con impuestos y gasto público (G). El resto del mundo entra con exportaciones (X) e importaciones (M).
-
-**Conexión jurídica.** El gobierno aparece con dos roles: recauda impuestos (Código Tributario) y hace gasto público (Ley de Presupuestos anual). Son dos actos jurídicos separados que, agregados, definen la política fiscal.
-
-*Samuelson & Nordhaus, Cap. 21, Fig. 21-1.*
-:::
-
-::: manifesto
-::titulo
-Tres preguntas antes de cerrar.
-
-::q1
-El PIB cuenta bienes finales, no intermedios. ¿Por qué?
-
-::q2
-Si un chileno trabaja en España y una fábrica alemana opera en Chile, ¿dónde entra cada aporte?
-
-::q3
-El enfoque del gasto y el del ingreso dan el mismo número. ¿Por qué?
-
-::footer
-(1) Para evitar el doble conteo. (2) El chileno → PIB español; la fábrica → PIB chileno. Territorio, no nacionalidad. (3) Cada peso gastado es un peso de ingreso para alguien — misma transacción, dos lados.
+Pleno empleo no significa cero desempleo — siempre hay desempleo friccional. Meta BCCh: **3% ± 1 punto**.
 :::
 
 ::: close
 ::eyebrow
-TAREA · JUEVES 30 DE ABRIL
+TAREA · PRÓXIMA SEMANA
 
 ::titulo
-Investigar datos reales en fuentes oficiales.
+Dos cosas antes de la Clase 17.
 
 ::body
-Entrar a **bcentral.cl** y **ine.gob.cl** y anotar:
+**Para el ensayo:** elige un tema y manda un correo a **jorgelamanavarro@gmail.com** — Jorge te responde con sugerencias de fuentes.
 
-1. **PIB chileno del último trimestre** (BCCh → Estadísticas → Cuentas Nacionales).
-2. **IPC del último mes** (INE → Precios e inflación → IPC).
-3. **Tasa de desocupación del último trimestre** (INE → Mercado Laboral → ENE).
+**Para Clase 17:** entra a **bcentral.cl** e **ine.gob.cl** y anota:
+1. PIB del último trimestre disponible (BCCh → Estadísticas → Cuentas Nacionales).
+2. IPC del último mes (INE → Precios e inflación → IPC).
+3. Tasa de desocupación del último trimestre (INE → Mercado Laboral → ENE).
 
-**Próxima clase — Clase 17.** Tomamos la identidad Y = C + I + G + (X − M) y la tratamos como **Demanda Agregada**. Introducimos la **Oferta Agregada**. El modelo DA-OA es el equivalente macro del modelo oferta-demanda que ya dominan de micro.
+La próxima semana arranca macro: el PIB, el modelo DA-OA, inflación, desempleo, política fiscal y monetaria.
 
 ::reglas
-PIB · valor de mercado · finales · dentro · período · Y = C + I + G + (X − M) · gasto · ingreso · producción · flujo circular
+escasez · costo de oportunidad · equilibrio · cuña · peso muerto · PIB · crecimiento · empleo · estabilidad · PEEL
 
 ::meta
 DERE-A0004 · Introducción a la Economía · Universidad Autónoma de Chile
