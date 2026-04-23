@@ -31,7 +31,7 @@ Tres bloques en 80 minutos.
 Espacio abierto para preguntas sobre la pauta. La pauta completa está a continuación. Las notas se publican dentro de los 10 días corridos (Art. 29). Para solicitar revisión formal: 3 días corridos desde la publicación (Art. 30).
 
 **Bloque 2 — Evaluación del 10% (20 min)**
-Instrucción del ensayo académico: estructura, método PEEL, 10 temas, rúbrica y logística de presentaciones.
+Instrucción del ensayo académico: estructura del párrafo argumentativo, 10 temas, rúbrica y logística de presentaciones.
 
 **Bloque 3 — Arranque Unidad III (25 min)**
 Qué es la macroeconomía, por qué es diferente de la micro y qué viene la próxima semana.
@@ -169,9 +169,9 @@ El ensayo
 ::sec1-pts
 ~750 palabras
 ::sec1-body
-Elija un tema de la lista. El ensayo tiene estructura fija: introducción con tesis clara + 3 párrafos de desarrollo (método PEEL, explicado abajo) + conclusión + referencias. La bibliografía es libre — envíe un correo al profesor con su tema y recibirá sugerencias de fuentes específicas.
+Elija un tema de la lista. El ensayo tiene estructura fija: introducción con tesis clara + 3 párrafos de desarrollo (estructura argumentativa explicada abajo) + conclusión + referencias. La bibliografía es libre — envíe un correo al profesor con su tema y recibirá sugerencias de fuentes específicas.
 
-**PEEL** es una técnica de escritura académica: cada párrafo de desarrollo abre con el **Punto** (su argumento en una frase), lo sostiene con **Evidencia** (dato, definición o ejemplo), **Explica** el vínculo entre ambos, y cierra con un **Link** que conecta al tema central o introduce el siguiente argumento.
+Cada párrafo de desarrollo sigue el **método PEEL**: abre con la **Postura** (su argumento en una frase), la sostiene con **Evidencia** (dato, definición o ejemplo concreto), **Analiza** el vínculo entre ambos, y cierra con una **Conexión** que enlaza al tema central o introduce el siguiente párrafo.
 
 ::sec2-label
 La presentación
@@ -192,12 +192,12 @@ Envíe el ensayo por correo a **jorge.lama@cloud.uautonoma.cl** antes del día a
 - Después del 17 de junio: sin bonificación.
 
 ::criterio
-**El argumento construido con evidencia** — no la extensión. Claridad de tesis + estructura PEEL visible en los 3 párrafos de desarrollo.
+**El argumento construido con evidencia** — no la extensión. Claridad de tesis + estructura de cuatro pasos visible en los 3 párrafos de desarrollo.
 
 ::claves
 - **Tesis (25%):** la introducción responde la pregunta en una frase clara.
 - **Evidencia (35%):** cada párrafo cita al menos 1 fuente y la analiza.
-- **PEEL (25%):** visible en los 3 párrafos — punto → evidencia → análisis → enlace.
+- **Estructura (25%):** los 3 párrafos siguen los cuatro pasos — postura → evidencia → análisis → conexión.
 - **Oral (15%):** claro, dentro del tiempo, no lee el papel.
 :::
 
@@ -206,22 +206,22 @@ Envíe el ensayo por correo a **jorge.lama@cloud.uautonoma.cl** antes del día a
 Cómo construir cada párrafo de desarrollo
 
 ::dominar
-- **P — Point:** primera oración = el argumento del párrafo en una frase. *"El PIB mide producción, no distribución."*
-- **E — Evidence:** 1–2 piezas de evidencia: dato, definición, ejemplo concreto (de los manuales del curso o fuente externa).
-- **E — Explain:** cómo la evidencia apoya el argumento. No basta citar — hay que mostrar la conexión.
-- **L — Link:** conecta el párrafo con la pregunta del ensayo o introduce el siguiente argumento.
+- **1. Postura** *(Point):* primera oración = el argumento del párrafo en una frase. *"El PIB mide producción, no distribución."*
+- **2. Evidencia** *(Evidence):* 1–2 datos, definiciones o ejemplos concretos (de los manuales del curso o fuente externa).
+- **3. Análisis** *(Explain):* cómo la evidencia sostiene la postura. No basta citar — hay que mostrar la conexión.
+- **4. Conexión** *(Link):* enlaza el párrafo con la pregunta del ensayo o introduce el siguiente argumento.
 
 ::pregunta
 ¿Qué hace que un párrafo académico sea sólido?
 
 ::respuesta
-**Que el lector pueda ver el hilo: argumento → evidencia → análisis → conexión con la pregunta.** Tres párrafos PEEL encadenados construyen la respuesta completa.
+**Que el lector pueda ver el hilo: postura → evidencia → análisis → conexión con la pregunta.** Tres párrafos encadenados de esta forma construyen la respuesta completa.
 
 ::trampa
-**"Citar es suficiente."** No: citar sin analizar no es argumento. El paso **E — Explain** es donde está el pensamiento real.
+**"Citar es suficiente."** No: citar sin analizar no es argumento. El paso de **análisis** es donde está el pensamiento real.
 
 ::regla
-Point claro → evidencia relevante → explicación del vínculo → link al tema central.
+Postura clara → evidencia relevante → análisis del vínculo → conexión al tema central.
 :::
 
 ::: intro
@@ -325,7 +325,7 @@ Dos cosas antes de la Clase 17.
 La próxima semana arranca macro: el PIB, el modelo DA-OA, inflación, desempleo, política fiscal y monetaria.
 
 ::reglas
-escasez · costo de oportunidad · equilibrio · cuña · peso muerto · PIB · crecimiento · empleo · estabilidad · PEEL
+escasez · costo de oportunidad · equilibrio · cuña · peso muerto · PIB · crecimiento · empleo · estabilidad · párrafo argumentativo
 
 ::meta
 DERE-A0004 · Introducción a la Economía · Universidad Autónoma de Chile
