@@ -171,7 +171,7 @@ El ensayo
 ::sec1-body
 Elija un tema de la lista. El ensayo tiene estructura fija: introducción con tesis clara + 3 párrafos de desarrollo (estructura argumentativa explicada abajo) + conclusión + referencias. La bibliografía es libre — envíe un correo al profesor con su tema y recibirá sugerencias de fuentes específicas.
 
-Cada párrafo de desarrollo sigue el **método PEEL**: abre con la **Postura** (su argumento en una frase), la sostiene con **Evidencia** (dato, definición o ejemplo concreto), **Analiza** el vínculo entre ambos, y cierra con una **Conexión** que enlaza al tema central o introduce el siguiente párrafo.
+Cada párrafo de desarrollo sigue el **método PEEL**: abre con el **Punto** (su argumento en una frase), lo sostiene con **Evidencia** (dato, definición o ejemplo concreto), lo desarrolla con una **Explicación** del vínculo, y cierra con un **Enlace** al tema central o al siguiente párrafo.
 
 ::sec2-label
 La presentación
@@ -197,7 +197,7 @@ Envíe el ensayo por correo a **jorge.lama@cloud.uautonoma.cl** antes del día a
 ::claves
 - **Tesis (25%):** la introducción responde la pregunta en una frase clara.
 - **Evidencia (35%):** cada párrafo cita al menos 1 fuente y la analiza.
-- **Estructura (25%):** los 3 párrafos siguen los cuatro pasos — postura → evidencia → análisis → conexión.
+- **Estructura (25%):** los 3 párrafos siguen los cuatro pasos — punto → evidencia → explicación → enlace.
 - **Oral (15%):** claro, dentro del tiempo, no lee el papel.
 :::
 
@@ -206,22 +206,22 @@ Envíe el ensayo por correo a **jorge.lama@cloud.uautonoma.cl** antes del día a
 Cómo construir cada párrafo de desarrollo
 
 ::dominar
-- **1. Postura** *(Point):* primera oración = el argumento del párrafo en una frase. *"El PIB mide producción, no distribución."*
-- **2. Evidencia** *(Evidence):* 1–2 datos, definiciones o ejemplos concretos (de los manuales del curso o fuente externa).
-- **3. Análisis** *(Explain):* cómo la evidencia sostiene la postura. No basta citar — hay que mostrar la conexión.
-- **4. Conexión** *(Link):* enlaza el párrafo con la pregunta del ensayo o introduce el siguiente argumento.
+- **P — Punto** *(Point):* primera oración = el argumento del párrafo en una frase. *"El PIB mide producción, no distribución."*
+- **E — Evidencia** *(Evidence):* 1–2 datos, definiciones o ejemplos concretos (de los manuales del curso o fuente externa).
+- **E — Explicación** *(Explain):* cómo la evidencia sostiene el argumento. No basta citar — hay que mostrar la conexión.
+- **L — Enlace** *(Link):* conecta el párrafo con la pregunta del ensayo o introduce el siguiente argumento.
 
 ::pregunta
 ¿Qué hace que un párrafo académico sea sólido?
 
 ::respuesta
-**Que el lector pueda ver el hilo: postura → evidencia → análisis → conexión con la pregunta.** Tres párrafos encadenados de esta forma construyen la respuesta completa.
+**Que el lector pueda ver el hilo: punto → evidencia → explicación → enlace con la pregunta.** Tres párrafos encadenados de esta forma construyen la respuesta completa.
 
 ::trampa
-**"Citar es suficiente."** No: citar sin analizar no es argumento. El paso de **análisis** es donde está el pensamiento real.
+**"Citar es suficiente."** No: citar sin analizar no es argumento. El paso de **explicación** es donde está el pensamiento real.
 
 ::regla
-Postura clara → evidencia relevante → análisis del vínculo → conexión al tema central.
+Punto claro → evidencia relevante → explicación del vínculo → enlace al tema central.
 :::
 
 ::: intro
