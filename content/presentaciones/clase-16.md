@@ -162,36 +162,42 @@ Determinante de oferta → desplaza oferta. Determinante de demanda → desplaza
 Evaluación del 10% — Ensayo académico y presentación oral
 
 ::sub
-~750 palabras escritas · presentación oral 5–6 min · bibliografía libre
+~750 palabras escritas · presentación oral 6 min · bibliografía libre · bonificación por entrega anticipada
 
 ::sec1-label
 El ensayo
 ::sec1-pts
 ~750 palabras
 ::sec1-body
-Elige un tema de la lista. Escribe intro + 3 párrafos PEEL + conclusión + referencias. La bibliografía es libre — escríbeme un correo con tu tema y te sugiero fuentes específicas.
+Elija un tema de la lista. El ensayo tiene estructura fija: introducción con tesis clara + 3 párrafos de desarrollo (método PEEL, explicado abajo) + conclusión + referencias. La bibliografía es libre — envíe un correo al profesor con su tema y recibirá sugerencias de fuentes específicas.
+
+**PEEL** es una técnica de escritura académica: cada párrafo de desarrollo abre con el **Punto** (su argumento en una frase), lo sostiene con **Evidencia** (dato, definición o ejemplo), **Explica** el vínculo entre ambos, y cierra con un **Link** que conecta al tema central o introduce el siguiente argumento.
 
 ::sec2-label
 La presentación
 ::sec2-pts
-5–6 min
+6 min
 ::sec2-body
-Defiendes tu argumento oralmente ante el curso. No lees el papel. Una pregunta al final. Puedes presentar desde la próxima semana — yo administro 1–2 por clase durante el semestre.
+El estudiante defiende su argumento oralmente ante el curso durante 6 minutos. No se lee el papel — se expone. Al final, el profesor formula una pregunta. El calendario de exposiciones lo administra el profesor: 1–2 por clase a lo largo del semestre según disponibilidad.
 
 ::sec3-label
-Entrega
+Entrega y bonificación
 ::sec3-pts
-Antes
+Puntos base
 ::sec3-body
-Envías el ensayo por correo a **jorge.lama@cloud.uautonoma.cl** antes del día que te asignen para presentar.
+Envíe el ensayo por correo a **jorge.lama@cloud.uautonoma.cl** antes del día asignado para exponer.
+
+- **Entrega antes del 20 de mayo → 2 puntos base** sobre la nota final del 10%.
+- **Entrega entre el 21 de mayo y el 17 de junio → 1 punto base.**
+- Después del 17 de junio: sin bonificación.
 
 ::criterio
-**El argumento construido con evidencia** — no la extensión. Claridad de tesis + estructura PEEL visible en ≥ 2 párrafos.
+**El argumento construido con evidencia** — no la extensión. Claridad de tesis + estructura PEEL visible en los 3 párrafos de desarrollo.
 
 ::claves
 - **Tesis (25%):** la introducción responde la pregunta en una frase clara.
 - **Evidencia (35%):** cada párrafo cita al menos 1 fuente y la analiza.
-- **PEEL (25%):** visible en ≥ 2 párrafos — punto → evidencia → análisis → enlace.
+- **PEEL (25%):** visible en los 3 párrafos — punto → evidencia → análisis → enlace.
 - **Oral (15%):** claro, dentro del tiempo, no lee el papel.
 :::
 
