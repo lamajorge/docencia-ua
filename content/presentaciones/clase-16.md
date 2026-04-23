@@ -324,7 +324,7 @@ TAREA · PRÓXIMA SEMANA
 Dos cosas antes de la Clase 17.
 
 ::body
-**Para el ensayo:** elige un tema y manda un correo a **jorge.lama@cloud.uautonoma.cl** — Jorge te responde con sugerencias de fuentes.
+**Para el ensayo:** elija un tema y escríbame a **jorge.lama@cloud.uautonoma.cl** — le respondo con sugerencias de fuentes específicas para ese tema.
 
 **Para Clase 17:** entra a **bcentral.cl** e **ine.gob.cl** y anota:
 1. PIB del último trimestre disponible (BCCh → Estadísticas → Cuentas Nacionales).
