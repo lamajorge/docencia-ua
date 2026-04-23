@@ -453,7 +453,7 @@ function Evaluacion({ s }: { s: Section }) {
   return (
     <section className="slide slide-evaluacion">
       <header className="ev-head">
-        <p className="ev-kicker">EVALUACIÓN REGULAR 1</p>
+        <p className="ev-kicker">EVALUACIÓN</p>
         <h2 className="ev-titulo">{s.slots.titulo}</h2>
         <p className="ev-sub">{s.slots.sub}</p>
       </header>
@@ -2127,11 +2127,18 @@ a { color: inherit; text-decoration: none; }
   .ed-body { font-size: 5mm; }
   .ed-twist-body { font-size: 5.2mm; }
 
-  .ev-titulo { font-size: 10mm; }
-  .ev-pts { font-size: 12mm; }
-  .ev-body { font-size: 3.9mm; }
-  .ev-criterio { font-size: 4.5mm; }
-  .ev-claves li { font-size: 3.9mm; padding: 1.5mm 0 1.5mm 3mm; }
+  .slide-evaluacion { padding: 8mm 14mm 10mm; gap: 2mm; }
+  .ev-head { padding-bottom: 2mm; }
+  .ev-titulo { font-size: 8mm; }
+  .ev-sub { font-size: 3mm; }
+  .ev-grid { gap: 4mm; }
+  .ev-cell { gap: 1mm; }
+  .ev-pts { font-size: 8mm; }
+  .ev-body { font-size: 3.2mm; line-height: 1.4; }
+  .ev-body p { margin: 0 0 1mm; }
+  .ev-criterio { font-size: 3.5mm; padding: 2mm 3mm; }
+  .ev-claves { padding: 2mm 3mm; }
+  .ev-claves li { font-size: 3.2mm; padding: 0.8mm 0 0.8mm 3mm; }
 
   .cl-titulo { font-size: 22mm; }
   .cl-body { font-size: 4.8mm; }
