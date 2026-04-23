@@ -1,7 +1,7 @@
 import { Client } from '@notionhq/client'
 import { NotionToMarkdown } from 'notion-to-md'
 import type { PageObjectResponse } from '@notionhq/client/build/src/api-endpoints'
-import { getPresentacion, listPresentacionesDisponibles } from './presentaciones'
+import { getPresentacion, listPresentacionesDisponibles, parsePresentacionFromMarkdown, Presentacion } from './presentaciones'
 
 export const notion = new Client({
   auth: process.env.NOTION_TOKEN,
@@ -191,3 +191,32 @@ function parseBloques(markdown: string): BloqueTematico[] {
 }
 
 export const REVALIDATE_SECONDS = 60 * 30
+
+export async function getPresentacionFromNotion(numero: number): Promise<Presentacion | null> {
+  const dbId = process.env.NOTION_PRESENTATIONS_DATABASE_ID
+  if (!dbId || !process.env.NOTION_TOKEN) return null
+
+  try {
+    const response = await notion.databases.query({
+      database_id: dbId,
+      filter: {
+        property: 'Clase ',
+        title: { equals: String(numero) },
+      },
+      page_size: 1,
+    })
+
+    const page = response.results.find(
+      (r): r is PageObjectResponse => r.object === 'page' && 'properties' in r
+    )
+    if (!page) return null
+
+    const mdBlocks = await n2m.pageToMarkdown(page.id)
+    const markdown = n2m.toMarkdownString(mdBlocks).parent ?? ''
+    if (!markdown.trim()) return null
+
+    return parsePresentacionFromMarkdown(numero, markdown)
+  } catch {
+    return null
+  }
+}

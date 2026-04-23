@@ -44,6 +44,15 @@ export function getPresentacion(numero: number): Presentacion | null {
   return { numero, frontmatter, sections }
 }
 
+export function parsePresentacionFromMarkdown(numero: number, markdown: string): Presentacion | null {
+  // Strip wrapping code fences (Notion code blocks export as ```lang\ncontent\n```)
+  const stripped = markdown.trim().replace(/^```[^\n]*\n([\s\S]*?)```\s*$/, '$1').trim()
+  const { frontmatter, body } = parseFrontmatter(stripped)
+  const sections = parseSections(body)
+  if (sections.length === 0) return null
+  return { numero, frontmatter, sections }
+}
+
 function parseFrontmatter(raw: string): { frontmatter: Record<string, string>; body: string } {
   if (!raw.startsWith('---')) return { frontmatter: {}, body: raw }
   const end = raw.indexOf('\n---', 4)

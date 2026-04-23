@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import Link from 'next/link'
-import { getClaseByNumero, getClases, REVALIDATE_SECONDS } from '@/lib/notion'
+import { getClaseByNumero, getClases, getPresentacionFromNotion, REVALIDATE_SECONDS } from '@/lib/notion'
 import { getPresentacion, Section } from '@/lib/presentaciones'
 import PrintButton from '@/components/PrintButton'
 
@@ -31,7 +31,7 @@ export default async function ClasePage({ params }: { params: { id: string } }) 
   const clase = await getClaseByNumero(numero)
   if (!clase) notFound()
 
-  const pres = getPresentacion(numero)
+  const pres = (await getPresentacionFromNotion(numero)) ?? getPresentacion(numero)
 
   return (
     <html lang="es">
