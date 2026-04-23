@@ -32,7 +32,7 @@ Para saber si una clase tiene página en Notion: buscar en la DB de presentacion
 6. El contenido sale **exclusivamente** de la guía — no se inventan ejemplos.
 7. Subir a Notion con `notion-update-page replace_content`, contenido envuelto en \`\`\`markdown ... \`\`\`.
 8. Escribir también en `content/presentaciones/clase-N.md` (sin zero-pad) y hacer commit. Es el fallback y el historial.
-9. Validar en pantalla (scroll de landing) **y** en vista impresa (`window.print()` del navegador). Cada sección debe caber en una A4 apaisada (297×210mm) cuando se imprime.
+9. Validar en pantalla (scroll de landing) **y** en vista impresa (`window.print()` del navegador). Cada sección debe caber en una lámina 16:9 (297×167mm) cuando se imprime.
 
 ---
 
@@ -83,7 +83,7 @@ Cuando una clase pide un layout que no existe (ej. una timeline, una grilla 3×3
 
 1. Agregar el caso en `SectionRenderer` en [`app/clases/[id]/page.tsx`](../../app/clases/[id]/page.tsx).
 2. Escribir la función React para el layout (ver los existentes como modelo).
-3. Añadir CSS para screen (landing scroll) y override en `@media print` para que encaje en A4 apaisada.
+3. Añadir CSS para screen (landing scroll) y override en `@media print` para que encaje en 297×167mm (16:9).
 4. Documentarlo en `TEMPLATE.md` con ejemplo de sintaxis.
 
 ---

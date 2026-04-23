@@ -28,6 +28,9 @@
 - Refactor "por longitud de texto" sobre-divide secciones. Consolidar por concepto, no por densidad.
 - Diagramas numéricos sin marcas en los ejes → siempre plotear con valores reales de la tabla origen.
 - Leyendas de abreviaturas faltantes → toda D/O/P/Q/EC/EP/T debe definirse en el slot `::d{n}-leyenda` antes de usarse.
+- **Print CSS en A4 landscape (297×210mm) cortaba contenido.** Las láminas se diseñan en pantalla con proporción 16:9 (vh-based). Corregido 2026-04-23: `@page { size: 297mm 167mm; margin: 0 }` y `.slide { height: 167mm }`. Todos los tamaños tipográficos escalados por factor ≈0.795. No volver a usar `size: A4 landscape` ni `height: 210mm`.
+- **`evaluacion` — slot `sec${n}-body` renderizaba asteriscos en texto crudo.** Estaba en un `<p>` sin pasar por `<MD>` (ReactMarkdown). Corregido a `<div className="ev-body"><MD>...</MD></div>`. Cualquier slot de contenido libre que pueda tener markdown (negritas, listas, cursivas) debe pasar por `<MD>`.
+- **`::trampa` y `::regla` en secciones `station` de clases de revisión/organización.** Esos slots tienen sentido en clases de contenido nuevo. En clases que solo revisan o presentan estructura del curso, eliminar ambos slots — son ruido para el estudiante.
 
 ---
 
