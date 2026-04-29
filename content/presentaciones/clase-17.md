@@ -230,18 +230,16 @@ BLOQUE 4 · CASO 4 — LEY DE RECONSTRUCCIÓN NACIONAL
 Un proyecto en discusión esta semana.
 
 ::body
-El Gobierno ingresó al Congreso, el **22 de abril**, el **Proyecto de Ley de Reconstrucción Nacional y Desarrollo Económico y Social**. Combina reconstrucción tras los **incendios de Ñuble y Biobío de enero 2026** con un paquete tributario amplio. Hoy está en discusión en la Comisión de Hacienda de la Cámara de Diputados.
+El Gobierno ingresó al Congreso, el **22 de abril**, el **Proyecto de Ley de Reconstrucción Nacional y Desarrollo Económico y Social**, que combina reconstrucción tras los **incendios de Ñuble y Biobío** con un paquete tributario amplio. Está en debate en la Comisión de Hacienda de la Cámara.
 
 | Medida | Detalle |
 |---|---|
 | Impuesto corporativo | Reducción gradual del **27% al 23%** |
 | IVA viviendas nuevas | **Eliminación por 12 meses** |
-| Reconstrucción incendios | **\$400 mil millones** adicionales para zonas afectadas |
+| Reconstrucción incendios | **\$400 mil millones** adicionales |
 | Estabilidad tributaria | **25 años** para inversiones >US\$50 millones |
 
-**Las opiniones están divididas.** Quienes apoyan el proyecto hablan de **estímulo a la inversión y al empleo**. Quienes lo critican hablan de **mayor déficit fiscal**, **menor recaudación** y **costo fiscal** de las rebajas tributarias — los mismos conceptos que aparecen en los Casos 2 y 3.
-
-No se trata de tomar partido hoy. Se trata de reconocer que este debate público — esta semana, en la Comisión de Hacienda — está estructurado por **el vocabulario macro que estamos empezando a aprender**: impuestos, recaudación, déficit, inversión, crecimiento. Mañana volvemos a este proyecto: vamos a usar varias de sus medidas como ejemplos al definir el PIB con rigor.
+Las opiniones están divididas: quienes apoyan hablan de **estímulo a la inversión y al empleo**; quienes critican, de **mayor déficit fiscal** y **menor recaudación**. El vocabulario es el mismo que vimos en los Casos 2 y 3 — impuestos, recaudación, déficit, inversión, crecimiento.
 :::
 
 ::: manifesto
