@@ -55,7 +55,7 @@ export async function GET(
 <title>Clase ${numero}</title>
 <style>
 ${css}
-html, body { margin: 0; padding: 0; background: #0D0D0D; min-height: 100%; }
+html, body { margin: 0; padding: 0; background: #F5F3EF; min-height: 100%; }
 .marpit { padding: 24px 16px; display: flex; flex-direction: column; align-items: center; gap: 24px; }
 .marpit > svg[data-marpit-svg] {
   display: block;

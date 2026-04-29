@@ -110,10 +110,10 @@ function MarpEmbed({ numero, titulo }: { numero: number; titulo: string }) {
           <button>↓ PDF</button>
         </a>
       </div>
-      <main style={{ paddingTop: 52, height: '100vh', display: 'flex', flexDirection: 'column', background: '#0D0D0D' }}>
+      <main style={{ paddingTop: 52, height: '100vh', display: 'flex', flexDirection: 'column', background: '#F5F3EF' }}>
         <iframe
           src={htmlUrl}
-          style={{ flex: 1, width: '100%', border: 'none', background: '#0D0D0D' }}
+          style={{ flex: 1, width: '100%', border: 'none', background: '#F5F3EF' }}
           title={`Clase ${numero} — ${titulo}`}
         />
       </main>
