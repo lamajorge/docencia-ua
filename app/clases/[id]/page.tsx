@@ -1216,7 +1216,8 @@ a { color: inherit; text-decoration: none; }
   padding: 8vh 10vw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  gap: 3vh;
   border-bottom: 1px solid var(--light);
 }
 
@@ -2044,6 +2045,8 @@ a { color: inherit; text-decoration: none; }
     border-bottom: 0;
     break-after: page; page-break-after: always;
     overflow: hidden;
+    justify-content: center;
+    gap: 0;
   }
   /* Ajustes específicos por tipo en print */
   .slide-hero, .slide-close, .slide-mecanismo, .slide-exercise-intro { padding: 0; }
