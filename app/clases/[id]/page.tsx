@@ -409,13 +409,16 @@ function GridFallas({ s }: { s: Section }) {
         <h2 className="gf-titulo">{s.slots.titulo}</h2>
       </header>
       <div className={layoutClass}>
-        {cells.map((n) => (
-          <div key={n} className={`gf-cell gf-${n}`}>
-            <p className="gf-n">0{n}</p>
-            <h3 className="gf-sub">{s.slots[`f${n}-titulo`]}</h3>
-            <div className="gf-body"><MD>{s.slots[`f${n}-body`]}</MD></div>
-          </div>
-        ))}
+        {cells.map((n) => {
+          const num = s.slots[`f${n}-num`] || `0${n}`
+          return (
+            <div key={n} className={`gf-cell gf-${n}`}>
+              <p className="gf-n">{num}</p>
+              <h3 className="gf-sub">{s.slots[`f${n}-titulo`]}</h3>
+              <div className="gf-body"><MD>{s.slots[`f${n}-body`]}</MD></div>
+            </div>
+          )
+        })}
       </div>
       {s.slots.nota && (
         <div className="gf-nota"><MD>{s.slots.nota}</MD></div>

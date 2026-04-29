@@ -156,8 +156,10 @@ BLOQUE 3 · OBJETIVOS 1 Y 2
 ::titulo
 Crecimiento y pleno empleo.
 
+::f1-num
+01
 ::f1-titulo
-1. Crecimiento económico
+Crecimiento económico
 ::f1-body
 **Aumento sostenido del PIB real** (no del PIB nominal — descontando la inflación) a lo largo del tiempo.
 
@@ -167,8 +169,10 @@ Crecimiento y pleno empleo.
 
 **Chile.** Creció 4–5% promedio en los 90 y 2000. Hoy crece la mitad: **+2,5% en 2025**, proyección **1,5%–2,5% para 2026**.
 
+::f2-num
+02
 ::f2-titulo
-2. Pleno empleo
+Pleno empleo
 ::f2-body
 **Tasa de desempleo más baja compatible** con una economía funcionando — no es desempleo cero.
 
@@ -189,8 +193,10 @@ BLOQUE 3 · OBJETIVOS 3 Y 4
 ::titulo
 Estabilidad de precios y equilibrio externo.
 
+::f1-num
+03
 ::f1-titulo
-3. Estabilidad de precios
+Estabilidad de precios
 ::f1-body
 **Inflación baja y predecible** — no inflación cero.
 
@@ -200,8 +206,10 @@ Estabilidad de precios y equilibrio externo.
 
 **Chile.** Meta del BCCh: **3% anual, tolerancia ±1 punto**. IPC marzo 2026: **+2,8% interanual** — dentro del rango meta.
 
+::f2-num
+04
 ::f2-titulo
-4. Equilibrio externo
+Equilibrio externo
 ::f2-body
 **Cuenta corriente** sin desequilibrios persistentes con el resto del mundo.
 
