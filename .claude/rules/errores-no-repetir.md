@@ -55,3 +55,22 @@
 ## Presentaciones — evaluaciones y porcentajes
 
 - **El % suelto se lee como ponderación.** Mostrar "60%" sin contexto en una prueba que pondera 40% confunde al estudiante — lo interpreta como el peso en la nota final. Siempre acompañar el umbral de aprobación con la frase del Art. 26: "la nota 4,0 se obtiene con el 60% del puntaje" + el equivalente en puntos concretos.
+
+---
+
+## Registro y lenguaje (Clase 17, abril 2026)
+
+Ver regla completa en [`pedagogia.md` § Registro y lenguaje](pedagogia.md). Acá quedan los ejemplos concretos que ya se corrigieron — no volver a producirlos:
+
+| Frase descartada | Reemplazo |
+|---|---|
+| "La macro entra por la coyuntura." | "Empecemos por lo que pasó este mes." |
+| "Hoy le ponemos nombre y marco." | "Hoy aprendemos a nombrarla." |
+| "La macroeconomía vive en lo que ya enfrentan." | "La macroeconomía aparece en lo cotidiano." |
+| "Hoy hacemos zoom en una pieza." | "Hoy nos enfocamos en una pieza." |
+| "CASOS QUE TENSIONAN LA DEFINICIÓN" | "CASOS QUE PONEN A PRUEBA LA DEFINICIÓN" |
+| "para que existan en su cabeza" | "para que les queden registrados" |
+| "pedazos de este proyecto" | "varias de sus medidas" |
+| "el marco donde viven las normas" | "el contexto en que se aplican las normas" |
+| "contratos atados al IPC, normas atadas a la UF, fallos atados al tipo de cambio, leyes atadas a la regla fiscal" | "normas, contratos y sentencias donde aparecen conceptos como IPC, UF, tipo de cambio o regla fiscal" |
+| Manifesto: "¿Cuándo enfrentaron macroeconomía esta semana?" + ejemplos centrados en el alumno (almuerzo cerca de la U, matrícula, beca, CAE) | Enunciado impersonal ("¿Dónde aparece la macroeconomía en lo cotidiano?") + ejemplos universales (bencina, crédito, dólar, noticia en celular). **Si Jorge valida el contenido de los ejemplos, conservarlos LITERAL — no reescribirlos.** |

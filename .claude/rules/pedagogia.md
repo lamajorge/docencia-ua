@@ -35,6 +35,29 @@ Se puede — y se debe — simplificar para primer año. Pero simplificar no es 
 - Si una frase ayuda pedagógicamente pero puede inducir un error conceptual posterior, **reformularla**. La claridad no justifica una imprecisión que el estudiante después tenga que desaprender.
 - Cuando haya tensión entre claridad y precisión, privilegiar la **precisión compatible con primer año**: la versión más simple que siga siendo correcta.
 
+---
+
+## Registro y lenguaje (no negociable)
+
+**Español natural de Chile, profesional pero no estirado.** Es contexto académico (universidad de Derecho), se puede ser cercano en una PPT — pero "hablando bien". El criterio operativo: si una frase no la diría un profesor en una sala de clases en Santiago hablando con normalidad, reescribirla.
+
+**Qué evitar:**
+
+- **Metáforas torcidas o antropomorfismos:** "la macro entra por la coyuntura", "donde viven las normas", "para que existan en su cabeza", "la macroeconomía vive en lo que enfrentan". Reformular en lenguaje directo.
+- **Anglicismos disfrazados:** "hacer zoom en X" → "enfocarse en X". "casos que tensionan" → "casos que ponen a prueba". "deck", "slide", "framework" sin necesidad. "feedback" en vez de "retroalimentación".
+- **Cadenas retóricas pretenciosas:** repetir un giro tres o cuatro veces para sonar elegante (ej. "contratos atados al IPC, normas atadas a la UF, fallos atados al tipo de cambio, leyes atadas a la regla fiscal"). Una sola formulación clara basta.
+- **Coloquialismos forzados que no son chilenos:** "le ponemos nombre y marco", "pedazos de este proyecto" en contexto formal. Sí es válido el coloquialismo chileno natural ("buscar pega", "la cuenta del super").
+- **Centrar al alumno como actor en situaciones que no vive a los 18 años:** "¿cuándo enfrentaron ustedes…?", "ustedes pagan…". Usar framing impersonal ("¿dónde aparece esto en lo cotidiano?").
+
+**Qué sí:**
+
+- Frases directas, en presente o pretérito, sin metáforas innecesarias.
+- "Usted" en materiales dirigidos al alumno (no tuteo). Tercera persona o impersonal cuando se describe el mundo.
+- Cuando el contenido de un ejemplo o frase ya fue validado por Jorge, conservarlo **literal** — no "mejorarlo" cambiando palabras.
+- Términos técnicos en español cuando exista equivalente: "Enlace" (no "Link"), "retroalimentación" (no "feedback").
+
+---
+
 ### Checklist de errores frecuentes (revisar antes de cerrar guía o presentación)
 
 1. **Confundir características con resultados.** "El mercado es eficiente" es un resultado del modelo bajo supuestos específicos, no una propiedad ontológica del mercado.
