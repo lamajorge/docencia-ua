@@ -85,7 +85,7 @@ BLOQUE 1 · ¿POR QUÉ MACRO?
 La macro entra por la coyuntura.
 
 ::body
-La semana pasada — el jueves 16 de abril — las bencinas en Chile subieron significativamente: la 93 unos **\$20 por litro**, la 97 unos **\$22**, el diésel **\$36**. Y eso fue con un mecanismo de contención del Estado funcionando: el **MEPCO**. Sin MEPCO, el alza habría superado los **\$73 en gasolina y \$100 en diésel** en una sola semana.
+Hace aproximadamente un mes — el **jueves 26 de marzo de 2026** — las bencinas en Chile registraron el alza más grande desde 1973: la 93 subió **\$372 por litro**, la 97 **\$391**, el diésel **\$580**. La causa fue una modificación administrativa al **MEPCO** (Mecanismo de Estabilización del Precio de los Combustibles): el ministro de Hacienda amplió la ventana de cálculo de 3 a 4 semanas, lo que liberó de golpe un diferencial acumulado que el Estado venía absorbiendo. Mantener el mecanismo en su parámetro previo costaba **US\$140 millones a la semana**.
 
 A diferencia de la microeconomía, que estudia un mercado particular, la macro evalúa **cómo le va a un país en su conjunto**. Pandemia, hiperinflación argentina, déficit fiscal, dólar — todo eso es macro.
 
@@ -184,13 +184,13 @@ Pleno empleo no significa cero desempleo — siempre hay desempleo friccional (g
 Coyuntura chilena — abril 2026
 
 ::eyebrow1
-ALZA DE BENCINAS · 16 ABRIL
+ALZA HISTÓRICA · 26 MARZO 2026
 
 ::numero1
-+\$20 a +\$36 / L
++\$372 a +\$580 / L
 
 ::descripcion1
-La 93 subió **+\$20**, la 97 **+\$22**, el diésel **+\$36** por litro. Sin **MEPCO**, las alzas habrían superado **+\$73 en gasolina** y **+\$100 en diésel** en una semana.
+La 93 subió **+\$372**, la 97 **+\$391**, el diésel **+\$580** por litro. La mayor alza desde 1973. Causa: ampliación de la ventana del **MEPCO** de 3 a 4 semanas, anunciada por el ministro de Hacienda.
 
 ::eyebrow2
 DÉFICIT ESTRUCTURAL · CIERRE 2025
@@ -210,9 +210,9 @@ BLOQUE 5 · COYUNTURA — CASOS CONCRETOS
 MEPCO, regla fiscal, Consejo Fiscal Autónomo.
 
 ::body
-**MEPCO — Mecanismo de Estabilización del Precio de los Combustibles.** Suaviza las variaciones bruscas del precio internacional ajustando el impuesto específico al consumidor final. La diferencia la asume el Estado vía menor recaudación. Toda intervención macro tiene un costo fiscal.
+**MEPCO — Mecanismo de Estabilización del Precio de los Combustibles.** Suaviza las variaciones bruscas del precio internacional ajustando el impuesto específico al consumidor final. La diferencia la asume el Estado vía menor recaudación. El alza histórica del 26 de marzo se produjo cuando el ministro de Hacienda amplió la ventana del mecanismo de 3 a 4 semanas — costaba **US\$140 millones a la semana** mantenerlo en su parámetro previo, con proyección a US\$160 millones. Toda intervención macro tiene un costo fiscal.
 
-**Regla fiscal.** Norma chilena que fija una meta anual de **balance estructural** (el balance fiscal corregido por el ciclo del cobre y del PIB). Su objetivo: disciplinar el gasto público y mantener la deuda en niveles sostenibles. La meta original 2025 era **1,1% del PIB**; el resultado fue **3,6%**, prácticamente el triple. **Tercer año consecutivo** de incumplimiento.
+**Regla fiscal.** Norma chilena que fija una meta anual de **balance estructural** (el balance fiscal corregido por el ciclo del cobre y del PIB). Su objetivo: disciplinar el gasto público y mantener la deuda en niveles sostenibles. La meta original 2025 era **1,1% del PIB**; el resultado fue **3,6%**, prácticamente el triple. **Tercer año consecutivo** de incumplimiento. Esto es lo que limita la capacidad del Estado de seguir absorbiendo shocks como el de las bencinas.
 
 **Consejo Fiscal Autónomo (CFA) — Ley 21.148 de 2019.** Organismo técnico independiente que evalúa el cumplimiento de la regla y emite recomendaciones públicas. Sus recomendaciones son técnicas, no vinculantes — pero condicionan la credibilidad del país ante mercados financieros, inversores y agencias de riesgo. El CFA recomendó reducir el gasto en torno a **1,6% del PIB (≈ US\$5.950 millones)** entre 2026 y 2029 para volver al equilibrio estructural.
 
