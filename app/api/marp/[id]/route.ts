@@ -51,16 +51,25 @@ export async function GET(
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=1280">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Clase ${numero}</title>
 <style>
 ${css}
-html, body { margin: 0; padding: 0; background: #0D0D0D; }
-body { display: flex; flex-direction: column; align-items: center; gap: 16px; padding: 16px 0; }
-section { box-shadow: 0 4px 24px rgba(0,0,0,0.3); }
+html, body { margin: 0; padding: 0; background: #0D0D0D; min-height: 100%; }
+.marpit { padding: 24px 16px; display: flex; flex-direction: column; align-items: center; gap: 24px; }
+.marpit > svg[data-marpit-svg] {
+  display: block;
+  width: min(1280px, 100%);
+  height: auto;
+  aspect-ratio: 16 / 9;
+  background: var(--sand, #F5F3EF);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+  border-radius: 4px;
+}
 @media print {
-  body { background: #fff; padding: 0; gap: 0; }
-  section { box-shadow: none; }
+  html, body { background: #fff; }
+  .marpit { padding: 0; gap: 0; }
+  .marpit > svg[data-marpit-svg] { box-shadow: none; border-radius: 0; width: 100%; max-width: none; page-break-after: always; break-after: page; }
 }
 </style>
 </head>
