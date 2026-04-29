@@ -62,7 +62,7 @@ Repaso de los cuatro objetivos macro.
 ::body
 Ayer (Clase 17) vimos que la macroeconomía evalúa cuatro cosas: **crecimiento**, **pleno empleo**, **estabilidad de precios** y **equilibrio externo**. También vimos datos chilenos vigentes y la coyuntura: bencinas, déficit estructural, regla fiscal, CFA.
 
-Hoy hacemos zoom en **una** sola pieza: cómo se **mide** el producto agregado de un país. El concepto se llama **PIB**. Parece simple — su definición cabe en una frase — pero está lleno de detalle. Cada palabra de la definición resuelve un problema de medición real.
+Hoy nos enfocamos en **una sola pieza**: cómo se **mide** el producto agregado de un país. El concepto se llama **PIB**. Parece simple — su definición cabe en una frase — pero está lleno de detalle. Cada palabra de la definición resuelve un problema de medición real.
 :::
 
 ::: intro
@@ -166,7 +166,7 @@ Producción de una fábrica de Toyota operando en Antofagasta.
 
 ::: intro
 ::kicker
-CASOS QUE TENSIONAN LA DEFINICIÓN
+CASOS QUE PONEN A PRUEBA LA DEFINICIÓN
 
 ::titulo
 Trabajo doméstico, terremotos, economía informal.

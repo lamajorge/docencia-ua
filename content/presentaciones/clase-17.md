@@ -29,7 +29,7 @@ Seis bloques: de por qué macro a la coyuntura chilena.
 ::p1-titulo
 ¿Por qué macro?
 ::p1-body
-La macroeconomía vive en lo que ya enfrentan: bencinas, créditos, dólar, noticias.
+La macroeconomía aparece en lo cotidiano: bencinas, créditos, dólar, noticias.
 
 ::p2-titulo
 Cambio de escala
@@ -74,7 +74,7 @@ Ver al dólar moverse antes de un viaje o una compra.
 Una noticia de inflación, desempleo o ajuste fiscal en el celular.
 
 ::footer
-Todo eso es macroeconomía. Hoy le ponemos nombre y marco.
+Todo eso es macroeconomía. Hoy aprendemos a nombrarla.
 :::
 
 ::: intro
@@ -82,14 +82,14 @@ Todo eso es macroeconomía. Hoy le ponemos nombre y marco.
 BLOQUE 1 · ¿POR QUÉ MACRO?
 
 ::titulo
-La macro entra por la coyuntura.
+Empecemos por lo que pasó este mes.
 
 ::body
-Hace aproximadamente un mes — el **jueves 26 de marzo de 2026** — las bencinas en Chile registraron el alza más grande desde 1973: la 93 subió **\$372 por litro**, la 97 **\$391**, el diésel **\$580**. La causa fue una modificación administrativa al **MEPCO** (Mecanismo de Estabilización del Precio de los Combustibles): el ministro de Hacienda amplió la ventana de cálculo de 3 a 4 semanas, lo que liberó de golpe un diferencial acumulado que el Estado venía absorbiendo. Mantener el mecanismo en su parámetro previo costaba **US\$140 millones a la semana**.
+El **jueves 26 de marzo de 2026** las bencinas en Chile registraron el alza más grande desde 1973: la 93 subió **\$372 por litro**, la 97 **\$391**, el diésel **\$580**. La causa fue una modificación administrativa al **MEPCO** (Mecanismo de Estabilización del Precio de los Combustibles): el ministro de Hacienda amplió la ventana de cálculo de 3 a 4 semanas, lo que liberó de golpe un diferencial acumulado que el Estado venía absorbiendo. Mantener el mecanismo en su parámetro previo costaba **US\$140 millones a la semana**.
 
-A diferencia de la microeconomía, que estudia un mercado particular, la macro evalúa **cómo le va a un país en su conjunto**. Pandemia, hiperinflación argentina, déficit fiscal, dólar — todo eso es macro.
+A diferencia de la microeconomía, que estudia un mercado en particular, la macro evalúa **cómo le va a un país en su conjunto**. Pandemia, hiperinflación argentina, déficit fiscal, tipo de cambio — todo eso es macro.
 
-**Por qué importa para ustedes.** No van a operar como economistas. Pero sí van a leer contratos atados al IPC, normas atadas a la UF, fallos atados al tipo de cambio, leyes presupuestarias atadas a la regla fiscal. Necesitan reconocer el lenguaje y las instituciones — Banco Central, Hacienda, FMI, CFA — porque son el marco donde viven las normas que van a estudiar.
+**Por qué importa para Derecho.** No van a operar como economistas. Pero a lo largo de la carrera van a leer normas, contratos y sentencias donde aparecen conceptos como IPC, UF, tipo de cambio o regla fiscal. Reconocer el lenguaje y las instituciones — Banco Central, Hacienda, FMI, CFA — es parte del contexto en que se aplican las normas que van a estudiar.
 :::
 
 ::: grid-fallas
@@ -137,7 +137,7 @@ La macroeconomía como disciplina y las instituciones macro que tenemos hoy no a
 | 2008 | Crisis financiera global | Sub-prime. Política monetaria a tasas cercanas a cero. |
 | 2020 | Pandemia | Política fiscal y monetaria a gran escala en todo el mundo. |
 
-No memoricen fechas. Sí reconozcan que **FMI**, **Banco Mundial**, **Bretton Woods**, **autonomía del Banco Central**, **regla fiscal** son nombres que les van a aparecer en la prensa, en clases de Derecho Económico y en lecturas de Política Internacional. Hoy los nombramos para que existan en su cabeza.
+No es necesario memorizar fechas. Sí es necesario reconocer que **FMI**, **Banco Mundial**, **Bretton Woods**, **autonomía del Banco Central** y **regla fiscal** son nombres que van a reaparecer en la prensa, en clases de Derecho Económico y en lecturas de Política Internacional. Hoy los nombramos para que les queden registrados.
 :::
 
 ::: stat-hero
@@ -223,7 +223,7 @@ El Gobierno ingresó al Congreso, el **22 de abril**, el **Proyecto de Ley de Re
 
 **Las opiniones están divididas.** Quienes apoyan el proyecto hablan de **estímulo a la inversión y al empleo**. Quienes lo critican hablan de **mayor déficit fiscal**, **menor recaudación** y **costo fiscal** de las rebajas tributarias — los mismos conceptos que aparecen en el debate del CFA y la regla fiscal.
 
-No se trata de tomar partido hoy. Se trata de reconocer que este debate público — esta semana, en la Comisión de Hacienda — está estructurado por **el vocabulario macro que estamos empezando a aprender**: impuestos, recaudación, déficit, inversión, crecimiento. Mañana usaremos pedazos de este proyecto para definir el PIB con rigor.
+No se trata de tomar partido hoy. Se trata de reconocer que este debate público — esta semana, en la Comisión de Hacienda — está estructurado por **el vocabulario macro que estamos empezando a aprender**: impuestos, recaudación, déficit, inversión, crecimiento. Mañana volvemos a este proyecto: vamos a usar varias de sus medidas como ejemplos al definir el PIB con rigor.
 :::
 
 ::: intro
