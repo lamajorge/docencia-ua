@@ -59,19 +59,19 @@ Síntesis y anticipo Clase 18 — el PIB con rigor.
 
 ::: manifesto
 ::titulo
-¿Cuándo se cruzaron con la macroeconomía esta semana?
+¿Dónde aparece la macroeconomía en lo cotidiano?
 
 ::q1
-El almuerzo cerca de la U o el café del descanso un poco más caro este semestre.
+Cargar bencina y ver el precio subir.
 
 ::q2
-La cuenta de la luz, el plan de datos o el arriendo apareciendo en alguna conversación familiar.
+Postular a un crédito y enfrentar la tasa de interés.
 
 ::q3
-La matrícula, la gratuidad, una beca, el CAE — el costo de estudiar y cómo se financia.
+El dólar moviéndose antes de un viaje o una compra importante.
 
 ::q4
-Una noticia de inflación, desempleo o ajuste fiscal pasando por el celular.
+Una noticia de inflación, desempleo o ajuste fiscal en el celular.
 
 ::footer
 Todo eso es macroeconomía. Hoy le ponemos nombre y marco.
