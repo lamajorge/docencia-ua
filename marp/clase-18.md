@@ -12,7 +12,7 @@ title: Clase 18 — El PIB con rigor
 
 # El PIB con rigor.
 
-## Cuatro palabras clave: valor de mercado, finales, dentro, período.
+## La definición de Samuelson y los cuatro componentes que la organizan.
 
 <p class="meta">DERE-A0004 · Introducción a la Economía · Universidad Autónoma de Chile · Jueves 30 de abril 2026</p>
 
@@ -38,7 +38,7 @@ title: Clase 18 — El PIB con rigor
 <div>
 <p class="num">03</p>
 <h3>PIB — definición formal</h3>
-<p>Las cuatro palabras clave y por qué cada una está.</p>
+<p>Cita de Samuelson y los cuatro componentes que la organizan.</p>
 </div>
 <div>
 <p class="num">04</p>
@@ -78,20 +78,44 @@ Necesitamos un solo número que **agregue** todo lo que produce un país en un p
 
 ---
 
+<!-- _class: quote -->
+
 #### BLOQUE 3 · DEFINICIÓN FORMAL
 
-# PIB — qué dice cada palabra.
+<p class="citation">"El PIB es el valor de mercado de todos los bienes y servicios finales producidos dentro de un país durante un período determinado."</p>
 
-**PIB.** Valor de mercado de todos los bienes y servicios **finales** producidos **dentro** de un país en un **período** determinado.
+<p class="source">Samuelson & Nordhaus · Economía, 18ª ed. · Cap. 21, p. 412</p>
 
-| Palabra | Qué resuelve |
-|---|---|
-| **Valor de mercado** | Permite agregar bienes heterogéneos en una sola cifra. Cada bien entra al PIB multiplicado por su precio. |
-| **Finales** | Bloquea el **doble conteo**. Los bienes intermedios (trigo, harina) ya están en el bien final (pan). |
-| **Dentro** | Cuenta lo producido en el **territorio** del país, sin importar la nacionalidad de quien produce. |
-| **Período** | El PIB es un **flujo** (lo producido en un año), no un **stock** (la riqueza acumulada). |
+---
 
-*(Samuelson & Nordhaus, cap. 21, p. 412.)*
+<!-- _class: grid-4 -->
+
+#### BLOQUE 3 · COMPONENTES DE LA DEFINICIÓN
+
+# Cuatro componentes que estructuran el PIB.
+
+<div class="grid">
+<div>
+<p class="num">01</p>
+<h3>Valor de mercado</h3>
+<p>Permite agregar bienes heterogéneos en una sola cifra. Cada bien entra al PIB multiplicado por su precio.</p>
+</div>
+<div class="dark">
+<p class="num">02</p>
+<h3>Bienes y servicios finales</h3>
+<p>Bloquea el <strong>doble conteo</strong>. Los bienes intermedios (trigo, harina) ya están incorporados en el bien final (pan).</p>
+</div>
+<div class="dark">
+<p class="num">03</p>
+<h3>Producidos dentro del país</h3>
+<p>El criterio es el <strong>territorio</strong>, no la nacionalidad. Una fábrica extranjera operando en Chile entra al PIB chileno.</p>
+</div>
+<div>
+<p class="num">04</p>
+<h3>Durante un período</h3>
+<p>El PIB es un <strong>flujo</strong> (lo producido en un año), no un <strong>stock</strong> (la riqueza acumulada del país).</p>
+</div>
+</div>
 
 ---
 
@@ -120,7 +144,7 @@ Necesitamos un solo número que **agregue** todo lo que produce un país en un p
 <div>
 <p class="num">04</p>
 <h3>¿Cuánto entra al PIB?</h3>
-<p>Solo <strong>$300</strong> (el pan). Sumar $100 + $180 + $300 = $580 cuenta el trigo tres veces. Por eso la palabra <strong>finales</strong>.</p>
+<p>Solo <strong>$300</strong> (el pan). Sumar $100 + $180 + $300 = $580 cuenta el trigo tres veces. Por eso el componente <strong>bienes finales</strong>.</p>
 </div>
 </div>
 
@@ -158,18 +182,18 @@ Necesitamos un solo número que **agregue** todo lo que produce un país en un p
 
 #### BLOQUE 4 · CASO 4 — COYUNTURA APLICADA
 
-# Las cuatro palabras del PIB en la Ley de Reconstrucción.
+# La definición del PIB aplicada a la Ley de Reconstrucción.
 
-Tres medidas del **Proyecto de Ley de Reconstrucción Nacional** y qué palabra del PIB define si entra y cómo.
+Tres medidas del **Proyecto de Ley de Reconstrucción Nacional** revisadas con los componentes de la definición.
 
 **$400 mil millones para reconstrucción de Ñuble y Biobío.**
-Palabras: **período + dentro**. Construir casas, reponer infraestructura es producción nueva del año en territorio chileno. Pero ¿el país está mejor? Casi nunca — se repone lo dañado. **El PIB mide producción, no bienestar**.
+Componentes que aplican: **producción del período** + **dentro del territorio**. Construir casas y reponer infraestructura es producción nueva del año en territorio chileno. Pero ¿el país está mejor? Casi nunca — se repone lo dañado. **El PIB mide producción, no bienestar**.
 
 **IVA cero en viviendas nuevas (12 meses).**
-Palabras: **valor de mercado + finales**. La vivienda nueva es bien **final** y entra a su **valor de mercado**. El IVA cero **no cambia** el valor en el PIB — cambia la **recaudación** del Estado. Son cosas distintas.
+Componentes que aplican: **valor de mercado** + **bienes finales**. La vivienda nueva es un bien **final** y entra a su **valor de mercado**. El IVA cero **no cambia** ese valor en el PIB — cambia la **recaudación** del Estado. Son cosas distintas.
 
 **Imp. corporativo 27% → 23%.**
-Indirectamente vía **período**: si la rebaja estimula inversión nueva (maquinaria, construcción), esa inversión sí aparece en el PIB del año. El "cuánto" es debate empírico avanzado.
+Indirectamente vía **producción del período**: si la rebaja estimula inversión nueva (maquinaria, construcción), esa inversión sí aparece en el PIB del año. El "cuánto" es debate empírico avanzado.
 
 ---
 

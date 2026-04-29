@@ -294,7 +294,7 @@ El Gobierno ingresó al Congreso el **22 de abril** el **Proyecto de Ley de Reco
 
 # El PIB con rigor — qué cuenta y qué no.
 
-Mañana definimos el concepto central de la macroeconomía: el **PIB**. Cuatro palabras clave: **valor de mercado · finales · dentro · período**.
+Mañana definimos el concepto central de la macroeconomía: el **PIB**. Trabajamos con la definición de Samuelson y sus cuatro componentes — **valor de mercado**, **bienes finales**, **producción dentro del territorio**, **en un período**.
 
 Resolvemos casos: ¿el auto usado entra al PIB? ¿el sueldo de un chileno trabajando en Alemania? ¿los $400 mil millones de reconstrucción?
 
