@@ -182,6 +182,7 @@ function Manifesto({ s }: { s: Section }) {
     .filter((q) => q && q.trim())
   return (
     <section className="slide slide-manifesto">
+      {s.slots.kicker && <p className="mani-kicker">{s.slots.kicker}</p>}
       <h2 className="mani-titulo">{s.slots.titulo}</h2>
       <ol className="mani-list">
         {qs.map((q, i) => (
@@ -402,7 +403,7 @@ function GridFallas({ s }: { s: Section }) {
   return (
     <section className="slide slide-grid-fallas">
       <header className="gf-head">
-        <p className="gf-kicker">FALLAS DE MERCADO</p>
+        {s.slots.kicker && <p className="gf-kicker">{s.slots.kicker}</p>}
         <h2 className="gf-titulo">{s.slots.titulo}</h2>
       </header>
       <div className={layoutClass}>

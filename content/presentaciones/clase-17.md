@@ -53,6 +53,9 @@ Síntesis y anticipo Clase 18 — el PIB con rigor.
 :::
 
 ::: manifesto
+::kicker
+BLOQUE 1 · ¿POR QUÉ MACRO?
+
 ::titulo
 ¿Dónde aparece la macroeconomía en lo cotidiano?
 
@@ -88,8 +91,11 @@ A diferencia de la microeconomía, que estudia un mercado en particular, la macr
 :::
 
 ::: grid-fallas
+::kicker
+BLOQUE 2 · CAMBIO DE ESCALA
+
 ::titulo
-Cambio de escala — micro a macro.
+Micro a macro.
 
 ::f1-titulo
 Micro (Unidad II)
@@ -112,20 +118,12 @@ El método: observar, medir, analizar. La oferta y la demanda reaparecen como De
 La escala y los **objetivos**: ya no eficiencia de un mercado, sino crecimiento, empleo, estabilidad de precios y equilibrio externo del **país**.
 :::
 
-::: stat-hero
-::eyebrow
-META DEL BANCO CENTRAL DE CHILE
-
-::numero
-3% ± 1
-
-::descripcion
-Meta de inflación anual. Está fijada en la **Ley Orgánica del Banco Central** y se opera vía la **tasa de política monetaria**.
-:::
-
 ::: grid-fallas
+::kicker
+BLOQUE 3 · CUATRO OBJETIVOS MACRO
+
 ::titulo
-Los cuatro objetivos macro.
+Cómo se evalúa una economía.
 
 ::f1-titulo
 1. Crecimiento
@@ -140,7 +138,7 @@ Los cuatro objetivos macro.
 ::f3-titulo
 3. Estabilidad de precios
 ::f3-body
-¿La inflación es baja y predecible? IPC marzo 2026: **+2,8%** interanual. Dentro del rango meta del BCCh (3% ± 1 punto).
+¿La inflación es baja y predecible? IPC marzo 2026: **+2,8%** interanual. Meta del Banco Central: **3% ± 1 punto**.
 
 ::f4-titulo
 4. Equilibrio externo
@@ -153,7 +151,7 @@ Pleno empleo no significa cero desempleo — siempre hay desempleo friccional (g
 
 ::: intro
 ::kicker
-BLOQUE 5 · COYUNTURA COMO PUERTA A LA MACRO
+BLOQUE 4 · COYUNTURA COMO PUERTA A LA MACRO
 
 ::titulo
 Cuatro casos vivos de la economía chilena.
@@ -171,32 +169,45 @@ Antes de entrar, recogemos la tarea de la clase pasada: PIB, IPC y tasa de desoc
 | 4 | Proyecto de Ley de Reconstrucción Nacional | Trade-off impuestos / inversión / déficit |
 :::
 
-::: stat-duo
+::: intro
+::kicker
+BLOQUE 4 · CASO 1 — BENCINAS Y MEPCO
+
 ::titulo
-Casos 1 y 2 — Bencinas y déficit estructural.
+La mayor alza de combustibles desde 1973.
 
-::eyebrow1
-CASO 1 · ALZA HISTÓRICA · 26 MARZO 2026
+::body
+El **jueves 26 de marzo de 2026** las bencinas en Chile registraron el alza más grande en cinco décadas: la 93 subió **\$372 por litro**, la 97 **\$391** y el diésel **\$580**. La causa fue una modificación administrativa al **MEPCO** (Mecanismo de Estabilización del Precio de los Combustibles) anunciada por el ministro de Hacienda: la ventana de cálculo del mecanismo pasó de 3 a 4 semanas, lo que liberó de golpe un diferencial acumulado que el Estado venía absorbiendo.
 
-::numero1
-+\$372 a +\$580 / L
+¿Por qué se hizo este cambio? Porque mantener el MEPCO en su parámetro previo costaba **US\$140 millones a la semana**, con proyección a US\$160 millones. Absorber el alza total habría implicado un costo fiscal de hasta **US\$4 mil millones**.
 
-::descripcion1
-La 93 subió **+\$372**, la 97 **+\$391**, el diésel **+\$580** por litro. La mayor alza desde 1973. Causa: el ministro de Hacienda amplió la ventana del **MEPCO** de 3 a 4 semanas. Mantener el mecanismo previo costaba **US\$140 millones a la semana**, con proyección a US\$160 millones. ¿Quién paga la diferencia? Los contribuyentes en su conjunto, vía menor recaudación.
-
-::eyebrow2
-CASO 2 · DÉFICIT ESTRUCTURAL · CIERRE 2025
-
-::numero2
-3,6 % del PIB
-
-::descripcion2
-Tercer año consecutivo de incumplimiento de la regla fiscal. Meta original 2025: **1,1%**. El resultado **prácticamente triplicó** la meta. Esto limita la capacidad del Estado de seguir absorbiendo shocks como el de las bencinas (Caso 1).
+¿Quién paga la diferencia cuando el Estado interviene vía MEPCO? Los contribuyentes en su conjunto, vía menor recaudación del impuesto específico. Toda intervención macro tiene un **costo fiscal**.
 :::
 
 ::: intro
 ::kicker
-BLOQUE 5 · CASO 3 — CONSEJO FISCAL AUTÓNOMO
+BLOQUE 4 · CASO 2 — DÉFICIT ESTRUCTURAL Y REGLA FISCAL
+
+::titulo
+Tercer año consecutivo de incumplimiento.
+
+::body
+Chile opera con una **regla fiscal** que fija una meta anual de **balance estructural** — el balance fiscal del año, ajustado por el ciclo económico (precio del cobre, posición del PIB respecto a su nivel tendencial). Su objetivo es disciplinar el gasto público y mantener la deuda en niveles sostenibles.
+
+| Indicador 2025 | Valor |
+|---|---|
+| Déficit efectivo | **2,8% del PIB** |
+| Déficit estructural | **3,6% del PIB** — el más alto desde la pandemia |
+| Meta original 2025 | **1,1% del PIB** — el resultado prácticamente la triplicó |
+| Año de incumplimiento | **Tercero consecutivo** |
+| Proyección 2026 | Cerca de **2,7% del PIB** (sería el cuarto incumplimiento) |
+
+Este déficit acumulado limita la capacidad del Estado para seguir absorbiendo shocks como el de las bencinas (Caso 1).
+:::
+
+::: intro
+::kicker
+BLOQUE 4 · CASO 3 — CONSEJO FISCAL AUTÓNOMO
 
 ::titulo
 La institución técnica que evalúa la regla.
@@ -213,7 +224,7 @@ Acá se ve en vivo cómo opera la macroeconomía chilena: una regla escrita, una
 
 ::: intro
 ::kicker
-BLOQUE 5 · CASO 4 — LEY DE RECONSTRUCCIÓN NACIONAL
+BLOQUE 4 · CASO 4 — LEY DE RECONSTRUCCIÓN NACIONAL
 
 ::titulo
 Un proyecto en discusión esta semana.
@@ -234,6 +245,9 @@ No se trata de tomar partido hoy. Se trata de reconocer que este debate público
 :::
 
 ::: manifesto
+::kicker
+BLOQUE 5 · CIERRE
+
 ::titulo
 Tres preguntas para cerrar.
 
