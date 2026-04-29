@@ -4,14 +4,18 @@ import { notFound } from 'next/navigation'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import Link from 'next/link'
-import { getClaseByNumero, getClases, getPresentacionFromNotion, REVALIDATE_SECONDS } from '@/lib/notion'
+import { getClaseByNumero, getClases, getMarpMarkdownFromNotion, getPresentacionFromNotion, REVALIDATE_SECONDS } from '@/lib/notion'
 import { getPresentacion, Section } from '@/lib/presentaciones'
 import PrintButton from '@/components/PrintButton'
 import RevalidateButton from '@/components/RevalidateButton'
 
-function hasMarpPdf(numero: number): boolean {
+async function isMarpPresentation(numero: number): Promise<boolean> {
+  // Notion → contenido Marp en bloque ```markdown
+  const md = await getMarpMarkdownFromNotion(numero)
+  if (md) return true
+  // Fallback: archivo local marp/clase-N.md
   try {
-    return fs.existsSync(path.join(process.cwd(), 'public', 'pdfs', `clase-${numero}.pdf`))
+    return fs.existsSync(path.join(process.cwd(), 'marp', `clase-${numero}.md`))
   } catch {
     return false
   }
@@ -42,7 +46,7 @@ export default async function ClasePage({ params }: { params: { id: string } }) 
   const clase = await getClaseByNumero(numero)
   if (!clase) notFound()
 
-  const isMarp = hasMarpPdf(numero)
+  const isMarp = await isMarpPresentation(numero)
   const pres = isMarp ? null : ((await getPresentacionFromNotion(numero)) ?? getPresentacion(numero))
 
   return (
@@ -88,6 +92,7 @@ export default async function ClasePage({ params }: { params: { id: string } }) 
 }
 
 function MarpEmbed({ numero, titulo }: { numero: number; titulo: string }) {
+  const htmlUrl = `/api/marp/${numero}`
   const pdfUrl = `/pdfs/clase-${numero}.pdf`
   return (
     <>
@@ -97,16 +102,17 @@ function MarpEmbed({ numero, titulo }: { numero: number; titulo: string }) {
           <span className="toolbar-clase">Clase {numero}</span>
           <span className="toolbar-titulo">{titulo}</span>
         </div>
-        <a href={pdfUrl} download={`clase-${numero}.pdf`}>
-          <button>↓ Descargar PDF</button>
-        </a>
-        <a href={pdfUrl} target="_blank" rel="noopener">
+        <RevalidateButton path={`/clases/${numero}`} />
+        <a href={htmlUrl} target="_blank" rel="noopener">
           <button>⛶ Pantalla completa</button>
+        </a>
+        <a href={pdfUrl} download={`clase-${numero}.pdf`}>
+          <button>↓ PDF</button>
         </a>
       </div>
       <main style={{ paddingTop: 52, height: '100vh', display: 'flex', flexDirection: 'column', background: '#0D0D0D' }}>
         <iframe
-          src={pdfUrl}
+          src={htmlUrl}
           style={{ flex: 1, width: '100%', border: 'none', background: '#0D0D0D' }}
           title={`Clase ${numero} — ${titulo}`}
         />

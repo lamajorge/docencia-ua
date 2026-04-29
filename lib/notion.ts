@@ -215,7 +215,42 @@ export async function getPresentacionFromNotion(numero: number): Promise<Present
     const markdown = n2m.toMarkdownString(mdBlocks).parent ?? ''
     if (!markdown.trim()) return null
 
+    // Si tiene frontmatter Marp, lo manejamos por separado vía getMarpMarkdownFromNotion
+    if (extractMarpMarkdown(markdown)) return null
+
     return parsePresentacionFromMarkdown(numero, markdown)
+  } catch {
+    return null
+  }
+}
+
+// Extrae el markdown Marp de un bloque ```markdown ... ``` si tiene frontmatter `marp: true`.
+function extractMarpMarkdown(notionMarkdown: string): string | null {
+  const match = notionMarkdown.match(/```markdown\s*\n([\s\S]*?)\n```/)
+  if (!match) return null
+  const content = match[1]
+  return content.includes('marp: true') ? content : null
+}
+
+export async function getMarpMarkdownFromNotion(numero: number): Promise<string | null> {
+  const dbId = process.env.NOTION_PRESENTATIONS_DATABASE_ID
+  if (!dbId || !process.env.NOTION_TOKEN) return null
+
+  try {
+    const response = await notion.databases.query({
+      database_id: dbId,
+      filter: { property: 'Clase ', title: { equals: String(numero) } },
+      page_size: 1,
+    })
+
+    const page = response.results.find(
+      (r): r is PageObjectResponse => r.object === 'page' && 'properties' in r
+    )
+    if (!page) return null
+
+    const mdBlocks = await n2m.pageToMarkdown(page.id)
+    const markdown = n2m.toMarkdownString(mdBlocks).parent ?? ''
+    return extractMarpMarkdown(markdown)
   } catch {
     return null
   }
