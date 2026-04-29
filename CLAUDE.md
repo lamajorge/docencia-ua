@@ -82,7 +82,24 @@ Los archivos en [`.claude/rules/`](.claude/rules/) no se cargan automáticamente
   - Correo de entrega y contacto: **jorge.lama@cloud.uautonoma.cl**
   - 10% = mejor nota entre Regular 1 y Regular 2 (no Canvas).
 - **Escala de notas:** 60% = 4.0 (Art. 26). Para prueba de 20 pts → 12 pts = 4.0.
-- **Programa macroeconomía (Unidad III, completo):** 17 bienvenida + 4 objetivos · 18 PIB conceptual · 19 PIB nominal/real, deflactor, per cápita · 20 modelo DA-OA · 21 limitaciones PIB y crecimiento · 22 desarrollo (Sen) · 23 inflación · 24 desempleo + Phillips · 25 **política fiscal** (gobierno, multiplicador) · **26 Regular 2** · 27 **política monetaria** (BCCh, TPM, encaje) · 28 macro y ética + autonomía BCCh, Rosende (Bretton Woods aquí) · 29 síntesis macro y entorno político-social · 30/31/32 presentaciones 10% · 33 cierre.
+- **Programa macroeconomía Unidad III (verificado contra Notion 2026-04-29):**
+  - **17** (mié 29 abr) Bienvenida a la macroeconomía — 4 objetivos + coyuntura
+  - **18** (jue 30 abr) El PIB — qué mide, qué cuenta, qué no
+  - **19** (mié 6 may) PIB nominal, PIB real y bienestar económico — deflactor, per cápita
+  - **20** (jue 7 may) Desplazamientos del modelo DA-OA — shocks
+  - **21** (mié 13 may) Limitaciones del PIB y crecimiento económico — IDH, ciclos
+  - **22** (jue 14 may) Debate: Crecimiento vs. Desarrollo Humano (Sen)
+  - **23** (mié 20 may) La inflación — causas, efectos, medición, IPC
+  - **24** (mié 27 may) El desempleo y la Curva de Phillips
+  - **25** (jue 28 may) Política Fiscal — gasto, impuestos, multiplicador
+  - **26** (mié 3 jun) ⚠️ EVALUACIÓN REGULAR 2 — acumulativa Unidades I-II-III
+  - **27** (mié 10 jun) Política Monetaria — dinero, BCCh, TPM, encaje
+  - **28** (jue 11 jun) Macroeconomía y Ética — inconsistencia temporal, autonomía BCCh, Rosende ← **Bretton Woods aquí**
+  - **29** (mié 17 jun) Síntesis: Macroeconomía y entorno político-social actual — reflexión Eco-Derecho
+  - **30** (jue 18 jun) Repaso final y síntesis del semestre
+  - **31** (mié 24 jun) Presentaciones orales — Ensayo 10% (clase dedicada)
+  - **32** (jue 8 jul) EXAMEN DE REPETICIÓN
+  - *(Clase 33 en Notion = Revisión Regular 1 del jue 23 abr — numeración no cronológica en la DB)*
 - **Reservado para Clase 28 (Macroeconomía y Ética — inconsistencia temporal + autonomía BCCh):** contar **Bretton Woods** con detalle como contexto histórico de la autonomía del Banco Central. Quiénes: Keynes (UK) y Harry Dexter White (EE.UU.); cuándo: julio 1944, antes de terminar la Segunda Guerra; qué se decidió: FMI, Banco Mundial, tipos de cambio fijos al dólar y dólar al oro; hasta cuándo duró: 1971 (Nixon termina convertibilidad); influencia hasta hoy: el modelo de bancos centrales autónomos chileno (1989) viene del consenso macro post-BW.
 
 ---
