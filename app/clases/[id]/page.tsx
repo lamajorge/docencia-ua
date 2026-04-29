@@ -1718,12 +1718,12 @@ a { color: inherit; text-decoration: none; }
 .gf-grid-2 { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr; }
 .gf-cell {
   background: var(--sand);
-  padding: 3vh 2.5vw;
-  display: flex; flex-direction: column; gap: 1.5vh;
+  padding: 3.5vh 2.8vw;
+  display: flex; flex-direction: column; gap: 1.8vh;
   border-left: 4px solid var(--red);
 }
 .gf-2, .gf-3 { background: var(--black); color: var(--white); }
-.gf-2 .gf-body, .gf-3 .gf-body { color: rgba(255,255,255,0.75); }
+.gf-2 .gf-body, .gf-3 .gf-body { color: rgba(255,255,255,0.82); }
 .gf-n {
   font-family: var(--disp);
   font-size: clamp(2rem, 3.5vw, 3rem);
@@ -1737,26 +1737,37 @@ a { color: inherit; text-decoration: none; }
   font-size: clamp(1.2rem, 1.7vw, 1.6rem);
   font-weight: 800;
   letter-spacing: -0.01em;
+  padding-bottom: 1.2vh;
+  border-bottom: 1px solid rgba(0,0,0,0.12);
 }
+.gf-2 .gf-sub, .gf-3 .gf-sub { border-bottom-color: rgba(255,255,255,0.18); }
 .gf-body {
   font-size: clamp(0.88rem, 1.05vw, 1rem);
-  line-height: 1.55;
+  line-height: 1.6;
 }
 .gf-body strong { color: var(--red); font-weight: 700; }
-.gf-2 .gf-body strong, .gf-3 .gf-body strong { color: var(--white); }
-.gf-body p { margin: 0; }
+.gf-2 .gf-body strong, .gf-3 .gf-body strong { color: #FBE8EB; }
+.gf-body p { margin: 0 0 1em 0; }
+.gf-body p:last-child { margin-bottom: 0; }
+.gf-body ul, .gf-body ol { margin: 0.4em 0 1em 0; padding-left: 1.3em; }
+.gf-body li { margin-bottom: 0.45em; line-height: 1.55; }
+.gf-body li:last-child { margin-bottom: 0; }
+.gf-body em { color: var(--gray); font-style: italic; }
+.gf-2 .gf-body em, .gf-3 .gf-body em { color: rgba(255,255,255,0.6); }
 .gf-nota {
   margin-top: 2vh;
-  padding: 1.8vh 2vw;
+  padding: 2vh 2.2vw;
   background: var(--sand);
   border-left: 4px solid var(--red);
   font-size: clamp(0.88rem, 1.05vw, 1rem);
-  line-height: 1.55;
+  line-height: 1.6;
 }
 .gf-nota strong { color: var(--red); font-weight: 700; }
-.gf-nota p { margin: 0; }
+.gf-nota p { margin: 0 0 0.8em 0; }
+.gf-nota p:last-child { margin-bottom: 0; }
 .gf-nota ul { margin: 0; padding-left: 1.2em; }
-.gf-nota li { margin: 0; }
+.gf-nota li { margin-bottom: 0.3em; }
+.gf-nota li:last-child { margin-bottom: 0; }
 
 /* ════════════════════════════════════════════
    EXERCISE INTRO
