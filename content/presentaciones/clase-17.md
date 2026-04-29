@@ -59,19 +59,19 @@ Síntesis y anticipo Clase 18 — el PIB con rigor.
 
 ::: manifesto
 ::titulo
-¿Cuándo enfrentaron macroeconomía esta semana?
+¿Cuándo se cruzaron con la macroeconomía esta semana?
 
 ::q1
-Cargar bencina y ver el precio subir.
+El almuerzo cerca de la U o el café del descanso un poco más caro este semestre.
 
 ::q2
-Postular a un crédito y ver la tasa de interés.
+La cuenta de la luz, el plan de datos o el arriendo apareciendo en alguna conversación familiar.
 
 ::q3
-Ver al dólar moverse antes de un viaje o una compra.
+La matrícula, la gratuidad, una beca, el CAE — el costo de estudiar y cómo se financia.
 
 ::q4
-Una noticia de inflación, desempleo o ajuste fiscal en el celular.
+Una noticia de inflación, desempleo o ajuste fiscal pasando por el celular.
 
 ::footer
 Todo eso es macroeconomía. Hoy le ponemos nombre y marco.
