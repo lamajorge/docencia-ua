@@ -123,7 +123,7 @@ La escala y los **objetivos**: ya no eficiencia de un mercado, sino crecimiento,
 BLOQUE 3 · CUATRO OBJETIVOS MACRO
 
 ::titulo
-Cómo se evalúa una economía.
+Cómo se evalúa una economía — panorama.
 
 ::f1-titulo
 1. Crecimiento
@@ -146,7 +146,70 @@ Cómo se evalúa una economía.
 ¿Las exportaciones guardan relación con las importaciones en el mediano plazo? Cuenta corriente sin desequilibrios persistentes.
 
 ::nota
-Pleno empleo no significa cero desempleo — siempre hay desempleo friccional (gente cambiando de trabajo, recién egresados). En Chile se considera pleno empleo cerca de **5–6%** de desocupación.
+A continuación profundizamos cada objetivo: qué es, por qué importa, cómo se mide.
+:::
+
+::: grid-fallas
+::kicker
+BLOQUE 3 · OBJETIVOS 1 Y 2
+
+::titulo
+Crecimiento y pleno empleo.
+
+::f1-titulo
+1. Crecimiento económico
+::f1-body
+**Aumento sostenido del PIB real** (no del PIB nominal — descontando la inflación) a lo largo del tiempo.
+
+**Por qué importa.** Sin crecimiento no hay aumento del ingreso per cápita, ni reducción estructural de la pobreza, ni espacio fiscal para más servicios públicos.
+
+**Determinantes (Samuelson):** capital físico, capital humano, recursos naturales, tecnología e instituciones.
+
+**Chile.** Creció 4–5% promedio en los 90 y 2000. Hoy crece la mitad: **+2,5% en 2025**, proyección **1,5%–2,5% para 2026**.
+
+::f2-titulo
+2. Pleno empleo
+::f2-body
+**Tasa de desempleo más baja compatible** con una economía funcionando — no es desempleo cero.
+
+**Tres tipos de desempleo:**
+- **Friccional:** rotación normal (cambio de trabajo, recién egresados).
+- **Estructural:** desajuste entre habilidades disponibles y empleos demandados.
+- **Cíclico:** asociado a recesiones.
+
+El pleno empleo solo elimina el cíclico. En Chile se considera pleno empleo cerca de **5–6%**.
+
+**Chile.** **8,3%** de desocupación (dic 2025–feb 2026, INE). Tres años sin bajar del 8% — sugiere problema **estructural**, no solo cíclico.
+:::
+
+::: grid-fallas
+::kicker
+BLOQUE 3 · OBJETIVOS 3 Y 4
+
+::titulo
+Estabilidad de precios y equilibrio externo.
+
+::f1-titulo
+3. Estabilidad de precios
+::f1-body
+**Inflación baja y predecible** — no inflación cero.
+
+**Por qué importa.** La inflación alta erosiona el poder adquisitivo, distorsiona precios relativos, hace imposibles los contratos de largo plazo y **redistribuye arbitrariamente** entre deudores y acreedores. La deflación también es peligrosa.
+
+**Cómo se controla.** El Banco Central maneja la inflación vía la **tasa de política monetaria** (TPM). Cuando la inflación sube, el BCCh sube la tasa para enfriar la economía.
+
+**Chile.** Meta del BCCh: **3% anual, tolerancia ±1 punto**. IPC marzo 2026: **+2,8% interanual** — dentro del rango meta.
+
+::f2-titulo
+4. Equilibrio externo
+::f2-body
+**Cuenta corriente** sin desequilibrios persistentes con el resto del mundo.
+
+**Cuenta corriente ≈** exportaciones − importaciones + transferencias netas. Mide cuánto recibe el país del exterior versus cuánto le paga.
+
+**Por qué importa.** Un déficit persistente debe financiarse con deuda externa o inversión extranjera. Si esos flujos se interrumpen, la economía enfrenta una crisis (lo que se llama *sudden stop* en la literatura).
+
+**Chile.** Suele operar con déficit moderado de cuenta corriente, financiado por inversión extranjera directa y exportaciones de cobre. La sostenibilidad depende del precio del cobre y de la confianza externa.
 :::
 
 ::: intro
