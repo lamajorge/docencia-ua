@@ -65,10 +65,10 @@ Síntesis y anticipo Clase 18 — el PIB con rigor.
 Cargar bencina y ver el precio subir.
 
 ::q2
-Postular a un crédito y enfrentar la tasa de interés.
+Postular a un crédito y ver la tasa de interés.
 
 ::q3
-El dólar moviéndose antes de un viaje o una compra importante.
+Ver al dólar moverse antes de un viaje o una compra.
 
 ::q4
 Una noticia de inflación, desempleo o ajuste fiscal en el celular.
