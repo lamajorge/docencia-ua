@@ -1,0 +1,509 @@
+/* @theme ua
+ * Universidad Autónoma de Chile · Facultad de Derecho
+ * DERE-A0004 · Introducción a la Economía
+ * Identidad visual: rojo UA, Fraunces (display), Inter (body), JetBrains Mono (datos)
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,800;9..144,900&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+/* ==============================================================
+   VARIABLES — paleta UA
+============================================================== */
+:root {
+  --red:       #C8102E;
+  --red-dark:  #8A0B1F;
+  --red-soft:  #FBE8EB;
+  --black:     #0D0D0D;
+  --text:      #151515;
+  --sand:      #F5F3EF;
+  --white:     #FFFFFF;
+  --gray:      #6B6B6B;
+  --light:     #E8E6E1;
+  --sans:      'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --disp:      'Fraunces', Georgia, serif;
+  --mono:      'JetBrains Mono', Consolas, monospace;
+}
+
+/* ==============================================================
+   BASE — cada section es una lámina 16:9
+============================================================== */
+section {
+  width: 1280px;
+  height: 720px;
+  padding: 60px 80px;
+  background: var(--sand);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 22px;
+  line-height: 1.55;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  letter-spacing: -0.005em;
+}
+
+section * {
+  box-sizing: border-box;
+}
+
+/* Pagination y header desactivados por default */
+section::after {
+  display: none;
+}
+
+/* ==============================================================
+   TIPOGRAFÍA
+============================================================== */
+h1 {
+  font-family: var(--disp);
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  margin: 0 0 20px;
+  max-width: 22ch;
+}
+
+h2 {
+  font-family: var(--disp);
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  color: var(--text);
+  margin: 0 0 16px;
+  max-width: 24ch;
+}
+
+h3 {
+  font-family: var(--disp);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text);
+  margin: 16px 0 8px;
+}
+
+h4 {
+  font-family: var(--sans);
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin: 0 0 24px;
+}
+
+p {
+  margin: 0 0 14px;
+  max-width: 65ch;
+}
+
+p:last-child { margin-bottom: 0; }
+
+strong { color: var(--red); font-weight: 700; }
+em { color: var(--gray); font-style: italic; }
+
+a { color: var(--red); text-decoration: underline; text-underline-offset: 2px; }
+
+/* Listas */
+ul, ol {
+  margin: 8px 0 16px;
+  padding-left: 1.4em;
+  max-width: 65ch;
+}
+
+li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+li:last-child { margin-bottom: 0; }
+li::marker { color: var(--red); font-weight: 700; }
+
+/* Código y mono */
+code {
+  font-family: var(--mono);
+  font-size: 0.9em;
+  background: var(--light);
+  padding: 2px 6px;
+  border-radius: 3px;
+  color: var(--text);
+}
+
+pre {
+  font-family: var(--mono);
+  font-size: 18px;
+  background: var(--black);
+  color: var(--white);
+  padding: 18px 22px;
+  border-radius: 4px;
+  border-left: 4px solid var(--red);
+  overflow-x: auto;
+}
+
+pre code { background: transparent; padding: 0; color: inherit; }
+
+/* Tablas */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 12px 0;
+  font-size: 18px;
+}
+
+th {
+  background: var(--black);
+  color: var(--white);
+  padding: 10px 14px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+td {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--light);
+}
+
+tr:nth-child(even) td { background: rgba(0, 0, 0, 0.02); }
+
+/* Blockquote — para citas o nota lateral */
+blockquote {
+  border-left: 4px solid var(--red);
+  background: var(--white);
+  padding: 14px 20px;
+  margin: 14px 0;
+  font-style: normal;
+  color: var(--text);
+}
+
+blockquote p { margin: 0; }
+
+/* hr — divisor sutil */
+hr {
+  border: none;
+  border-top: 1px solid var(--light);
+  margin: 24px 0;
+}
+
+/* ==============================================================
+   CLASES DE LÁMINA (se aplican con <!-- _class: hero --> etc.)
+============================================================== */
+
+/* HERO — portada / cierre */
+section.hero, section.close {
+  background: var(--black);
+  color: var(--white);
+  padding: 0;
+  position: relative;
+  justify-content: center;
+}
+
+section.hero::before, section.close::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 12px;
+  background: var(--red);
+}
+
+section.hero > *, section.close > * {
+  margin-left: 100px;
+  margin-right: 80px;
+}
+
+section.hero h1, section.close h1 {
+  color: var(--white);
+  font-size: 88px;
+  max-width: 18ch;
+}
+
+section.hero h2, section.close h2 {
+  color: var(--white);
+  max-width: 20ch;
+}
+
+section.hero h4, section.close h4 {
+  color: var(--red);
+}
+
+section.hero p, section.close p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 24px;
+  max-width: 50ch;
+}
+
+section.hero strong, section.close strong {
+  color: var(--red-soft);
+}
+
+section.hero em, section.close em {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+section.hero ul, section.close ul,
+section.hero ol, section.close ol {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* META — pie sutil al final del hero/close */
+section.hero .meta, section.close .meta {
+  position: absolute;
+  bottom: 50px;
+  left: 100px;
+  right: 80px;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+}
+
+/* ROADMAP — overview de bloques */
+section.roadmap {
+  background: var(--sand);
+  padding: 50px 70px;
+}
+
+section.roadmap h1 { font-size: 40px; max-width: none; }
+
+section.roadmap .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+  flex: 1;
+  margin-top: 16px;
+}
+
+section.roadmap .grid > div {
+  background: var(--white);
+  border-left: 4px solid var(--red);
+  padding: 20px 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+section.roadmap .grid h3 {
+  font-family: var(--sans);
+  font-size: 17px;
+  font-weight: 800;
+  margin: 0 0 8px;
+  color: var(--text);
+}
+
+section.roadmap .grid p {
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--gray);
+  margin: 0;
+}
+
+section.roadmap .num {
+  font-family: var(--disp);
+  font-size: 36px;
+  font-weight: 900;
+  color: var(--red);
+  line-height: 0.9;
+  margin: 0 0 8px;
+}
+
+/* MANIFESTO — lista numerada grande sobre fondo claro */
+section.manifesto {
+  background: var(--white);
+  padding: 60px 80px;
+}
+
+section.manifesto ol {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 24px;
+  max-width: none;
+  counter-reset: mani-counter;
+}
+
+section.manifesto ol li {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  align-items: baseline;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--light);
+  margin: 0;
+  font-size: 22px;
+  font-style: italic;
+  color: var(--text);
+  counter-increment: mani-counter;
+}
+
+section.manifesto ol li::marker { content: ''; }
+
+section.manifesto ol li::before {
+  content: counter(mani-counter, decimal-leading-zero);
+  font-family: var(--disp);
+  font-size: 36px;
+  font-weight: 900;
+  color: var(--red);
+  font-style: normal;
+}
+
+section.manifesto .footer-note {
+  font-size: 16px;
+  color: var(--gray);
+  font-style: italic;
+  border-left: 3px solid var(--red);
+  padding-left: 14px;
+  margin-top: auto;
+  max-width: none;
+}
+
+/* GRID-2 / GRID-4 — celdas para casos */
+section.grid-2 .grid,
+section.grid-4 .grid {
+  display: grid;
+  gap: 14px;
+  flex: 1;
+  margin-top: 12px;
+}
+
+section.grid-2 .grid { grid-template-columns: 1fr 1fr; }
+section.grid-4 .grid { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; }
+
+section.grid-2 .grid > div,
+section.grid-4 .grid > div {
+  background: var(--white);
+  border-left: 4px solid var(--red);
+  padding: 22px 24px;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+section.grid-2 .grid > div.dark,
+section.grid-4 .grid > div.dark {
+  background: var(--black);
+  color: rgba(255, 255, 255, 0.85);
+}
+
+section.grid-2 .grid > div.dark strong,
+section.grid-4 .grid > div.dark strong { color: var(--red-soft); }
+
+section.grid-2 .grid > div.dark h3,
+section.grid-4 .grid > div.dark h3 { color: var(--white); }
+
+section.grid-2 .grid h3,
+section.grid-4 .grid h3 {
+  font-size: 20px;
+  margin: 0 0 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--light);
+}
+
+section.grid-2 .grid > div.dark h3,
+section.grid-4 .grid > div.dark h3 {
+  border-bottom-color: rgba(255, 255, 255, 0.18);
+}
+
+section.grid-2 .grid p,
+section.grid-4 .grid p {
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0 0 8px;
+}
+
+section.grid-2 .grid p:last-child,
+section.grid-4 .grid p:last-child { margin-bottom: 0; }
+
+section.grid-2 .grid .num,
+section.grid-4 .grid .num {
+  font-family: var(--disp);
+  font-size: 32px;
+  font-weight: 900;
+  color: var(--red);
+  line-height: 0.9;
+  margin: 0 0 6px;
+}
+
+/* STAT — número grande con label */
+section.stat {
+  background: var(--sand);
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+
+section.stat .num-side {
+  flex: 0 0 50%;
+  background: var(--black);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 60px;
+}
+
+section.stat .num-side .label {
+  font-family: var(--sans);
+  font-size: 14px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin: 0 0 16px;
+}
+
+section.stat .num-side .value {
+  font-family: var(--disp);
+  font-size: 120px;
+  font-weight: 900;
+  line-height: 0.9;
+  color: var(--white);
+  margin: 0;
+}
+
+section.stat .text-side {
+  flex: 1;
+  padding: 60px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section.stat .text-side h2 { color: var(--text); margin-bottom: 16px; }
+
+/* QUOTE — cita / definición destacada */
+section.quote {
+  background: var(--black);
+  color: var(--white);
+  padding: 80px 100px;
+  justify-content: center;
+}
+
+section.quote h4 { color: var(--red); margin-bottom: 30px; }
+
+section.quote .citation {
+  font-family: var(--disp);
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--white);
+  max-width: 28ch;
+  margin: 0 0 24px;
+}
+
+section.quote .source {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+/* ==============================================================
+   IMPRESIÓN — Marp ya genera 1280x720 fijo.
+   Solo asegurar que no se rompa nada.
+============================================================== */
+@media print {
+  section { break-after: page; }
+}

@@ -33,3 +33,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# marp — PDFs y otros outputs generados localmente
+marp/out/
+marp/node_modules/

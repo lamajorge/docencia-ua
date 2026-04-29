@@ -36,7 +36,7 @@ Los archivos en [`.claude/rules/`](.claude/rules/) no se cargan automáticamente
 |---|---|
 | Antes de redactar cualquier contenido conceptual (guía o presentación) | [`.claude/rules/pedagogia.md`](.claude/rules/pedagogia.md) |
 | Antes de crear o modificar una guía en Notion | [`.claude/rules/produccion-guias.md`](.claude/rules/produccion-guias.md) |
-| Antes de tocar `content/presentaciones/` o el renderer | [`.claude/rules/produccion-presentaciones.md`](.claude/rules/produccion-presentaciones.md) |
+| Antes de crear o modificar una presentación (Marp) | [`.claude/rules/produccion-presentaciones.md`](.claude/rules/produccion-presentaciones.md) y [`marp/README.md`](marp/README.md) |
 | Antes de tocar CSS, tema, tipografía | [`.claude/rules/identidad-visual.md`](.claude/rules/identidad-visual.md) |
 | Ante cualquier decisión sobre asistencia, notas, eliminación, interrupción | [`.claude/rules/normativa-pregrado.md`](.claude/rules/normativa-pregrado.md) |
 | Antes de diseñar, imprimir, corregir o retroalimentar una evaluación | [`.claude/rules/evaluaciones.md`](.claude/rules/evaluaciones.md) |
@@ -44,12 +44,15 @@ Los archivos en [`.claude/rules/`](.claude/rules/) no se cargan automáticamente
 
 ---
 
-## Arquitectura del sitio (resumen)
+## Arquitectura (resumen)
 
-- Rutas públicas: `/clases` (grid) y `/clases/[n]` (landing). El mismo URL imprime vía `@media print`.
-- Presentaciones: `content/presentaciones/clase-N.md` (sin zero-pad). Parser `:::` → componentes React en [`app/clases/[id]/page.tsx`](app/clases/[id]/page.tsx).
-- Bibliografía (`content/manuales/`): fuente interna, no pública (copyright).
-- Guías (Notion): no se exponen en el sitio — solo metadata y enlace a la presentación.
+**Modelo vigente desde 2026-04-29: Marp para presentaciones.**
+
+- **Presentaciones (vigente):** [`marp/`](marp/). Una clase = un `.md` Marp + theme `theme-ua.css`. `npm run build clase-NN.md` → PDF. Sin React, sin bugs de print, exportable a PowerPoint. Ver [`marp/README.md`](marp/README.md).
+- **Sitio web (legacy):** `docencia-ua.vercel.app`. Rutas `/clases` (grid índice) y `/clases/[n]` (landing). Sirve como índice público; las presentaciones proyectables son los PDFs de Marp.
+- **Sistema legacy de presentaciones:** `content/presentaciones/clase-N.md` con sintaxis `:::` + React renderer en [`app/clases/[id]/page.tsx`](app/clases/[id]/page.tsx). **No producir clases nuevas acá.** Las viejas se migran a Marp cuando necesiten cambios.
+- **Bibliografía (`content/manuales/`):** fuente interna, no pública (copyright).
+- **Guías (Notion):** narrativas detalladas para Jorge en clase. No se exponen en el sitio.
 
 ---
 

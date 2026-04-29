@@ -1,0 +1,17 @@
+{
+  "name": "docencia-ua-marp",
+  "version": "1.0.0",
+  "description": "Presentaciones DERE-A0004 — Introducción a la Economía · Marp + theme UA",
+  "private": true,
+  "scripts": {
+    "build": "marp --theme theme-ua.css --pdf --allow-local-files",
+    "build-all": "for f in clase-*.md; do marp \"$f\" --theme theme-ua.css --pdf --allow-local-files --output \"out/${f%.md}.pdf\"; done",
+    "pptx": "marp --theme theme-ua.css --pptx --allow-local-files",
+    "html": "marp --theme theme-ua.css --html --allow-local-files",
+    "preview": "marp --theme theme-ua.css --preview --allow-local-files",
+    "watch": "marp --theme theme-ua.css --watch --pdf --allow-local-files"
+  },
+  "devDependencies": {
+    "@marp-team/marp-cli": "^4.0.0"
+  }
+}

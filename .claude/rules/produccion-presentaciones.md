@@ -1,106 +1,86 @@
-# Producción de presentaciones web (landing-por-clase)
+# Producción de presentaciones — Marp + theme UA
 
-**Cuándo leer este archivo:** antes de crear o modificar un archivo en [`content/presentaciones/`](../../content/presentaciones/). Guías (Notion) y presentaciones (repo) son **tareas separadas**: la guía primero, la presentación solo cuando Jorge la pida.
-
----
-
-## Filosofía
-
-Cada clase es una **landing page editorial**, no un deck genérico. Layouts distintos por rol semántico de la sección: números protagonistas en 85mm para datos clave, manifesto tipográfico para preguntas diagnósticas, grilla 2×2 para taxonomías, split con contraste claro/oscuro para dualidades. El markdown declara **qué tipo** de sección es; el renderer React le da el layout rico.
-
-**Referencia completa del formato:** [`content/presentaciones/TEMPLATE.md`](../../content/presentaciones/TEMPLATE.md). Leer antes de producir una clase nueva.
+**Cuándo leer este archivo:** antes de crear o modificar una presentación de clase.
 
 ---
 
-## Fuente de verdad: Notion tiene prioridad sobre el archivo local
+## Modelo vigente: Marp
 
-`getPresentacionFromNotion(numero)` consulta primero la **base de datos de presentaciones de Notion** (`NOTION_PRESENTATIONS_DATABASE_ID`). Si encuentra una página para la clase, la usa — el archivo local `content/presentaciones/clase-N.md` queda ignorado por el sitio.
+Desde el **29 de abril de 2026**, las presentaciones se producen con **Marp** + un theme CSS custom (`marp/theme-ua.css`). Antes el sistema era markdown con sintaxis `:::` parseado por React en `app/clases/[id]/page.tsx`. Ese sistema queda como **legacy** y se está deprecando: bugs persistentes de print, mantenimiento alto, cada cambio visual requería editar código.
 
-**Regla operativa:** toda edición de contenido debe hacerse **en Notion** (usando `notion-update-page replace_content` con el markdown envuelto en \`\`\`markdown ... \`\`\`). El archivo local es respaldo para git y fallback si Notion no responde — siempre mantenerlos sincronizados, pero Notion manda.
+**Fuente única de presentaciones nuevas:** `marp/clase-NN.md`. Una clase = un archivo `.md`.
 
-Para saber si una clase tiene página en Notion: buscar en la DB de presentaciones (`34b7612d194d80b69196e7dba1c44b4f`) con `notion-search` por "Clase N".
+**Generar PDF:** `cd marp && npm run build clase-NN.md` → `out/clase-NN.pdf`. Sin bugs de CSS print, sin React, sin Vercel.
+
+Ver [`marp/README.md`](../../marp/README.md) para guía completa de uso, layouts y convenciones.
+
+---
+
+## Estructura de cada presentación
+
+```yaml
+---
+marp: true
+theme: ua
+paginate: false
+size: 16:9
+title: Título de la clase
+---
+```
+
+Después, cada lámina se separa con `---` (tres guiones).
+
+Cada lámina puede aplicar un layout custom con `<!-- _class: NOMBRE -->` al inicio. Layouts disponibles: `hero`, `close`, `roadmap`, `manifesto`, `grid-2`, `grid-4`, `stat`, `quote`. Ver [`marp/clase-template.md`](../../marp/clase-template.md) para ejemplos.
 
 ---
 
 ## Flujo de producción
 
-1. Leer la guía de la clase en Notion como **única fuente de contenido**.
-2. Redactar el markdown con frontmatter + secciones `:::` (localmente o en memoria).
-3. Cada sección abre con `::: tipo [props...]` y cierra con `:::`. Dentro, slots `::nombre` declaran sub-bloques. El contenido dentro de cada slot es markdown libre.
-4. Tipos de sección disponibles: `hero`, `intro`, `roadmap`, `manifesto`, `station` (part=a/b), `mecanismo`, `stat-hero`, `stat-duo`, `stat-split`, `grid-fallas` (con `::nota` opcional), `exercise-intro`, `exercise-d`, `evaluacion`, `close`, `referencia`, `diagrama` (con `::d{n}-leyenda`), `revision` (para revisión de prueba — ver abajo). Cada uno tiene su componente React con layout único en [`app/clases/[id]/page.tsx`](../../app/clases/[id]/page.tsx).
-5. **Consolidar:** ~18 secciones por clase, no 30+. Si una idea no necesita slide propio, colapsarla en una `station` o `stat`. Regla: **1 sección = 1 concepto**; ejemplos del mismo concepto van juntos.
-6. El contenido sale **exclusivamente** de la guía — no se inventan ejemplos.
-7. Subir a Notion con `notion-update-page replace_content`, contenido envuelto en \`\`\`markdown ... \`\`\`.
-8. Escribir también en `content/presentaciones/clase-N.md` (sin zero-pad) y hacer commit. Es el fallback y el historial.
-9. Validar en pantalla (scroll de landing) **y** en vista impresa (`window.print()` del navegador). Cada sección debe caber en una lámina 16:9 (297×167mm) cuando se imprime.
+1. Leer la guía de la clase en Notion como única fuente de contenido.
+2. Crear `marp/clase-NN.md` (copiar de `clase-template.md` para arrancar con todos los layouts disponibles).
+3. **~12–15 láminas por clase.** Cada lámina = 1 concepto. Si un concepto pide más, dividir en dos láminas.
+4. Editar con preview en vivo: VS Code + extensión "Marp for VS Code".
+5. Generar PDF: `npm run build clase-NN.md`.
+6. Validar visualmente el PDF (cada lámina cabe en 1280×720 sin cortes).
+7. Commit del `.md` (NO del PDF generado — `out/` está en `.gitignore`).
 
 ---
 
-## Tipo `revision` — revisión de prueba
+## Convenciones de contenido
 
-Misma estructura visual que `station` pero con labels configurables. Usar para clases de revisión de evaluación (tipo Clase 15).
-
-```markdown
-::: revision num=01 clases="Clases 1–3"
-::titulo
-Tema — Preguntas N a M
-
-::respuestas
-- **P1 → D.** *"Enunciado abreviado."* Explicación de la respuesta correcta.
-- **P2 → C.** ...
-
-::concepto
-**Pregunta conceptual central.**
-
-Explicación completa con cadena causal.
-
-::trampa
-**"Distractor común."** Por qué está mal.
-
-::regla
-Regla de oro aplicable.
-:::
-```
-
-Props opcionales: `labelLeft="PREGUNTA Y RÚBRICA"` y `labelRight="RESPUESTA MODELO"` para secciones de desarrollo (override del default "RESPUESTAS CORRECTAS" / "CONCEPTO CLAVE").
-
-**No usar `station` para revisiones** — tiene "QUÉ DEBEN DOMINAR" hardcodeado, que no aplica.
+- **Cada lámina arranca con kicker:** `#### BLOQUE N · ETIQUETA` (mayúsculas, en rojo UA por CSS).
+- **Título grande:** `# Título de la lámina.` (Fraunces, fondo claro o blanco según layout).
+- **Negritas (`**texto**`):** se renderizan en rojo UA. Usar para palabras clave, NO como decoración general.
+- **Cursivas (`*texto*`):** grises. Para citas o anotaciones.
+- **Blockquote (`> texto`):** caja blanca con borde rojo a la izquierda. Para "Por qué importa", notas laterales.
+- **Listas (`-` o `1.`):** estilizadas con marker rojo. Espacio vertical entre items.
+- **Tablas:** header negro automático, zebra rows. No requieren CSS adicional.
+- **Símbolo `$`:** sin escape. Marp no tiene math habilitado por default.
 
 ---
 
-## Alcance público del sitio
+## Identidad visual (theme UA)
 
-- Rutas públicas: solo `/clases` (grid) y `/clases/[n]` (landing).
-- **No hay `/print` separado** — el mismo URL imprime vía `@media print` cuando se presiona "Imprimir / Guardar PDF" en la toolbar.
-- La bibliografía (`content/manuales/`) es **fuente de datos interna** por copyright, no contenido público.
-- El cuerpo de las guías (Notion) tampoco se expone en la landing — solo metadata + botón a la presentación.
+Todo en `marp/theme-ua.css`. No editar arquitectura del theme sin coordinarlo — los layouts dependen del CSS.
 
----
-
-## Cómo agregar un tipo de sección nuevo
-
-Cuando una clase pide un layout que no existe (ej. una timeline, una grilla 3×3):
-
-1. Agregar el caso en `SectionRenderer` en [`app/clases/[id]/page.tsx`](../../app/clases/[id]/page.tsx).
-2. Escribir la función React para el layout (ver los existentes como modelo).
-3. Añadir CSS para screen (landing scroll) y override en `@media print` para que encaje en 297×167mm (16:9).
-4. Documentarlo en `TEMPLATE.md` con ejemplo de sintaxis.
+- **Paleta:** rojo `#C8102E` (principal), `#8A0B1F` (oscuro), `#FBE8EB` (soft); negro `#0D0D0D`; arena `#F5F3EF`; blanco; gris `#6B6B6B`.
+- **Tipografía:** Fraunces (display, títulos), Inter (body, UI), JetBrains Mono (datos técnicos).
+- **Tamaño:** 1280×720 (16:9). Una lámina = una página A4 apaisada cuando se exporta a PDF.
 
 ---
 
-## Diagramas
+## Errores ya cometidos en el sistema legacy — no repetir
 
-- Los diagramas basados en tabla numérica **deben** llevar marcas en los ejes con los valores reales de la tabla.
-- Toda abreviación (P, Q, D, O, EC, EP, etc.) debe estar definida en el slot `::d{n}-leyenda` antes de usarse en el texto de la sección.
-- Si un diagrama no existe en Samuelson ni Case & Fair, no se construye — se explica verbalmente.
+- **Sistema React custom de markdown→render→CSS print:** mantenimiento alto, bugs por slot, cortes de contenido en print. Reemplazado por Marp.
+- **`overflow: hidden` + `justify-content: center` + `min-height: 100vh`:** rompía contenido en pantalla. Marp evita esto: cada lámina es un container fijo de 1280×720.
+- **Slots con nombres custom (`::eyebrow`, `::descripcion`):** cada componente esperaba slots distintos. En Marp todo es markdown estándar.
+- **Kicker hardcodeado "FALLAS DE MERCADO" en `GridFallas`:** bug del renderer legacy. En Marp el kicker se escribe explícito en cada lámina.
+- **`\$` literal renderizado por componentes que no procesan markdown:** en Marp, `$` se escribe directo sin escape.
 
 ---
 
-## Errores ya cometidos — no repetir
+## Sistema legacy (`content/presentaciones/` + `app/clases/[id]/page.tsx`)
 
-- El modelo "deck de slides" (un molde de título + body + footer por slide) produce láminas genéricas y vacías. Cada sección necesita layout propio según qué comunica.
-- Tipografía Playfair como body se ve editorial/libro, no presentación. Para UI y cuerpo: **Inter** (sans-serif). Para display grande y serif editorial: **Fraunces**.
-- `react-markdown` sin `remark-gfm` **no renderiza tablas** — salen como texto crudo con `|`. Siempre pasar `remarkPlugins={[remarkGfm]}`.
-- El CSS con `display: block` sobre `<strong>` quiebra palabras en líneas sueltas. Si se quiere dar énfasis tipográfico a un fragmento, splitear el contenido en JS (`splitQuestion`) en vez de depender de selectores CSS frágiles.
-- El bug de zero-pad en [`lib/presentaciones.ts`](../../lib/presentaciones.ts): los archivos se llaman `clase-N.md` (sin cero), no `clase-NN.md`. Ya corregido.
-- Refactor "por longitud de texto" sobre-divide secciones. Consolidar por concepto, no por densidad.
+Queda como referencia hasta que se migren las clases viejas. **NO producir clases nuevas en formato legacy.** Cuando una clase legacy necesite cambios significativos, reescribirla en Marp y eliminar el archivo `:::`.
+
+El sitio web `docencia-ua.vercel.app` con el listado de clases puede mantenerse como índice, pero las presentaciones proyectables son los PDFs de Marp.
