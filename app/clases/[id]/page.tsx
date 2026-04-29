@@ -190,11 +190,11 @@ function Manifesto({ s }: { s: Section }) {
         {qs.map((q, i) => (
           <li key={i}>
             <span className="mani-num">{String(i + 1).padStart(2, '0')}</span>
-            <p>{q}</p>
+            <div className="mani-q"><MD>{q}</MD></div>
           </li>
         ))}
       </ol>
-      {s.slots.footer && <p className="mani-footer">{s.slots.footer}</p>}
+      {s.slots.footer && <div className="mani-footer"><MD>{s.slots.footer}</MD></div>}
     </section>
   )
 }
@@ -487,10 +487,12 @@ function Close({ s }: { s: Section }) {
         <p className="cl-eyebrow">{s.slots.eyebrow}</p>
         <h2 className="cl-titulo">{s.slots.titulo}</h2>
         <div className="cl-body"><MD>{s.slots.body}</MD></div>
-        <div className="cl-reglas">
-          <p className="cl-reglas-label">REGLAS DE ORO QUE ENTRAN</p>
-          <p className="cl-reglas-text">{s.slots.reglas}</p>
-        </div>
+        {s.slots.reglas && (
+          <div className="cl-reglas">
+            <p className="cl-reglas-label">REGLAS DE ORO QUE ENTRAN</p>
+            <p className="cl-reglas-text">{s.slots.reglas}</p>
+          </div>
+        )}
         <p className="cl-meta">{s.slots.meta}</p>
       </div>
     </section>
