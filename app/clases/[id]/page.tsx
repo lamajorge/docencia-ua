@@ -1,3 +1,5 @@
+import fs from 'fs'
+import path from 'path'
 import { notFound } from 'next/navigation'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
@@ -6,6 +8,14 @@ import { getClaseByNumero, getClases, getPresentacionFromNotion, REVALIDATE_SECO
 import { getPresentacion, Section } from '@/lib/presentaciones'
 import PrintButton from '@/components/PrintButton'
 import RevalidateButton from '@/components/RevalidateButton'
+
+function hasMarpPdf(numero: number): boolean {
+  try {
+    return fs.existsSync(path.join(process.cwd(), 'public', 'pdfs', `clase-${numero}.pdf`))
+  } catch {
+    return false
+  }
+}
 
 export const revalidate = REVALIDATE_SECONDS
 
@@ -32,7 +42,8 @@ export default async function ClasePage({ params }: { params: { id: string } }) 
   const clase = await getClaseByNumero(numero)
   if (!clase) notFound()
 
-  const pres = (await getPresentacionFromNotion(numero)) ?? getPresentacion(numero)
+  const isMarp = hasMarpPdf(numero)
+  const pres = isMarp ? null : ((await getPresentacionFromNotion(numero)) ?? getPresentacion(numero))
 
   return (
     <html lang="es">
@@ -49,7 +60,9 @@ export default async function ClasePage({ params }: { params: { id: string } }) 
         <style dangerouslySetInnerHTML={{ __html: styles }} />
       </head>
       <body>
-        {!pres ? (
+        {isMarp ? (
+          <MarpEmbed numero={clase.numero} titulo={clase.titulo} />
+        ) : !pres ? (
           <Placeholder numero={clase.numero} titulo={clase.titulo} />
         ) : (
           <>
@@ -71,6 +84,34 @@ export default async function ClasePage({ params }: { params: { id: string } }) 
         )}
       </body>
     </html>
+  )
+}
+
+function MarpEmbed({ numero, titulo }: { numero: number; titulo: string }) {
+  const pdfUrl = `/pdfs/clase-${numero}.pdf`
+  return (
+    <>
+      <div className="toolbar">
+        <Link href="/clases" className="toolbar-back">← Todas las clases</Link>
+        <div className="toolbar-center">
+          <span className="toolbar-clase">Clase {numero}</span>
+          <span className="toolbar-titulo">{titulo}</span>
+        </div>
+        <a href={pdfUrl} download={`clase-${numero}.pdf`}>
+          <button>↓ Descargar PDF</button>
+        </a>
+        <a href={pdfUrl} target="_blank" rel="noopener">
+          <button>⛶ Pantalla completa</button>
+        </a>
+      </div>
+      <main style={{ paddingTop: 52, height: '100vh', display: 'flex', flexDirection: 'column', background: '#0D0D0D' }}>
+        <iframe
+          src={pdfUrl}
+          style={{ flex: 1, width: '100%', border: 'none', background: '#0D0D0D' }}
+          title={`Clase ${numero} — ${titulo}`}
+        />
+      </main>
+    </>
   )
 }
 
