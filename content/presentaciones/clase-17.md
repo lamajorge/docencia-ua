@@ -204,6 +204,30 @@ Tercer año consecutivo de incumplimiento de la regla fiscal. Meta original: **1
 
 ::: intro
 ::kicker
+BLOQUE 5 · CASO 4 — LEY DE RECONSTRUCCIÓN NACIONAL
+
+::titulo
+Un proyecto en debate esta semana.
+
+::body
+El Gobierno ingresó al Congreso, el **22 de abril**, el **Proyecto de Ley de Reconstrucción Nacional y Desarrollo Económico y Social**. Combina reconstrucción tras los **incendios de Ñuble y Biobío de enero 2026** con un paquete tributario amplio. Hoy está en discusión en la Comisión de Hacienda de la Cámara de Diputados.
+
+**Algunas medidas que están en el proyecto:**
+
+| Medida | Detalle |
+|---|---|
+| Impuesto corporativo | Reducción gradual del **27% al 23%** |
+| IVA viviendas nuevas | **Eliminación por 12 meses** |
+| Reconstrucción incendios | **\$400 mil millones** adicionales para zonas afectadas |
+| Estabilidad tributaria | **25 años** para inversiones >US\$50 millones |
+
+**Las opiniones están divididas.** Quienes apoyan el proyecto hablan de **estímulo a la inversión y al empleo**. Quienes lo critican hablan de **mayor déficit fiscal**, **menor recaudación** y **costo fiscal** de las rebajas tributarias — los mismos conceptos que aparecen en el debate del CFA y la regla fiscal.
+
+No se trata de tomar partido hoy. Se trata de reconocer que este debate público — esta semana, en la Comisión de Hacienda — está estructurado por **el vocabulario macro que estamos empezando a aprender**: impuestos, recaudación, déficit, inversión, crecimiento. Mañana usaremos pedazos de este proyecto para definir el PIB con rigor.
+:::
+
+::: intro
+::kicker
 BLOQUE 5 · COYUNTURA — CASOS CONCRETOS
 
 ::titulo

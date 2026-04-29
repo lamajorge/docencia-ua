@@ -199,6 +199,30 @@ Si Chile crece 2,5% al año, eso no significa que cada chileno esté 2,5% mejor.
 Por eso el PIB se mira **junto** con otros indicadores — empleo, inflación, distribución del ingreso, índice de desarrollo humano —, no como cifra única.
 :::
 
+::: intro
+::kicker
+COYUNTURA APLICADA · LEY DE RECONSTRUCCIÓN
+
+::titulo
+Las cuatro palabras del PIB en una ley real.
+
+::body
+Ayer mencionamos el **Proyecto de Ley de Reconstrucción Nacional**, ingresado al Congreso el 22 de abril. Apliquemos las cuatro palabras del PIB a algunas medidas concretas del proyecto.
+
+**Medida 1 — \$400 mil millones para reconstrucción de Ñuble y Biobío.**
+¿Esa actividad económica entra al PIB chileno? **Sí.** Construir casas nuevas, reponer infraestructura dañada, contratar servicios de ingeniería y obra — todo es producción nueva del año, dentro del territorio. Entra entero.
+
+**Subpregunta:** ¿el país está mejor después del incendio + reconstrucción que antes? **Casi nunca.** El PIB sube por la reconstrucción, pero se está reponiendo lo que ya existía. Vuelve la crítica que vimos en el caso del terremoto: **el PIB mide producción, no bienestar**.
+
+**Medida 2 — Eliminación del IVA en viviendas nuevas por 12 meses.**
+¿La vivienda nueva entra al PIB? **Sí** — es producción del año (la palabra "finales" se cumple, la palabra "dentro" se cumple). El IVA cero significa que el comprador paga menos, pero el valor de la vivienda **a precio de mercado** sigue siendo el mismo en el PIB. Lo que cambia es la recaudación del Estado, no el PIB.
+
+**Medida 3 — Reducción del impuesto corporativo de 27% a 23%.**
+¿Eso afecta al PIB directamente? **No directamente.** La rebaja tributaria es un cambio de recaudación. Pero **indirectamente**, si la rebaja estimula más inversión empresarial, esa inversión nueva — maquinaria, construcción, tecnología — sí aparece en el PIB del año. La pregunta empírica de "cuánto" estimula es debate técnico avanzado.
+
+Ese tipo de distinciones — qué entra directamente al PIB, qué afecta solo al fisco, qué tiene efectos indirectos — es exactamente lo que el vocabulario macro permite hacer con rigor.
+:::
+
 ::: manifesto
 ::titulo
 Cinco casos relámpago para cerrar.
