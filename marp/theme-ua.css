@@ -30,12 +30,12 @@
 section {
   width: 1280px;
   height: 720px;
-  padding: 60px 80px;
+  padding: 50px 75px;
   background: var(--sand);
   color: var(--text);
   font-family: var(--sans);
-  font-size: 22px;
-  line-height: 1.55;
+  font-size: 21px;
+  line-height: 1.5;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -56,12 +56,12 @@ section::after {
 ============================================================== */
 h1 {
   font-family: var(--disp);
-  font-size: 64px;
+  font-size: 56px;
   font-weight: 800;
   line-height: 1.05;
   letter-spacing: -0.02em;
   color: var(--text);
-  margin: 0 0 20px;
+  margin: 0 0 16px;
   max-width: 22ch;
 }
 
@@ -175,10 +175,11 @@ tr:nth-child(even) td { background: rgba(0, 0, 0, 0.02); }
 blockquote {
   border-left: 4px solid var(--red);
   background: var(--white);
-  padding: 14px 20px;
-  margin: 14px 0;
+  padding: 12px 18px;
+  margin: 10px 0;
   font-style: normal;
   color: var(--text);
+  font-size: 0.95em;
 }
 
 blockquote p { margin: 0; }
@@ -198,7 +199,7 @@ hr {
 section.hero, section.close {
   background: var(--black);
   color: var(--white);
-  padding: 0;
+  padding: 0 0 90px 0;
   position: relative;
   justify-content: center;
 }
