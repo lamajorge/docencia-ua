@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { revalidateClase } from '@/app/actions/revalidate'
 
 export default function RevalidateButton({ path }: { path: string }) {
   const [state, setState] = useState<'idle' | 'loading' | 'ok' | 'error'>('idle')
@@ -8,11 +9,9 @@ export default function RevalidateButton({ path }: { path: string }) {
   async function handleClick() {
     setState('loading')
     try {
-      const res = await fetch(`/api/revalidate?path=${encodeURIComponent(path)}`, { cache: 'no-store' })
-      const data = await res.json()
+      const data = await revalidateClase(path)
       if (data.ok) {
         setState('ok')
-        // Recargar para ver el contenido actualizado
         setTimeout(() => window.location.reload(), 600)
       } else {
         setState('error')
