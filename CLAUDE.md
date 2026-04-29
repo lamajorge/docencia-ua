@@ -83,6 +83,7 @@ Los archivos en [`.claude/rules/`](.claude/rules/) no se cargan automáticamente
   - 10% = mejor nota entre Regular 1 y Regular 2 (no Canvas).
 - **Escala de notas:** 60% = 4.0 (Art. 26). Para prueba de 20 pts → 12 pts = 4.0.
 - **Pendiente estructural:** Clase 27 no existe en Notion.
+- **Reservado para Clase 29 (Macroeconomía y Ética — autonomía BCCh, Rosende):** contar **Bretton Woods** con detalle como contexto histórico de la autonomía del Banco Central. Quiénes: Keynes (UK) y Harry Dexter White (EE.UU.); cuándo: julio 1944, antes de terminar la Segunda Guerra; qué se decidió: FMI, Banco Mundial, tipos de cambio fijos al dólar y dólar al oro; hasta cuándo duró: 1971 (Nixon termina convertibilidad); influencia hasta hoy: el modelo de bancos centrales autónomos chileno (1989) viene del consenso macro post-BW.
 
 ---
 
