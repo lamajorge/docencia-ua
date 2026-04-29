@@ -1,6 +1,6 @@
 ---
 clase: 17
-titulo: Medición de la actividad económica — el PIB y objetivos macro
+titulo: Bienvenida a la macroeconomía — qué importa, qué evalúa, cómo está Chile
 unidad: Unidad III
 fecha: Miércoles 29 de abril
 ---
@@ -10,10 +10,10 @@ fecha: Miércoles 29 de abril
 CLASE 17 · UNIDAD III · MACROECONOMÍA
 
 ::titulo
-El PIB y los objetivos macro
+Bienvenida a la macroeconomía.
 
 ::subtitulo
-Primera clase de macroeconomía — cambiamos la escala
+Por qué importa, qué evalúa, cómo está Chile hoy.
 
 ::meta
 DERE-A0004 · Introducción a la Economía · Universidad Autónoma de Chile
@@ -24,55 +24,77 @@ DERE-A0004 · Introducción a la Economía · Universidad Autónoma de Chile
 ESTRUCTURA DE LA CLASE
 
 ::titulo
-Seis bloques: del mercado particular a la economía entera.
+Seis bloques: de por qué macro a la coyuntura chilena.
 
 ::p1-titulo
-Puente de micro a macro
+¿Por qué macro?
 ::p1-body
-Cierre Unidad II como caso particular. ¿Cómo evaluamos la economía entera?
+La macroeconomía vive en lo que ya enfrentan: bencinas, créditos, dólar, noticias.
 
 ::p2-titulo
-Los cuatro objetivos macro
+Cambio de escala
 ::p2-body
-Crecimiento, empleo, estabilidad de precios, equilibrio externo.
+De un mercado particular (la prueba) a la economía entera (Chile).
 
 ::p3-titulo
-Qué es el PIB
+Contexto histórico
 ::p3-body
-Las cuatro palabras clave. Qué cuenta y qué no.
+Del patrón oro a Bretton Woods al Banco Central autónomo de Chile.
 
 ::p4-titulo
-Tres enfoques del PIB
+Cuatro objetivos macro
 ::p4-body
-Gasto, ingreso, producción. Por qué los tres dan el mismo número.
+Crecimiento, empleo, estabilidad de precios, equilibrio externo. Datos de Chile vigentes.
 
 ::p5-titulo
-Flujo circular ampliado
+Coyuntura chilena
 ::p5-body
-Familias, empresas, gobierno, resto del mundo.
+Bencinas y MEPCO. Déficit estructural 2025. Regla fiscal y Consejo Fiscal Autónomo.
 
 ::p6-titulo
-Cierre y tarea
+Cierre
 ::p6-body
-Verificación y tarea de investigación en fuentes oficiales.
+Síntesis y anticipo Clase 18 — el PIB con rigor.
+:::
+
+::: manifesto
+::titulo
+¿Cuándo enfrentaron macroeconomía esta semana?
+
+::q1
+Cargar bencina y ver el precio subir.
+
+::q2
+Postular a un crédito y ver la tasa de interés.
+
+::q3
+Ver al dólar moverse antes de un viaje o una compra.
+
+::q4
+Una noticia de inflación, desempleo o ajuste fiscal en el celular.
+
+::footer
+Todo eso es macroeconomía. Hoy le ponemos nombre y marco.
 :::
 
 ::: intro
 ::kicker
-BLOQUE 1 · CAMBIO DE ESCALA
+BLOQUE 1 · ¿POR QUÉ MACRO?
 
 ::titulo
-De un mercado particular a la economía entera.
+La macro entra por la coyuntura.
 
 ::body
-Todo lo que vimos en la Unidad II era **un mercado particular**: una curva de demanda, una de oferta, un equilibrio, una cuña impositiva. Incluso cuando analizamos impuestos, la pregunta era sobre *un* mercado (bebidas azucaradas, cigarrillos).
+La semana pasada — el jueves 16 de abril — las bencinas en Chile subieron significativamente: la 93 unos **\$20 por litro**, la 97 unos **\$22**, el diésel **\$36**. Y eso fue con un mecanismo de contención del Estado funcionando: el **MEPCO**. Sin MEPCO, el alza habría superado los **\$73 en gasolina y \$100 en diésel** en una sola semana.
 
-Hoy cambiamos de escala: en vez de un mercado, **la economía entera**. En vez de un precio, **el nivel general de precios**. En vez de una cantidad, **el PIB**. El método económico es el mismo; lo que cambia es el nivel de agregación.
+A diferencia de la microeconomía, que estudia un mercado particular, la macro evalúa **cómo le va a un país en su conjunto**. Pandemia, hiperinflación argentina, déficit fiscal, dólar — todo eso es macro.
+
+**Por qué importa para ustedes.** No van a operar como economistas. Pero sí van a leer contratos atados al IPC, normas atadas a la UF, fallos atados al tipo de cambio, leyes presupuestarias atadas a la regla fiscal. Necesitan reconocer el lenguaje y las instituciones — Banco Central, Hacienda, FMI, CFA — porque son el marco donde viven las normas que van a estudiar.
 :::
 
 ::: grid-fallas
 ::titulo
-Micro vs. Macro — el cambio de escala
+Cambio de escala — micro a macro
 
 ::f1-titulo
 Micro (Unidad II)
@@ -87,27 +109,61 @@ La economía entera · todos los bienes · nivel general de precios · el PIB ·
 ::f3-titulo
 ¿Qué se mantiene?
 ::f3-body
-El método: oferta, demanda, equilibrio, análisis de intervenciones. La próxima clase (Clase 18) introduce Demanda Agregada y Oferta Agregada.
+El método: observar, medir, analizar. La oferta y la demanda reaparecen como Demanda Agregada y Oferta Agregada en clases siguientes.
 
 ::f4-titulo
 ¿Qué cambia?
 ::f4-body
-La escala de agregación y los **objetivos**: ya no es eficiencia de un mercado, sino crecimiento, empleo, estabilidad de precios y equilibrio externo del **país**.
+La escala y los **objetivos**: ya no eficiencia de un mercado, sino crecimiento, empleo, estabilidad de precios y equilibrio externo del **país**.
+:::
+
+::: intro
+::kicker
+BLOQUE 3 · CONTEXTO HISTÓRICO
+
+::titulo
+Del patrón oro al Banco Central autónomo.
+
+::body
+La macroeconomía como disciplina y las instituciones macro que tenemos hoy no aparecieron de un día para otro. Cada una respondió a un problema histórico concreto.
+
+| Año | Hito | Qué fue |
+|---|---|---|
+| s. XIX – 1914 | Patrón oro clásico | Las monedas fijaban su valor en oro. Sistema rígido pero predecible. |
+| 1929–1939 | Gran Depresión | Colapso financiero global. **Nace la macro moderna** (Keynes, *Teoría General*, 1936). |
+| 1944 | **Bretton Woods** | 44 países crean el **FMI** y el **Banco Mundial**; tipos de cambio fijos al dólar, dólar al oro. |
+| 1971 | Fin convertibilidad | Nixon termina la convertibilidad oro-dólar. Comienza el régimen actual de tipos de cambio flotantes. |
+| 1989 (Chile) | BCCh autónomo | **Constitución, art. 108** + **Ley Orgánica 18.840**. Banco Central separado del gobierno. |
+| 2008 | Crisis financiera global | Sub-prime. Política monetaria a tasas cercanas a cero. |
+| 2020 | Pandemia | Política fiscal y monetaria a gran escala en todo el mundo. |
+
+No memoricen fechas. Sí reconozcan que **FMI**, **Banco Mundial**, **Bretton Woods**, **autonomía del Banco Central**, **regla fiscal** son nombres que les van a aparecer en la prensa, en clases de Derecho Económico y en lecturas de Política Internacional. Hoy los nombramos para que existan en su cabeza.
+:::
+
+::: stat-hero
+::eyebrow
+META DEL BANCO CENTRAL DE CHILE
+
+::numero
+3% ± 1
+
+::descripcion
+Meta de inflación anual. Está en la **Ley Orgánica del Banco Central** y se opera vía la tasa de política monetaria.
 :::
 
 ::: grid-fallas
 ::titulo
-Los cuatro objetivos de la política macroeconómica
+Los cuatro objetivos macro
 
 ::f1-titulo
 1. Crecimiento
 ::f1-body
-¿El PIB real aumenta año a año? Chile 2025: **+2,5%**. Proyección 2026: **1,5–2,5%** (BCCh, IPoM marzo 2026).
+¿El producto agregado crece año a año? Chile 2025: **+2,5%**. Proyección 2026: **1,5%–2,5%** (BCCh, IPoM marzo 2026).
 
 ::f2-titulo
 2. Pleno empleo
 ::f2-body
-¿Todos los que quieren trabajar, trabajan? Chile dic 2025–feb 2026: **8,3%** desocupación. Más de 3 años sin bajar del 8% (INE, ENE).
+¿Todos los que quieren trabajar, trabajan? Chile dic 2025–feb 2026: **8,3%** de desocupación. Más de **3 años** sin bajar del 8% (INE, ENE).
 
 ::f3-titulo
 3. Estabilidad de precios
@@ -120,137 +176,79 @@ Los cuatro objetivos de la política macroeconómica
 ¿Exportaciones guardan relación con importaciones en el mediano plazo? Cuenta corriente sin desequilibrios persistentes.
 
 ::nota
-Pleno empleo no significa cero desempleo. Siempre hay desempleo friccional (gente cambiando de trabajo, recién egresados). Meta del BCCh inflación: **3% ± 1 punto**.
+Pleno empleo no significa cero desempleo — siempre hay desempleo friccional (gente cambiando de trabajo, recién egresados). En Chile se considera pleno empleo cerca de **5–6%** de desocupación.
+:::
+
+::: stat-duo
+::titulo
+Coyuntura chilena — abril 2026
+
+::eyebrow1
+ALZA DE BENCINAS · 16 ABRIL
+
+::numero1
++\$20 a +\$36 / L
+
+::descripcion1
+La 93 subió **+\$20**, la 97 **+\$22**, el diésel **+\$36** por litro. Sin **MEPCO**, las alzas habrían superado **+\$73 en gasolina** y **+\$100 en diésel** en una semana.
+
+::eyebrow2
+DÉFICIT ESTRUCTURAL · CIERRE 2025
+
+::numero2
+3,6 % del PIB
+
+::descripcion2
+Tercer año consecutivo de incumplimiento de la regla fiscal. Meta original: **1,1%**. El resultado **prácticamente triplicó** la meta.
 :::
 
 ::: intro
 ::kicker
-BLOQUE 3 · EL CONCEPTO CENTRAL
+BLOQUE 5 · COYUNTURA — CASOS CONCRETOS
 
 ::titulo
-PIB — Producto Interno Bruto.
+MEPCO, regla fiscal, Consejo Fiscal Autónomo.
 
 ::body
-**Definición.** Valor de mercado de todos los bienes y servicios **finales** producidos **dentro** de un país en un **período** determinado (año o trimestre).
+**MEPCO — Mecanismo de Estabilización del Precio de los Combustibles.** Suaviza las variaciones bruscas del precio internacional ajustando el impuesto específico al consumidor final. La diferencia la asume el Estado vía menor recaudación. Toda intervención macro tiene un costo fiscal.
 
-Cuatro palabras clave:
+**Regla fiscal.** Norma chilena que fija una meta anual de **balance estructural** (el balance fiscal corregido por el ciclo del cobre y del PIB). Su objetivo: disciplinar el gasto público y mantener la deuda en niveles sostenibles. La meta original 2025 era **1,1% del PIB**; el resultado fue **3,6%**, prácticamente el triple. **Tercer año consecutivo** de incumplimiento.
 
-1. **Valor de mercado.** No se suman cantidades físicas — se multiplica precio × cantidad. Es la única forma de agregar manzanas y computadores.
-2. **Finales.** No bienes intermedios. El trigo ya está dentro del valor del pan — contarlo aparte sería doble conteo.
-3. **Dentro.** Territorio, no nacionalidad. Fábrica de Toyota en Chile → PIB chileno. Chileno trabajando en Alemania → PIB alemán.
-4. **Período.** El PIB es un **flujo** (lo producido en un año), no un **stock** (la riqueza total del país).
+**Consejo Fiscal Autónomo (CFA) — Ley 21.148 de 2019.** Organismo técnico independiente que evalúa el cumplimiento de la regla y emite recomendaciones públicas. Sus recomendaciones son técnicas, no vinculantes — pero condicionan la credibilidad del país ante mercados financieros, inversores y agencias de riesgo. El CFA recomendó reducir el gasto en torno a **1,6% del PIB (≈ US\$5.950 millones)** entre 2026 y 2029 para volver al equilibrio estructural.
+
+**Deuda pública chilena hoy:** cerca del **42% del PIB**. Umbral prudente que recomienda el CFA: **45%**. Estamos cerca del límite. El nuevo gobierno tiene **90 días desde su instalación** para definir su decreto de política fiscal y sus metas — esas metas marcan el espacio macro de los próximos cuatro años.
 :::
 
 ::: manifesto
 ::titulo
-¿Entra en el PIB chileno de 2026?
+Tres preguntas para cerrar.
 
 ::q1
-Un auto nuevo producido en Chile en marzo 2026.
+¿Cuáles son los cuatro objetivos macro?
 
 ::q2
-Un auto usado vendido entre dos personas en abril 2026.
+¿Cuál es la meta de inflación del Banco Central de Chile?
 
 ::q3
-Servicios de un abogado chileno que atiende un caso en abril 2026.
+¿Qué institución técnica chilena evalúa el cumplimiento de la regla fiscal?
 
 ::footer
-(1) Sí — producción del año. (2) No — el auto ya fue contabilizado en el PIB del año que se produjo; revenderlo no agrega producción nueva. (3) Sí — los servicios cuentan como producción actual.
-:::
-
-::: intro
-::kicker
-BLOQUE 4 · TRES ENFOQUES DEL PIB
-
-::titulo
-Tres formas de medir el mismo número.
-
-::body
-Las tres **tienen que dar el mismo número** — no porque se fuerce, sino porque son aritméticamente equivalentes. Cada una mira la misma transacción desde un ángulo distinto.
-
-**¿Para qué tener tres?** Porque cada una aporta información distinta. El enfoque del gasto dice quién demanda (política económica). El del ingreso dice cómo se distribuye (desigualdad). El de producción dice qué sectores aportan más (política industrial). El número es el mismo; la lectura, distinta.
-:::
-
-::: grid-fallas
-::titulo
-Los tres enfoques — el mismo PIB, tres miradas
-
-::f1-titulo
-Enfoque del gasto (quién compra)
-::f1-body
-**Y = C + I + G + (X − M).** C = consumo familias · I = inversión empresas · G = gasto público (no incluye transferencias) · X − M = exportaciones netas.
-
-::f2-titulo
-Enfoque del ingreso (quién recibe)
-::f2-body
-Cada peso gastado es ingreso de alguien. Se descompone en **salarios + rentas + intereses + utilidades**. Gasto e ingreso son dos caras de la misma transacción.
-
-::f3-titulo
-Enfoque de la producción (qué se produce)
-::f3-body
-Suma del **valor agregado** en cada etapa productiva. Evita el doble conteo. Trigo ($100) + molienda ($80) + panadería ($120) = **$300** = precio del pan (bien final).
-
-::f4-titulo
-¿Por qué coinciden?
-::f4-body
-Son aritméticamente equivalentes. Lo que uno gasta, otro lo recibe como ingreso, y todo se origina en valor agregado en la producción. No hay forma de que difieran.
-
-::nota
-La identidad **Y = C + I + G + (X − M)** se usa todo el resto de la unidad. La próxima clase la trata como **Demanda Agregada**.
-:::
-
-::: intro
-::kicker
-BLOQUE 5 · FLUJO CIRCULAR AMPLIADO
-
-::titulo
-Cuatro agentes, un solo PIB.
-
-::body
-El flujo circular conecta **familias, empresas, gobierno y resto del mundo**. Los tres enfoques del PIB no son casualidad — salen del flujo circular.
-
-Lo que se gasta en el **mercado de bienes** (arriba) es igual a lo que se paga en el **mercado de factores** (abajo). El gobierno entra con impuestos y gasto público (G). El resto del mundo entra con exportaciones (X) e importaciones (M).
-
-**Conexión jurídica.** El gobierno aparece con dos roles: recauda impuestos (Código Tributario) y hace gasto público (Ley de Presupuestos anual). Son dos actos jurídicos separados que, agregados, definen la política fiscal.
-
-*Samuelson & Nordhaus, Cap. 21, Fig. 21-1.*
-:::
-
-::: manifesto
-::titulo
-Tres preguntas antes de cerrar.
-
-::q1
-El PIB cuenta bienes finales, no intermedios. ¿Por qué?
-
-::q2
-Si un chileno trabaja en España y una fábrica alemana opera en Chile, ¿dónde entra cada aporte?
-
-::q3
-El enfoque del gasto y el del ingreso dan el mismo número. ¿Por qué?
-
-::footer
-(1) Para evitar el doble conteo. (2) El chileno → PIB español; la fábrica → PIB chileno. Territorio, no nacionalidad. (3) Cada peso gastado es un peso de ingreso para alguien — misma transacción, dos lados.
+(1) Crecimiento, pleno empleo, estabilidad de precios, equilibrio externo. (2) 3% anual, ±1 punto. (3) El Consejo Fiscal Autónomo, CFA — Ley 21.148 de 2019.
 :::
 
 ::: close
 ::eyebrow
-TAREA · JUEVES 30 DE ABRIL
+PRÓXIMA CLASE · JUEVES 30 DE ABRIL
 
 ::titulo
-Investigar datos reales en fuentes oficiales.
+El PIB con rigor — qué cuenta y qué no.
 
 ::body
-Entrar a **bcentral.cl** y **ine.gob.cl** y anotar:
+Mañana definimos el concepto central de la macroeconomía: el **PIB**. Cuatro palabras clave: **valor de mercado · finales · dentro · período**. Cada una tiene un porqué.
 
-1. **PIB chileno del último trimestre** (BCCh → Estadísticas → Cuentas Nacionales).
-2. **IPC del último mes** (INE → Precios e inflación → IPC).
-3. **Tasa de desocupación del último trimestre** (INE → Mercado Laboral → ENE).
+Resolveremos casos: ¿el auto usado entra? ¿el sueldo de un chileno trabajando en Alemania? ¿el trigo que se convierte en pan? ¿la consulta jurídica que cobró un abogado?
 
-**Próxima clase — Clase 18.** Tomamos la identidad Y = C + I + G + (X − M) y la tratamos como **Demanda Agregada**. Introducimos la **Oferta Agregada**. El modelo DA-OA es el equivalente macro del modelo oferta-demanda que ya dominan de micro.
-
-::reglas
-PIB · valor de mercado · finales · dentro · período · Y = C + I + G + (X − M) · gasto · ingreso · producción · flujo circular
+**Lectura sugerida.** Samuelson & Nordhaus, cap. 21, pp. 411–415 (definición del PIB).
 
 ::meta
 DERE-A0004 · Introducción a la Economía · Universidad Autónoma de Chile
