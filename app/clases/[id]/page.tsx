@@ -1217,10 +1217,7 @@ a { color: inherit; text-decoration: none; }
   display: flex;
   flex-direction: column;
   justify-content: center;
-  overflow: hidden;
   border-bottom: 1px solid var(--light);
-  break-after: page;
-  page-break-after: always;
 }
 
 /* ════════════════════════════════════════════

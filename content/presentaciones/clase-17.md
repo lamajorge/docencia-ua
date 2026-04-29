@@ -24,7 +24,7 @@ DERE-A0004 · Introducción a la Economía · Universidad Autónoma de Chile
 ESTRUCTURA DE LA CLASE
 
 ::titulo
-Seis bloques: de por qué macro a la coyuntura chilena.
+Cinco bloques: del por qué macro a la coyuntura chilena.
 
 ::p1-titulo
 ¿Por qué macro?
@@ -34,26 +34,21 @@ La macroeconomía aparece en lo cotidiano: bencinas, créditos, dólar, noticias
 ::p2-titulo
 Cambio de escala
 ::p2-body
-De un mercado particular (la prueba) a la economía entera (Chile).
+De un mercado en particular (la prueba) a la economía entera (Chile).
 
 ::p3-titulo
-Contexto histórico
+Cuatro objetivos macro
 ::p3-body
-Del patrón oro a Bretton Woods al Banco Central autónomo de Chile.
+Crecimiento, empleo, estabilidad de precios, equilibrio externo. Datos chilenos vigentes.
 
 ::p4-titulo
-Cuatro objetivos macro
+Coyuntura chilena
 ::p4-body
-Crecimiento, empleo, estabilidad de precios, equilibrio externo. Datos de Chile vigentes.
+Bencinas y MEPCO. Déficit estructural. Consejo Fiscal Autónomo. Ley de Reconstrucción.
 
 ::p5-titulo
-Coyuntura chilena
-::p5-body
-Bencinas y MEPCO. Déficit estructural 2025. Regla fiscal y Consejo Fiscal Autónomo.
-
-::p6-titulo
 Cierre
-::p6-body
+::p5-body
 Síntesis y anticipo Clase 18 — el PIB con rigor.
 :::
 
@@ -94,7 +89,7 @@ A diferencia de la microeconomía, que estudia un mercado en particular, la macr
 
 ::: grid-fallas
 ::titulo
-Cambio de escala — micro a macro
+Cambio de escala — micro a macro.
 
 ::f1-titulo
 Micro (Unidad II)
@@ -117,29 +112,6 @@ El método: observar, medir, analizar. La oferta y la demanda reaparecen como De
 La escala y los **objetivos**: ya no eficiencia de un mercado, sino crecimiento, empleo, estabilidad de precios y equilibrio externo del **país**.
 :::
 
-::: intro
-::kicker
-BLOQUE 3 · CONTEXTO HISTÓRICO
-
-::titulo
-Del patrón oro al Banco Central autónomo.
-
-::body
-La macroeconomía como disciplina y las instituciones macro que tenemos hoy no aparecieron de un día para otro. Cada una respondió a un problema histórico concreto.
-
-| Año | Hito | Qué fue |
-|---|---|---|
-| s. XIX – 1914 | Patrón oro clásico | Las monedas fijaban su valor en oro. Sistema rígido pero predecible. |
-| 1929–1939 | Gran Depresión | Colapso financiero global. **Nace la macro moderna** (Keynes, *Teoría General*, 1936). |
-| 1944 | **Bretton Woods** | 44 países crean el **FMI** y el **Banco Mundial**; tipos de cambio fijos al dólar, dólar al oro. |
-| 1971 | Fin convertibilidad | Nixon termina la convertibilidad oro-dólar. Comienza el régimen actual de tipos de cambio flotantes. |
-| 1989 (Chile) | BCCh autónomo | **Constitución, art. 108** + **Ley Orgánica 18.840**. Banco Central separado del gobierno. |
-| 2008 | Crisis financiera global | Sub-prime. Política monetaria a tasas cercanas a cero. |
-| 2020 | Pandemia | Política fiscal y monetaria a gran escala en todo el mundo. |
-
-No es necesario memorizar fechas. Sí es necesario reconocer que **FMI**, **Banco Mundial**, **Bretton Woods**, **autonomía del Banco Central** y **regla fiscal** son nombres que van a reaparecer en la prensa, en clases de Derecho Económico y en lecturas de Política Internacional. Hoy los nombramos para que les queden registrados.
-:::
-
 ::: stat-hero
 ::eyebrow
 META DEL BANCO CENTRAL DE CHILE
@@ -148,12 +120,12 @@ META DEL BANCO CENTRAL DE CHILE
 3% ± 1
 
 ::descripcion
-Meta de inflación anual. Está en la **Ley Orgánica del Banco Central** y se opera vía la tasa de política monetaria.
+Meta de inflación anual. Está fijada en la **Ley Orgánica del Banco Central** y se opera vía la **tasa de política monetaria**.
 :::
 
 ::: grid-fallas
 ::titulo
-Los cuatro objetivos macro
+Los cuatro objetivos macro.
 
 ::f1-titulo
 1. Crecimiento
@@ -173,33 +145,70 @@ Los cuatro objetivos macro
 ::f4-titulo
 4. Equilibrio externo
 ::f4-body
-¿Exportaciones guardan relación con importaciones en el mediano plazo? Cuenta corriente sin desequilibrios persistentes.
+¿Las exportaciones guardan relación con las importaciones en el mediano plazo? Cuenta corriente sin desequilibrios persistentes.
 
 ::nota
 Pleno empleo no significa cero desempleo — siempre hay desempleo friccional (gente cambiando de trabajo, recién egresados). En Chile se considera pleno empleo cerca de **5–6%** de desocupación.
 :::
 
+::: intro
+::kicker
+BLOQUE 5 · COYUNTURA COMO PUERTA A LA MACRO
+
+::titulo
+Cuatro casos vivos de la economía chilena.
+
+::body
+Los siguientes cuatro casos están en la prensa esta semana. **No son ejercicios para resolver hoy** — son la puerta de entrada a los conceptos que se aprenden en esta unidad. Lo que se pide es reconocer el vocabulario y las preguntas que aparecen.
+
+Antes de entrar, recogemos la tarea de la clase pasada: PIB, IPC y tasa de desocupación que cada uno buscó en **bcentral.cl** y **ine.gob.cl**. Esos datos sirven de referencia para los casos.
+
+| # | Caso | Qué concepto introduce |
+|---|---|---|
+| 1 | Alza histórica de bencinas + MEPCO | Estabilidad de precios + intervención fiscal |
+| 2 | Déficit estructural 2025 + regla fiscal | Política fiscal + sostenibilidad |
+| 3 | Consejo Fiscal Autónomo | Instituciones técnicas + credibilidad |
+| 4 | Proyecto de Ley de Reconstrucción Nacional | Trade-off impuestos / inversión / déficit |
+:::
+
 ::: stat-duo
 ::titulo
-Coyuntura chilena — abril 2026
+Casos 1 y 2 — Bencinas y déficit estructural.
 
 ::eyebrow1
-ALZA HISTÓRICA · 26 MARZO 2026
+CASO 1 · ALZA HISTÓRICA · 26 MARZO 2026
 
 ::numero1
 +\$372 a +\$580 / L
 
 ::descripcion1
-La 93 subió **+\$372**, la 97 **+\$391**, el diésel **+\$580** por litro. La mayor alza desde 1973. Causa: ampliación de la ventana del **MEPCO** de 3 a 4 semanas, anunciada por el ministro de Hacienda.
+La 93 subió **+\$372**, la 97 **+\$391**, el diésel **+\$580** por litro. La mayor alza desde 1973. Causa: el ministro de Hacienda amplió la ventana del **MEPCO** de 3 a 4 semanas. Mantener el mecanismo previo costaba **US\$140 millones a la semana**, con proyección a US\$160 millones. ¿Quién paga la diferencia? Los contribuyentes en su conjunto, vía menor recaudación.
 
 ::eyebrow2
-DÉFICIT ESTRUCTURAL · CIERRE 2025
+CASO 2 · DÉFICIT ESTRUCTURAL · CIERRE 2025
 
 ::numero2
 3,6 % del PIB
 
 ::descripcion2
-Tercer año consecutivo de incumplimiento de la regla fiscal. Meta original: **1,1%**. El resultado **prácticamente triplicó** la meta.
+Tercer año consecutivo de incumplimiento de la regla fiscal. Meta original 2025: **1,1%**. El resultado **prácticamente triplicó** la meta. Esto limita la capacidad del Estado de seguir absorbiendo shocks como el de las bencinas (Caso 1).
+:::
+
+::: intro
+::kicker
+BLOQUE 5 · CASO 3 — CONSEJO FISCAL AUTÓNOMO
+
+::titulo
+La institución técnica que evalúa la regla.
+
+::body
+El **Consejo Fiscal Autónomo (CFA), Ley 21.148 de 2019**, es un organismo técnico independiente que evalúa el cumplimiento de la regla fiscal y emite recomendaciones públicas. Sus recomendaciones son **técnicas, no vinculantes** — pero condicionan la credibilidad del país ante mercados financieros, inversionistas y agencias de riesgo.
+
+En los últimos años el CFA emitió advertencias reiteradas: el gasto comprometido excede los niveles compatibles con la meta de balance estructural, las proyecciones de ingresos han sido optimistas, y las medidas correctivas han sido insuficientes. El entonces ministro Marcel respondió públicamente diciendo que el CFA *"genera frustración respecto de los esfuerzos genuinos por mejorar la conducción fiscal"*.
+
+**Recomendación CFA actual:** reducir el gasto en torno a **1,6% del PIB (≈ US\$5.950 millones)** entre 2026 y 2029 para volver al equilibrio estructural. Deuda pública chilena hoy: cerca del **42% del PIB**, con un umbral prudente recomendado de 45%.
+
+Acá se ve en vivo cómo opera la macroeconomía chilena: una regla escrita, una institución técnica que evalúa, un Ministerio que responde, prensa que sigue el debate.
 :::
 
 ::: intro
@@ -207,12 +216,10 @@ Tercer año consecutivo de incumplimiento de la regla fiscal. Meta original: **1
 BLOQUE 5 · CASO 4 — LEY DE RECONSTRUCCIÓN NACIONAL
 
 ::titulo
-Un proyecto en debate esta semana.
+Un proyecto en discusión esta semana.
 
 ::body
 El Gobierno ingresó al Congreso, el **22 de abril**, el **Proyecto de Ley de Reconstrucción Nacional y Desarrollo Económico y Social**. Combina reconstrucción tras los **incendios de Ñuble y Biobío de enero 2026** con un paquete tributario amplio. Hoy está en discusión en la Comisión de Hacienda de la Cámara de Diputados.
-
-**Algunas medidas que están en el proyecto:**
 
 | Medida | Detalle |
 |---|---|
@@ -221,26 +228,9 @@ El Gobierno ingresó al Congreso, el **22 de abril**, el **Proyecto de Ley de Re
 | Reconstrucción incendios | **\$400 mil millones** adicionales para zonas afectadas |
 | Estabilidad tributaria | **25 años** para inversiones >US\$50 millones |
 
-**Las opiniones están divididas.** Quienes apoyan el proyecto hablan de **estímulo a la inversión y al empleo**. Quienes lo critican hablan de **mayor déficit fiscal**, **menor recaudación** y **costo fiscal** de las rebajas tributarias — los mismos conceptos que aparecen en el debate del CFA y la regla fiscal.
+**Las opiniones están divididas.** Quienes apoyan el proyecto hablan de **estímulo a la inversión y al empleo**. Quienes lo critican hablan de **mayor déficit fiscal**, **menor recaudación** y **costo fiscal** de las rebajas tributarias — los mismos conceptos que aparecen en los Casos 2 y 3.
 
 No se trata de tomar partido hoy. Se trata de reconocer que este debate público — esta semana, en la Comisión de Hacienda — está estructurado por **el vocabulario macro que estamos empezando a aprender**: impuestos, recaudación, déficit, inversión, crecimiento. Mañana volvemos a este proyecto: vamos a usar varias de sus medidas como ejemplos al definir el PIB con rigor.
-:::
-
-::: intro
-::kicker
-BLOQUE 5 · COYUNTURA — CASOS CONCRETOS
-
-::titulo
-MEPCO, regla fiscal, Consejo Fiscal Autónomo.
-
-::body
-**MEPCO — Mecanismo de Estabilización del Precio de los Combustibles.** Suaviza las variaciones bruscas del precio internacional ajustando el impuesto específico al consumidor final. La diferencia la asume el Estado vía menor recaudación. El alza histórica del 26 de marzo se produjo cuando el ministro de Hacienda amplió la ventana del mecanismo de 3 a 4 semanas — costaba **US\$140 millones a la semana** mantenerlo en su parámetro previo, con proyección a US\$160 millones. Toda intervención macro tiene un costo fiscal.
-
-**Regla fiscal.** Norma chilena que fija una meta anual de **balance estructural** (el balance fiscal corregido por el ciclo del cobre y del PIB). Su objetivo: disciplinar el gasto público y mantener la deuda en niveles sostenibles. La meta original 2025 era **1,1% del PIB**; el resultado fue **3,6%**, prácticamente el triple. **Tercer año consecutivo** de incumplimiento. Esto es lo que limita la capacidad del Estado de seguir absorbiendo shocks como el de las bencinas.
-
-**Consejo Fiscal Autónomo (CFA) — Ley 21.148 de 2019.** Organismo técnico independiente que evalúa el cumplimiento de la regla y emite recomendaciones públicas. Sus recomendaciones son técnicas, no vinculantes — pero condicionan la credibilidad del país ante mercados financieros, inversores y agencias de riesgo. El CFA recomendó reducir el gasto en torno a **1,6% del PIB (≈ US\$5.950 millones)** entre 2026 y 2029 para volver al equilibrio estructural.
-
-**Deuda pública chilena hoy:** cerca del **42% del PIB**. Umbral prudente que recomienda el CFA: **45%**. Estamos cerca del límite. El nuevo gobierno tiene **90 días desde su instalación** para definir su decreto de política fiscal y sus metas — esas metas marcan el espacio macro de los próximos cuatro años.
 :::
 
 ::: manifesto
@@ -270,7 +260,7 @@ El PIB con rigor — qué cuenta y qué no.
 ::body
 Mañana definimos el concepto central de la macroeconomía: el **PIB**. Cuatro palabras clave: **valor de mercado · finales · dentro · período**. Cada una tiene un porqué.
 
-Resolveremos casos: ¿el auto usado entra? ¿el sueldo de un chileno trabajando en Alemania? ¿el trigo que se convierte en pan? ¿la consulta jurídica que cobró un abogado?
+Resolvemos casos, incluyendo medidas concretas del Proyecto de Reconstrucción que vimos hoy: ¿los \$400 mil millones de reconstrucción entran al PIB? ¿La vivienda nueva con IVA cero entra? ¿El sueldo de un chileno trabajando en Alemania?
 
 **Lectura sugerida.** Samuelson & Nordhaus, cap. 21, pp. 411–415 (definición del PIB).
 
