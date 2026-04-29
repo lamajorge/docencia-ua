@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { getClaseByNumero, getClases, getPresentacionFromNotion, REVALIDATE_SECONDS } from '@/lib/notion'
 import { getPresentacion, Section } from '@/lib/presentaciones'
 import PrintButton from '@/components/PrintButton'
+import RevalidateButton from '@/components/RevalidateButton'
 
 export const revalidate = REVALIDATE_SECONDS
 
@@ -58,6 +59,7 @@ export default async function ClasePage({ params }: { params: { id: string } }) 
                 <span className="toolbar-clase">Clase {clase.numero}</span>
                 <span className="toolbar-titulo">{clase.titulo}</span>
               </div>
+              <RevalidateButton path={`/clases/${clase.numero}`} />
               <PrintButton />
             </div>
             <main className="deck">
