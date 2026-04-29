@@ -30,7 +30,7 @@
 section {
   width: 1280px;
   height: 720px;
-  padding: 50px 75px;
+  padding: 50px 75px 65px;
   background: var(--sand);
   color: var(--text);
   font-family: var(--sans);
@@ -314,7 +314,7 @@ section.roadmap .num {
 /* MANIFESTO — lista numerada grande sobre fondo claro */
 section.manifesto {
   background: var(--white);
-  padding: 60px 80px;
+  padding: 50px 75px 60px;
 }
 
 section.manifesto ol {

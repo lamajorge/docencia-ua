@@ -119,6 +119,21 @@ Necesitamos un solo número que **agregue** todo lo que produce un país en un p
 
 ---
 
+#### BLOQUE 4 · CASOS DEL PIB
+
+# Ahora, aplicar la definición a casos concretos.
+
+Ya tenemos la cita de Samuelson y sus cuatro componentes. La densidad del PIB no está en repetir la definición — está en **aplicarla**. Cada caso muestra dónde un componente decide si algo entra o no.
+
+| # | Caso | Componente que decide |
+|---|---|---|
+| 1 | El pan: doble conteo | Bienes y servicios **finales** |
+| 2 | ¿Entra al PIB chileno 2026? | **Dentro** del territorio + **período** |
+| 3 | Lo que el PIB no captura | **Valor de mercado** (lo que pasa por mercado) |
+| 4 | Ley de Reconstrucción aplicada | Los cuatro componentes en una pieza real |
+
+---
+
 <!-- _class: grid-4 -->
 
 #### BLOQUE 4 · CASO 1 — DOBLE CONTEO
@@ -182,18 +197,15 @@ Necesitamos un solo número que **agregue** todo lo que produce un país en un p
 
 #### BLOQUE 4 · CASO 4 — COYUNTURA APLICADA
 
-# La definición del PIB aplicada a la Ley de Reconstrucción.
+# La definición del PIB en una ley real.
 
-Tres medidas del **Proyecto de Ley de Reconstrucción Nacional** revisadas con los componentes de la definición.
+Tres medidas del **Proyecto de Ley de Reconstrucción Nacional** analizadas con los componentes de la definición.
 
-**$400 mil millones para reconstrucción de Ñuble y Biobío.**
-Componentes que aplican: **producción del período** + **dentro del territorio**. Construir casas y reponer infraestructura es producción nueva del año en territorio chileno. Pero ¿el país está mejor? Casi nunca — se repone lo dañado. **El PIB mide producción, no bienestar**.
-
-**IVA cero en viviendas nuevas (12 meses).**
-Componentes que aplican: **valor de mercado** + **bienes finales**. La vivienda nueva es un bien **final** y entra a su **valor de mercado**. El IVA cero **no cambia** ese valor en el PIB — cambia la **recaudación** del Estado. Son cosas distintas.
-
-**Imp. corporativo 27% → 23%.**
-Indirectamente vía **producción del período**: si la rebaja estimula inversión nueva (maquinaria, construcción), esa inversión sí aparece en el PIB del año. El "cuánto" es debate empírico avanzado.
+| Medida | Componentes que aplican | Efecto en el PIB |
+|---|---|---|
+| **\$400 mil millones para reconstrucción de Ñuble y Biobío** | producción del **período** · **dentro** del territorio | **Sí entra.** Construir y reponer es producción nueva del año en Chile. *Pero PIB ≠ bienestar — se repone lo dañado.* |
+| **IVA cero en viviendas nuevas (12 meses)** | **valor de mercado** · **bienes finales** | **Sí entra**, a precio de mercado completo. *El IVA cero solo cambia recaudación, no el PIB.* |
+| **Impuesto corporativo 27% → 23%** | (indirecto) producción del **período** | **No directamente** — el impuesto es recaudación. *Si estimula inversión nueva, esa inversión sí aparece en el PIB.* |
 
 ---
 

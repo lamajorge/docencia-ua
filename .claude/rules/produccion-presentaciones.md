@@ -4,6 +4,16 @@
 
 ---
 
+## ⚠️ Regla crítica: la guía es la fuente, la presentación es derivada
+
+**Toda actualización de la presentación debe ir acompañada (o precedida) de la actualización de la guía Notion de la clase.** Si cambia el contenido conceptual, la organización o los ejemplos, **la guía cambia primero, después la presentación**. Si solo cambia el layout/padding/tipografía, la guía no requiere actualización.
+
+Verificar siempre la consistencia al final: terminología, ejemplos, casos, esquemas, citas. Si la presentación dice "cuatro componentes", la guía no puede seguir diciendo "cuatro palabras clave".
+
+Orden ideal: **guía Notion → presentación Marp → PDF → publicación**. Nunca al revés.
+
+---
+
 ## Modelo vigente: Marp
 
 Desde el **29 de abril de 2026**, las presentaciones se producen con **Marp** + un theme CSS custom (`marp/theme-ua.css`). Antes el sistema era markdown con sintaxis `:::` parseado por React en `app/clases/[id]/page.tsx`. Ese sistema queda como **legacy** y se está deprecando: bugs persistentes de print, mantenimiento alto, cada cambio visual requería editar código.
