@@ -1705,6 +1705,7 @@ a { color: inherit; text-decoration: none; }
 .slide-grid-fallas { background: var(--white); padding: 5vh 7vw; gap: 3vh; }
 .gf-head { padding-bottom: 2vh; border-bottom: 3px solid var(--red); }
 .gf-kicker { font-size: 0.78rem; letter-spacing: 0.3em; font-weight: 800; color: var(--red); margin-bottom: 1vh; }
+.mani-kicker { font-size: 0.85rem; letter-spacing: 0.3em; font-weight: 800; color: var(--red); margin-bottom: 4vh; }
 .gf-titulo {
   font-family: var(--disp);
   font-size: clamp(2rem, 4vw, 3.3rem);
