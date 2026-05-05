@@ -164,9 +164,7 @@ La economía sí creció — pero **17,1%**, no **82,9%**. La diferencia (~66 pu
 
 # El índice de precios implícito en el PIB.
 
-$$
-\text{Deflactor} = \frac{\text{PIB nominal}}{\text{PIB real}} \times 100
-$$
+**Deflactor** = (PIB nominal ÷ PIB real) × 100.
 
 | Año | PIB nominal | PIB real | Deflactor |
 |---|---|---|---|
