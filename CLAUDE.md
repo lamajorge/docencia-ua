@@ -66,13 +66,14 @@ Los archivos en [`.claude/rules/`](.claude/rules/) no se cargan automáticamente
 
 ---
 
-## Estado del curso (al 2026-04-23)
+## Estado del curso (al 2026-05-05)
 
-- **Guías en Notion:** Clases 1–14 completas · Clase 15 = Evaluación Regular 1 · Clase 16 producida · Clase 17 (PIB) existe en Notion.
-- **Presentaciones web:** Clases 1–17 en formato landing.
+- **Guías en Notion:** Clases 1–14 completas · Clase 15 = Evaluación Regular 1 · Clase 16 producida · Clases 17–20 completas (PIB, PIB con rigor, PIB nominal/real, modelo DA–OA).
+- **Presentaciones web (legacy):** Clases 1–17 en formato landing React.
   - Clase 15 = revisión de pauta (con respuestas).
   - Clase 16 = revisión Regular 1 + instrucción 10% + transición micro→macro.
-  - Clase 17 = PIB y objetivos macro (contenido que era la clase 16 anterior).
+  - Clase 17 = bienvenida macro y 4 objetivos.
+- **Presentaciones Marp:** Clases 17, 18, 19, 20 en `marp/` (PDF proyectable + PPTX exportable). 17 reescrita en Marp; 18 = PIB con rigor; 19 = PIB nominal vs. real, deflactor, per cápita; 20 = modelo DA–OA y shocks.
 - **Regular 1:** aplicada miércoles 22 de abril · 20 pts · cubre Clases 1–13 · 40%.
 - **Regular 2:** 2/3 junio 2026 · acumulativa Unidades I, II y III · 50%.
 - **Examen de repetición:** 8 julio 2026.
