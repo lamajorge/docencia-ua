@@ -47,8 +47,8 @@ title: Clase 19 — PIB nominal, PIB real y bienestar
 </div>
 <div>
 <p class="num">05</p>
-<h3>Casos + cierre</h3>
-<p>Argentina con inflación. Chile 1990–2026. Anticipo Clase 20.</p>
+<h3>Bienestar + casos</h3>
+<p>Qué captura y qué no captura el PIB. Argentina, Chile 1990–2026.</p>
 </div>
 </div>
 
@@ -235,7 +235,40 @@ Si el PIB crece **2,5%** y la población crece **1,0%**, el PIB per cápita crec
 </div>
 </div>
 
-<p class="footer-note">El PIB per cápita real es la mejor primera aproximación a "qué tan rico es un país" — pero no captura desigualdad ni sostenibilidad. Eso lo veremos con Sen en Clase 22.</p>
+<p class="footer-note">Estos casos muestran <strong>por qué importa</strong> la distinción nominal/real. Pero ojo: incluso medido bien — real, per cápita, en moneda comparable — el PIB no es lo mismo que <strong>bienestar</strong>. La siguiente lámina lo aterriza.</p>
+
+---
+
+<!-- _class: grid-4 -->
+
+#### BLOQUE 7 · PIB Y BIENESTAR
+
+# Lo que el PIB per cápita NO captura.
+
+<div class="grid">
+<div>
+<p class="num">01</p>
+<h3>Distribución</h3>
+<p>El PIB per cápita es un <strong>promedio</strong>. Si una persona gana 90 y otra 10, el promedio es 50 — pero ninguna vive con 50. Para desigualdad existe el <strong>coeficiente de Gini</strong>.</p>
+</div>
+<div class="dark">
+<p class="num">02</p>
+<h3>Calidad de vida</h3>
+<p>Salud, educación, seguridad, libertades, ocio. Dos países con el mismo PIB per cápita pueden ofrecer vidas muy distintas. El <strong>IDH</strong> intenta capturarlo (Clase 21).</p>
+</div>
+<div class="dark">
+<p class="num">03</p>
+<h3>Daño ambiental</h3>
+<p>Talar un bosque y vender madera <strong>entra</strong> al PIB como producción. Pero el país queda más pobre en stock natural. El PIB cuenta el flujo, no el stock.</p>
+</div>
+<div>
+<p class="num">04</p>
+<h3>Trabajo no remunerado</h3>
+<p>Cuidado en el hogar, voluntariado, economía informal. Tienen valor económico real, pero no pasan por el mercado — y por eso no entran al PIB.</p>
+</div>
+</div>
+
+<p class="footer-note">El PIB per cápita real es la <strong>primera aproximación</strong> al ingreso medio — no la última palabra. Profundizamos en Clase 21 (IDH, ciclos) y Clase 22 (Sen).</p>
 
 ---
 
@@ -251,7 +284,7 @@ Si el PIB crece **2,5%** y la población crece **1,0%**, el PIB per cápita crec
 
 <!-- _class: manifesto -->
 
-#### BLOQUE 7 · SÍNTESIS
+#### BLOQUE 8 · SÍNTESIS
 
 # Tres herramientas — y una división.
 
