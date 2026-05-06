@@ -32,8 +32,8 @@ title: Clase 20 — Modelo DA–OA y shocks
 </div>
 <div>
 <p class="num">02</p>
-<h3>Modelo DA–OA</h3>
-<p>Las dos curvas y por qué tienen las pendientes que tienen.</p>
+<h3>Medición + DA–OA</h3>
+<p>Tres formas de medir el mismo PIB. Las dos curvas y sus pendientes.</p>
 </div>
 <div>
 <p class="num">03</p>
@@ -80,9 +80,25 @@ En macro la pregunta cambia: ¿qué determina, **juntos**, el **PIB total** del 
 
 ---
 
+#### BLOQUE 3 · MEDICIÓN DEL PIB
+
+# Tres formas de medir el mismo PIB.
+
+| Enfoque | Cómo se calcula | Pregunta que responde |
+|---|---|---|
+| **Gasto** | C + I + G + (X − M) | ¿quién compra lo producido? |
+| **Ingreso** | salarios + rentas + intereses + utilidades | ¿quién recibe el pago? |
+| **Producción** | suma del valor agregado en cada etapa | ¿qué se produce, sin doble conteo? |
+
+Las tres dan **exactamente el mismo número**. Es la **identidad fundamental** de las cuentas nacionales: cada peso producido se gasta por alguien y se recibe como ingreso por alguien.
+
+> **Flujo circular.** El PIB circula entre cuatro nodos: **hogares**, **empresas**, **gobierno** y **resto del mundo**. El modelo **DA–OA** que vamos a construir usa el enfoque del **gasto** — la fórmula **DA = C + I + G + (X − M)** es ese enfoque, escrito como demanda.
+
+---
+
 <!-- _class: grid-4 -->
 
-#### BLOQUE 3 · DEMANDA AGREGADA
+#### BLOQUE 4 · DEMANDA AGREGADA
 
 # DA = C + I + G + (X − M).
 
@@ -111,7 +127,7 @@ En macro la pregunta cambia: ¿qué determina, **juntos**, el **PIB total** del 
 
 ---
 
-#### BLOQUE 3 · POR QUÉ DA TIENE PENDIENTE NEGATIVA
+#### BLOQUE 4 · POR QUÉ DA TIENE PENDIENTE NEGATIVA
 
 # Cuando los precios suben, se demanda menos PIB.
 
@@ -125,7 +141,7 @@ Otras razones (efecto sobre tasas de interés, exportaciones netas) se ven en ma
 
 ---
 
-#### BLOQUE 4 · OFERTA AGREGADA
+#### BLOQUE 5 · OFERTA AGREGADA
 
 # Pendiente positiva en el corto plazo.
 
@@ -137,7 +153,7 @@ La curva de **Oferta Agregada** representa cuánto PIB real **están dispuestas 
 
 ---
 
-#### BLOQUE 5 · EQUILIBRIO MACROECONÓMICO
+#### BLOQUE 6 · EQUILIBRIO MACROECONÓMICO
 
 # Dos cifras determinadas a la vez.
 
@@ -154,7 +170,7 @@ Lo interesante de este modelo es lo que pasa cuando algo lo perturba. Una de las
 
 <!-- _class: grid-2 -->
 
-#### BLOQUE 6 · SHOCKS DE DEMANDA
+#### BLOQUE 7 · SHOCKS DE DEMANDA
 
 # Algo desplaza la curva DA.
 
@@ -179,7 +195,7 @@ Lo interesante de este modelo es lo que pasa cuando algo lo perturba. Una de las
 
 <!-- _class: grid-2 -->
 
-#### BLOQUE 7 · SHOCKS DE OFERTA
+#### BLOQUE 8 · SHOCKS DE OFERTA
 
 # Algo desplaza la curva OA.
 
@@ -223,7 +239,7 @@ Lo interesante de este modelo es lo que pasa cuando algo lo perturba. Una de las
 
 ---
 
-#### BLOQUE 8 · SÍNTESIS
+#### BLOQUE 9 · SÍNTESIS
 
 # Cuatro tipos de shock — cuatro cuadrantes.
 
@@ -250,7 +266,7 @@ Lo interesante de este modelo es lo que pasa cuando algo lo perturba. Una de las
 
 <!-- _class: manifesto -->
 
-#### BLOQUE 8 · LECTURA DIAGNÓSTICA
+#### BLOQUE 9 · LECTURA DIAGNÓSTICA
 
 # Cinco titulares — clasifíquenlos.
 
